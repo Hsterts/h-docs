@@ -1,6 +1,4 @@
 ---
-title: Solution Finder: Percent
-tags:
-- sfinder
+title: "Solution Finder: Percent"
 ---
 **Percent** is the

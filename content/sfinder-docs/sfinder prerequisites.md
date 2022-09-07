@@ -1,5 +1,5 @@
 ---
-title: sfinder prerequisites
+title: Solution Finder Prerequisites
 ---
 Here are a bunch of prerequisites for sfinder and its branches.
 ___
