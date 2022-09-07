@@ -1,26 +1,23 @@
-name: Jacky Zhao
-enableToc: true
+name: Hsterts
+enableToc: false
 openToc: false
-enableLinkPreview: true
+enableLinkPreview: false
 enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: true
 enableSPA: true
 enableFooter: true
-enableContextualBacklinks: true
+enableContextualBacklinks: false
 enableRecentNotes: false
-enableGitHubEdit: true
-GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+enableGitHubEdit: false
+GitHubLink: https://github.com/hsterts/h-docs/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Buncha stuff. Sorting it out.
 page_title:
-  "🪴 Quartz 3.3"
+  "h-docs"
 links:
-  - link_name: Twitter
-    link: https://twitter.com/_jzhao
-  - link_name: Github
-    link: https://github.com/jackyzha0
+  - link_name: PC Gang
+    link: https://discord.gg/HQ3aJM7TJws
