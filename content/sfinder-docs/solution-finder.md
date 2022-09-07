@@ -7,25 +7,25 @@ ___
 - You must have [[sfinder-docs/sfinder prerequisites#Java Runtime Environment|Java Runtime Environment]] installed.
 - You must have a basic understanding of **[[sfinder-docs/sfinder prerequisites#Command Line Inputs|command line inputs]]**.
 - You know how to use a [[sfinder-docs/fumen editor|Fumen Editor]].
-
-### Downloading
-1. **Solution Finder** can be downloaded from knewjade's [GitHub repo](https://github.com/knewjade/solution-finder)or from this [direct download link](https://github.com/knewjade/solution-finder/releases/download/v1.30/solution-finder-1.30.zip).
+___
+## Downloading
+1. **Solution Finder** can be downloaded from knewjade's [GitHub repo](https://github.com/knewjade/solution-finder) or from this [direct download](https://github.com/knewjade/solution-finder/releases/download/v1.30/solution-finder-1.30.zip) link.
 2. Once downloaded, **extract the .ZIP file somewhere convenient**. All examples used in this page assumes the sfinder.jar file is in `C:\Users\hsterts\Documents\solution-finder-1.30\`.
 >[!INFO]- Customized solution finder with 180 spins
 >A lot of research is being done with 180 spins considered. [Here](https://cdn.discordapp.com/attachments/569730931544293395/943898698289672232/sfinder-1.12-jstris180.jar) is a direct download link to torchlight's modification of solution finder 1.12 to include 180 spins. Simply replace the extracted `sfinder.jar` file with this new one, and rename the new one to `sfinder.jar`.
 
-### Opening
+___
+## Opening
 1. **Solution Finder** takes inputs from [[sfinder-docs/sfinder prerequisites#Command Line Inputs|command line inputs]] (*CLIs*). These are entered into a terminal, most often the **PowerShell Terminal**.
 2. There are various ways to open the PowerShell Terminal, but the simplest way is to right click <u>somewhere on File Explorer in the folder where sfinder.jar is, while holding shift.</u>
 <center><img src = "https://i.imgur.com/XsL6WnV.png"></center>
 
-This will open a PowerShell terminal with its directory already set to where your `sfinder.jar` file is. A window will open, and it should have single line that looks like this:
+This will open a PowerShell terminal with its directory already set to where your `sfinder.jar` file is. **This is where you will be typing in your CLIs**. A window will open, and it should have single line that looks like this:
 ```
 PS C:\Users\hsterts\Documents\solution-finder-1.30\>
 ```
-<u>This is where you will be typing in your CLIs</u>.
-
-### Usage
+___
+## Usage
 Every command line input starts with `java -jar sfinder.jar <command>`.
 Command line inputs may vary between different **sfinder commands**:
 <center><table>
@@ -71,7 +71,7 @@ Command line inputs may vary between different **sfinder commands**:
 	</tr>
 </table></center>
 
-However, there are various parameters that are universal between the commands:
+Here are various parameters that are universal between most commands:
 1. **Tetfu** refers to the fumen codes made from [[sfinder-docs/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some take multiple.
 ```yaml {title="Single Fumen Input"}
 java -jar sfinder.jar percent --tetfu <fumen>
