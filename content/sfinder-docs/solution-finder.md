@@ -16,8 +16,9 @@ ___
 
 ### Opening
 1. **Solution Finder** takes inputs from [[sfinder-docs/sfinder prerequisites#Command Line Inputs|command line inputs]] (*CLIs*). These are entered into a terminal, most often the **PowerShell Terminal**.
-2. There are various ways to open the PowerShell Terminal, but here's the simplest:
+2. There are various ways to open the PowerShell Terminal, but the simplest way is to right click <u>somewhere on File Explorer in the folder where sfinder.jar is, while holding shift.</u>
 <center><img src = "https://i.imgur.com/XsL6WnV.png"></center>
+
 This will open a PowerShell terminal with its directory already set to where your `sfinder.jar` file is. A window will open, and it should have single line that looks like this:
 ```
 PS C:\Users\hsterts\Documents\solution-finder-1.30\>
@@ -75,9 +76,11 @@ However, there are various parameters that are universal between the commands:
 ```yaml {title="Single Fumen Input"}
 java -jar sfinder.jar percent --tetfu <fumen>
 ```
+
 ```yaml {title="Multiple Fumen Inputs"}
 java -jar sfinder.jar cover --tetfu <fumen> <fumen> <fumen>
 ```
+
 ```yaml {title="Shorthand for Tetfu"}
 java -jar sfinder.jar percent -t <fumen>
 ```
