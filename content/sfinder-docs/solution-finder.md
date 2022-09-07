@@ -17,7 +17,7 @@ ___
 ___
 ## Opening
 1. **Solution Finder** takes inputs from [[sfinder-docs/sfinder prerequisites#Command Line Inputs|command line inputs]] (*CLIs*). These are entered into a terminal, most often the **PowerShell Terminal**.
-2. There are various ways to open the PowerShell Terminal, but the simplest way is to right click <u>somewhere on File Explorer in the folder where sfinder.jar is, while holding shift.</u>
+2. There are various ways to open the PowerShell Terminal, but the simplest way is to right click <strong>somewhere on File Explorer in the folder where sfinder.jar is, while holding shift</strong>.
 <center><img src = "https://i.imgur.com/XsL6WnV.png"></center>
 
 This will open a PowerShell terminal with its directory already set to where your `sfinder.jar` file is. **This is where you will be typing in your CLIs**. A window will open, and it should have single line that looks like this:
@@ -26,9 +26,14 @@ PS C:\Users\hsterts\Documents\solution-finder-1.30\>
 ```
 ___
 ## Usage
-Every command line input starts with `java -jar sfinder.jar <command>`.
+Every command line input starts with `java -jar sfinder.jar <command>`. The rest of it looks like `--parameter <value>` so the final command looks like:
+
+```YAML {title="SFinder CLI Structure"}
+java -jar sfinder.jar <command> --parameter <value> --parameter <value>
+```
+
 Command line inputs may vary between different **sfinder commands**:
-<center><table>
+<center><table width="80%">
 	<tr>
 		<th width="120px">Command</th>
 		<th>Function</th>
@@ -72,15 +77,14 @@ Command line inputs may vary between different **sfinder commands**:
 </table></center>
 
 Here are various parameters that are universal between most commands:
-1. **Tetfu** refers to the fumen codes made from [[sfinder-docs/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some take multiple.
+1. **Tetfu** refers to the fumen codes made from [[sfinder-docs/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some can take multiple.
+
 ```yaml {title="Single Fumen Input"}
 java -jar sfinder.jar percent --tetfu <fumen>
 ```
-
 ```yaml {title="Multiple Fumen Inputs"}
 java -jar sfinder.jar cover --tetfu <fumen> <fumen> <fumen>
 ```
-
 ```yaml {title="Shorthand for Tetfu"}
 java -jar sfinder.jar percent -t <fumen>
 ```
