@@ -139,7 +139,7 @@ S-Spawn J-Spawn I-Spawn / 7.6 % [64]
 ```
 
 No line erasure vs with line erasure:
-<div style="display: flex; justify-content: space-around; margin-top: -40px; margin-bottom: -20px;">
+<div style="display: flex; justify-content: space-around">
 	<div>
 		<figure>
 		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/no_line_erasures.png?raw=true">
