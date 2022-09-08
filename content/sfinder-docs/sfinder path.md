@@ -1,12 +1,12 @@
 ---
-title: "Solution Finder: Percent"
+title: "Solution Finder: Path"
 ---
-Solution Finder's **Percent** command outputs the probability of getting a perfect clear from a **specified field**, given a specified **pattern**. This output is written in the terminal and the specified [[#^b09600|log path]].
+Solution Finder's **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. This output is written into a file in the specified [[#^9e183e|Log Path]].
 ```YAML {title="Command Structure"}
-java -jar sfinder.jar percent --tetfu <fumen> --patterns <pattern>
+java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
 ```
 ```YAML {title="Shorthand Command Structure"}
-java -jar sfinder.jar percent -t <fumen> -p <pattern>
+java -jar sfinder.jar path -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
@@ -36,7 +36,7 @@ ___
 ## Miscellaneous Parameters
 **Log path** (--log-path, -lp): create a .txt file output from the output of the command. 
 	- By default, the log path is `output/last_output.txt`.
-	- `--log-path output/chances.txt` ^b09600
+	- `--log-path output/chances.txt` ^9e183e
 
 **Specified Field from a file** (--field-path, -fp): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
 	- By default, the field path is `input/field.txt`.
@@ -49,7 +49,8 @@ ___
 **Threads** (--threads, --th): Specify the number of threads to use when sfinder is running.
 	- By default, the number of threads used is 1.
 	- `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
-___
+
+**Cached Bit** (--cached-bit, -cb): Specify the smallest bit of the cache to use for the internal algorithm. <u>You almost never need to use this parameter</u>.
 ___
 ## Summary
 <center><table>
