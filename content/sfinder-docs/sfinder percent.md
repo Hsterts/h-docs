@@ -50,6 +50,7 @@ ___
 	- By default, the number of threads used is 1.
 	- `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 ___
+
 ___
 ## Summary
 <center><table>

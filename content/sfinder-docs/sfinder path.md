@@ -120,6 +120,7 @@ ___
 		<td>-1</td>
 	</tr>
 </table></center>
+
 ___
 ## Example Command and Output
 An **example output** of the percent command `java -jar sfinder.jar percent --tetfu v115@9gE8DeG8CeH8BeG8CeA8JeAgH --patterns *p4 -td 1 -fc 5`:
