@@ -25,5 +25,8 @@
   --outlinegray: #343434 !important;
 }
 
-
-
+fig {
+  background: var(--lightgray);
+  border-radius: 10px;
+  padding: 0;
+}

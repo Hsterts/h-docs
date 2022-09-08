@@ -1,7 +1,7 @@
 ---
 title: "Solution Finder: Path"
 ---
-Solution Finder's **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. This output is written into a file in the specified [[#Miscellaneous Parameters|log path]].
+Solution Finder's **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a path file is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
 ```
