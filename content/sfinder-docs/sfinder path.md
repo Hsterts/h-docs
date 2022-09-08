@@ -8,6 +8,8 @@ java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
 ```YAML {title="Shorthand Command Structure"}
 java -jar sfinder.jar path -t <fumen> -p <pattern>
 ```
+
+There are three types of outputs
 ___
 ## Input Parameters
 **Specified Field** (--tetfu, --t): the [[sfinder-docs/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
@@ -26,15 +28,27 @@ ___
 	- By default, it uses `softdrop`. 
 	- `--drop harddrop`: only harddrop and kicks.
 	- `--drop softdrop`: enabled softdrop and kicks.
-		- `--drop 180`: softdrop but with 180 spins.AW@2zd2sf  cfmvdgbtkvrvxbhdvgny72wseda1qddrte
+	- `--drop 180`: softdrop but with 180 spins.
 ___
 ## Output Parameters
+**Format** (--format, -f): Dictates the way the path output is written onto a file.
+- By default, the output is in html.
+- With `--format html` (the default), there are two outputs (if `--max-layer` is not specified):
+	- `path_unique.html` contains a list of all the possible solves found by sfinder.
+	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what this means in [[minimals|this page]].
+- `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with unreadable text</u>. More info about csv outputs [[#Example Commands and Outputs|here]].
+
+**Max Layer** (--max-layer, -L): refers to the outputs of path when using the **html format**.
+	- By default, it is set to 2 (outputs both `path_unique.html` and `path_minimal.html`)
+	- The only other option is `-L 1`, where it only outputs `path_unique.html`.
+
+
 
 ___
 ## Miscellaneous Parameters
-**Log path** (--log-path, -lp): create a .txt file output from the output of the command.  ^fb964e
+**Log path** (--log-path, -lp): create a .txt file output from the output of the command.
 - By default, the log path is `output/last_output.txt`.
-- `--log-path output/chances.txt`
+- `--log-path output/foundpaths.txt`
 
 **Specified Field from a file** (--field-path, -fp): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
 - By default, the field path is `input/field.txt`.
@@ -44,93 +58,26 @@ ___
 - By default, the patterns path is `input/patterns.txt`.
 - `--patterns-path input/filteredqueue.txt`
 
-**Threads** (--threads, --th): Specify the number of threads to use when sfinder is running.
+**Threads** (--threads, --th): Specify the number of threads to use when sfinder is running. Basically, threads are tiny virtual CPUs used to calculate stuff. Almost no need to ever touch this.
 - By default, the number of threads used is 1.
 - `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 
 **Cached Bit** (--cached-bit, -cb): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
 ___
 ## Summary
-<center><table>
-	<tr>
-		<th>Parameter</th>
-		<th>Shorthand</th>
-		<th>Default</th>
-	</tr>
-	<tr>
-		<td>--tetfu</td>
-		<td style="text-align: center;">-t</td>
-		<td>null</td>
-	</tr>
-	<tr>
-		<td>--page</td>
-		<td style="text-align: center;">-P</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>--clear-line</td>
-		<td style="text-align: center;">-c</td>
-		<td>4</td>
-	</tr>
-	<tr>
-		<td>--patterns</td>
-		<td style="text-align: center;">-p</td>
-		<td>null</td>
-	</tr>
-	<tr>
-		<td>--hold</td>
-		<td style="text-align: center;">--H</td>
-		<td>use</td>
-	</tr>
-	<tr>
-		<td>--drop</td>
-		<td style="text-align: center;">-d</td>
-		<td>softdrop</td>
-	</tr>
-	<tr>
-		<td>--tree-depth</td>
-		<td style="text-align: center;">-td</td>
-		<td>3</td>
-	</tr>
-	<tr>
-		<td>--failed-count</td>
-		<td style="text-align: center;">-fc</td>
-		<td>100</td>
-	</tr>
-	<tr>
-		<td>--log-path</td>
-		<td style="text-align: center;">-lp</td>
-		<td>output/last_output.txt</td>
-	</tr>
-	<tr>
-		<td>--field-path</td>
-		<td style="text-align: center;">-fp</td>
-		<td>input/field.txt</td>
-	</tr>
-	<tr>
-		<td>--patterns-path</td>
-		<td style="text-align: center;">-pp</td>
-		<td>input/patterns.txt</td>
-	</tr>
-	<tr>
-		<td>--threads</td>
-		<td style="text-align: center;">-th</td>
-		<td>-1</td>
-	</tr>
-</table></center>
 
 ___
-## Example Command and Output
+## Example Commands and Outputs
 An **example output** of the path command:
-```YAML {title="output/last_output.txt"}
+```YAML {title="Terminal Output"}
 #Command Line Input
-java -jar sfinder.jar percent --tetfu v115@9gE8DeG8CeH8BeG8CeA8JeAgH --patterns *p4 -td 1 -fc 5
+java -jar sfinder.jar path -t v115@9gD8DeF8CeG8BeH8CeC8JeAgH -p *p4
 
 # Setup Field
-XXXXX____X
-XXXXXX___X
-XXXXXXX__X
-XXXXXX___X
+XXXX____XX
+XXXX___XXX
+XXXX__XXXX
+XXXX___XXX
 
 # Initialize / User-defined
 Max clear lines: 4
@@ -140,42 +87,60 @@ Searching patterns:
   *p4
 
 # Initialize / System
-Threads = 4
 Version = 1.0
-Necessary Pieces = 3
+Threads = 4
+Need Pieces = 3
 
 # Enumerate pieces
 Piece pop count = 4
-Searching pattern size (duplicate) = 840
-Searching pattern size ( no dup. ) = 840
+
+# Cache
+  -> Stopwatch start
+     ... done
+  -> Stopwatch stop : avg.time = 20 ms [1 counts]
 
 # Search
   -> Stopwatch start
-  -> Stopwatch stop : avg.time = 115 ms [1 counts]
+     ... searching
+     ... done
+  -> Stopwatch stop : avg.time = 353 ms [1 counts]
 
-# Output
-success = 61.19% (514/840)
-
-# Tree Depth (--tree-depth, -td)
-Success pattern tree [Head 1 pieces]:
-* -> 61.19 %
-? T -> 85.83 %
-? I -> 73.33 %
-? L -> 67.50 %
-? J -> 43.33 %
-? S -> 58.33 %
-? Z -> 52.50 %
-? O -> 47.50 %
-
-# Fail Count (--fail-count, -fc)
--------------------
-Fail pattern (max. 5)
-[J, L, T, O]
-[S, L, T, O]
-[L, J, T, O]
-[S, J, T, O]
-[Z, J, T, O]
+# Output file
+Found path [unique] = 18
+Found path [minimal] = 16
 
 # Finalize
 done
 ```
+
+These are the outputs produced by various [[#output parameters]]:
+
+1. **With --format html --max-layer 2** (the defaults), the output looks like this for both `path_minimal.html` and `path_unique.html`:
+```YAML {title="HTML Output"}
+18 solutions [840 input sequences]
+All solutions #link
+
+No line erasure
+J-Spawn T-Reverse I-Spawn / 11.4 % [96] # these are links to fumens
+T-Spawn L-Reverse I-Spawn / 7.6 % [64]
+L-Right I-Left T-Reverse / 5.7 % [48]
+# 2 more lines...
+
+With line erasure
+O-Spawn J-Reverse I-Spawn / 7.6 % [64]
+Z-Spawn L-Reverse I-Spawn / 7.6 % [64]
+S-Spawn J-Spawn I-Spawn / 7.6 % [64]
+# 10 more lines...
+```
+
+<div style="display: flex; justify-content: space-around">
+	<div>
+		<img src="./attachments/no_line_erasures.png">
+	</div>
+	<div>
+		<img src="./attachments/with_line_erasures.png">
+	</div>
+</div>
+
+- `last_output.txt` contains the text that was printed onto the terminal after a command finished.
+

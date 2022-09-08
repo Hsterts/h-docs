@@ -1,0 +1,38 @@
+# Setup Field
+XXXX____XX
+XXXX___XXX
+XXXX__XXXX
+XXXX___XXX
+
+# Initialize / User-defined
+Max clear lines: 4
+Using hold: use
+Drop: softdrop
+Searching patterns:
+  *p4
+
+# Initialize / System
+Version = 1.0
+Threads = 4
+Need Pieces = 3
+
+# Enumerate pieces
+Piece pop count = 4
+
+# Cache
+  -> Stopwatch start
+     ... done
+  -> Stopwatch stop : avg.time = 20 ms [1 counts]
+
+# Search
+  -> Stopwatch start
+     ... searching
+     ... done
+  -> Stopwatch stop : avg.time = 353 ms [1 counts]
+
+# Output file
+Found path [unique] = 18
+Found path [minimal] = 16
+
+# Finalize
+done
