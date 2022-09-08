@@ -14,17 +14,17 @@ ___
 ## Input Parameters
 **Specified Field** (--tetfu, --t): the [[sfinder-docs/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
 - **Page** (--page, -P): Specify the page of the fumen. 
-	- The default is 1 (the first page)
+	- The default is `1` (the first page)
 	- `--page 2` 
 - **Clear Line** (--clear-line, -c): Specify the number of line clears for a perfect clear. 
-	- The default is 4
+	- The default is `4`
 	- `--clear-line 6`
 
 **Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder-docs/parameter patterns|here]].
 - **Hold** (--hold, -H): Specify whether or not a hold slot is usable.
-	- By default, it is enabled.
+	- By default, it is `use`.
 	- `--H use` or `--H avoid`
-- **Drop** (--drop, -d): Specify what movements are usable. 
+- **Drop** (--drop, -d): Specify what movements sfinder uses to try and find solutions.
 	- By default, it uses `softdrop`. 
 	- `--drop harddrop`: only harddrop and kicks.
 	- `--drop softdrop`: enabled softdrop and kicks.
@@ -32,17 +32,18 @@ ___
 ___
 ## Output Parameters
 **Format** (--format, -f): Dictates the way the path output is written onto a file.
-- By default, the output is in html.
+- By default, the output is in `html`.
 - With `--format html` (the default), there are two outputs (if `--max-layer` is not specified):
 	- `path_unique.html` contains a list of all the possible solves found by sfinder.
-	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what this means in [[minimals|this page]].
-- `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with unreadable text</u>. More info about csv outputs [[#Example Commands and Outputs|here]].
+	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[minimals|this page]].
+- `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with nonsensical text</u>. Some more info about different csv outputs [[#Example Commands and Outputs|here]].
 
 **Max Layer** (--max-layer, -L): refers to the outputs of path when using the **html format**.
-	- By default, it is set to 2 (outputs both `path_unique.html` and `path_minimal.html`)
+	- By default, it is set to `2` (outputs both `path_unique.html` and `path_minimal.html`)
 	- The only other option is `-L 1`, where it only outputs `path_unique.html`.
 
-
+**Key** (--key, -k): refers to the way the path result is sorted when using the **csv format**.
+	- By default, it is set to `none`.
 
 ___
 ## Miscellaneous Parameters
@@ -115,12 +116,12 @@ done
 
 These are the outputs produced by various [[#output parameters]]:
 
-1. **With --format html --max-layer 2** (the defaults), the output looks like this for both `path_minimal.html` and `path_unique.html`:
+1. **With --format html** (the default), the output looks like this for both `path_minimal.html` and `path_unique.html`: 
 ```YAML {title="HTML Output"}
 18 solutions [840 input sequences]
 All solutions #link
 
-No line erasure
+No line erasure # line erasure = line clear
 J-Spawn T-Reverse I-Spawn / 11.4 % [96] # these are links to fumens
 T-Spawn L-Reverse I-Spawn / 7.6 % [64]
 L-Right I-Left T-Reverse / 5.7 % [48]
@@ -131,16 +132,55 @@ O-Spawn J-Reverse I-Spawn / 7.6 % [64]
 Z-Spawn L-Reverse I-Spawn / 7.6 % [64]
 S-Spawn J-Spawn I-Spawn / 7.6 % [64]
 # 10 more lines...
+
+# "J-Spawn T-Re..." refers to mino operations based on fumen.
+# "/ 11.4 %" is the percentage of queues the solution works for (cov%).
+# "[96]" is the number of queues the solution works for (cov#).
 ```
 
-<div style="display: flex; justify-content: space-around">
+No line erasure vs with line erasure:
+<div style="display: flex; justify-content: space-around; margin-top: -40px; margin-bottom: -20px;">
 	<div>
-		<img src="./attachments/no_line_erasures.png">
+		<figure>
+		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/no_line_erasures.png?raw=true">
+		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
+		</figure>
 	</div>
 	<div>
-		<img src="./attachments/with_line_erasures.png">
+		<figure>
+		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/with_line_erasures.png?raw=true">
+		<figcaption style="text-align: center;">Solve with line erasure</figcaption>
+		</figure>
+		
 	</div>
 </div>
 
-- `last_output.txt` contains the text that was printed onto the terminal after a command finished.
+2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
+```YAML {title="CSV Solution Sample Output"}
+v115@9gD8g0ywF8i0G8RpH8RpwwC8JeAgWDAv/1BA, #the solution
+TJO, #pieces used in the solution
+1, #
+1, #
+32, # number of queues this solution works for
+OJT, #
+OJT, #
+SOJT;ZOJT;JOTI;OTJL;JOTS;OJTL;... # queues this solution works for
+```
 
+3. **With --format csv --key pattern**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by queue</u>:
+```YAML {title="CSV Pattern Sample Output"}
+OITL, # queue being checked
+2, # number of solutions
+TIL;TIO, # pieces used in the solutions
+O;L, # pieces not used in the solutions (saved pieces)
+v115@...;v115@...;... # solutions for this queue
+```
+
+4. **With --format csv --key use**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by pieces used</u>:
+```YAML {title="CSV Pattern Sample Output"}
+ILZ, # pieces used
+1, # number of solutions that use these pieces
+64, # number of queues solved with these pieces
+v115@9gD8zhF8ilG8BtH8glBtC8JeAgWDA6SdBA, # solutions that use these pieces
+ZSIL;TZIL;... # queues the solutions work for
+```
