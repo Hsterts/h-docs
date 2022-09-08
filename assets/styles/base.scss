@@ -29,7 +29,6 @@ html {
   }
 }
 
-
 body {
   margin: 0;
   height: 100vh;
@@ -49,6 +48,11 @@ h1, h2, h3, h4, h5, h6, thead {
   &:hover > .hanchor {
     color: var(--secondary);
   }
+}
+
+strong {
+  font-weight: 800;
+  color: #e1503a;
 }
 
 .hanchor {

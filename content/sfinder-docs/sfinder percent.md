@@ -51,7 +51,7 @@ ___
 - `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 ___
 ## Summary
-<div style="display: flex; justify-content: space-between;''">
+<div style="display: flex; justify-content: space-around;''">
 	<div>
 		<table width="40%">
 			<tr>
