@@ -1,7 +1,7 @@
 ---
 title: "Solution Finder: Path"
 ---
-Solution Finder's **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. This output is written into a file in the specified [[#^fb964e|Log Path]].
+Solution Finder's **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. This output is written into a file in the specified [[#Miscellaneous Parameters|log path]].
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
 ```
@@ -134,8 +134,8 @@ S-Spawn J-Spawn I-Spawn / 7.6 % [64]
 # 10 more lines...
 
 # "J-Spawn T-Re..." refers to mino operations based on fumen.
-# "/ 11.4 %" is the percentage of queues the solution works for (cov%).
-# "[96]" is the number of queues the solution works for (cov#).
+# "/ 11.4 %" is the percentage of queues the solution works for. (cov%)
+# "[96]" is the number of queues the solution works for. (cov#)
 ```
 
 No line erasure vs with line erasure:
@@ -151,7 +151,6 @@ No line erasure vs with line erasure:
 		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/with_line_erasures.png?raw=true">
 		<figcaption style="text-align: center;">Solve with line erasure</figcaption>
 		</figure>
-		
 	</div>
 </div>
 
