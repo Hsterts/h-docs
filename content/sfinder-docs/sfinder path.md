@@ -44,7 +44,14 @@ ___
 
 **Key** (--key, -k): refers to the way the path result is sorted when using the **csv format**.
 	- By default, it is set to `none`.
+	- `--key solution` outputs the path info <u>grouped by solution</u>.
+	- `--key pattern` outputs the path info <u>grouped by queue</u>.
+	- `--key use` outputs the path info <u>grouped by pieces used</u>
+	- The parameters may also be shortened to just the first name (`--key use` = `-k u`).
 
+**Split** (--split, -s): refers to the way the solution fumen is built.
+	- By default, it is set to `no` (output is a normal fumen).
+	- `--split yes` builds the solves <u>mino-by-mino</u> ([[sfinder-docs/fumen editor#Fumen Types|glued fumen]]).
 ___
 ## Miscellaneous Parameters
 **Log path** (--log-path, -lp): create a .txt file output from the output of the command.
