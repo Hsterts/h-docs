@@ -1,7 +1,7 @@
 ---
 title: "Solution Finder: Percent"
 ---
-Solution Finder's **Percent** command outputs the probability of getting a perfect clear from a **specified field**, given a specified **pattern**. This output is written in the terminal and the specified [[#^b09600|Log Path]].
+Solution Finder's **Percent** command outputs the probability of getting a perfect clear from a **specified field**, given a specified **pattern**. This output is written in the terminal and the specified **log path**.
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar percent --tetfu <fumen> --patterns <pattern>
 ```
@@ -23,6 +23,7 @@ ___
 	- `--drop harddrop`: only harddrop and kicks.
 	- `--drop softdrop`: enabled softdrop and kicks.
 	- `--drop 180`: softdrop but with 180 spins.
+	- `--drop T-softdrop`: only the T piece is softdropped.
 ___
 ## Output Parameters
 **Tree Depth** (--tree-depth, -td): determines the depth of the tree diagram of the output. The tree output checks for the sol% of the field if the first few pieces of the queue is known.
@@ -34,7 +35,7 @@ ___
 - `--fail-count -1` displays as many fail queues as possible.
 ___
 ## Miscellaneous Parameters
-**Log path** (--log-path, -lp): create a .txt file output from the output of the command. ^b09600
+**Log path** (--log-path, -lp): create a .txt file output from the output of the command.
 - By default, the log path is `output/last_output.txt`.
 - `--log-path output/chances.txt`
 
@@ -52,7 +53,7 @@ ___
 ___
 ## Summary
 <div style="display: flex; justify-content: space-around;''">
-	<div>
+	<div style="flex: 50%">
 		<table width="40%">
 			<tr>
 				<th colspan="3">Input Parameters</th>
@@ -94,7 +95,7 @@ ___
 			</tr>
 			</table>
 	</div>
-	<div style="flex-direction: column;">
+	<div style="flex: 40%; flex-direction: column;">
 		<div>
 			<table width="400px">
 				<tr>

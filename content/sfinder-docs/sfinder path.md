@@ -1,15 +1,13 @@
 ---
 title: "Solution Finder: Path"
 ---
-Solution Finder's **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a path file is generated in the specified [[#Miscellaneous Parameters|output base]].
+[[sfinder-docs/solution-finder|Solution Finder]]'s **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
 ```
 ```YAML {title="Shorthand Command Structure"}
 java -jar sfinder.jar path -t <fumen> -p <pattern>
 ```
-
-There are three types of outputs
 ___
 ## Input Parameters
 **Specified Field** (--tetfu, --t): the [[sfinder-docs/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
@@ -29,6 +27,11 @@ ___
 	- `--drop harddrop`: only harddrop and kicks.
 	- `--drop softdrop`: enabled softdrop and kicks.
 	- `--drop 180`: softdrop but with 180 spins.
+	- `--drop T-softdrop`: only the T piece is softdropped.
+	- `--drop any-tspin`: only the T piece is softdropped, and it must get any type of T-spin including a T-spin zero and minis.
+	- `--drop tss`: only the T piece is softdropped, and it must get a T-spin single, double, or triple.
+	- `--drop tsd`: only the T piece is softdropped, and it must get a T-spin double, or triple.
+	- `--drop tst`: only the T piece is softdropped, and it must get a T-spin triple.
 ___
 ## Output Parameters
 **Format** (--format, -f): Dictates the way the path output is written onto a file.
@@ -54,7 +57,11 @@ ___
 	- `--split yes` builds the solves <u>mino-by-mino</u> ([[sfinder-docs/fumen editor#Fumen Types|glued fumen]]).
 ___
 ## Miscellaneous Parameters
-**Log path** (--log-path, -lp): create a .txt file output from the output of the command.
+**Output Base** (--output-base, -o): Specify the path data file output.
+- By default, the path data is written into `output/path.csv, path_minimal.html, or path_unique.html` (depending on your path command).
+- `--output-base output/tubpath.csv`
+
+**Log path** (--log-path, -lp): Specify the .txt file output from the output of the command.
 - By default, the log path is `output/last_output.txt`.
 - `--log-path output/foundpaths.txt`
 
@@ -66,13 +73,123 @@ ___
 - By default, the patterns path is `input/patterns.txt`.
 - `--patterns-path input/filteredqueue.txt`
 
-**Threads** (--threads, --th): Specify the number of threads to use when sfinder is running. Basically, threads are tiny virtual CPUs used to calculate stuff. Almost no need to ever touch this.
+**Threads** (--threads, --th): Specify the number of threads to use when sfinder is running. Basically, threads are tiny virtual CPUs used to calculate stuff. <u>Almost no need to ever touch this.</u>
 - By default, the number of threads used is 1.
 - `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 
 **Cached Bit** (--cached-bit, -cb): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
 ___
 ## Summary
+<div style="display: flex; justify-content: space-around;''">
+	<div>
+		<table width="40%">
+			<tr>
+				<th colspan="3">Input Parameters</th>
+			</tr>
+			<tr>
+				<th>Parameter</th>
+				<th>Shorthand</th>
+				<th>Default</th>
+			</tr>
+			<tr>
+				<td>--tetfu</td>
+				<td style="text-align: center;">-t</td>
+				<td>null</td>
+			</tr>
+			<tr>
+				<td>--page</td>
+				<td style="text-align: center;">-P</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>--clear-line</td>
+				<td style="text-align: center;">-c</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>--patterns</td>
+				<td style="text-align: center;">-p</td>
+				<td>null</td>
+			</tr>
+			<tr>
+				<td>--hold</td>
+				<td style="text-align: center;">--H</td>
+				<td>use</td>
+			</tr>
+			<tr>
+				<td>--drop</td>
+				<td style="text-align: center;">-d</td>
+				<td>softdrop</td>
+			</tr>
+			</table>
+	</div>
+	<div style="flex-direction: column;">
+		<div>
+			<table width="400px">
+				<tr>
+					<th colspan="3">Output Parameters</th>
+				</tr>
+				<tr>
+					<td>--format</td>
+					<td style="text-align: center;">-f</td>
+					<td>html</td>
+				</tr>
+				<tr>
+					<td>--max-layer</td>
+					<td style="text-align: center;">-L</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>--key</td>
+					<td style="text-align: center;">-k</td>
+					<td>none</td>
+				</tr>
+				<tr>
+					<td>--split</td>
+					<td style="text-align: center;">-s</td>
+					<td>no</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<table  width="400px">
+				<tr>
+					<th colspan="3">Miscellaneous Parameters</th>
+				</tr>
+				<tr>
+					<td>--output-base</td>
+					<td style="text-align: center;">-o</td>
+					<td>output/path.txt</td>
+				</tr>
+				<tr>
+					<td>--log-path</td>
+					<td style="text-align: center;">-lp</td>
+					<td>output/last_output.txt</td>
+				</tr>
+				<tr>
+					<td>--field-path</td>
+					<td style="text-align: center;">-fp</td>
+					<td>input/field.txt</td>
+				</tr>
+				<tr>
+					<td>--patterns-path</td>
+					<td style="text-align: center;">-pp</td>
+					<td>input/patterns.txt</td>
+				</tr>
+				<tr>
+					<td>--threads</td>
+					<td style="text-align: center;">-th</td>
+					<td>-1</td>
+				</tr>
+				<tr>
+					<td>--cached-bit</td>
+					<td style="text-align: center;">-cb</td>
+					<td>0</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
 
 ___
 ## Example Commands and Outputs
