@@ -1,4 +1,5 @@
 // Add your own CSS here!
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Karla&family=Montserrat&display=swap');
 
 :root {
   --light: #f7f9fc; //background
@@ -28,11 +29,8 @@
 figure {
   background: var(--lightgray);
   border-radius: 10px;
-}
-
-figcaption {
+  padding: 10px;
   font-style: "Karla";
   color: var(--gray);
-  background: var(--lightgray);
   border-radius: 5px
 }
