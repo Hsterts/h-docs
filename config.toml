@@ -1,6 +1,6 @@
 baseURL = "https://hsterts.github.io/h-docs/"
 languageCode = "en-us"
-googleAnalytics = "G-XYFD95KB4J"
+googleAnalytics = "G-2KM7MBX5DR"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
