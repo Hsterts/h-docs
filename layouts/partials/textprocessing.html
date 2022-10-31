@@ -37,7 +37,7 @@
       {{$split := split $inner "|"}}
       <!-- separate link path -->
       {{$path := index $split 0}}
-      {{$reference := split $path ""#}}
+      {{$reference := split $path "#"}}
       <!-- path with heading link (i.e. $block) removed -->
       {{$title := index $reference 0}}
       <!-- heading link -->
