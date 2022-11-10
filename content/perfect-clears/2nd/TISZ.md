@@ -1,3 +1,6 @@
+---
+title: "TISZ"
+---
 Author: stickmancomic<br>
 Practice: [Link](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[TISZ]p4,*p7)
 

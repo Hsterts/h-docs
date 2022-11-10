@@ -2,6 +2,7 @@
 title: "IOSZ QB"
 ---
 # Notes
+Practice Queue: `[IOSZ]p4,*p7`
 Keep in mind you can use mirrors of the setups for specific queues.
 # Setups
 ## I > LJ (save T)
