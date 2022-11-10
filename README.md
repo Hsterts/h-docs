@@ -7,7 +7,7 @@ If you are interested in contributing, use the following instructions to setup y
 ```git
 git clone git@github.com:Hsterts/h-docs.git
 ```
-2. Install Hugo and Hugo-Obsidian
+2. Install Hugo and Hugo-Obsidian. Install go [here](https://go.dev/) if you do not already have it.
 ```bash
 go install github.com/jackyzha0/hugo-obsidian@latest
 go install --tags extended github.com/gohugoio/hugo@latest
