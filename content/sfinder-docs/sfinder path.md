@@ -266,14 +266,16 @@ No line erasure vs with line erasure:
 <div style="display: flex; justify-content: space-around">
 	<div>
 		<figure>
-		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/no_line_erasures.png?raw=true">
-		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
+		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/spin_output_1.png?raw=true">
 		</figure>
 	</div>
 	<div>
 		<figure>
-		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/with_line_erasures.png?raw=true">
-		<figcaption style="text-align: center;">Solve with line erasure</figcaption>
+		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/spin_output_2.png?raw=true">
+	</div>
+	<div>
+		<figure>
+		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/spin_output_3.png?raw=true">
 		</figure>
 	</div>
 </div>
