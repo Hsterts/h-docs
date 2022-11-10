@@ -163,10 +163,10 @@ function fumencanvas(container) {
 	}
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  let tags = document.getElementsByTagName('fumen');
-	Array.from(tags).forEach(tag => {
-		console.log(tag);
-		fumencanvas(tag);
-	});
-})
+function formatFumen() {
+	let tags = document.getElementsByTagName('fumen');
+	Array.from(tags).forEach(tag => fumencanvas(tag));
+}
+
+window.addEventListener('million:navigate', formatFumen);
+window.addEventListener('DOMContentLoaded', formatFumen);
