@@ -4,26 +4,28 @@
 :root {
   --light: #f7f9fc; //background
   --dark: #161b22; //markdown heading
-  --secondary: #4c8cef; //link
-  --tertiary: #8fb7f5; //title hover
-  --visited: #afbfc9; //visited node
+  --secondary: #7db1ff; //link
+  --tertiary: #6a78f5; //title hover
+  --visited: #af7dff; //visited node
   --primary: #f28482; //current node
   --gray: #161b22; //text on page
   --lightgray: #f0f0f0; //ctrl k background
   --outlinegray: #dadada; // graph outline
-  --million-progress-bar-color: var(--secondary);
+  --strong: #e1503a; //**text** color
+  --million-rgbs-bar-color: var(--secondary);
 }
 
 [saved-theme="dark"] {
   --light: #0d1117 !important;
   --dark: #c9d1d9 !important;
-  --secondary: #60a2fc !important;
+  --secondary: #647ce0 !important;
   --tertiary: #9cc5fd !important;
   --visited: #4a575e !important;
   --primary: #f58382 !important;
   --gray: #d4d4d4 !important;
   --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
+  --outlinegray: #3d3b63 !important;
+  --strong: #ff6a67 !important;
 }
 
 figure {
@@ -34,3 +36,22 @@ figure {
   color: var(--gray);
   border-radius: 5px
 }
+
+strong {
+  font-weight: 800;
+  color: var(--strong);
+}
+
+//scroll bar
+*::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    }
+*::-webkit-scrollbar-track{
+    background:  #393a3a;
+    }
+*::-webkit-scrollbar-thumb{
+    background-color: #aaa6cf;
+    border-radius: 4px;
+    }
+

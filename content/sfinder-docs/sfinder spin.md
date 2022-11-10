@@ -278,9 +278,9 @@ No line erasure vs with line erasure:
 	</div>
 </div>
 
-![[sfinder-docs/attachments/spin_output_1.png]]
-![[sfinder-docs/attachments/spin_output_2.png]]
-![[sfinder-docs/attachments/spin_output_3.png]]
+![[sfinder-docs/attachments_sfinder/spin_output_1.png]]
+![[sfinder-docs/attachments_sfinder/spin_output_2.png]]
+![[sfinder-docs/attachments_sfinder/spin_output_3.png]]
 
 2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
 ```YAML {title="CSV Solution Sample Output"}
