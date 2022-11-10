@@ -281,8 +281,8 @@ No line erasure vs with line erasure:
 </div>
 
 Actual links to the output html:
-- [[sfinder-docs/attachments/path_minimal.html|path_minimal.html]]
-- [[sfinder-docs/attachments/path_unique.html|path_unique.html]]
+- [[sfinder-docs/attachments_sfinder/path_minimal.html|path_minimal.html]]
+- [[sfinder-docs/attachments_sfinder/path_unique.html|path_unique.html]]
 
 2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
 ```YAML {title="CSV Solution Sample Output"}
