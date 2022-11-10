@@ -1,12 +1,12 @@
 ---
-title: "Solution Finder: Path"
+title: "Solution Finder: Spin"
 ---
-[[sfinder-docs/solution-finder|Solution Finder]]'s **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
+[[sfinder-docs/solution-finder|Solution Finder]]'s **Spin** command outputs all the ways to get a specified spin (TS0, TSS, TSD, and Mini Variants) from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}
-java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
+java -jar sfinder.jar spin --tetfu <fumen> --patterns <pattern>
 ```
 ```YAML {title="Shorthand Command Structure"}
-java -jar sfinder.jar path -t <fumen> -p <pattern>
+java -jar sfinder.jar spin -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
@@ -278,9 +278,9 @@ No line erasure vs with line erasure:
 	</div>
 </div>
 
-Actual links to the output html:
-- [[sfinder-docs/attachments/path_minimal.html|path_minimal.html]]
-- [[sfinder-docs/attachments/path_unique.html|path_unique.html]]
+![[sfinder-docs/attachments/spin_output_1.png]]
+![[sfinder-docs/attachments/spin_output_2.png]]
+![[sfinder-docs/attachments/spin_output_3.png]]
 
 2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
 ```YAML {title="CSV Solution Sample Output"}

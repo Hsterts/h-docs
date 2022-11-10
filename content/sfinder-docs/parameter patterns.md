@@ -41,3 +41,5 @@ ___
 	- Error message:: ``Message: Should specify equal to or more than X pieces: CurrentPieces=Y``
 4. **Duplicate Pieces**: duplicate pieces won't work. Bags should only have one of each piece.
 	- **\[TIILJ]** would return an error: ``Duplicate 'I' pieces in [] [position=3char] [SyntaxException]``.
+5. **"^" in Command Prompt**: The `^` symbol is a special character for command prompt. To avoid errors when using it, either enclose the text in quotation marks or write it twice `[^T]` → `[^^T]`
+	- Some people just decide to put parameters in quotation marks even in PowerShell to avoid these issues.
