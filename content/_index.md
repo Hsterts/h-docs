@@ -7,4 +7,5 @@ Yet. Another. Documentation. Website. It's mostly a hobby project to kill time, 
 2. [[setups/setups|Setup Information]]
 	- Rithsagea needs a life :D
 ___
-# A
+# Test
+<fumen code="v115@HhglBeQ4FeglBtR4CeRphlBtQ4CeRpJeAgH"/>
