@@ -45,7 +45,7 @@
 
 .spinmode {
   float: right;
-  padding: 1em;
+  padding: 0 1em 0 1em;
   min-width: 30px;
   position: relative;
 
@@ -58,7 +58,7 @@
     box-sizing: border-box;
   }
 
-  & svg {
+  & span {
     opacity: 0;
     position: absolute;
     width: 20px;

@@ -12,9 +12,6 @@ var colors = {
 	Empty: { normal: '#f3f3ed' },
 };
 
-gridToggle = false;
-transparency_four = true;
-
 function draw(fumenPage, numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background) {
 	var field = fumenPage.field;
 	var operation = fumenPage.operation;
@@ -49,6 +46,8 @@ function draw(fumenPage, numrows, numcols, cellSize, gridToggle, gridColor, tran
 
 	if (!transparency_four) {
 		context.fillStyle = background;
+	} else {
+		context.fillStyle = '#00000000';
 	}
 
 	context.fillRect(0, 0, width, height);
@@ -134,8 +133,8 @@ function fumencanvas(container) {
 	if(container.getAttribute('height') != null) {var height = container.getAttribute('height')} else {var height = 5};
 	if(container.getAttribute('width') != null) {var width = container.getAttribute('width')} else {var width = 10};
 	if(container.getAttribute('size') != null) {var cellSize = container.getAttribute('size')} else {var cellSize = 22};
-	if(container.getAttribute('grid') != null) {var gridColor = container.getAttribute('grid'); gridToggle = true} else {gridToggle = false};
-	if(container.getAttribute('background') != null) {var background = container.getAttribute('background'); transparency_four = false} else {transparency_four = true};
+	if(container.getAttribute('grid') != null) {var gridColor = container.getAttribute('grid'); var gridToggle = true} else {var gridToggle = false};
+	if(container.getAttribute('background') != null) {var background = container.getAttribute('background'); var transparency_four = false} else {var transparency_four = true};
 	container.innerHTML = '';
 
 	var fumenCodes = [];
