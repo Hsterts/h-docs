@@ -15,7 +15,7 @@ var colors = {
 gridToggle = false;
 transparency_four = true;
 
-function draw(fumenPage, numrows, numcols, cellSize, gridColor, background) {
+function draw(fumenPage, numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background) {
 	var field = fumenPage.field;
 	var operation = fumenPage.operation;
 
@@ -148,7 +148,7 @@ function fumencanvas(container) {
 	for (let code of fumenCodes) {
 		try {
 			var pages = decoder.decode(code);
-			canvas = draw(pages[0], height, width, cellSize, gridColor, background);
+			canvas = draw(pages[0], height, width, cellSize, gridToggle, gridColor, transparency_four, background);
 
 			var img = document.createElement('img');
 			

@@ -1,7 +1,7 @@
 ---
 title: "TISZ"
 ---
-Author: stickmancomic
+Author: stickmancomic<br>
 Practice: [Confidential Usermode](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[TISZ]p4,*p7)
 
 ## General Setup

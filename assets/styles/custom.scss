@@ -54,7 +54,7 @@ strong {
 }
 
 *::-webkit-scrollbar-thumb{
-  background-color: var(--secondary);
+  background-color: var(--dark);
   border-radius: 2px;
 }
 
@@ -67,7 +67,7 @@ a > p, li > p {
   text-decoration: underline var(--secondary) solid 2px;
 }
 
-fumen {
+img.imageOutput {
   background: var(--outlinegray);
   outline: var(--dark);
 }
