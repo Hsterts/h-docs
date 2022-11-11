@@ -44,17 +44,30 @@ strong {
 
 //scroll bar
 *::-webkit-scrollbar{
-    width: 8px;
-    height: 8px;
-    }
+  width: 8px;
+  height: 8px;
+  transition-duration: 0.2s;
+}
+
 *::-webkit-scrollbar-track{
-    background:  #393a3a;
-    }
+  background: var(--outlinegray);
+}
+
 *::-webkit-scrollbar-thumb{
-    background-color: #aaa6cf;
-    border-radius: 4px;
-    }
+  background-color: var(--secondary);
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar:hover{
+  width: 12px;
+  height: 12px;
+}
+
+a > p, li > p {
+  text-decoration: underline var(--secondary) solid 2px;
+}
 
 fumen {
-	font-size: 0;
+  background: var(--outlinegray);
+  outline: lighten(--secondary, 50%)
 }

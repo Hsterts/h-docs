@@ -1,15 +1,21 @@
 ---
 title: "TISZ"
 ---
-Author: stickmancomic<br>
-Practice: [Link](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[TISZ]p4,*p7)
+Author: stickmancomic
+Practice: [Confidential Usermode](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[TISZ]p4,*p7)
 
 ## General Setup
 <fumen>v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
-
-Minimals Spoiler (TODO)
+<fumen height = "6">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
+<fumen width = "5">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
+<fumen height = "4" width = "4">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
+<fumen size = "44">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
+<fumen background = "#00FFFF">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
+<fumen grid = "#00FF00">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
+<fumen height = "6" width = "5" background = "#00FFFF" grid = "#00FF00" size = "44">v115@OhR4EeBtR4wwBezhBtywJeAgH</fumen>
 
 <fumen>v115@9gwhh0Btywhlwhg0RpBtwwB8glwhg0RpE8glwhI8Je?AgH</fumen> <fumen>v115@9gwhh0ywR4hlwhg0RpwwR4B8glwhg0RpE8glwhI8Je?AgH</fumen> <fumen>v115@9gwhBtywR4hlwhg0BtwwR4B8glwhi0E8glwhI8JeAg?H</fumen> <fumen>v115@9gh0zhR4hlBtywR4B8glg0BtwwE8glg0I8JeAgH</fumen>
+___
 ## Queue Base
 ### SO (Save T)
 <fumen>v115@GhwhAeR4BeQ4CewhR4wwBtR4RpwhAeywBtQ4RpwhJe?AgH</fumen> <fumen>v115@9gh0BtzhglA8g0B8BtA8ilK8g0I8JeAgH</fumen>

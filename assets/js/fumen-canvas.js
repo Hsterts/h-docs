@@ -12,14 +12,10 @@ var colors = {
 	Empty: { normal: '#f3f3ed' },
 };
 
+gridToggle = false;
+transparency_four = true;
 
-//drawing settings
-var cellSize = 22;
-var transparency_four = true;
-var gridToggle = false;
-var numcols = 10;
-
-function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
+function draw(fumenPage, numrows, numcols, cellSize, gridColor, background) {
 	var field = fumenPage.field;
 	var operation = fumenPage.operation;
 
@@ -42,8 +38,8 @@ function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
 		numrows += 2;
 	}
 
-	const width = tilesize * numcols;
-	const height = numrows * tilesize;
+	var width = cellSize * numcols;
+	var height = numrows * cellSize;
 
 	var canvas = document.createElement('canvas');
 	canvas.width = width;
@@ -51,10 +47,8 @@ function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
 
 	const context = canvas.getContext('2d');
 
-	if (!transparent) {
-		context.fillStyle = document.getElementById('bg').value;
-	} else {
-		context.fillStyle = 'rgba(0, 0, 0, 0)';
+	if (!transparency_four) {
+		context.fillStyle = background;
 	}
 
 	context.fillRect(0, 0, width, height);
@@ -67,8 +61,8 @@ function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
 			for (j = 0; j < numrows; j++) {
 				// all dim grids
 				context.fillStyle = gridColor + '30';
-				context.fillRect(i * tilesize, height - (j + 1) * tilesize, 1, tilesize);
-				context.fillRect(i * tilesize, height - (j + 1) * tilesize, tilesize, 1);
+				context.fillRect(i * cellSize, height - (j + 1) * cellSize, 1, cellSize);
+				context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, 1);
 			}
 		}
 	}
@@ -78,35 +72,35 @@ function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
 			if (field.at(i, j) != '_') {
 				// all blocks
 				context.fillStyle = colors[field.at(i, j)].normal;
-				context.fillRect(i * tilesize, height - (j + 1) * tilesize, tilesize, tilesize);
+				context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, cellSize);
 				// all dim grids
 				if (gridToggle) {
 					context.fillStyle = gridColor + '40';
-					context.fillRect(i * tilesize, height - (j + 1) * tilesize, 1, tilesize);
-					context.fillRect(i * tilesize, height - (j + 1) * tilesize, tilesize, 1);
-					context.fillRect((i + 1) * tilesize, height - (j + 1) * tilesize, 1, tilesize);
-					context.fillRect(i * tilesize, height - j * tilesize, tilesize, 1);
+					context.fillRect(i * cellSize, height - (j + 1) * cellSize, 1, cellSize);
+					context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, 1);
+					context.fillRect((i + 1) * cellSize, height - (j + 1) * cellSize, 1, cellSize);
+					context.fillRect(i * cellSize, height - j * cellSize, cellSize, 1);
 				}
 				if (field.at(i, j + 1) == '_') {
 					// all highlights
 					context.fillStyle = colors[field.at(i, j)].light;
-					context.fillRect(i * tilesize, height - (j + 1) * tilesize - tilesize / 5, tilesize, tilesize / 5);
+					context.fillRect(i * cellSize, height - (j + 1) * cellSize - cellSize / 5, cellSize, cellSize / 5);
 					if (gridToggle) {
 						// all top dim highlight borders
 						context.fillStyle = gridColor + 'CC';
-						context.fillRect(i * tilesize, height - (j + 1) * tilesize - tilesize / 5, tilesize, 1);
+						context.fillRect(i * cellSize, height - (j + 1) * cellSize - cellSize / 5, cellSize, 1);
 						// left kinda dim highlight borders
 						if (field.at(Math.max(0, i - 1), j + 1) == '_') {
 							context.fillStyle = gridColor + 'CC';
-							context.fillRect(i * tilesize, height - (j + 1) * tilesize - tilesize / 5, 1, tilesize / 5);
+							context.fillRect(i * cellSize, height - (j + 1) * cellSize - cellSize / 5, 1, cellSize / 5);
 						} else {
 							context.fillStyle = gridColor + 'FF';
-							context.fillRect(i * tilesize, height - (j + 1) * tilesize - tilesize / 5, 1, tilesize / 5);
+							context.fillRect(i * cellSize, height - (j + 1) * cellSize - cellSize / 5, 1, cellSize / 5);
 						}
 						// right kinda dim highlight borders
 						if (field.at(i + 1, j + 1) == '_') {
 							context.fillStyle = gridColor + 'CC';
-							context.fillRect((i + 1) * tilesize, height - (j + 1) * tilesize - tilesize / 5, 1, tilesize / 5);
+							context.fillRect((i + 1) * cellSize, height - (j + 1) * cellSize - cellSize / 5, 1, cellSize / 5);
 						}
 					}
 				}
@@ -114,19 +108,19 @@ function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
 					context.fillStyle = gridColor + 'FF';
 					// left border
 					if (field.at(Math.max(i - 1, 0), j) == '_') {
-						context.fillRect(i * tilesize, height - (j + 1) * tilesize, 1, tilesize + 1);
+						context.fillRect(i * cellSize, height - (j + 1) * cellSize, 1, cellSize + 1);
 					}
 					// top border
 					if (field.at(i, j + 1) == '_') {
-						context.fillRect(i * tilesize, height - (j + 1) * tilesize, tilesize + 1, 1);
+						context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize + 1, 1);
 					}
 					// right border
 					if (field.at(i + 1, j) == '_') {
-						context.fillRect((i + 1) * tilesize, height - (j + 1) * tilesize, 1, tilesize + 1);
+						context.fillRect((i + 1) * cellSize, height - (j + 1) * cellSize, 1, cellSize + 1);
 					}
 					// bottom border
 					if (field.at(i, j - 1) == '_') {
-						context.fillRect(i * tilesize, height - j * tilesize, tilesize + 1, 1);
+						context.fillRect(i * cellSize, height - j * cellSize, cellSize + 1, 1);
 					}
 				}
 			}
@@ -137,10 +131,13 @@ function draw(fumenPage, tilesize, numrows, transparent, gridColor) {
 
 function fumencanvas(container) {
 	var input = container.innerHTML;
+	if(container.getAttribute('height') != null) {var height = container.getAttribute('height')} else {var height = 5};
+	if(container.getAttribute('width') != null) {var width = container.getAttribute('width')} else {var width = 10};
+	if(container.getAttribute('size') != null) {var cellSize = container.getAttribute('size')} else {var cellSize = 22};
+	if(container.getAttribute('grid') != null) {var gridColor = container.getAttribute('grid'); gridToggle = true} else {gridToggle = false};
+	if(container.getAttribute('background') != null) {var background = container.getAttribute('background'); transparency_four = false} else {transparency_four = true};
 	container.innerHTML = '';
-
-	var height = undefined;
-	var gridColor = '#ffffff';
+	container.innerText = '';
 
 	var fumenCodes = [];
 
@@ -151,7 +148,7 @@ function fumencanvas(container) {
 	for (let code of fumenCodes) {
 		try {
 			var pages = decoder.decode(code);
-			canvas = draw(pages[0], cellSize, height, transparency_four, gridColor);
+			canvas = draw(pages[0], height, width, cellSize, gridColor, background);
 
 			var img = document.createElement('img');
 			
