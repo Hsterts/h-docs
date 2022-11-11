@@ -69,5 +69,5 @@ a > p, li > p {
 
 fumen {
   background: var(--outlinegray);
-  outline: lighten(var(--secondary), 50%)
+  outline: var(--dark);
 }
