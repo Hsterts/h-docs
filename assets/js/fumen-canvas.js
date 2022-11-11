@@ -137,7 +137,6 @@ function fumencanvas(container) {
 	if(container.getAttribute('grid') != null) {var gridColor = container.getAttribute('grid'); gridToggle = true} else {gridToggle = false};
 	if(container.getAttribute('background') != null) {var background = container.getAttribute('background'); transparency_four = false} else {transparency_four = true};
 	container.innerHTML = '';
-	container.innerText = '';
 
 	var fumenCodes = [];
 

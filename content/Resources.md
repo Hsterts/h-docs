@@ -10,6 +10,8 @@ Tools used to find perfect clear solutions.
 - **[[sfinder-docs/solution-finder|Solution-Finder]]**'s [[sfinder-docs/sfinder path|Path]] Command
 ___
 ## Perfect Clear Practice Tools
+- **cokotia**'s [Perfect Clear Challenge](https://davdav1233.github.io/ttpc/) is a practice tool for the [[perfect-clears/1st/Perfect Clear Opener]].
+	- **Swng**'s [English Version](https://swng.github.io/ttpc/)
 ___
 ## Perfect Clear Research Tools
 Tools for working with [[sfinder-docs/fumen editor|fumens]] and [[sfinder-docs/solution-finder|solution-finder]] or its outputs.

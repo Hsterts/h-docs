@@ -28,6 +28,24 @@
   --strong: #ff6a67 !important;
 }
 
+.text-180 {
+  display: inline-block;
+}
+
+.text-90 {
+  display: none;
+}
+
+[saved-spin="no180"] {
+  .text-180 {
+    display: nmone;
+  }
+  
+  .text-90 {
+    display: inline-block;
+  }
+}
+
 figure {
   background: var(--lightgray);
   border-radius: 10px;
