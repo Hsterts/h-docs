@@ -50,14 +50,10 @@ if (currentSpin) {
 
 const switchSpin = (e) => {
   if (e.target.checked) {
-    document.documentElement.setAttribute('saved-spin', 'no-180');
-    localStorage.setItem('spin', 'no-180');
-    spinTheme.href = '{{ $no180Syntax.Permalink }}';
+    console.log("checked, no 180")
   }
   else {
-    document.documentElement.setAttribute('saved-spin', 'with-180')
-    localStorage.setItem('spin', 'with-180')
-    spinTheme.href = '{{ $with180Syntax.Permalink }}';
+    console.log("unchecked, 180")
   }
 }
 
