@@ -160,17 +160,12 @@ function fumencanvas(container) {
 
 function minocanvas(container) {
 	var input = container.innerText
-	var minos = input.split('')
-	var div = document.createElement('div')
-	div.className = 'text-mino'
-	for(let i = 0; i > minos.length; i++){
+	for(let i = 0; i > input.length; i++){
 		var img = document.createElement('img')
-		img.src = '/h-docs/attachments_mino/' + minos[i] + '.png'
+		img.src = '/h-docs/attachments_mino/' + input[i] + '.png'
 		img.className = 'mino'
-		div.appendChild(img)
+		container.appendChild(img)
 	}
-	container.innerText = ''
-	container.appendChild(div)
 }
 
 
