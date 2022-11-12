@@ -34,6 +34,12 @@ other = "Light Mode"
 [dark_mode]
 other = "Dark Mode"
 
+[rotation_180_mode]
+other = "Turn on 180 rotations. Primarily affects percentages."
+
+[rotation_90_mode]
+other = "Turn off 180 rotations. Primarily affects percentages."
+
 [edit_source]
 other = "Edit Source"
 

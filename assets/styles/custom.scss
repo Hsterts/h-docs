@@ -11,6 +11,7 @@
   --gray: #161b22; //text on page
   --lightgray: #f0f0f0; //ctrl k background
   --outlinegray: #dadada; // graph outline
+  --fumenbackground: #dadada80; // fumenbackground
   --strong: #e1503a; //**text** color
   --million-rgbs-bar-color: var(--secondary);
 }
@@ -25,6 +26,7 @@
   --gray: #d4d4d4 !important;
   --lightgray: #292633 !important;
   --outlinegray: #3d3b63 !important;
+  --fumenbackground: #3d3b6380 !important; // fumenbackground
   --strong: #ff6a67 !important;
 }
 
@@ -86,7 +88,7 @@ a > p, li > p {
 }
 
 img.imageOutput {
-  background: var(--outlinegray);
+  background: var(--fumenbackground);
   outline: var(--dark);
 }
 
@@ -94,6 +96,7 @@ img.imageOutput {
   font-family: Karla, Arial;
   font-size: 20px;
   font-weight: 600;
+  display: inline-block;
 }
 
 #header-options{
