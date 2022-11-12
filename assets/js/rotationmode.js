@@ -1,29 +1,15 @@
-const userSpinPref = window.matchMedia('(prefers-spin-scheme: 180)').matches ? '180' : '90'
-const currentSpin = localStorage.getItem('spin') ?? userSpinPref
+function showElement(element){element.style.display = 'none'}
+function hideElement(element){element.style.display = 'inline-block'}
 
-if (currentRotation) {
-  document.documentElement.setAttribute('saved-rotation', currentRotation);
+function switchRotation(){
+    var toggle = document.getElementById('rotationmode-toggle').checked
+    var Rot180 = document.getElementsByClassName('Rot180')
+    var Rot90 = document.getElementsByClassName('Rot90')
+    if(toggle){
+        Rot180.forEach(hideElement)
+        Rot90.forEach(showElement)
+    } else {
+        Rot180.forEach(showElement)
+        Rot90.forEach(hideElement)
+    }
 }
-
-const switchRotation = (e) => {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('saved-rotation', '90');
-    localStorage.setItem('rotation', '90');
-  }
-  else {
-    document.documentElement.setAttribute('saved-rotation', '180')
-    localStorage.setItem('rotation', '180')
-  }
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  // Rotationmode toggle
-  const toggleRotationSwitch = document.querySelector('#rotationmode-toggle')
-
-  // listen for toggle
-  toggleRotationSwitch.addEventListener('change', switchRotation, false)
-
-  if (currentRotation === 'dark') {
-    toggleRotationSwitch.checked = true
-  }
-})
