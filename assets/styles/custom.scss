@@ -92,7 +92,7 @@ img.imageOutput {
 
 .text-logo{
   font-family: Karla, Arial;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 600;
   display: inline-block;
 }
@@ -124,8 +124,8 @@ img.imageOutput {
     width: 30px;
     height: 20px;
     top: calc(50% - 10px);
-    margin: 0;
-    fill: var(--gray);
+    margin: -2px 0 0 -15px;
+    color: var(--gray);
     transition: opacity 0.1s ease;
   }
 }
