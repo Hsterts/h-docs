@@ -1,5 +1,5 @@
 // Replace this with your own font imports!
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Karla:wght@200;400;600;800&family=Montserrat:wght@200;400;600;800&family=Poppins:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Karla&family=Montserrat&display=swap');
 
 :root {
   --font-body: "Karla";
@@ -78,7 +78,7 @@ tbody, li, p {
       cursor: zoom-in;
       font-family: var(--font-header);
       color: var(--dark);
-      font-weight: 700;
+      font-weight: 600;
     }
 
     &[open] summary {
@@ -110,7 +110,7 @@ tbody, li, p {
 
   & > li::marker, & > li > ol > li::marker {
     font-family: var(--font-body);
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -261,7 +261,7 @@ sup > a {
 
 a {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
   color: var(--secondary);
