@@ -39,6 +39,7 @@
 }
 
 #page-title {
+  background-clip: text;
   background-image: linear-gradient(180deg, var(--dark), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,7 +63,8 @@ strong {
 *::-webkit-scrollbar{
   width: 8px;
   height: 8px;
-  transition-duration: 0.2s;
+  transition: width 0.2s ease-in;
+  transition: height 0.2s ease-in;
 }
 
 *::-webkit-scrollbar-track{
@@ -79,7 +81,7 @@ strong {
   height: 12px;
 }
 
-a > p, li > p {
+p > a, li > a {
   text-decoration: underline var(--secondary) solid 2px;
 }
 
@@ -90,7 +92,7 @@ img.imageOutput {
 
 .text-logo{
   font-family: Karla, Arial;
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 600;
   display: inline-block;
 }
@@ -105,6 +107,7 @@ img.imageOutput {
   padding: 0.5em;
   min-width: 30px;
   position: relative;
+  text-align: center;
 
   @media all and (max-width: 450px) {
     padding: 1em;
@@ -115,7 +118,7 @@ img.imageOutput {
     box-sizing: border-box;
   }
 
-  & svg {
+  & span {
     opacity: 1;
     position: absolute;
     width: 30px;
