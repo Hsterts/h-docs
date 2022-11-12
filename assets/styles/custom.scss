@@ -30,22 +30,18 @@
   --strong: #ff6a67 !important;
 }
 
-.text-180 {
+.Rot180 {
   display: inline-block;
 }
 
-.text-90 {
+.Rot90 {
   display: none;
 }
 
-[saved-spin="no180"] {
-  .text-180 {
-    display: nmone;
-  }
-  
-  .text-90 {
-    display: inline-block;
-  }
+#page-title {
+  background-image: linear-gradient(180deg, var(--dark), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 figure {
@@ -106,8 +102,7 @@ img.imageOutput {
 
 // Rotation Mode Button SCSS
 .rotationmode {
-  float: right;
-  padding: 1em;
+  padding: 0.5em;
   min-width: 30px;
   position: relative;
 
@@ -123,10 +118,10 @@ img.imageOutput {
   & svg {
     opacity: 1;
     position: absolute;
-    width: 20px;
+    width: 30px;
     height: 20px;
     top: calc(50% - 10px);
-    margin: 0 7px;
+    margin: 0;
     fill: var(--gray);
     transition: opacity 0.1s ease;
   }

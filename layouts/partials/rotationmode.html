@@ -1,15 +1,15 @@
-<div class='rotationmode'>
-    <input class='toggle' id='rotationmode-toggle' type='checkbox' tabindex="-1" onchange='switchRotation()'>
-    <label id="toggle-label-180" for='rotationmode-toggle' tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="180Icon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
-            <title>{{ i18n "rotation_180_mode" }}</title>
-            <text class="text-logo">180</text>
+<div class="rotationmode">
+    <input class="toggle" id="rotationmode-toggle" type="checkbox" tabindex="-1" onchange="switchRotation()">
+    <label id="toggle-label-180" for="rotationmode-toggle" tabindex="-1">
+        <svg id="180icon" style="opacity: 0;" viewBox="0 0 35 35">
+            <title>Turn on 180 rotations. Primarily affects percentages.</title>
+            <text class="text-logo" x="-5" y="28">180</text>
         </svg>
     </label>
-    <label id="toggle-label-90" for='rotationmode-toggle' tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="90Icon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
-            <title>{{ i18n "rotation_90_mode" }}</title>
-            <text class="text-logo">90</text>
+    <label id="toggle-label-90" for="rotationmode-toggle" tabindex="-1">
+        <svg id="90icon" style="opacity: 1;" viewBox="0 0 35 35">
+            <title>Turn off 180 rotations. Primarily affects percentages.</title>
+            <text class="text-logo" x="0" y="28">90</text>
         </svg>
     </label>
 </div>
