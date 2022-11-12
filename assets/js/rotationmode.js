@@ -17,7 +17,7 @@ const switchRotation = (e) => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  // Darkmode toggle
+  // Rotationmode toggle
   const toggleRotationSwitch = document.querySelector('#rotationmode-toggle')
 
   // listen for toggle

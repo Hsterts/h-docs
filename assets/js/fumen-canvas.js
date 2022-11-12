@@ -129,13 +129,12 @@ function draw(fumenPage, numrows, numcols, cellSize, gridToggle, gridColor, tran
 }
 
 function fumencanvas(container) {
-	var input = container.innerHTML;
+	var input = container.innerText;
 	if(container.getAttribute('height') != null) {var height = container.getAttribute('height')} else {var height = 5};
 	if(container.getAttribute('width') != null) {var width = container.getAttribute('width')} else {var width = 10};
 	if(container.getAttribute('size') != null) {var cellSize = container.getAttribute('size')} else {var cellSize = 22};
 	if(container.getAttribute('grid') != null) {var gridColor = container.getAttribute('grid'); var gridToggle = true} else {var gridToggle = false};
 	if(container.getAttribute('background') != null) {var background = container.getAttribute('background'); var transparency_four = false} else {var transparency_four = true};
-	container.innerHTML = '';
 
 	var fumenCodes = [];
 
@@ -152,7 +151,8 @@ function fumencanvas(container) {
 			
 			img.src = canvas.toDataURL("image/png");
 			img.className = 'imageOutput';
-
+			
+			container.innerText = '';
 			container.appendChild(img);
 		} catch (error) { console.log(code, error); }
 	}
