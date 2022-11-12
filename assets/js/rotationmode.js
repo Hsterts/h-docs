@@ -6,10 +6,10 @@ function switchRotation(){
     var Rot180 = document.getElementsByClassName('Rot180')
     var Rot90 = document.getElementsByClassName('Rot90')
     if(toggle){
-        Rot180.forEach(hideElement)
-        Rot90.forEach(showElement)
+        for(element in Rot180){hideElement(element)}
+        for(element in Rot90){showElement(element)}
     } else {
-        Rot180.forEach(showElement)
-        Rot90.forEach(hideElement)
+        for(element in Rot180){showElement(element)}
+        for(element in Rot90){hideElement(element)}
     }
 }
