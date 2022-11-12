@@ -1,8 +1,8 @@
 function switchRotation(){
     var toggle = document.getElementById('rotationmode-toggle').checked
     var rotationModeDiv = document.getElementsByClassName('rotationmode')[0]
-    var Icon180 = document.getElementById('90icon')
-    var Icon90 = document.getElementById('180icon')
+    var Icon180 = document.getElementById('180icon')
+    var Icon90 = document.getElementById('90icon')
     var Rot180 = document.getElementsByClassName('Rot180')
     var Rot90 = document.getElementsByClassName('Rot90')
     if(toggle){
