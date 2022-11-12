@@ -169,8 +169,8 @@ function minocanvas(container) {
 		img.className = 'mino'
 		div.appendChild(img)
 	}
-	container.appendChild(div)
 	container.innerText = ''
+	container.appendChild(div)
 }
 
 
