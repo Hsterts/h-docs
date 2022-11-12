@@ -1,7 +1,7 @@
 ---
 title: Solution Finder
 ---
-**Solution Finder**, often referred to as **sfinder**, is a program created by [knewjade](https://gitdub.com/knewjade), who's also responsible for various other tools. It is the cornerstone of **Tetris-related research** such as for openers, loops, and perfect clearing.
+**Solution Finder**, often referred to as **sfinder**, is a program created by [knewjade](https://github.com/knewjade), who's also responsible for various other tools. It is the cornerstone of **Tetris-related research** such as for openers, loops, and perfect clearing.
 ___
 ## Getting Started
 - You must have [[sfinder-docs/sfinder prerequisites#Java Runtime Environment|Java Runtime Environment]] installed.

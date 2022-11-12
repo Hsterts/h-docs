@@ -5,6 +5,7 @@ function switchRotation(){
     var Rot180 = document.getElementsByClassName('Rot180')
     var Rot90 = document.getElementsByClassName('Rot90')
     if(toggle){
+        console.log('Disabled 180s')
         if(Rot180.length != 0){
             for(let i = 0; i < Rot180.length; i++){
                 Rot180[i].style.display = 'none'
@@ -18,6 +19,7 @@ function switchRotation(){
         Icon180.style.opacity = 1
         Icon90.style.opacity = 0
     } else {
+        console.log('Enabled 180s')
         if(Rot180.length != 0){
             for(let i = 0; i < Rot180.length; i++){
                 Rot180[i].style.display = 'inline-block'
