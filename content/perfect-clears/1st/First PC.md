@@ -12,3 +12,5 @@ ___
 	<fumen>v115@DhzhFeR4hlEeR4RpglGeRpglJeAgH</fumen>
 	<figcaption><span title = "4950/5040">Sol: 98.214%</span></figcaption>
 </figure>
+
+DEMO <mino>T</mino> <mino>LJ</mino> WOW!

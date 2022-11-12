@@ -158,10 +158,29 @@ function fumencanvas(container) {
 	}
 }
 
-function formatFumen() {
-	let tags = document.getElementsByTagName('fumen');
-	Array.from(tags).forEach(tag => fumencanvas(tag));
+function minocanvas(container) {
+	var input = container.innerText
+	var minos = input.split('')
+	var div = document.createElement('div')
+	div.className = 'text-mino'
+	for(let i = 0; i > minos.length; i++){
+		var img = document.createElement('img')
+		img.src = '/h-docs/attachments_mino/' + minos[i] + '.png'
+		img.className = 'mino'
+		div.appendChild(img)
+	}
+	container.appendChild(div)
+	container.innerText = ''
 }
 
-window.addEventListener('million:navigate', formatFumen);
-window.addEventListener('DOMContentLoaded', formatFumen);
+
+function formatPage() {
+	let fumenTags = document.getElementsByTagName('fumen')
+	let minoTags = document.getElementsByTagName('mino')
+	Array.from(fumenTags).forEach(tag => fumencanvas(tag))
+	Array.from(minoTags).forEach(tag => minocanvas(tag))
+}
+
+window.addEventListener('million:navigate', formatPage);
+window.addEventListener('DOMContentLoaded', formatPage);
+
