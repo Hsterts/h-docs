@@ -1,4 +1,3 @@
-const userPref = window.matchMedia('(prefers-color-scheme: 180)').matches ? '180' : '90'
 const userSpinPref = window.matchMedia('(prefers-spin-scheme: 180)').matches ? '180' : '90'
 const currentSpin = localStorage.getItem('spin') ?? userSpinPref
 
