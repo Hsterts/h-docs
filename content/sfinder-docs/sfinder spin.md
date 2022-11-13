@@ -265,22 +265,19 @@ S-Spawn J-Spawn I-Spawn / 7.6 % [64]
 No line erasure vs with line erasure:
 <div style="display: flex; justify-content: space-around">
 	<div>
-		<figure>
-		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/no_line_erasures.png?raw=true">
-		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
+		<figure class="fumen">v115@BhAtFehlBtR4Beg0B8glAtR4ywg0B8glD8wwh0JeAg?H
 		</figure>
 	</div>
 	<div>
-		<figure>
-		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/with_line_erasures.png?raw=true">
-		<figcaption style="text-align: center;">Solve with line erasure</figcaption>
+		<figure class="fumen">v115@KhAtAeR4Beg0B8BtR4ywg0B8AtD8wwh0JeAgH
+		</figure>
+	</div>
+	<div>
+		<figure class="fumen">v115@DhAtHeBtBeg0B8ilAtywg0B8glD8wwh0JeAgH
 		</figure>
 	</div>
 </div>
 
-![[sfinder-docs/attachments_sfinder/spin_output_1.png]]
-![[sfinder-docs/attachments_sfinder/spin_output_2.png]]
-![[sfinder-docs/attachments_sfinder/spin_output_3.png]]
 
 2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
 ```YAML {title="CSV Solution Sample Output"}
