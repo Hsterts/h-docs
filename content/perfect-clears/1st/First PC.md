@@ -13,7 +13,4 @@ ___
 	<figcaption><span title = "4950/5040">Sol: 98.214%</span></figcaption>
 </figure>
 
-DEMO
-<figure class = "mino">T</figure> <figure class = "mino">LJ</figure>
-
-WOW!
+<p>DEMO<figure class = "mino">T</figure> <figure class = "mino">LJ</figure>WOW!</p>
