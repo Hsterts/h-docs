@@ -163,9 +163,11 @@ function minocanvas(container) {
 		var input = container.innerText
 		container.innerText = ''
 		for(let i = 0; i < input.length; i++){
-			var img = document.createElement('img')
-			img.src = '/h-docs/attachments_mino/' + input[i] + '.png'
-			container.appendChild(img)
+			if('TILJSZO'.indexOf(input[i]) != -1) {	
+				var img = document.createElement('img')
+				img.src = '/h-docs/attachments_mino/' + input[i] + '.png'
+				container.appendChild(img)
+			}
 		}
 	}
 }
