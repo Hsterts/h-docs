@@ -26,6 +26,7 @@
   --primary: #f58382 !important;
   --gray: #d4d4d4 !important;
   --lightgray: #292633 !important;
+  --lightergray: #292633BB !important;
   --outlinegray: #3d3b63 !important;
   --fumen-background: #3d3b6380 !important; // fumenbackground
   --strong: #ff6a67 !important;
@@ -46,7 +47,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-figure {
+figure, .mino img {
   background: var(--lightergray);
   padding: 0px 5px;
   color: var(--gray);
@@ -92,12 +93,15 @@ p > a, li > a {
 }
 
 .fumen {
-  padding: 0;
+  font-size: 0;
+  margin: 0;
 }
 
 .fumen > img {
   background: var(--fumenbackground);
   outline: var(--dark);
+  margin: 0;
+  padding: 0;
 }
 
 .mino {
@@ -110,6 +114,7 @@ p > a, li > a {
 .mino > img {
   width: 22px;
   height: 22px;
+  padding: 2px;
 }
 
 .text-logo{
