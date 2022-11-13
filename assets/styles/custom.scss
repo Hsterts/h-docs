@@ -59,7 +59,7 @@ figure, .mino {
 figcaption {
   font-family: var(--font-header);
   font-weight: 600;
-  padding: 5px 5px 0 5px;
+  padding: 5px;
 }
 
 strong {
@@ -77,10 +77,10 @@ p > a, li > a {
 }
 
 .fumen > img {
-  background: var(--fumenbackground);
+  background: var(--fumen-background);
   outline: var(--dark);
-  margin: 0;
-  padding: 0;
+  margin: 5px 0 0 0;
+  box-shadow:  rgb(0 0 0 / 20%) 0px 4px 6px -1px, rgb(0 0 0 / 12%) 0px 2px 4px -1px
 }
 
 .mino {
