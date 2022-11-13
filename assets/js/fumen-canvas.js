@@ -160,10 +160,10 @@ function fumencanvas(container) {
 
 function minocanvas(container) {
 	var input = container.innerText
-	for(let i = 0; i > input.length; i++){
+	container.innerText = ''
+	for(let i = 0; i < input.length; i++){
 		var img = document.createElement('img')
 		img.src = '/h-docs/attachments_mino/' + input[i] + '.png'
-		img.className = 'mino'
 		container.appendChild(img)
 	}
 }
