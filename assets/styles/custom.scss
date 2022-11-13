@@ -54,6 +54,7 @@ figure, .mino {
   color: var(--gray);
   // outline: 1px solid var(--outlinegray);
   border-radius: 3px;
+  display: inline-block;
 }
 
 figcaption {
@@ -91,6 +92,12 @@ p > a, li > a {
 }
 
 .mino > img {
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+}
+
+h3 > .mino > img {
   width: 22px;
   height: 22px;
   padding: 2px;
