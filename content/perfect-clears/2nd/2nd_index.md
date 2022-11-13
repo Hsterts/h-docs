@@ -1,6 +1,5 @@
 ---
-title: "2nd"
+title: "Second Perfect Clear"
 ---
-## IOSZ
-- [[perfect-clears/2nd/ISZO QB]]
-- [[perfect-clears/2nd/TISZ]]
+- [[perfect-clears/2nd/2nd - ISZO]]
+- [[perfect-clears/2nd/2nd - TISZ]]

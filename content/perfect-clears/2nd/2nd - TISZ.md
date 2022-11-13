@@ -1,12 +1,11 @@
 ---
-title: "TISZ"
+title: "2nd: TISZ"
 ---
 Author: stickmancomic<br>
-Practice: [Confidential Usermode](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[TISZ]p4,*p7)
+Practice TISZ 2nd: [Confidential Usermode](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[TISZ]p4,*p7)
 
 ## General Setup
-<figure class = "fumen">v115@OhR4EeBtR4wwBezhBtywJeAgH</figure></span>
-
+<figure class = "fumen">v115@OhR4EeBtR4wwBezhBtywJeAgH</figure><br>
 <figure class = "fumen">v115@9gwhh0Btywhlwhg0RpBtwwB8glwhg0RpE8glwhI8Je?AgH</figure> <figure class = "fumen">v115@9gwhh0ywR4hlwhg0RpwwR4B8glwhg0RpE8glwhI8Je?AgH</figure> <figure class = "fumen">v115@9gwhBtywR4hlwhg0BtwwR4B8glwhi0E8glwhI8JeAg?H</figure> <figure class = "fumen">v115@9gh0zhR4hlBtywR4B8glg0BtwwE8glg0I8JeAgH</figure>
 
 ___
