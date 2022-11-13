@@ -9,7 +9,7 @@ Practice TISZ 2nd: [Confidential Usermode](https://himitsuconfidential.github.io
 <figure class = "fumen">v115@9gwhh0Btywhlwhg0RpBtwwB8glwhg0RpE8glwhI8Je?AgH</figure> <figure class = "fumen">v115@9gwhh0ywR4hlwhg0RpwwR4B8glwhg0RpE8glwhI8Je?AgH</figure> <figure class = "fumen">v115@9gwhBtywR4hlwhg0BtwwR4B8glwhi0E8glwhI8JeAg?H</figure> <figure class = "fumen">v115@9gh0zhR4hlBtywR4B8glg0BtwwE8glg0I8JeAgH</figure>
 
 ___
-## Queue Base
+## Queue Based
 <h3><span class="mino">SO</span> (Save <span class="mino">T</span>)</h3>
 <figure class = "fumen">v115@GhwhAeR4BeQ4CewhR4wwBtR4RpwhAeywBtQ4RpwhJe?AgH</figure> <figure class = "fumen">v115@9gh0BtzhglA8g0B8BtA8ilK8g0I8JeAgH</figure>
 
