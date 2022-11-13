@@ -10,8 +10,9 @@
   --primary: #f28482; //current node
   --gray: #161b22; //text on page
   --lightgray: #f0f0f0; //ctrl k background
+  --lightergray: #f0f0f0BB; //figure background
   --outlinegray: #dadada; // graph outline
-  --fumenbackground: #dadada80; // fumenbackground
+  --fumen-background: #dadada40; // fumenbackground
   --strong: #e1503a; //**text** color
   --million-rgbs-bar-color: var(--secondary);
 }
@@ -26,7 +27,7 @@
   --gray: #d4d4d4 !important;
   --lightgray: #292633 !important;
   --outlinegray: #3d3b63 !important;
-  --fumenbackground: #3d3b6380 !important; // fumenbackground
+  --fumen-background: #3d3b6380 !important; // fumenbackground
   --strong: #ff6a67 !important;
 }
 
@@ -46,12 +47,16 @@
 }
 
 figure {
-  background: var(--lightgray);
-  border-radius: 10px;
-  padding: 10px;
-  font-family: "Karla";
+  background: var(--lightergray);
+  padding: 5px;
   color: var(--gray);
-  border-radius: 5px
+  border: 1px solid var(--outlinegray);
+  border-radius: 3px;
+}
+
+figcaption {
+  font-family: var(--font-header);
+  font-weight: 600;
 }
 
 strong {
@@ -85,13 +90,29 @@ p > a, li > a {
   text-decoration: underline var(--secondary) solid 2px;
 }
 
-img.imageOutput {
+.fumen {
+  font-size: 0px;
+}
+
+.fumen > img {
   background: var(--fumenbackground);
   outline: var(--dark);
 }
 
+.mino {
+  display: inline-flex;
+  padding: 2px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.mino > img {
+  width: 22px;
+  height: 22px;
+}
+
 .text-logo{
-  font-family: Karla, Arial;
+  font-family: var(--font-body);
   font-size: 20px;
   font-weight: 600;
   display: inline-block;
