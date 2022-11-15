@@ -1,8 +1,8 @@
 ## Unsorted Resources
 - **Confidential**'s [Usermodes](https://himitsuconfidential.github.io/downstack-practice/library), the most dynamic practice website for perfect clearing, among others.
-- **PC Gang**'s [Setup Konbini](https://docs.google.com/spreadsheets/d/1utU86mHLcXu7KjyiMjYPNkEG_CthO-bfY0Pk7jOOH_E/edit), a collection of almost everything related to perfect clearing.
 ___
 ## Perfect Clear Setups
+- **PC Gang**'s [Setup Konbini](https://docs.google.com/spreadsheets/d/1utU86mHLcXu7KjyiMjYPNkEG_CthO-bfY0Pk7jOOH_E/edit), a collection of almost everything related to perfect clearing.
 ___
 ## Perfect Clear Solvers
 Tools used to find perfect clear solutions.

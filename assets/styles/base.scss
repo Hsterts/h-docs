@@ -1,7 +1,8 @@
 // Replace this with your own font imports!
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Karla&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Karla:wght@200;400;600;800&family=Montserrat:wght@200;400;600;800&family=Poppins:wght@200;400;600;800&display=swap');
 
 :root {
+  --font-headest: "Poppins";
   --font-body: "Karla";
   --font-header: "Montserrat";
   --font-mono: "Fira Code";
@@ -22,7 +23,7 @@ html {
 }
 
 .singlePage {
-  padding: 4em 30vw;
+  padding: 4em 20vw;
   @media all and (max-width: 1200px) {
     padding: 25px 5vw;
   }
