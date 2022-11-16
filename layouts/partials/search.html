@@ -15,4 +15,3 @@
 {{ $js := resources.Get "js/full-text-search.js" | resources.Fingerprint "md5" | resources.Minify }}
 <script defer src="{{ $js.Permalink }}"></script>
 {{end}}
-

@@ -1,46 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Lang }}">
+{{ partial "head.html" . }}
   <head>
-    <meta name="generator" content="Hugo 0.96.0">
-    <meta charset="utf-8">
-    <meta name="description" content="Buncha stuff. Sorting it out.">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Resources for everything PC related!">
     <title>H-Docs</title>
-    <link rel="shortcut icon" type="image/png" href="https://hsterts.github.io/h-docs//icon.png">
-    <link href="https://hsterts.github.io/h-docs/styles.989996866442d28b5832f1b5959bd15c.min.css" rel="stylesheet">
-    <link href="https://hsterts.github.io/h-docs/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css" rel="stylesheet" id="theme-link">
-    <script src="https://hsterts.github.io/h-docs/js/darkmode.04a32aa5e12d83ab1e29bb3924ccb3cd.min.js"></script>
-    <script src="https://hsterts.github.io/h-docs/js/util.9825137f5e7825e8553c68ce39ac9e44.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
-    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
-    <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js" integrity="sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
-    <script src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
-    <script src="https://hsterts.github.io/h-docs/js/popover.9b72b70bd35617d0635e9d15463662b2.min.js"></script>
-    <script src="https://hsterts.github.io/h-docs/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js"></script>
-    <script src="https://hsterts.github.io/h-docs/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js"></script>
-    <script src="https://hsterts.github.io/h-docs/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js"></script>
-    <script>
-      const BASE_URL="https://hsterts.github.io/h-docs/",fetchData=Promise.all([fetch("https://hsterts.github.io/h-docs/indices/linkIndex.f9d65f2955eabdc27ecca245ef67fd18.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://hsterts.github.io/h-docs/indices/contentIndex.383e2d0438e3007a1b568b0fbb9150fb.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts();const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://hsterts.github.io/h-docs",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}
-    </script>
-    <script type="module">
-      import { attachSPARouting } from "https:\/\/hsterts.github.io\/h-docs\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
-      attachSPARouting(init, render)
-    </script>
-    <script src="https://hsterts.github.io/h-docs/js/tetris-fumen.18a2ede7ec4a893f1d9a5ce644c301fb.min.js"></script>
-    <script src="https://hsterts.github.io/h-docs/js/fumen-canvas.98dce4ca3a1776d5ed78805e2fe4dc88.min.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2KM7MBX5DR"></script><script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2KM7MBX5DR",{anonymize_ip:!1})}</script>
-    <link href="/assets/styles/resources.css" rel="stylesheet">
+    <link href="https://github.com/Hsterts/h-docs/blob/hugo/assets/styles/resources.css" rel="stylesheet">
   </head>
+  <!-- figure out how to link this css file. pepega -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Karla:wght@200;400;600;800&family=Montserrat:wght@200;400;600;800&family=Poppins:wght@200;400;600;800&display=swap');
+.singlePage{
+    padding: 25px 15vw;
+    width: 70vw;
+    overflow: hidden hidden;
+}
+
+/* literally just invalidating the built-in responsive css */
+@media all and (max-width: 1200px) {
+    .singlePage{
+        padding: 25px 5vw;
+        margin: 0;
+        width: 90vw;
+    }
+}
+
+#pepenter{
+    margin: 10vh 0 0 0;
+}
+
+#pepenter, h1{
+    color: var(--gray);
+    display: inline-block;
+    font-family: var(--font-header);
+    vertical-align: center;
+    width: 90%;
+    background-image: linear-gradient(90deg, var(--outlinegray) 75%, transparent);
+    padding: 0 1em;
+}
+
+h2{
+    color: var(--gray);
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+h1 img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+}
+
+#page-title {
+      font-size: 2em;
+      font-family: "Karla";
+    }
+  
+@media all and (max-width: 600px) {
+    header nav{
+        display: none;
+    }
+}
+
+#search-icon {
+    background-color: var(--lightgray);
+    border-radius: 4px;
+    height: 2em;
+    width: 65vw;
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 200ms ease;
+    box-shadow: 0px 5px 10px 0 #00000020;
+    font-style: italic;
+}
+
+#search-icon:hover {
+    background-color: var(--light);
+}
+
+#search-icon > p {
+    display: inline;
+    padding: 0 1.5em 0 2em;
+    opacity: 0.5;
+}
+
+svg {
+    cursor: pointer;
+    width: 24px;
+    min-width: 18px;
+    margin: 0 1.5em;
+}
+
+svg .search-path {
+    stroke: var(--gray);
+    stroke-width: 2px;
+    transition: stroke 0.5s ease;
+}
+
+svg:hover .search-path {
+    stroke: var(--tertiary);
+}
+
+.result-card{
+    background-color: var(--lightergray) !important;
+    margin: 0 0 0.5em 0 !important;
+    border: 1px solid var(--outlinegray) !important;
+    border-radius: 4px !important;
+}
+
+.result-card:last-of-type{
+    margin: 0 !important;
+}
+
+.result-card p{
+    display: none;
+}
+
+.result-card h3{
+    margin: 0;
+}
+
+footer{
+    margin: 0;
+}
+
+footer a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#resource-panels-body {
+    margin: 0;
+    height: 750px;
+    padding: 1vh 0;
+    background: var(--lightergray);
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1), white 50px, white calc(100% - 50px), rgba(0, 0, 0, 0.1));
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1), white 50px, white calc(100% - 50px), rgba(0, 0, 0, 0.1));
+}
+
+#resource-panels{
+    position: relative;
+    height: inherit;
+    width: inherit;
+    transition: transform 250ms ease-out;
+}
+
+.panel {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    
+    padding: 0 10%;
+    width: 80%;
+    height: 75vh;
+
+    transition: transform 250ms ease-out,
+                opacity 100ms ease-in;
+}
+
+#panel-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5vw;
+}
+
+.panel-link{
+    width: 50vw;
+    margin: 1vw;
+    padding: 1vh 10vw 1vh 5vw;
+    background: var(--outlinegray);
+    box-shadow: 0px 5px 10px 0 #00000030;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.panel-link:hover{
+    transform: translateX(1em)
+}
+
+.panel-link h2{
+    margin: 0;
+}
+
+.panel-link h2::before{
+    content: '↳ ';
+    color: var(--secondary);
+    transform: translateY(-20px);
+}
+
+
+#client-selection{
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template: 300 300 / 300 300;
+    gap: 0 0;
+}
+
+#client-selection div{
+    height: 300px;
+    width: 300px;
+    transition: background 250ms ease-in,
+                transform 250ms ease-out;
+}
+
+.client-link{
+    text-align: center;
+    height: 290px;
+    width: 270px;
+    padding: 0 10px;
+    transform-origin: top left;
+    transition: transform 250ms ease-in,
+                width 250ms ease-in,
+                height 250ms ease-in;
+}
+
+.client-link img{
+    margin: 10px;
+    height: 225px;
+    cursor: pointer;
+}
+
+.client-link figcaption{
+    background: var(--outlinegray);
+    margin: 5px;
+    transition: opacity 250ms ease-in,
+                width 250ms ease-in,
+                height 250ms ease-in;
+}
+
+
+/* NAVIGATION BUTTONS */
+.nav-button{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--light);
+    border-radius: 50%;
+    border: none;
+    color: var(--dark);
+    font-family: var(--font-mono);
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.1s ease-in,
+                background-color 0.1s ease-in,
+                opacity 0.2s ease-in;
+}
+
+.nav-button:hover{
+    transform: scale(0.90);
+    background-color: var(--lightgray);
+}
+
+.nav-button:active{
+    transform: scale(0.80);
+    background-color: var(--secondary);
+}
+
+#left-nav{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    opacity: 0.3;
+}
+
+#right-nav{
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+  </style>
   <body>
-    <div id="search-container">
-      <div id="search-space">
-        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
-        <div id="results-container"></div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer=""></script>
-      <script defer="" src="https://hsterts.github.io/h-docs/js/full-text-search.24827f874defbbc6d529926cbfcfb493.min.js"></script>
-    </div>
+    {{ partial "search.html" . }}
     <div class="singlePage">
       <header>
         <h1 id="page-title"><a href="https://hsterts.github.io/h-docs/">h-docs</a></h1>
