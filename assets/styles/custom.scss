@@ -72,12 +72,7 @@ p > a, li > a {
   text-decoration: underline var(--secondary) solid 2px;
 }
 
-.fumen {
-  font-size: 0;
-  margin: 0;
-}
-
-.fumen > img {
+figure > img {
   background: var(--fumen-background);
   outline: var(--dark);
   margin: 5px 0 0 0;

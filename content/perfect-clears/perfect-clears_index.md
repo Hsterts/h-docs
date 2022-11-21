@@ -4,7 +4,7 @@ title: "Perfect Clears"
 Here are setups for various perfect clears. More to come later
 ___
 # Categories
-- 1st
+- [[perfect-clears/1st/1st_index]]
 - [[perfect-clears/2nd/2nd_index|2nd PC]]
 - 3rd
 - 4th

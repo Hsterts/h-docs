@@ -12,7 +12,7 @@ var colors = {
 	Empty: { normal: '#f3f3ed' },
 };
 
-function draw(fumenPage, numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background) {
+function draw(fumenPage, {numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background}) {
 	var field = fumenPage.field;
 	var operation = fumenPage.operation;
 
@@ -128,32 +128,57 @@ function draw(fumenPage, numrows, numcols, cellSize, gridToggle, gridColor, tran
 	return canvas;
 }
 
-function fumencanvas(container) {
-	var input = container.innerText;
-	if(container.getAttribute('height') != null) {var height = container.getAttribute('height')} else {var height = 5};
-	if(container.getAttribute('width') != null) {var width = container.getAttribute('width')} else {var width = 10};
-	if(container.getAttribute('size') != null) {var cellSize = container.getAttribute('size')} else {var cellSize = 22};
-	if(container.getAttribute('grid') != null) {var gridColor = container.getAttribute('grid'); var gridToggle = true} else {var gridToggle = false};
-	if(container.getAttribute('background') != null) {var background = container.getAttribute('background'); var transparency_four = false} else {var transparency_four = true};
+function generateDiagram(frame, options) {
+	var canvas = draw(frame, options);
+	var figure = document.createElement('figure');
 
-	var fumenCodes = [];
+	var img = document.createElement('img');
+	img.src = canvas.toDataURL("image/png");
+	img.className = 'imageOutput';
+	figure.appendChild(img);
 
-	for (let rawInput of input.split('\t')) {
-		fumenCodes.push(...rawInput.split(/\s/));
+	if(frame.comment) {
+		var caption = document.createElement('figcaption');
+		caption.textContent = frame.comment;
+		figure.appendChild(caption);
 	}
 
+	return figure;
+}
+
+function fumencanvas(container, collate) {
+	var input = container.innerText;
+
+	var options = {
+		'numrows': container.getAttribute('height') || 5,
+		'numcols': container.getAttribute('width') || 10,
+		'cellSize': container.getAttribute('size') || 22,
+		'gridColor': container.getAttribute('grid'),
+		'gridToggle': container.getAttribute('grid') != null,
+		'background': container.getAttribute('background'),
+		'transparency_four': container.getAttribute('background') == null
+	};
+	var fumenCodes = [];
+
+	for (let rawInput of input.split(/\s+/)) {
+		fumenCodes.push(rawInput);
+	}
+
+	container.innerText = '';
 	for (let code of fumenCodes) {
 		try {
-			var pages = decoder.decode(code);
-			canvas = draw(pages[0], height, width, cellSize, gridToggle, gridColor, transparency_four, background);
+			if(collate) {
+				container.appendChild(generateDiagram(decoder.decode(code)[0], options))
+			} else {
+				var spoiler = document.createElement('details');
 
-			var img = document.createElement('img');
-			
-			img.src = canvas.toDataURL("image/png");
-			img.className = 'imageOutput';
-			
-			container.innerText = '';
-			container.appendChild(img);
+				var summary = document.createElement('summary');
+				summary.textContent = 'Solves';
+
+				spoiler.appendChild(summary);
+				decoder.decode(code).forEach(p => spoiler.appendChild(generateDiagram(p, options)));
+				container.appendChild(spoiler);
+			}
 		} catch (error) { console.log(code, error); }
 	}
 }
@@ -174,12 +199,10 @@ function minocanvas(container) {
 
 
 function formatPage() {
-	let fumenTags = document.getElementsByClassName('fumen')
-	let minoTags = document.getElementsByClassName('mino')
-	Array.from(fumenTags).forEach(tag => fumencanvas(tag))
-	Array.from(minoTags).forEach(tag => minocanvas(tag))
+	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, true));
+	Array.from(document.getElementsByTagName('solution')).forEach(tag => fumencanvas(tag, false));
+	Array.from(document.getElementsByClassName('mino')).forEach(tag => minocanvas(tag));
 }
 
 window.addEventListener('million:navigate', formatPage);
 window.addEventListener('DOMContentLoaded', formatPage);
-
