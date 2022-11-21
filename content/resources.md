@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+---
+title: Resources
+---
 <html lang="{{ .Lang }}">
 {{ partial "head.html" . }}
   <head>
