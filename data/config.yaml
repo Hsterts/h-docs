@@ -15,7 +15,7 @@ GitHubLink: https://github.com/hsterts/h-docs/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  Buncha stuff. Sorting it out.
+  The beginnings of the definitive source of Perfect Clearing information.
 page_title:
   "h-docs"
 links:
