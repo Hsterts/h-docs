@@ -1,5 +1,13 @@
 let mirrored = false;
 
+function mirrorDiagram() {
+	var toggle = document.getElementById('mirror-toggle').checked;
+	mirrored = toggle;
+	document.getElementById('mirror-icon').textContent = toggle ? "🙃" : "🙂";
+
+	formatPage();
+}
+
 function switchRotation() {
 	var toggle = document.getElementById('rotationmode-toggle').checked;
 	var rotationModeDiv = document.getElementsByClassName('rotationmode')[0];
@@ -7,9 +15,6 @@ function switchRotation() {
 	var Icon90 = document.getElementById('90icon');
 	var Rot180 = document.getElementsByClassName('Rot180');
 	var Rot90 = document.getElementsByClassName('Rot90');
-
-	mirrored = toggle;
-
 	if (toggle) {
 		console.log('Disabled 180s');
 		rotationModeDiv.setAttribute('title', 'Turn on 180 rotations. Primarily affects percentages.');
@@ -41,6 +46,4 @@ function switchRotation() {
 		Icon180.style.opacity = 0;
 		Icon90.style.opacity = 1;
 	}
-
-	formatPage();
 }

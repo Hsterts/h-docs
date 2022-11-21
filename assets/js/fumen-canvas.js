@@ -162,9 +162,11 @@ function fumencanvas(container, collate) {
 	};
 
 	var fumenCodes = input.split(/\s+/);
-	if (mirrored) fumenCodes.map(code => {
-		return mirrorFumen(code)[0];
-	});
+	if(mirrored) {
+		for(let x = 0; x < fumenCodes.length; x++) {
+			fumenCodes[x] = mirrorFumen(fumenCodes[x])[0];
+		}
+	}
 
 	for (let code of fumenCodes) {
 		try {
