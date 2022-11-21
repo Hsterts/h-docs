@@ -192,6 +192,8 @@
 	<!-- PC Scripts -->
 	{{ $fumen := resources.Get "js/tetris-fumen.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$fumen.Permalink}}"></script>
+	{{ $fumen_util := resources.Get "js/fumen-util.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$fumen_util.Permalink}}"></script>
   {{ $canvas := resources.Get "js/fumen-canvas.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$canvas.Permalink}}"></script>
 </head>

@@ -1,4 +1,4 @@
-const { decoder } = require('tetris-fumen');
+const { decoder, encoder } = require('tetris-fumen');
 
 var colors = {
 	I: { normal: '#41afde', highlight1: '#3dc0fb', highlight2: '#3dc0fb', lighter: '#3dc0fb', light: '#43d3ff' },
@@ -12,7 +12,7 @@ var colors = {
 	Empty: { normal: '#f3f3ed' },
 };
 
-function draw(fumenPage, {numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background}) {
+function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background }) {
 	var field = fumenPage.field;
 	var operation = fumenPage.operation;
 
@@ -137,7 +137,7 @@ function generateDiagram(frame, options) {
 	img.className = 'imageOutput';
 	figure.appendChild(img);
 
-	if(frame.comment) {
+	if (frame.comment) {
 		var caption = document.createElement('figcaption');
 		caption.textContent = frame.comment;
 		figure.appendChild(caption);
@@ -147,7 +147,9 @@ function generateDiagram(frame, options) {
 }
 
 function fumencanvas(container, collate) {
-	var input = container.innerText;
+	if(container.getAttribute('code') == null) container.setAttribute('code', container.innerHTML);
+	var input = container.getAttribute('code');
+	container.innerText = '';
 
 	var options = {
 		'numrows': container.getAttribute('height') || 5,
@@ -158,22 +160,21 @@ function fumencanvas(container, collate) {
 		'background': container.getAttribute('background'),
 		'transparency_four': container.getAttribute('background') == null
 	};
-	var fumenCodes = [];
 
-	for (let rawInput of input.split(/\s+/)) {
-		fumenCodes.push(rawInput);
-	}
+	var fumenCodes = input.split(/\s+/);
+	if (mirrored) fumenCodes.map(code => {
+		return mirrorFumen(code)[0];
+	});
 
-	container.innerText = '';
 	for (let code of fumenCodes) {
 		try {
-			if(collate) {
-				container.appendChild(generateDiagram(decoder.decode(code)[0], options))
+			if (collate) {
+				container.appendChild(generateDiagram(decoder.decode(code)[0], options));
 			} else {
 				var spoiler = document.createElement('details');
 
 				var summary = document.createElement('summary');
-				summary.textContent = 'Solves';
+				summary.textContent = container.getAttribute('spoiler') || 'Solves';
 
 				spoiler.appendChild(summary);
 				decoder.decode(code).forEach(p => spoiler.appendChild(generateDiagram(p, options)));
@@ -184,19 +185,18 @@ function fumencanvas(container, collate) {
 }
 
 function minocanvas(container) {
-	if(container.innerText != ''){
-		var input = container.innerText
-		container.innerText = ''
-		for(let i = 0; i < input.length; i++){
-			if('TILJSZO'.indexOf(input[i]) != -1) {	
-				var img = document.createElement('img')
-				img.src = '/h-docs/attachments_mino/' + input[i] + '.png'
-				container.appendChild(img)
+	if (container.innerText != '') {
+		var input = container.innerText;
+		container.innerText = '';
+		for (let i = 0; i < input.length; i++) {
+			if ('TILJSZO'.indexOf(input[i]) != -1) {
+				var img = document.createElement('img');
+				img.src = '/h-docs/attachments_mino/' + input[i] + '.png';
+				container.appendChild(img);
 			}
 		}
 	}
 }
-
 
 function formatPage() {
 	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, true));
