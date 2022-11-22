@@ -102,9 +102,8 @@ h3 > .mino > img {
 
 .text-logo{
   font-family: var(--font-body);
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 800;
-  display: inline-block;
 }
 
 #header-options{
@@ -112,12 +111,11 @@ h3 > .mino > img {
   flex-direction: row;
 }
 
-// Rotation Mode Button SCSS
+// Rotation/Mirror Button SCSS
 .rotationmode, .diagram-mirror {
-  padding: 0.5em;
+  padding: 0.25em 0.5em;
   min-width: 30px;
   position: relative;
-  text-align: center;
 
   @media all and (max-width: 450px) {
     padding: 1em;
@@ -129,12 +127,7 @@ h3 > .mino > img {
   }
 
   & span {
-    opacity: 1;
     position: absolute;
-    width: 30px;
-    height: 20px;
-    top: calc(50% - 10px);
-    margin: -2px 0 0 -15px;
     color: var(--gray);
     transition: opacity 0.1s ease;
     cursor: pointer;
@@ -148,6 +141,7 @@ h3 > .mino > img {
   & > #90Icon {
     opacity: 1;
   }
+
 }
 
 .toggle:not(:checked) ~ label {
@@ -180,4 +174,20 @@ h3 > .mino > img {
 *::-webkit-scrollbar:hover{
   width: 12px;
   height: 12px;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+hr.small {
+  width: 500%;
+  margin: 2em auto;
+  height: 1px;
+  background-color: var(--outlinegray);
 }
