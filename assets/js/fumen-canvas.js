@@ -139,7 +139,13 @@ function generateDiagram(frame, options) {
 
 	if (frame.comment) {
 		var caption = document.createElement('figcaption');
-		caption.textContent = frame.comment;
+		captionLines = frame.comment.split("\n");
+		for(let i = 0; i < captionLines.length; i++){
+			captionLine = document.createElement('span');
+			captionLine.innerText = captionLines[i];
+			caption.appendChild(captionLine);
+			caption.appendChild(document.createElement('br'));
+		}
 		figure.appendChild(caption);
 	}
 
