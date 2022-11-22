@@ -187,15 +187,33 @@ function fumencanvas(container, collate) {
 }
 
 function minocanvas(container) {
-	if (container.innerText != '') {
-		var input = container.innerText;
-		container.innerText = '';
-		for (let i = 0; i < input.length; i++) {
-			if ('TILJSZO'.indexOf(input[i]) != -1) {
-				var img = document.createElement('img');
-				img.src = '/h-docs/attachments_mino/' + input[i] + '.png';
-				container.appendChild(img);
+	if(container.getAttribute('mino') == null) container.setAttribute('mino', container.innerText);
+	var input = container.getAttribute('mino');
+	container.innerText = '';
+
+	if(mirrored) {
+		let res = '';
+		for(let char of input) {
+			if('LJSZ'.includes(char)) {
+				switch(char) {
+					case 'L': res += 'J'; break;
+					case 'J': res += 'L'; break;
+					case 'S': res += 'Z'; break;
+					case 'Z': res += 'S'; break;
+				}
+			} else {
+				res += char;
 			}
+		}
+
+		input = res;
+	}
+
+	for (let i = 0; i < input.length; i++) {
+		if ('TILJSZO'.indexOf(input[i]) != -1) {
+			var img = document.createElement('img');
+			img.src = '/h-docs/attachments_mino/' + input[i] + '.png';
+			container.appendChild(img);
 		}
 	}
 }
