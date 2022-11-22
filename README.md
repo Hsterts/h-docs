@@ -9,8 +9,8 @@ git clone git@github.com:Hsterts/h-docs.git
 ```
 2. Install Hugo and Hugo-Obsidian. Install go [here](https://go.dev/) if you do not already have it.
 ```bash
+go install -tags extended github.com/gohugoio/hugo@latest
 go install github.com/jackyzha0/hugo-obsidian@latest
-go install --tags extended github.com/gohugoio/hugo@latest
 ```
 3. Run Preview; this command creates a live preview available at http://localhost:1313/h-docs
 ```bash
