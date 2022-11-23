@@ -141,9 +141,25 @@ function generateDiagram(frame, options) {
 		var caption = document.createElement('figcaption');
 		captionLines = frame.comment.split("\n");
 		for(let i = 0; i < captionLines.length; i++){
-			captionLine = document.createElement('span');
-			captionLine.innerText = captionLines[i];
-			caption.appendChild(captionLine);
+			span = document.createElement('span');
+			words = captionLines[i];
+			if(mirrored){
+				words = captionLines[i].split(' ');
+				for(let j = 0; j < words.length; j++){
+					if(words[j].match(/^[TILJSZO]+$/g)){
+						words[j] = words[j]
+							.replace('L','X')
+							.replace('S','Y')
+							.replace('J','L')
+							.replace('Z','S')
+							.replace('X','J')
+							.replace('Y','Z');
+					}
+				}
+				words = words.join(' ');
+			}
+			span.innerText = words;
+			caption.appendChild(span);
 			caption.appendChild(document.createElement('br'));
 		}
 		figure.appendChild(caption);

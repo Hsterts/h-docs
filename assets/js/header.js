@@ -1,10 +1,7 @@
 let mirrored = false;
 
 function mirrorDiagram() {
-	var toggle = document.getElementById('mirror-toggle').checked;
-	mirrored = toggle;
-	document.getElementById('mirror-icon').textContent = toggle ? "🙃" : "🙂";
-
+	mirrored = document.getElementById('mirror-toggle').checked;
 	formatPage();
 }
 
