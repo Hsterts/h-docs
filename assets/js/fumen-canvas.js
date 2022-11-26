@@ -128,13 +128,34 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 	return canvas;
 }
 
-function generateDiagram(frame, options) {
+function generateDiagram(frame, options, code) {
 	var canvas = draw(frame, options);
 	var figure = document.createElement('figure');
+	figure.className = "fumen-figure";
 
 	var img = document.createElement('img');
 	img.src = canvas.toDataURL("image/png");
 	img.className = 'imageOutput';
+	
+	var button = document.createElement("button");
+	button.className = "fumen-clipboard-button";
+	button.type = "button";
+	button.innerHTML = svgCopy;
+	button.addEventListener("click", () => {
+		navigator.clipboard.writeText(code).then(
+			() => {
+				button.blur();
+				button.innerHTML = svgCheck;
+				setTimeout(() => {
+					button.innerHTML = svgCopy
+					button.style.borderColor = ""
+				}, 2000);
+			},
+			(error) => (button.innerHTML = "Error")
+		);
+	});
+
+	figure.appendChild(button);
 	figure.appendChild(img);
 
 	if (frame.comment) {
@@ -169,8 +190,8 @@ function generateDiagram(frame, options) {
 }
 
 function fumencanvas(container, collate) {
-	if(container.getAttribute('code') == null) container.setAttribute('code', container.innerHTML);
-	var input = container.getAttribute('code');
+	if(container.dataset.code == null) container.dataset.code = container.innerHTML;
+	var input = container.dataset.code;
 	container.innerText = '';
 
 	var options = {
@@ -193,7 +214,7 @@ function fumencanvas(container, collate) {
 	for (let code of fumenCodes) {
 		try {
 			if (collate) {
-				container.appendChild(generateDiagram(decoder.decode(code)[0], options));
+				container.appendChild(generateDiagram(decoder.decode(code)[0], options, code));
 			} else {
 				var spoiler = document.createElement('details');
 
@@ -201,7 +222,7 @@ function fumencanvas(container, collate) {
 				summary.textContent = container.getAttribute('spoiler') || 'Solves';
 
 				spoiler.appendChild(summary);
-				decoder.decode(code).forEach(p => spoiler.appendChild(generateDiagram(p, options)));
+				decoder.decode(code).forEach(p => spoiler.appendChild(generateDiagram(p, options, code)));
 				container.appendChild(spoiler);
 			}
 		} catch (error) { console.log(code, error); }

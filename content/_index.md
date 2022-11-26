@@ -8,4 +8,4 @@ Yet. Another. Documentation. Website. It's mostly a hobby project to kill time, 
 	- Rithsagea needs a life :D
 ___
 # Test
-<fumen code="v115@HhglBeQ4FeglBtR4CeRphlBtQ4CeRpJeAgH"/>
+<fumen data-code="v115@HhglBeQ4FeglBtR4CeRphlBtQ4CeRpJeAgH"/>

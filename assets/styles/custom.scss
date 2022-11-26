@@ -62,7 +62,7 @@ figure, .mino {
 figcaption {
   font-family: var(--font-header);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1em;
   padding: 5px;
 }
 
@@ -318,7 +318,8 @@ background-color: var(--outlinegray);
     grid-template-columns: 70%;
     justify-content: center;
     .credit-section{
-      width: 70%;
+      width: 80%;
+      min-width: 400px;
     }
   }
 }
