@@ -97,3 +97,10 @@
 {{end}}
 
 {{ $content | safeHTML }}
+
+{{/* Remove commented sections */}}
+{{$comments := findRE "%%([^\\$]+)%%" $content}}
+{{range $comments}}
+  {{$cleared := replaceRE "%%([^\\$]+)%%" "\n" .}}
+  {{$content = replace $content . $cleared}}
+{{end}}

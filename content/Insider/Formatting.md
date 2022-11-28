@@ -69,4 +69,4 @@ ___
 ## Other Site Bits
 1. **Title for Percentages**: it'd be cool if we had proper titles for percentages as fractions.
 	- \<span class="Rot180" title="30/210">14.286%\</span>
-2. **Precision**: three decimals
+2. **Precision**: two decimals

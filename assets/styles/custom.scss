@@ -62,7 +62,7 @@ figure, .mino {
 figcaption {
   font-family: var(--font-header);
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 5px;
 }
 
@@ -167,27 +167,17 @@ h3 > .mino > img {
 
 //scroll bar
 *::-webkit-scrollbar{
-  width: 8px;
-  height: 8px;
-  margin: 2px;
-  opacity: 0.6;
-  transition: all 0.2s ease-in;
-}
-
-*::-webkit-scrollbar:hover{
   width: 12px;
   height: 12px;
-  opacity: 1;
-  transition: all 0.2s ease-in;
 }
 
 *::-webkit-scrollbar-track{
-  background: var(--outlinegray);
+  background: var(--lightergray);
 }
 
 *::-webkit-scrollbar-thumb{
-  background-color: var(--dark);
-  border-radius: 2px;
+  background-color: var(--outlinegray);
+  border-radius: 4px;
 }
 
 summary {
@@ -200,7 +190,7 @@ summary {
   padding: .25em;
 }
 
-details {
+details{
   color: var(--dark);
   margin: .5em;
   padding: .5em .5em 0;

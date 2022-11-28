@@ -14,7 +14,7 @@ ___
 ## Pattern Syntax
 Begin by defining a single **static queue**: you can define a single pattern by simply writing the pieces in order.
 1. **TILJSZO**: returns only **TILJSZO**.
-2. **TIL**: returns only **TIL**..
+2. **TIL**: returns only **TIL**.
 
 Next, you can define **bags**. These are a <u>set of pieces that sfinder gets pieces from</u>. Bags are defined by placing pieces within square brackets ``[OSZ]``.
 1. **T\[OSZ]**: returns **TO**, **TS**, and **TZ**
