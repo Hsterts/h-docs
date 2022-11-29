@@ -304,14 +304,14 @@ ___
 			<fumen>v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQVt2AFrvAA</fumen>
 		</div>
 		<div class="Rot180">
-			<fumen>v115@9gRph0ilR4A8Rpg0wwglAtR4B8RpxwBtD8Rpg0wwAt?E8JeAgWTADX7rDy4CwBFbsABW1ZOBFrvAA</fumen>
-			<fumen>v115@9gRpwwhlh0R4A8Rpxwglg0R4B8RpBtglg0D8RpwwBt?E8JeAgWSADX7rDy4CwBFbkRBO0wRAyfAAA</fumen>
-			<fumen>v115@9gRpBtywR4A8RpzhR4B8Rpg0BtwwD8Rpi0E8JeAgWS?ADX7rDy4CwBFbkRBuSjRAyfAAA</fumen>
-			<fumen>v115@9gBtilh0R4A8wwzhg0R4B8xwglRpg0D8wwBtRpE8Je?AgWSADX7rDy4CwBFb85AOIsRAyfAAA</fumen>
-			<fumen>v115@9gh0wwzhR4A8g0xwglRpR4B8BtwwglRpD8g0BthlE8?JeAgWSADX7rDy4CwBFbk2AOUjRAyfAAA</fumen>
-			<fumen>v115@9gBtilh0R4A8wwBtRpg0R4B8xwglRpg0D8wwzhE8Je?AgWSADX7rDy4CwBFbk2AO+gRAyfAAA</fumen>
-			<fumen>v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgWSADX7rDy4CwBFbk2AOecRAyfAAA</fumen>
-			<fumen>v115@9ghlg0zhR4A8wwgli0AtR4B8xwRpBtD8wwglRpAtE8?JeAgWSADX7rDy4CwBFbk2Au8pRAyfAAA</fumen>
+			<fumen>v115@9gRph0ilR4A8Rpg0wwglAtR4B8RpxwBtD8Rpg0wwAt?E8JeAgWsAlEvXEhoo2AmXyTASILdD2488AwNM2ABlClEFMV?ABBoo2ATBwKB3ngHB</fumen>
+			<fumen>v115@9gRpwwhlh0R4A8Rpxwglg0R4B8RpBtglg0D8RpwwBt?E8JeAgWrAlEvXEhoo2AmXyTASILdD2488AwNM2ABlClEFMV?ABBoo2AYVOVBFrvAA</fumen>
+			<fumen>v115@9gRpBtywR4A8RpzhR4B8Rpg0BtwwD8Rpi0E8JeAgWr?AlEvXEhoo2AmXyTASILdD2488AQSM2ABlClEFMVABBoo2AY?F8ABFrvAA</fumen>
+			<fumen>v115@9gBtilh0R4A8wwzhg0R4B8xwglRpg0D8wwBtRpE8Je?AgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2ARVMOBFrvAA</fumen>
+			<fumen>v115@9gh0wwzhR4A8g0xwglRpR4B8BtwwglRpD8g0BthlE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQV+ABFrvAA</fumen>
+			<fumen>v115@9gBtilh0R4A8wwBtRpg0R4B8xwglRpg0D8wwzhE8Je?AgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2AQVd9AFrvAA</fumen>
+			<fumen>v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQVt2AFrvAA</fumen>
+			<fumen>v115@9ghlg0zhR4A8wwgli0AtR4B8xwRpBtD8wwglRpAtE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQF7KBFrvAA</fumen>
 		</div>
 	</details>
 </div>
@@ -379,14 +379,41 @@ ___
 		<summary>Solutions</summary>
 		<h4>Minimals</h4>
 		<div class="Rot90">
+			<fumen>v115@9gRph0ilR4AtRpg0wwglAtR4BtB8xwBtB8AtC8g0ww?AtE8JeAgWTADX7rDy4CwBFbEEBR1ZOBFrvAA</fumen>
+			<fumen>v115@9gRpwhhlh0R4AtRpwhwwglg0R4BtB8whxwg0B8AtC8?whwwglE8JeAgWTADX7rDy4CwBFbEEBQVk2AFrvAA</fumen>
+			<fumen>v115@9gilzhR4AtglywRpR4BtB8BtRpB8AtC8wwBtE8JeAg?WTADX7rDy4CwBFbsABS1Y9AFrvAA</fumen>
+			<fumen>v115@9gRpBtywR4AtRpg0BtwwR4BtB8zhB8AtC8i0E8JeAg?WTADX7rDy4CwBFbsABQFMVBFrvAA</fumen>
+			<fumen>v115@9gRph0wwzhAtRpg0xwilBtB8BtwwglB8AtC8g0BtE8?JeAgWTADX7rDy4CwBFbU9AW1ZOBFrvAA</fumen>
+			<fumen>v115@9gRpwhQ4BtywAtRpwhR4BtwwBtB8whilB8AtC8whgl?Q4E8JeAgWTADX7rDy4CwBFbU9AQVk2AFrvAA</fumen>
+			<fumen>v115@9gRpDti0glRpwwDtilB8xwR4B8g0C8wwR4E8JeAgWT?ADX7rDy4CwBFb85AVVkRBFrvAA</fumen>
+			<fumen>v115@9gRpwwhlh0R4AtRpxwglg0R4BtB8Btglg0B8AtC8ww?BtE8JeAgWTADX7rDy4CwBFb85AQlwHBFrvAA</fumen>
+			<fumen>v115@9gRpBtywR4AtRpzhR4BtB8g0BtwwB8AtC8i0E8JeAg?WSADX7rDy4CwBFb8UBu/gRAyfAAA</fumen>
+			<fumen>v115@9gRpBtilR4AtRpwwi0R4BtB8xwglg0B8AtC8wwBtE8?JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</fumen>
 		</div>
 		<div class="Rot180">
+			<fumen>v115@9gRpwhhlh0R4AtRpwhwwglg0R4BtB8whxwg0B8AtC8?whwwglE8JeAgWTADX7rDy4CwBFbEEBQVk2AFrvAA</fumen>
+			<fumen>v115@9gilzhR4AtglywRpR4BtB8BtRpB8AtC8wwBtE8JeAg?WTADX7rDy4CwBFbsABS1Y9AFrvAA</fumen>
+			<fumen>v115@9gRpzhywAtRpilR4wwBtB8BtR4B8AtC8glBtE8JeAg?WTADX7rDy4CwBFbsABR1QOBFrvAA</fumen>
+			<fumen>v115@9gRpBtywR4AtRpg0BtwwR4BtB8zhB8AtC8i0E8JeAg?WTADX7rDy4CwBFbsABQFMVBFrvAA</fumen>
+			<fumen>v115@9gRph0wwzhAtRpg0xwilBtB8BtwwglB8AtC8g0BtE8?JeAgWTADX7rDy4CwBFbU9AW1ZOBFrvAA</fumen>
+			<fumen>v115@9gRpglQ4BtywAtRpglR4BtwwBtB8zhB8AtC8hlQ4E8?JeAgWTADX7rDy4CwBFbU9ARl+5AFrvAA</fumen>
+			<fumen>v115@9gRpwhQ4BtywAtRpwhR4BtwwBtB8whilB8AtC8whgl?Q4E8JeAgWTADX7rDy4CwBFbU9AQVk2AFrvAA</fumen>
+			<fumen>v115@9gRpDti0glRpwwDtilB8xwR4B8g0C8wwR4E8JeAgWT?ADX7rDy4CwBFb85AVVkRBFrvAA</fumen>
+			<fumen>v115@9gRpwwhlh0R4AtRpxwglg0R4BtB8Btglg0B8AtC8ww?BtE8JeAgWTADX7rDy4CwBFb85AQlwHBFrvAA</fumen>
+			<fumen>v115@9gRpBtywR4AtRpzhR4BtB8g0BtwwB8AtC8i0E8JeAg?WSADX7rDy4CwBFb8UBu/gRAyfAAA</fumen>
+			<fumen>v115@9gRpBtilR4AtRpwwi0R4BtB8xwglg0B8AtC8wwBtE8?JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</fumen>
 		</div>
 		<hr class="small">
 		<h4>Extra Solutions</h4>
 		<div class="Rot90">
+			<fumen>v115@9gRpzhywAtRpilR4wwBtB8BtR4B8AtC8glBtE8JeAg?WsAlEvXEhoo2AmXyTASILdD2488AQPM2ABlClEFMVABBoo2?Az5P9A3ngHB</fumen>
+			<fumen>v115@9gzhilR4Ati0wwglAtR4BtB8xwBtB8AtC8g0wwAtE8?JeAgWsAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2Ay/fRB3ngHB</fumen>
+			<fumen>v115@9gi0wwilR4AtzhglAtR4BtB8xwBtB8AtC8g0wwAtE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AXlGEBFrvAA</fumen>
 		</div>
 		<div class="Rot180">
+			<fumen>v115@9gRph0ilR4AtRpg0wwglAtR4BtB8xwBtB8AtC8g0ww?AtE8JeAgWsAlEvXEhoo2AmXyTASILdD2488AwNM2ABlClEF?MVABBoo2A05vKB3ngHB</fumen>
+			<fumen>v115@9gzhilR4Ati0wwglAtR4BtB8xwBtB8AtC8g0wwAtE8?JeAgWsAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2Ay/fRB3ngHB</fumen>
+			<fumen>v115@9gi0wwilR4AtzhglAtR4BtB8xwBtB8AtC8g0wwAtE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AXlGEBFrvAA</fumen>
 		</div>
 	</details>
 </div>
@@ -426,40 +453,3 @@ ABCD's queue-based setups are (writeup)
 		</ul>
 	</div>
 </div>
-
-
----
-title: "2nd: LSZO"
----
-## Setups
-
-### Standard 4p
-<figure>
-    <fumen>v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgH</fumen>
-    <figcaption>sol%: 94.21%</figcaption>
-</figure>
-
-<solution>v115@9gA8Bthlh0whRpB8Btglg0wwwhRpD8glxwwhG8g0ww?whB8JeAgH9gA8Bti0hlRpB8BtQ4g0wwglRpD8R4xwG8Q4ww?glB8JeAAA9gA8Btzhi0B8BtRpywg0D8RpR4G8R4wwB8JeAA?A9gA8BtywR4RpB8BtwwR4glRpD8zhG8ilB8JeAAA9gA8zhw?whlRpB8i0xwglRpD8g0wwR4G8R4glB8JeAAA9gA8ywR4Atw?hRpB8wwR4BtwhRpD8i0whG8Atg0whB8JeAAA9gA8BtywR4R?pB8BtzhRpD8wwR4glG8ilB8JeAAA9gA8Bthlh0wwRpB8Btg?lg0xwRpD8glg0R4G8R4wwB8JeAAeAhBtAewhglGeAPwSIeh?WVeAAA9gA8Bti0wwilB8BtQ4g0zhD8R4xwG8Q4wwglB8JeA?AA</solution>
-
-### 3p Setups
-#### 1
-<figure>
-    <fumen>v115@GhAtHeBtRpFeAtglRpEeilJeAgH</fumen>
-    <figcaption>sol%: 98.93%</figcaption>
-</figure>
-
-#### 2
-<figure>
-    <figcaption>sol%: 98.13%</figcaption>
-</figure>
-
-#### 3
-<figure>
-    <fumen>v115@GhAtHeBtFeR4AtglEeR4ilJeAgH</fumen>
-    <fumen>v115@RhRpDeR4AeglRpCeR4ilJeAgH</fumen>
-    <figcaption>sol%: 97.34%</figcaption>
-</figure>
-
-### Queue Based
-
-#### Two Piece QB

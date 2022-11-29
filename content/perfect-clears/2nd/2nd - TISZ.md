@@ -21,24 +21,48 @@ ___
 			<fumen>v115@IhBtHewwBtR4DeywR4zhKeAgWVAT3kTAyvTABBoo2A?RY0vAQo78AVAAAA</fumen>
 		</div>
 		<div class="setup-info">
-			<table>
-				<tr><th colspan="2">Saves</th></tr>
-				<tr>
-					<td><strong>T</strong>: <span title="0/5040">0.00%</span></td>
-					<td><strong>O</strong>: <span title="3984/5040">79.05%</span></td>
-				</tr>
-				<tr>
-					<td><strong>T/O</strong>: <span title="3984/5040">79.05%</span></td>
-					<td><strong>T/O/I</strong>: <span title="3984/5040">79.05%</span></td>
-				</tr>
-				<tr>
-					<td><strong>No SZ</strong>: <span title="3984/5040">79.05%</span></td>
-					<td><strong>OSZ</strong>: <span title="5040/5040">100.00%</span></td>
-				</tr>
+			<table>			
+				<tr>		
+					<th colspan=2>Saves</th>	
+				</tr>		
+				<tr>		
+					<td>	
+						<strong>T</strong>: 
+						<span title='0/5040' class='Rot90'>0.00%</span>
+						<span title='0/5040' class='Rot180'>0.00%</span>
+					</td>	
+					<td>	
+						<strong>TO</strong>: 
+						<span title='3984/5040' class='Rot90'>79.05%</span>
+						<span title='3984/5040' class='Rot180'>79.05%</span>
+					</td>	
+				</tr>		
+				<tr>		
+					<td>	
+						<strong>TIO</strong>: 
+						<span title='3984/5040' class='Rot90'>79.05%</span>
+						<span title='3984/5040' class='Rot180'>79.05%</span>
+					</td>	
+					<td>	
+						<strong>No SZ</strong>: 
+						<span title='3984/5040' class='Rot90'>79.05%</span>
+						<span title='3984/5040' class='Rot180'>79.05%</span>
+					</td>	
+				</tr>		
+				<tr>		
+					<td>	
+						<strong>OSZ</strong>: 
+						<span title='5040/5040' class='Rot90'>100.00%</span>
+						<span title='5040/5040' class='Rot180'>100.00%</span>
+					</td>	
+					<td>	
+						<saves src="2nd-tisz-flat">
+					</td>	
+				</tr>		
 			</table>
 		</div>
 		<div class="setup-writeup">
-			<p>The <strong>"Flat"</strong> TISZ Setup. This setup is <strong>mainly used for Ultra</strong>, as it can be executed easily and quickly, and can always save <span class="mino">OSZ</span> and has decent quad chances <span title="2160/5040">(42.86%).</span>
+			<p>The <strong>"Flat"</strong> TISZ Setup. This setup is <strong>mainly used for Ultra</strong>, as it can be executed easily and quickly, <u>only</u> saves <span class="mino">OSZ</span> and has decent quad chances <span title="2160/5040">(42.86%).</span>
 				<ul>
 					<li>
 						<a href="#l-o">Early<span class="mino">L</span></a> can always save <span class="mino">O</span>
@@ -68,21 +92,45 @@ ___
 			<fumen>v115@LhBtFeR4wwBtDeR4ywzhJeAgWVAT3kTAyvTABBoo2A?RY0vAQo78AVAAAA</fumen>
 		</div>
 		<div class="setup-info">
-			<table>
-				<tr><th colspan="2">Saves</th></tr>
-				<tr>
-					<td><strong>T</strong>: <span title="1760/5040">34.92%</span></td>
-					<td><strong>O</strong>: <span title="4064/5040">80.63%</span></td>
-				</tr>
-				<tr>
-					<td><strong>T/O</strong>: <span title="4232/5040">83.97%</span></td>
-					<td><strong>T/O/I</strong>: <span title="4436/5040">88.02%</span></td>
-				</tr>
-				<tr>
-					<td><strong>No SZ</strong>: <span title="4628/5040">91.83%</span></td>
-					<td><strong>OSZ</strong>: <span title="5040/5040">100.00%</span></td>
-				</tr>
-			</table>
+			<table>			
+				<tr>		
+					<th colspan=2>Saves</th>	
+				</tr>		
+				<tr>		
+					<td>	
+						<strong>T</strong>: 
+						<span title='1760/5040' class='Rot90'>34.92%</span>
+						<span title='1760/5040' class='Rot180'>34.92%</span>
+					</td>	
+					<td>	
+						<strong>TO</strong>: 
+						<span title='4232/5040' class='Rot90'>83.97%</span>
+						<span title='4232/5040' class='Rot180'>83.97%</span>
+					</td>	
+				</tr>		
+				<tr>		
+					<td>	
+						<strong>TIO</strong>: 
+						<span title='4436/5040' class='Rot90'>88.02%</span>
+						<span title='4436/5040' class='Rot180'>88.02%</span>
+					</td>	
+					<td>	
+						<strong>No SZ</strong>: 
+						<span title='4628/5040' class='Rot90'>91.83%</span>
+						<span title='4628/5040' class='Rot180'>91.83%</span>
+					</td>	
+				</tr>		
+				<tr>		
+					<td>	
+						<strong>OSZ</strong>: 
+						<span title='5040/5040' class='Rot90'>100.00%</span>
+						<span title='5040/5040' class='Rot180'>100.00%</span>
+					</td>	
+					<td>	
+						<saves src="2nd-tisz-bumpy">
+					</td>	
+				</tr>		
+			</table>			
 		</div>
 		<div class="setup-writeup">
 			<p>The <strong>"Bumpy"</strong> TISZ setup. This setup is has <strong>Save</strong><span class="mino">T</span> while basically still having identical solutions to the "Flat" setup, and has decent quad chances <span title="1680/5040">(33.33%).</span>
