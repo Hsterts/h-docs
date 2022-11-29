@@ -230,10 +230,11 @@ function fumencanvas(container, collate) {
 }
 
 function minocanvas(container) {
+	//this isn't made with canvas at all, but names be names for sure
 	if(container.getAttribute('mino') == null) container.setAttribute('mino', container.innerText);
 	var input = container.getAttribute('mino');
 	container.innerText = '';
-
+	
 	if(mirrored) {
 		let res = '';
 		for(let char of input) {
@@ -251,10 +252,11 @@ function minocanvas(container) {
 
 		input = res;
 	}
-
+	
 	for (let i = 0; i < input.length; i++) {
 		if ('TILJSZO'.indexOf(input[i]) != -1) {
 			var img = document.createElement('img');
+			img.setAttribute('draggable', false)
 			img.src = '/h-docs/attachments_mino/' + input[i] + '.png';
 			container.appendChild(img);
 		}

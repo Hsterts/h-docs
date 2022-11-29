@@ -12,7 +12,7 @@
   --lightgray: #f0f0f0; //ctrl k background
   --lightergray: #f0f0f0BB; //figure background
   --outlinegray: #dadada; // graph outline
-  --fumen-background: #dadada40; // fumenbackground
+  --fumen-background: #dadada40;
   --strong: #e1503a; //**text** color
   --million-rgbs-bar-color: var(--secondary);
 }
@@ -28,7 +28,7 @@
   --lightgray: #292633 !important;
   --lightergray: #292633BB !important;
   --outlinegray: #3d3b63 !important;
-  --fumen-background: #3d3b6380 !important; // fumenbackground
+  --fumen-background: #3d3b6380 !important;
   --strong: #ff6a67 !important;
 }
 
@@ -326,4 +326,63 @@ li::before{
 
 footer li::before{
   display: none;
+}
+
+.save-selection{
+  font-style: italic;
+  width: 100%;
+  height: 100%; 
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: var(--outlinegray);
+  cursor: pointer;
+}
+
+.filled{
+  font-style: normal;
+  color: var(--dark);
+}
+
+.save-input{
+  position: absolute;
+  left: 0;
+  top: 110%;
+  display: none;
+  align-content: space-around;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 15vw;
+  min-width: 120px;
+  height: 15vw;
+  min-height: 120px;
+  background: var(--lightgray);
+  font-size: 1em;
+  font-style: normal;
+  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px;
+  border-radius: 4px;
+  cursor: default;
+  input[type="checkbox"]{
+    display: none;
+  }
+  input[type="checkbox"]:checked + label img{
+    background: var(--lightergray);
+    box-shadow: var(--outlinegray) 0 0 4px 2px inset;
+    transform: scale(0.9);
+  }
+  label{
+    width: 100%;
+    text-align: center;
+    img {
+      width: 2em;
+      height: 2em;
+      background: var(--light);
+      cursor: pointer;
+    }
+  }
+}
+
+.save-input:focus{
+  outline: none;
 }

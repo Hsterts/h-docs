@@ -196,5 +196,10 @@
   <script src="{{$fumen_util.Permalink}}"></script>
   {{ $canvas := resources.Get "js/fumen-canvas.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script src="{{$canvas.Permalink}}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	{{ $jQueryCSV := resources.Get "js/jquery-csv.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$jQueryCSV.Permalink}}"></script>
+  {{ $getSaves := resources.Get "js/get-saves-csv.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script defer src="{{$getSaves.Permalink}}"></script>
 </head>
 {{ template "_internal/google_analytics.html" . }}
