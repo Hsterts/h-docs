@@ -3,6 +3,8 @@ title: Formatting
 ---
 ## Generating Fumen Images
 Insert a fumen code into Rith's custom \<fumen> tags as you would in standard HTML. Images will be rendered in-site through JavaScript.
+
+Changing the name of the tag from \<fumen> to \<figfumen> will generate its inner comment as a fig caption.
 ___
 ### \<fumen> tag attributes:
 **Height**: number of rows to render. Default is 5, max is 23.

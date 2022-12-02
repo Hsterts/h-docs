@@ -186,15 +186,16 @@ function generateDiagram(frame, options, code) {
 		figure.appendChild(caption);
 	}
 
-	return figure;
+	if(options.figure){return figure}{return img};
 }
 
-function fumencanvas(container, collate) {
+function fumencanvas(container, collate, figure) {
 	if(container.dataset.code == null) container.dataset.code = container.innerHTML;
 	var input = container.dataset.code;
 	container.innerText = '';
 
 	var options = {
+		'figure': figure,
 		'numrows': container.getAttribute('height') || 5,
 		'numcols': container.getAttribute('width') || 10,
 		'cellSize': container.getAttribute('size') || 22,
@@ -264,7 +265,8 @@ function minocanvas(container) {
 }
 
 function formatPage() {
-	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, true));
+	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, true, false));
+	Array.from(document.getElementsByTagName('figfumen')).forEach(tag => fumencanvas(tag, true, true));
 	Array.from(document.getElementsByTagName('solution')).forEach(tag => fumencanvas(tag, false));
 	Array.from(document.getElementsByClassName('mino')).forEach(tag => minocanvas(tag));
 }
