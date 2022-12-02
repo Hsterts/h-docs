@@ -90,109 +90,131 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 <center>
 	<div class="standard-queuebased-body">
 		<section id="i-lj-t">
-			<a href="#i-lj-t">
-				<h3><span class="mino">I</span> (Save <span class="mino">T</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@KhBtEezhBtR4RpAezhR4AeRpJeAgWdAT4UTASoUSAS?4MrDmXyrDFbEVCFbMLEyoo2AqAAAA</figfumen>
-				<figfumen>v115@9gh0R4BthlRpg0R4B8BtglRpJ8g0F8glB8JeAgWTAD?X7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
+				<h3>
+					<a href="#i-lj-t"><span class="mino">I</span> (Save <span class="mino">T</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					One of the few 40%+ cover QB setups. Similar to the <a href="#sz-t">See <span class="mino">SZ</span> QB</a> setup.
-				</p>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@KhBtEezhBtR4RpAezhR4AeRpJeAgWdAT4UTASoUSAS?4MrDmXyrDFbEVCFbMLEyoo2AqAAAA</figfumen>
+					<figfumen>v115@9gh0R4BthlRpg0R4B8BtglRpJ8g0F8glB8JeAgWTAD?X7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
+				</div>
+				<div class="standard-queuebased-writeup">
+					<hr class="small">
+					<p>
+						One of the few 40%+ cover QB setups. Similar to the <a href="#sz-t">See <span class="mino">SZ</span> QB</a> setup.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="lo-t">
-			<a href="#lo-t">
-				<h3><span class="mino">LO</span> (Save <span class="mino">T</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@KhRpBeilAeR4RpBtglRpR4zhBtRpJeAgWIAT4UTASY?LgC</figfumen>
-				<figfumen>v115@9gh0R4Btzhg0R4B8BtC8g0S8JeAgWUADX7rDy4CwBF?b85AVFM6A0ngHB</figfumen>
+				<h3>
+					<a href="#lo-t"><span class="mino">LO</span> (Save <span class="mino">T</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					The setup is <strong>shrine-like</strong>. Congruent to the <a href="#ts-o">See <span class="mino">TS</span> QB</a> setup.
-				</p>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@KhRpBeilAeR4RpBtglRpR4zhBtRpJeAgWIAT4UTASY?LgC</figfumen>
+					<figfumen>v115@9gh0R4Btzhg0R4B8BtC8g0S8JeAgWUADX7rDy4CwBF?b85AVFM6A0ngHB</figfumen>
+				</div>
+				<div class="standard-queuebased-writeup">
+					<hr class="small">
+					<p>
+						The setup is <strong>shrine-like</strong>. Its residue is congruent to the <a href="#ts-o">See <span class="mino">TS</span> QB</a> setup.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="ls-t">
-			<a href="#ls-t">
-				<h3><span class="mino">LS</span> (Save <span class="mino">T</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@+gglQ4HeglR4BeQ4DehlQ4BtR4RpAezhBtQ4RpJeAg?WIAT4UTASYrtC</figfumen>
-				<figfumen>v115@9gwhB8Bti0RpwhC8BtA8g0RpwhI8whI8JeAgWUADX7?rDy4CwBFb85AU1oRB2ngHB</figfumen>
+				<h3>
+					<a href="#ls-t"><span class="mino">LS</span> (Save <span class="mino">T</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					The setup is similar to the <strong>"See L"</strong> ISZO setup, with the I piece placed flat.<br>				
-					It may also be useful to recognize the <span class="mino">ILSZ</span> structure as <strong>an alt-build of the Feet setup</strong>.
-				</p>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@+gglQ4HeglR4BeQ4DehlQ4BtR4RpAezhBtQ4RpJeAg?WIAT4UTASYrtC</figfumen>
+					<figfumen>v115@9gwhB8Bti0RpwhC8BtA8g0RpwhI8whI8JeAgWUADX7?rDy4CwBFb85AU1oRB2ngHB</figfumen>
+				</div>
+				<div class="standard-queuebased-writeup">
+					<hr class="small">
+					<p>
+						The setup is similar to the <strong>"See L"</strong> ISZO setup, with the I piece placed flat.<br>				
+						It may also be useful to recognize the <span class="mino">ILSZ</span> structure as <strong>an alt-build of the Feet setup</strong>.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="sz-t">
-			<a href="#sz-t">
-				<h3><span class="mino">SZ</span> (Save <span class="mino">T</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@IhT4BtCeT4DtRpAezhBtAeRpJeAgWIAT4UTASIjFD</figfumen>
-				<figfumen>v115@9gh0zhhlRpg0F8glRpJ8g0F8glB8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB</figfumen>
+				<h3>
+					<a href="#sz-t"><span class="mino">SZ</span> (Save <span class="mino">T</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					Easy to think of as a three-dimensional lime. Similar to the <a href="i-lj-t">See <span class="mino">T</span> QB</a>.
-				</p>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@IhT4BtCeT4DtRpAezhBtAeRpJeAgWIAT4UTASIjFD</figfumen>
+					<figfumen>v115@9gh0zhhlRpg0F8glRpJ8g0F8glB8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB</figfumen>
+				</div>
+				<div class="standard-queuebased-writeup">
+					<hr class="small">
+					<p>
+						Easy to think of as a three-dimensional lime. Similar to the <a href="i-lj-t">See <span class="mino">I</span> QB</a>.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="ts-o">
-			<a href="#ts-o">
-				<h3><span class="mino">TS</span> (Save <span class="mino">O</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@/gQ4HewwR4BeQ4CeywQ4BtR4RpAezhBtQ4RpJeAgWI?AT4UTASY9tC</figfumen>
-				<figfumen>v115@9gh0A8Btzhglg0C8BtA8ilJ8g0I8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB</figfumen>
+				<h3>
+					<a href="#ts-o"><span class="mino">TS</span> (Save <span class="mino">O</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					The setup is identical to the <a href="#ls-o">See <span class="mino">LS</span> QB</a>, but swaps out <span class="mino">L</span> for <span class="mino">T</span>
-				</p>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@/gQ4HewwR4BeQ4CeywQ4BtR4RpAezhBtQ4RpJeAgWI?AT4UTASY9tC</figfumen>
+					<figfumen>v115@9gh0A8Btzhglg0C8BtA8ilJ8g0I8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB</figfumen>
+				</div>
+				<div class="standard-queuebased-writeup">
+					<hr class="small">
+					<p>
+						The setup is identical to the <a href="#ls-o">See <span class="mino">LS</span> QB</a>, but swaps out <span class="mino">L</span> for <span class="mino">T</span>
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="tl-o">
-			<a href="#tl-o">
-				<h3><span class="mino">TL</span> (Save <span class="mino">O</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@KhRpBeQ4hlywRpBtR4glAewwzhBtQ4glJeAgWIAT4U?TASYVWC</figfumen>
-				<figfumen>v115@9gh0R4Btzhg0R4B8BtM8g0I8JeAgWUADX7rDy4CwBF?b85AU1oRB2ngHB</figfumen>
+				<h3>
+					<a href="#tl-o"><span class="mino">TL</span> (Save <span class="mino">O</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					The setup is <strong>shrine-like</strong>. Congruent to the <a href="#lo-t">See <span class="mino">LO</span> QB</a> setup.
-				</p>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@KhRpBeQ4hlywRpBtR4glAewwzhBtQ4glJeAgWIAT4U?TASYVWC</figfumen>
+					<figfumen>v115@9gh0R4Btzhg0R4B8BtM8g0I8JeAgWUADX7rDy4CwBF?b85AU1oRB2ngHB</figfumen>
+				</div>
+				<div class="standard-queuebased-writeup">
+					<hr class="small">
+					<p>
+						The setup is <strong>shrine-like</strong>. Its residue is congruent to the <a href="#lo-t">See <span class="mino">LO</span> QB</a> setup.
+					</p>
+				</div>
 			</div>
 		</section>
 		<section id="ilj-to">
-			<a href="#i-lj-t">
-				<h3><span class="mino">I</span> (Save <span class="mino">T</span>)</h3>
-			</a>
 			<div class="standard-queuebased">
-				<figfumen>v115@9gilzhi0glAtRpDeQ4g0BtRpDeR4AtzhDeQ4JeAgWJ?AT4UTASo8VCqAAAA</figfumen>
-				<figfumen>v115@9gN8RpR4F8RpBtG8R4BtA8JeAgWTADX7rDy4CwBFbU?9AO0XOBFrvAA</figfumen>
-				<figfumen>v115@9gN8Q4ywF8R4BtG8Q4wwBtA8JeAgWTADX7rDy4CwBF?bU9AO0XOBFrvAA</figfumen>
+				<h3>
+					<a href="#i-lj-t"><span class="mino">ILJ</span>(Save <span class="mino">TO</span>)</a>
+				</h3>
 				<hr class="small">
-				<p>
-					The setup looks like an <strong>extended Grace setup</strong>. The top-line skim is similar to some Lime DPC solutions.
-				</p>
-			</div>
-		</section>
-		<section id="tl-o">
-			<a href="#ts-o">
-				<h3><span class="mino">TL</span> (Save <span class="mino">O</span>)</h3>
-			</a>
-			<div class="standard-queuebased">
-				<figfumen>v115@KhRpBeQ4hlywRpBtR4glAewwzhBtQ4glJeAgWIAT4U?TASYVWC</figfumen>
-				<figfumen>v115@9gh0R4Btzhg0R4B8BtM8g0I8JeAgWUADX7rDy4CwBF?b85AU1oRB2ngHB</figfumen>
+				<div class="standard-queuebased-image">
+					<figfumen>v115@9gilzhi0glAtRpDeQ4g0BtRpDeR4AtzhDeQ4JeAgWJ?AT4UTASo8VCqAAAA</figfumen>
+					<figfumen>v115@9gN8RpR4F8RpBtG8R4BtA8JeAgWTADX7rDy4CwBFbU?9AO0XOBFrvAA</figfumen>
+					<figfumen>v115@9gN8Q4ywF8R4BtG8Q4wwBtA8JeAgWTADX7rDy4CwBF?bU9AO0XOBFrvAA</figfumen>
+				</div>
 				<hr class="small">
-				<p>
-					The setup is <strong>shrine-like</strong>. Congruent to the <a href="#lo-t">See <span class="mino">LO</span> QB</a> setup.
-				</p>
+				<div class="standard-queuebased-writeup">
+					<p>
+						The setup looks like an <strong>extended Grace setup</strong>. The top-line skim is similar to some Lime DPC solutions. This can also be used as See <span class="mino">SZO</span> or See <span class="mino">TSZ</span>, but these do not contribute to cover.
+					</p>
+				</div>
 			</div>
 		</section>
 	</div>

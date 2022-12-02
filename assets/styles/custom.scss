@@ -260,6 +260,33 @@ background-color: var(--outlinegray);
 
 .standard-queuebased{
   text-align: center;
+  height: 100%;
+ h3{
+  a {
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 1.25em;
+    img {
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+  margin: 0.5em;
+  font-size: 1em;
+ }
+}
+
+.standard-queuebased-image{
+  display: flex;
+  flex-wrap: nowrap;
+  height: 158px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.standard-queuebased-writeup{
 }
 
 .setup-body{
