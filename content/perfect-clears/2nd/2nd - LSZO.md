@@ -15,11 +15,11 @@ Practice **LSZO 2nd**: [Confidential Usermode](https://himitsuconfidential.githu
 ___
 ## General Setups
 <hr class="small">
-<div class="setup-body">
-	<div class="setup-display">
+<div class="second-setup-body">
+	<div class="second-setup-display">
 		<div class="setup-image">
-			<fumen class="Rot180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2A5//DB0ngHB</figfumen>
-            <fumen class="Rot90">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2AZ+P9AxngHB</figfumen>
+			<figfumen class="Rot180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2A5//DB0ngHB</figfumen>
+            <figfumen class="Rot90">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2AZ+P9AxngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -74,7 +74,7 @@ ___
 	<details>
 		<summary>Solutions</summary>
 		<h4>Minimals</h4>
-		<div class="Rot90">
+		<div class="solutions Rot90">
 			<figfumen>v115@9gRpwhhlh0R4A8Rpwhwwglg0R4D8whxwg0F8whwwgl?E8JeAgWTADX7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
 			<figfumen>v115@9gRph0ilR4A8Rpg0wwglAtR4D8xwBtF8g0wwAtE8Je?AgWTADX7rDy4CwBFbsABW1ZOBFrvAA</figfumen>
 			<figfumen>v115@9gilzhR4A8glywRpR4D8BtRpF8wwBtE8JeAgWTADX7?rDy4CwBFbsABRVsABFrvAA</figfumen>
@@ -86,7 +86,7 @@ ___
 			<figfumen>v115@9gRpBtilR4A8Rpwwi0R4D8xwglg0F8wwBtE8JeAgWS?ADX7rDy4CwBFb0KBusnRAyfAAA</figfumen>
 			<figfumen>v115@9gi0wwilR4A8zhglAtR4D8xwBtF8g0wwAtE8JeAgWS?ADX7rDy4CwBFb0KBusnRAyfAAA</figfumen>
 		</div>
-		<div class="Rot180">
+		<div class="solutions Rot180">
 			<figfumen>v115@9gRpwhhlh0R4A8Rpwhwwglg0R4D8whxwg0F8whwwgl?E8JeAgWTADX7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
 			<figfumen>v115@9gRph0ilR4A8Rpg0wwglAtR4D8xwBtF8g0wwAtE8Je?AgWTADX7rDy4CwBFbsABW1ZOBFrvAA</figfumen>
 			<figfumen>v115@9gilzhR4A8glywRpR4D8BtRpF8wwBtE8JeAgWTADX7?rDy4CwBFbsABRVsABFrvAA</figfumen>
@@ -101,16 +101,18 @@ ___
 			<figfumen>v115@9gi0wwilR4A8zhglAtR4D8xwBtF8g0wwAtE8JeAgWS?ADX7rDy4CwBFb0KBusnRAyfAAA</figfumen>
 		</div>
 		<hr class="small">
-		<h4>Extra Solutions</h4>
+		<h4>Extras</h4>
+		<div>
 			<figfumen>v115@9gzhilR4A8i0wwglAtR4D8xwBtF8g0wwAtE8JeAgWs?AlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AS?7HOBwngHB</figfumen>
 			<figfumen>v115@9gRpzhywA8RpilR4wwD8BtR4F8glBtE8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQPM2ABlClEFMVABBoo2AT4nAB?yngHB</figfumen>
+		</div>
 	</details>
 </div>
-<div class="setup-body">
-    <div class="setup-display">
+<div class="second-setup-body">
+    <div class="second-setup-display">
 		<div class="setup-image">
-			<fumen class="Rot180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZE4UBzngHB</figfumen>
-			<fumen class="Rot90">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZEgRB5ngHB</figfumen>
+			<figfumen class="Rot180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZE4UBzngHB</figfumen>
+			<figfumen class="Rot90">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZEgRB5ngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -193,7 +195,8 @@ ___
 			<figfumen>v115@9gRpwwhlh0R4A8Rpxwglg0R4D8Btglg0R4D8wwBtR4?C8JeAgWSADX7rDy4CwBFbkRBO0wRAyfAAA</figfumen>
 		</div>
 		<hr class="small">
-		<h4>Extra Solutions</h4>
+		<h4>Extras</h4>
+		<div>
 			<figfumen>v115@9gzhilR4A8i0wwglAtR4D8xwBtR4D8g0wwAtR4C8Je?AgWsAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2AS7HOBwngHB</figfumen>
 			<figfumen>v115@9gRpwwBtQ4glh0A8Rpxwilg0D8wwT4g0D8R4BtQ4C8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwNM2ABlClEFMVAB?Boo2AZlf9AFrvAA</figfumen>
 			<figfumen>v115@9gi0wwilR4A8zhglAtR4D8xwBtR4D8g0wwAtR4C8Je?AgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2AWFjHBFrvAA</figfumen>
@@ -203,13 +206,14 @@ ___
 			<figfumen>v115@9gRpwhh0T4A8Rpwhg0T4D8whBtywD8whg0BtwwC8Je?AgWsAlEvXEhoo2AmXyTASILdD2488AQSM2ABlClEFMVABBo?o2AREoABzngHB</figfumen>
 			<figfumen>v115@9gRpwhg0AtT4A8Rpwhi0R4D8whBtywD8whAtR4wwC8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AQSM2ABlClEFMVAB?Boo2AWFjHBFrvAA</figfumen>
 			<figfumen>v115@9gilR4RpR4A8glBtywR4D8BtzhD8R4wwRpC8JeAgWr?AlEvXEhoo2AmXyTASILdD2488AQPM2ABlClEFMVABBoo2AX?lGEBFrvAA</figfumen>
+		</div>
 	</details>
 </div>
-<div class="setup-body">
-    <div class="setup-display">
+<div class="second-setup-body">
+    <div class="second-setup-display">
 		<div class="setup-image">
-			<fumen class="Rot90">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2A5C45A0ngHB</figfumen>
-			<fumen class="Rot180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2AZE45AzngHB</figfumen>
+			<figfumen class="Rot90">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2A5C45A0ngHB</figfumen>
+			<figfumen class="Rot180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2AZE45AzngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -293,7 +297,7 @@ ___
 			<figfumen>v115@9gRpBtilR4A8Rpwwi0R4B8Rpxwglg0D8RpwwBtE8Je?AgWSADX7rDy4CwBFb0KBusnRAyfAAA</figfumen>
 		</div>
 		<hr class="small">
-		<h4>Extra Solutions</h4>
+		<h4>Extras</h4>
 		<div class="Rot90">
 			<figfumen>v115@9gBtilh0R4A8wwzhg0R4B8xwglRpg0D8wwBtRpE8Je?AgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2AR1wABFrvAA</figfumen>
 			<figfumen>v115@9gh0wwzhR4A8g0xwglRpR4B8BtwwglRpD8g0BthlE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQV+ABFrvAA</figfumen>
@@ -315,11 +319,11 @@ ___
 		</div>
 	</details>
 </div>
-<div class="setup-body">
-    <div class="setup-display">
+<div class="second-setup-body">
+    <div class="second-setup-display">
 		<div class="setup-image">
-			<fumen class="Rot90">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB0ngHB</figfumen>
-			<fumen class="Rot180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB4ngHB</figfumen>
+			<figfumen class="Rot90">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB0ngHB</figfumen>
+			<figfumen class="Rot180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB4ngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -404,7 +408,7 @@ ___
 			<figfumen>v115@9gRpBtilR4AtRpwwi0R4BtB8xwglg0B8AtC8wwBtE8?JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</figfumen>
 		</div>
 		<hr class="small">
-		<h4>Extra Solutions</h4>
+		<h4>Extras</h4>
 		<div class="Rot90">
 			<figfumen>v115@9gRpzhywAtRpilR4wwBtB8BtR4B8AtC8glBtE8JeAg?WsAlEvXEhoo2AmXyTASILdD2488AQPM2ABlClEFMVABBoo2?Az5P9A3ngHB</figfumen>
 			<figfumen>v115@9gzhilR4Ati0wwglAtR4BtB8xwBtB8AtC8g0wwAtE8?JeAgWsAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2Ay/fRB3ngHB</figfumen>
@@ -423,12 +427,12 @@ ___
 ABCD's queue-based setups are (writeup)
 <hr class="small">
 <center>
-	<div class="standard-queuebased-body">
+	<div class="second-standard-queuebased-body">
 		<section id="xy-t">
 			<a href="#xy-t">
 				<h3><span class="mino">XY</span> (Save <span class="mino">T</span>)</h3>
 			</a>
-			<div class="standard-queuebased">
+			<div class="second-standard-queuebased">
 				<hr class="small">
 				<p></p>
 			</div>

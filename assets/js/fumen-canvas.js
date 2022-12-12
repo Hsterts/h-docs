@@ -131,11 +131,11 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 function generateDiagram(frame, options, code) {
 	var canvas = draw(frame, options);
 	var figure = document.createElement('figure');
-	figure.className = "fumen-figure";
+	figure.className = options.figure ? "fumen-figure" : "fumen-figure minimized";
 
 	var img = document.createElement('img');
 	img.src = canvas.toDataURL("image/png");
-	img.className = 'imageOutput';
+	img.className = 'fumen-image';
 	
 	var button = document.createElement("button");
 	button.className = "fumen-clipboard-button";
@@ -158,7 +158,7 @@ function generateDiagram(frame, options, code) {
 	figure.appendChild(button);
 	figure.appendChild(img);
 
-	if (frame.comment) {
+	if (frame.comment && options.figure) {
 		var caption = document.createElement('figcaption');
 		captionLines = frame.comment.split("\n");
 		for(let i = 0; i < captionLines.length; i++){
@@ -186,7 +186,7 @@ function generateDiagram(frame, options, code) {
 		figure.appendChild(caption);
 	}
 
-	if(options.figure){return figure}{return img};
+	return figure;
 }
 
 function fumencanvas(container, collate, figure) {
