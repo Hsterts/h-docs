@@ -368,7 +368,13 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 1em 0 2em;
+  margin: 0;
+  padding: 1em 0;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(180deg, var(--light) 80%, transparent);
+  z-index: 999999;
 
   & > h1 {
     font-size: 2em;
