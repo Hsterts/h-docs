@@ -3,7 +3,7 @@ data = []
 
 function getSaves(source){
 	let display = document.getElementById(source + '-display')
-	let rot = document.getElementById('rotationmode-toggle').checked ? '90' : '180'
+	let rot = rotationMode == 'with180' ? '90' : '180'
 	let selection = []
 	for(let i = 0; i < 7; i++){
 		let input = document.getElementById('TILJSZO'[i] + '-' + source).checked

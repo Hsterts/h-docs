@@ -347,7 +347,7 @@ hr {
     box-sizing: border-box;
     min-height: 250px;
     margin: 0.5em 0;
-
+    overflow: hidden;
     & > svg {
       margin-bottom: -5px;
 

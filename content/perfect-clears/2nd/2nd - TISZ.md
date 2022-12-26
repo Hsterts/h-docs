@@ -28,32 +28,32 @@ ___
 				<tr>		
 					<td>	
 						<strong>T</strong>: 
-						<span title='0/5040' class='Rot90'>0.00%</span>
-						<span title='0/5040' class='Rot180'>0.00%</span>
+						<span title='0/5040' class='no180'>0.00%</span>
+						<span title='0/5040' class='with180'>0.00%</span>
 					</td>	
 					<td>	
 						<strong>TO</strong>: 
-						<span title='3984/5040' class='Rot90'>79.05%</span>
-						<span title='3984/5040' class='Rot180'>79.05%</span>
+						<span title='3984/5040' class='no180'>79.05%</span>
+						<span title='3984/5040' class='with180'>79.05%</span>
 					</td>	
 				</tr>		
 				<tr>		
 					<td>	
 						<strong>TIO</strong>: 
-						<span title='3984/5040' class='Rot90'>79.05%</span>
-						<span title='3984/5040' class='Rot180'>79.05%</span>
+						<span title='3984/5040' class='no180'>79.05%</span>
+						<span title='3984/5040' class='with180'>79.05%</span>
 					</td>	
 					<td>	
 						<strong>No SZ</strong>: 
-						<span title='3984/5040' class='Rot90'>79.05%</span>
-						<span title='3984/5040' class='Rot180'>79.05%</span>
+						<span title='3984/5040' class='no180'>79.05%</span>
+						<span title='3984/5040' class='with180'>79.05%</span>
 					</td>	
 				</tr>		
 				<tr>		
 					<td>	
 						<strong>OSZ</strong>: 
-						<span title='5040/5040' class='Rot90'>100.00%</span>
-						<span title='5040/5040' class='Rot180'>100.00%</span>
+						<span title='5040/5040' class='no180'>100.00%</span>
+						<span title='5040/5040' class='with180'>100.00%</span>
 					</td>	
 					<td>	
 						<saves src="2nd-tisz-flat">
@@ -101,32 +101,32 @@ ___
 				<tr>		
 					<td>	
 						<strong>T</strong>: 
-						<span title='1760/5040' class='Rot90'>34.92%</span>
-						<span title='1760/5040' class='Rot180'>34.92%</span>
+						<span title='1760/5040' class='no180'>34.92%</span>
+						<span title='1760/5040' class='with180'>34.92%</span>
 					</td>	
 					<td>	
 						<strong>TO</strong>: 
-						<span title='4232/5040' class='Rot90'>83.97%</span>
-						<span title='4232/5040' class='Rot180'>83.97%</span>
+						<span title='4232/5040' class='no180'>83.97%</span>
+						<span title='4232/5040' class='with180'>83.97%</span>
 					</td>	
 				</tr>		
 				<tr>		
 					<td>	
 						<strong>TIO</strong>: 
-						<span title='4436/5040' class='Rot90'>88.02%</span>
-						<span title='4436/5040' class='Rot180'>88.02%</span>
+						<span title='4436/5040' class='no180'>88.02%</span>
+						<span title='4436/5040' class='with180'>88.02%</span>
 					</td>	
 					<td>	
 						<strong>No SZ</strong>: 
-						<span title='4628/5040' class='Rot90'>91.83%</span>
-						<span title='4628/5040' class='Rot180'>91.83%</span>
+						<span title='4628/5040' class='no180'>91.83%</span>
+						<span title='4628/5040' class='with180'>91.83%</span>
 					</td>	
 				</tr>		
 				<tr>		
 					<td>	
 						<strong>OSZ</strong>: 
-						<span title='5040/5040' class='Rot90'>100.00%</span>
-						<span title='5040/5040' class='Rot180'>100.00%</span>
+						<span title='5040/5040' class='no180'>100.00%</span>
+						<span title='5040/5040' class='with180'>100.00%</span>
 					</td>	
 					<td>	
 						<saves src="2nd-tisz-bumpy">

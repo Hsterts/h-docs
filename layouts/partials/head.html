@@ -201,5 +201,13 @@
   <script src="{{$jQueryCSV.Permalink}}"></script>
   {{ $getSaves := resources.Get "js/get-saves-csv.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script defer src="{{$getSaves.Permalink}}"></script>
+  {{ $GIFEncoder := resources.Get "js/GIFEncoder.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$GIFEncoder.Permalink}}"></script>
+  {{ $LZWEncoder := resources.Get "js/LZWEncoder.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$LZWEncoder.Permalink}}"></script>
+  {{ $NeuQuant := resources.Get "js/NeuQuant.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$NeuQuant.Permalink}}"></script>
+  {{ $b64 := resources.Get "js/b64.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{$b64.Permalink}}"></script>
 </head>
 {{ template "_internal/google_analytics.html" . }}

@@ -28,32 +28,32 @@ ___
 				<tr>		
 					<td>	
 						<strong>T</strong>: 
-						<span title='1772/2160' class='Rot90'>82.04%</span>
-						<span title='1772/2160' class='Rot180'>82.04%</span>
+						<span title='1772/2160' class='no180'>82.04%</span>
+						<span title='1772/2160' class='with180'>82.04%</span>
 					</td>	
 					<td>	
 						<strong>TO</strong>: 
-						<span title='2082/2160' class='Rot90'>96.39%</span>
-						<span title='2082/2160' class='Rot180'>96.39%</span>
+						<span title='2082/2160' class='no180'>96.39%</span>
+						<span title='2082/2160' class='with180'>96.39%</span>
 					</td>	
 				</tr>		
 				<tr>		
 					<td>	
 						<strong>TIO</strong>: 
-						<span title='2091/2160' class='Rot90'>96.81%</span>
-						<span title='2091/2160' class='Rot180'>96.81%</span>
+						<span title='2091/2160' class='no180'>96.81%</span>
+						<span title='2091/2160' class='with180'>96.81%</span>
 					</td>	
 					<td>	
 						<strong>No SZ</strong>: 
-						<span title='4971/5040' class='Rot90'>96.81%</span>
-						<span title='4971/5040' class='Rot180'>96.81%</span>
+						<span title='4971/5040' class='no180'>96.81%</span>
+						<span title='4971/5040' class='with180'>96.81%</span>
 					</td>	
 				</tr>		
 				<tr>		
 					<td>	
 						<strong>OSZ</strong>: 
-						<span title='2142/2160' class='Rot90'>99.17%</span>
-						<span title='2142/2160' class='Rot180'>99.17%</span>
+						<span title='2142/2160' class='no180'>99.17%</span>
+						<span title='2142/2160' class='with180'>99.17%</span>
 					</td>	
 					<td>	
 						<saves src="2nd-iszo-see-L">
@@ -62,10 +62,10 @@ ___
 			</table>			
 		</div>
 		<div class="setup-writeup">
-			<p>The <strong>See <span class="mino">L</span> 3p</strong> ISZO setup. Only used when you can see <span class="mino">L</span> (<span title="2160/2160">100.00%</span>), or when you can't see both of <span class="mino">LJ</span> (<span title="1440/1440">100.00%</span>). Otherwise, its sol% drops down to <span title="5032/5040">99.84%</span>.
+			<p>The <strong>See <span class="mino">L</span> 3p</strong> ISZO setup. Only used when you can see <span class="mino">L</span> (<span title="2160/2160">100.00%</span>), or when you can't see both of <span class="mino">LJ</span> (<span title="1440/1440">100.00%</span>). Otherwise, its sol% drops down to <span title="5032/5040">99.84%</span>. Mirror accordingly.
 				<ul>
 					<li>
-						<a href="#early-i">Early<span class="mino">I</span></a> can save <span class="mino">T</span> or <span class="mino">O</span>.
+						<a href="#early-i">Early<span class="mino">I</span></a>, <a href="#ls-t">See<span class="mino">LS</span></a>, and <a href="#ts-o">See<span class="mino">TS</span></a> share the <span class="mino">SZO</span> placements this setup uses. They all place the leftover <span class="mino">I</span> piece the same.
 					</li>
 				</ul>
 			</p>
@@ -75,15 +75,17 @@ ___
 		<summary>Solutions</summary>
 		<h4>Minimals</h4>
 		<div>
-			<figfumen>v115@9gwhh0R4Btywwhg0R4B8Btwwglwhg0E8ilwhI8JeAg?WTADX7rDy4CwBFbMOBWl+UBFrvAA </figfumen>
-			<figfumen>v115@9gwhh0R4ywhlwhg0R4B8wwRpglwhg0E8RpglwhI8Je?AgWTADX7rDy4CwBFbkRBQlwHBFrvAA </figfumen>
+			<figfumen size="16">v115@9gwhglQ4Bti0RpwhglR4BtA8g0RpwhhlQ4F80hE8Je?AgWTADX7rDy4CwBFb0KBW1ZOBFrvAA</figfumen>
+			<figfumen size="16">v115@9gwhh0Btzhglwhg0R4BtA8ilwhR4wwF8whg0ywE8Je?AgWTADX7rDy4CwBFbsABTFzABFrvAA</figfumen>
+			<figfumen size="16">v115@9gwhQ4Btwwi0RpwhR4ywA8g0RpwhilF8whglQ4BtE8?JeAgWTADX7rDy4CwBFbsABS1Y9AFrvAA</figfumen>
+			<figfumen size="16">v115@9gxhili0RpxhglAtR4A8g0RpxhBtF8xhAtR4E8JeAg?WTADX7rDy4CwBFbU9AQVk2AFrvAA</figfumen>
+			<figfumen size="16">v115@9gwhilwwi0RpwhBtywA8g0RpwhglBtF80hE8JeAgWT?ADX7rDy4CwBFb85ARl+5AFrvAA</figfumen>
 		</div>	
 		<hr class="small">
 		<h4>Extras</h4>
 		<div>
-			<figfumen>v115@9gwhh0R4Btilwhg0R4B8BtRpwhg0E8glRpwhI8JeAg?WsAlEvXEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2?ASEYHB3ngHB</figfumen>
-			<figfumen>v115@9gilR4i0RpglAtR4B8zhBtE8g0RpAtI8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AZlf9A?FrvAA </figfumen>
-			<figfumen>v115@9gilR4zhg0glAtR4B8ywg0BtE8wwh0AtI8JeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AyCI?OB4ngHB</figfumen>
+			<figfumen size="16">v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2Ay8fRB?5ngHB</figfumen>
+			<figfumen size="16">v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AR7P9A?yngHB</figfumen>
 		</div>	
 	</details>
 </div>
@@ -224,6 +226,28 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 		</section>
 	</div>
 </center>
+<hr>
+<section id="solution-finder">
+	<div class="solution-finder-body">
+		<div class="solution-finder">
+			<h2 class="solution-finder-title">Solution Finder</h2>
+			<div class="solution-finder-display">
+				<h4>Selected Setup</h4>
+				<fumen height ="6">v115@2gRpEewhBeRpEewhCeR4Bthlwhg0AeT4Btglwhi0R4?CeglJeAgH</fumen>
+			</div>
+			<div class="solution-finder-input">
+				<div class="stat">Select Setup: </div>
+				<div class="stat">Queue: </div>
+				<div class="stat">180/90 CHECKBOX</div>
+			</div>
+			<div class="solution-finder-outputs">
+				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
+				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
+				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
+			</div>
+		</div>
+	</div>
+</section>
 <hr>
 <div class="credits">
 	<div class="credit-section">

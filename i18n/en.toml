@@ -40,6 +40,12 @@ other = "Turn on 180 rotations. Primarily affects percentages."
 [rotation_90_mode]
 other = "Turn off 180 rotations. Primarily affects percentages."
 
+[mirror]
+other = "Mirror fumens and minos."
+
+[grid_toggle]
+other = "Toggle grids for fumen boards."
+
 [edit_source]
 other = "Edit Source"
 

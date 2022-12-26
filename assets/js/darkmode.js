@@ -11,27 +11,35 @@ if (currentTheme) {
   syntaxTheme.href = currentTheme === 'dark' ?  '{{ $darkSyntax.Permalink }}' :  '{{ $lightSyntax.Permalink }}';
 }
 
-const switchTheme = (e) => {
-  if (e.target.checked) {
+function switchTheme(theme){
+  var lightModeToggle = document.getElementById('light-mode-toggle')
+  var darkModeToggle = document.getElementById('dark-mode-toggle')
+  if(theme == 'dark'){
     document.documentElement.setAttribute('saved-theme', 'dark');
     localStorage.setItem('theme', 'dark');
     syntaxTheme.href = '{{ $darkSyntax.Permalink }}';
+    
+    darkModeToggle.setAttribute('class','darkmode logo hidden')
+    lightModeToggle.setAttribute('class','darkmode logo')
   }
-  else {
+  else if(theme == 'light'){
     document.documentElement.setAttribute('saved-theme', 'light')
     localStorage.setItem('theme', 'light')
     syntaxTheme.href = '{{ $lightSyntax.Permalink }}';
+    
+    darkModeToggle.setAttribute('class','darkmode logo')
+    lightModeToggle.setAttribute('class','darkmode logo hidden')
   }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  // Darkmode toggle
-  const toggleSwitch = document.querySelector('#darkmode-toggle')
-
-  // listen for toggle
-  toggleSwitch.addEventListener('change', switchTheme, false)
-
+  var lightModeToggle = document.getElementById('light-mode-toggle')
+  var darkModeToggle = document.getElementById('dark-mode-toggle')
   if (currentTheme === 'dark') {
-    toggleSwitch.checked = true
+    darkModeToggle.setAttribute('class','darkmode logo hidden')
+    lightModeToggle.setAttribute('class','darkmode logo')
+  } else {
+    darkModeToggle.setAttribute('class','darkmode logo')
+    lightModeToggle.setAttribute('class','darkmode logo hidden')
   }
 })

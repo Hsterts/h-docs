@@ -1,46 +1,59 @@
 let mirrored = false;
+let rotationMode = `with180`;
 
-function mirrorDiagram() {
-	mirrored = document.getElementById('mirror-toggle').checked;
-	formatPage();
+function toggleMirror(){
+	var unmirroredElements = document.getElementById('unmirrored')
+	var mirroredElements = document.getElementsByClassName('mirrored')
+	if(!mirrored){
+		for(let x = 0; x < unmirroredElements; x++){
+			unmirroredElements[x].style.display = 'inline-block'
+			mirroredElements[x].style.display = 'none'
+		}
+	} else {
+		for(let x = 0; x < unmirroredElements; x++){
+			unmirroredElements[x].style.display = 'none'
+			mirroredElements[x].style.display = 'inline-block'
+		}
+	}
 }
 
-function switchRotation() {
-	var toggle = document.getElementById('rotationmode-toggle').checked;
-	var rotationModeDiv = document.getElementsByClassName('rotationmode')[0];
-	var Icon180 = document.getElementById('180icon');
-	var Icon90 = document.getElementById('90icon');
-	var Rot180 = document.getElementsByClassName('Rot180');
-	var Rot90 = document.getElementsByClassName('Rot90');
-	if (toggle) {
-		console.log('Disabled 180s');
-		rotationModeDiv.setAttribute('title', 'Turn on 180 rotations. Primarily affects percentages.');
-		if (Rot180.length != 0) {
-			for (let i = 0; i < Rot180.length; i++) {
-				Rot180[i].style.display = 'none';
-			}
+function switchRotation(rot){
+	rotationMode = rot
+	var with180Toggle = document.getElementById('with-180-toggle')
+	var no180Toggle = document.getElementById('no-180-toggle')
+	var with180Elements = document.getElementsByClassName('with180')
+  	var no180Elements = document.getElementsByClassName('no180')
+	if(rot == 'with180'){
+	  	with180Toggle.setAttribute('class','rotation-logo logo hidden')
+	  	no180Toggle.setAttribute('class','rotation-logo logo')
+		for(let x = 0; x < with180Elements.length; x++){
+			with180Elements[x].style.display = 'inline-block'
+			no180Elements[x].style.display = 'none'
 		}
-		if (Rot90.length != 0) {
-			for (let i = 0; i < Rot90.length; i++) {
-				Rot90[i].style.display = 'inline-block';
-			}
+	}
+	if(rot == 'no180'){
+		with180Toggle.setAttribute('class','rotation-logo logo')
+		no180Toggle.setAttribute('class','rotation-logo logo hidden')
+		for(let x = 0; x < with180Elements.length; x++){
+			with180Elements[x].style.display = 'none'
+			no180Elements[x].style.display = 'inline-block'
 		}
-		Icon180.style.opacity = 1;
-		Icon90.style.opacity = 0;
-	} else {
-		console.log('Enabled 180s');
-		rotationModeDiv.setAttribute('title', 'Turn off 180 rotations. Primarily affects percentages.');
-		if (Rot180.length != 0) {
-			for (let i = 0; i < Rot180.length; i++) {
-				Rot180[i].style.display = 'inline-block';
-			}
-		}
-		if (Rot90.length != 0) {
-			for (let i = 0; i < Rot90.length; i++) {
-				Rot90[i].style.display = 'none';
-			}
-		}
-		Icon180.style.opacity = 0;
-		Icon90.style.opacity = 1;
+	}
+}
+
+function toggleGrid(grid){
+	var withGridToggle = document.getElementById('with-grid-toggle')
+	var noGridToggle = document.getElementById('no-grid-toggle')
+	if(grid == 'withGrid'){
+	  	withGridToggle.setAttribute('class','grid-toggle-logo logo hidden')
+	  	noGridToggle.setAttribute('class','gridtoggle logo')
+	  	allGridToggle = true;
+	  	formatPage()
+	}
+	else if(grid == 'noGrid'){
+		withGridToggle.setAttribute('class','grid-toggle-logo logo')
+		noGridToggle.setAttribute('class','grid-toggle-logo logo hidden')
+		allGridToggle = false;
+		formatPage()
 	}
 }

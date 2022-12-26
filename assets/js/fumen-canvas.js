@@ -1,5 +1,7 @@
 const { decoder, encoder } = require('tetris-fumen');
 
+allGridToggle = false
+
 var colors = {
 	I: { normal: '#41afde', highlight1: '#3dc0fb', highlight2: '#3dc0fb', lighter: '#3dc0fb', light: '#43d3ff' },
 	T: { normal: '#b451ac', highlight1: '#d161c9', highlight2: '#d161c9', lighter: '#d161c9', light: '#e56add' },
@@ -12,36 +14,14 @@ var colors = {
 	Empty: { normal: '#f3f3ed' },
 };
 
-function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background }) {
+function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }) {
+	var cellSize = parseFloat(cellSize);
 	var field = fumenPage.field;
-	var operation = fumenPage.operation;
-
-	function operationFilter(e) {
-		return i == e.x && j == e.y;
-	}
-
-	if (numrows == undefined) {
-		numrows = 0;
-		for (i = 0; i < numcols; i++) {
-			for (j = 0; j < 23; j++) {
-				if (field.at(i, j) != '_') {
-					numrows = Math.max(numrows, j);
-				}
-				if (operation != undefined && operation.positions().filter(operationFilter).length > 0) {
-					numrows = Math.max(numrows, j);
-				}
-			}
-		}
-		numrows += 2;
-	}
-
 	var width = cellSize * numcols;
 	var height = numrows * cellSize;
-
 	var canvas = document.createElement('canvas');
 	canvas.width = width;
 	canvas.height = height;
-
 	const context = canvas.getContext('2d');
 
 	if (!transparency_four) {
@@ -52,18 +32,20 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 
 	context.fillRect(0, 0, width, height);
 
-	if (gridToggle) {
+	if(allGridToggle){gridColor = '#ffffff'}
+
+	if (gridToggle || allGridToggle) {
 		//Border
 		context.strokeStyle = gridColor;
 		context.strokeRect(0, 0, width, height);
-		for (i = 0; i < numcols; i++) {
-			for (j = 0; j < numrows; j++) {
-				// all dim grids
-				context.fillStyle = gridColor + '30';
-				context.fillRect(i * cellSize, height - (j + 1) * cellSize, 1, cellSize);
-				context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, 1);
-			}
-		}
+		// for (i = 0; i < numcols; i++) {
+		// 	for (j = 0; j < numrows; j++) {
+		// 		// all dim grids
+		// 		context.fillStyle = gridColor + '30';
+		// 		context.fillRect(i * cellSize, height - (j + 1) * cellSize, 1, cellSize);
+		// 		context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, 1);
+		// 	}
+		// }
 	}
 
 	for (i = 0; i < numcols; i++) {
@@ -73,7 +55,7 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 				context.fillStyle = colors[field.at(i, j)].normal;
 				context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, cellSize);
 				// all dim grids
-				if (gridToggle) {
+				if (gridToggle || allGridToggle) {
 					context.fillStyle = gridColor + '40';
 					context.fillRect(i * cellSize, height - (j + 1) * cellSize, 1, cellSize);
 					context.fillRect(i * cellSize, height - (j + 1) * cellSize, cellSize, 1);
@@ -84,7 +66,7 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 					// all highlights
 					context.fillStyle = colors[field.at(i, j)].light;
 					context.fillRect(i * cellSize, height - (j + 1) * cellSize - cellSize / 5, cellSize, cellSize / 5);
-					if (gridToggle) {
+					if (gridToggle || allGridToggle) {
 						// all top dim highlight borders
 						context.fillStyle = gridColor + 'CC';
 						context.fillRect(i * cellSize, height - (j + 1) * cellSize - cellSize / 5, cellSize, 1);
@@ -103,7 +85,7 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 						}
 					}
 				}
-				if (gridToggle) {
+				if (gridToggle || allGridToggle) {
 					context.fillStyle = gridColor + 'FF';
 					// left border
 					if (field.at(Math.max(i - 1, 0), j) == '_') {
@@ -125,18 +107,90 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 			}
 		}
 	}
+
+	if(lock){
+		for (i = 0; i < numcols; i++) {
+			var filled = 0
+			for (j = 0; j < numrows; j++) {
+				if(field.at(j, i) != '_'){filled++}
+			}
+			if(filled == 10){
+				context.fillStyle = '#FFFFFF40';
+				context.fillRect(0, height - (i + 1) * cellSize, width, cellSize);
+			}
+		}
+	}
+
+	if(outline){
+		var index = fumenPage.index
+		var outlineField = decoder.decode(outline)[index].field;
+		for (i = 0; i < numcols; i++) {
+			for (j = 0; j < numrows; j++) {
+				if(outlineField.at(i, j) != '_'){
+					context.fillStyle = '#FFFFFF';
+					// left border
+					if (outlineField.at(Math.max(i - 1, 0), j) == '_') {
+						context.fillRect(i * cellSize - 1, height - (j + 1) * cellSize, 2, cellSize + 1);
+					}
+					// top border
+					if (outlineField.at(i, j + 1) == '_') {
+						context.fillRect(i * cellSize - 1, height - (j + 1) * cellSize, cellSize + 1, 2);
+					}
+					// right border
+					if (outlineField.at(i + 1, j) == '_') {
+						context.fillRect((i + 1) * cellSize - 1, height - (j + 1) * cellSize, 2, cellSize + 1);
+					}
+					// bottom border
+					if (outlineField.at(i, j - 1) == '_') {
+						context.fillRect(i * cellSize - 1, height - j * cellSize, cellSize + 1, 2);
+					}
+				}
+			}
+		}
+	}
 	return canvas;
 }
 
-function generateDiagram(frame, options, code) {
-	var canvas = draw(frame, options);
+function drawFumens(fumenPages, { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline}) {
+	var width = cellSize * numcols;
+	var height = numrows * cellSize;
+	var canvas = document.createElement('canvas');
+	canvas.width = width;
+	canvas.height = height;
+	var encoder = new GIFEncoder();
+	encoder.start();
+	encoder.setRepeat(0); // 0 for repeat, -1 for no-repeat
+	encoder.setDelay(delay); // frame delay in ms
+	encoder.setQuality(1); // image quality. 10 is default.
+	if (transparency_four) {
+		encoder.setTransparent('rgba(0, 0, 0, 0)');
+	}
+	for (x = 0; x < fumenPages.length; x++) {
+		var frame = draw(fumenPages[x], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline}).getContext('2d');
+		encoder.addFrame(frame);
+	}
+	encoder.finish();
+	return encoder;
+}
+
+function generateDiagram(code, options) {
+	var pages = decoder.decode(code);
+	var img = document.createElement('img');
+	if(pages.length == 1){
+		var canvas = draw(pages[0], options);
+		img.src = canvas.toDataURL("image/png");
+		img.className = 'fumen-image';
+	}
+	if(pages.length > 1){
+		gif = drawFumens(pages, options);
+		var binary_gif = gif.stream().getData();
+		var data_url = 'data:image/gif;base64,' + btoa(binary_gif);
+        var img = document.createElement('img');
+		img.src = data_url;
+		img.className = 'fumen-image';
+	}
 	var figure = document.createElement('figure');
 	figure.className = options.figure ? "fumen-figure" : "fumen-figure minimized";
-
-	var img = document.createElement('img');
-	img.src = canvas.toDataURL("image/png");
-	img.className = 'fumen-image';
-	
 	var button = document.createElement("button");
 	button.className = "fumen-clipboard-button";
 	button.type = "button";
@@ -158,9 +212,9 @@ function generateDiagram(frame, options, code) {
 	figure.appendChild(button);
 	figure.appendChild(img);
 
-	if (frame.comment && options.figure) {
+	if (pages[0].comment && options.figure) {
 		var caption = document.createElement('figcaption');
-		captionLines = frame.comment.split("\n");
+		captionLines = pages[0].comment.split("\n");
 		for(let i = 0; i < captionLines.length; i++){
 			span = document.createElement('span');
 			words = captionLines[i];
@@ -189,45 +243,33 @@ function generateDiagram(frame, options, code) {
 	return figure;
 }
 
-function fumencanvas(container, collate, figure) {
+function fumencanvas(container, figure) {
 	if(container.dataset.code == null) container.dataset.code = container.innerHTML;
-	var input = container.dataset.code;
+	var fumenCodes = container.dataset.code;
 	container.innerText = '';
-
+	
 	var options = {
 		'figure': figure,
-		'numrows': container.getAttribute('height') || 5,
-		'numcols': container.getAttribute('width') || 10,
-		'cellSize': container.getAttribute('size') || 22,
-		'gridColor': container.getAttribute('grid'),
+		'numrows': parseFloat(container.getAttribute('height')) || 5,
+		'numcols': parseFloat(container.getAttribute('width')) || 10,
+		'cellSize': parseFloat(container.getAttribute('size')) || 22,
+		'gridColor': parseFloat(container.getAttribute('grid')),
 		'gridToggle': container.getAttribute('grid') != null,
-		'background': container.getAttribute('background'),
-		'transparency_four': container.getAttribute('background') == null
+		'background': parseFloat(container.getAttribute('background')),
+		'transparency_four': container.getAttribute('background') == null,
+		'delay': parseFloat(container.getAttribute('delay')) || 500,
+		'lock': container.getAttribute('lock'),
+		'outline': container.getAttribute('outline')
 	};
 
-	var fumenCodes = input.split(/\s+/);
 	if(mirrored) {
-		for(let x = 0; x < fumenCodes.length; x++) {
-			fumenCodes[x] = mirrorFumen(fumenCodes[x])[0];
-		}
+		fumenCodes = mirrorFumen(fumenCodes)[0];
+		outlineCodes = mirrorFumen(outlineCodes)[0];
 	}
 
-	for (let code of fumenCodes) {
-		try {
-			if (collate) {
-				container.appendChild(generateDiagram(decoder.decode(code)[0], options, code));
-			} else {
-				var spoiler = document.createElement('details');
-
-				var summary = document.createElement('summary');
-				summary.textContent = container.getAttribute('spoiler') || 'Solves';
-
-				spoiler.appendChild(summary);
-				decoder.decode(code).forEach(p => spoiler.appendChild(generateDiagram(p, options, code)));
-				container.appendChild(spoiler);
-			}
-		} catch (error) { console.log(code, error); }
-	}
+	try {
+		container.appendChild(generateDiagram(fumenCodes, options));
+	} catch (error) { console.log(fumenCodes, error); }
 }
 
 function minocanvas(container) {
@@ -265,9 +307,8 @@ function minocanvas(container) {
 }
 
 function formatPage() {
-	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, true, false));
-	Array.from(document.getElementsByTagName('figfumen')).forEach(tag => fumencanvas(tag, true, true));
-	Array.from(document.getElementsByTagName('solution')).forEach(tag => fumencanvas(tag, false));
+	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, false));
+	Array.from(document.getElementsByTagName('figfumen')).forEach(tag => fumencanvas(tag, true));
 	Array.from(document.getElementsByClassName('mino')).forEach(tag => minocanvas(tag));
 }
 

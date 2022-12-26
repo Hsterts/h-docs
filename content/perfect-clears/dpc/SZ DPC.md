@@ -85,8 +85,8 @@ title: "S/Z DPC"
                     <div class="dpc-solution-display">
                         <fumen>v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</fumen>
                         <div class="dpc-stats">
-                            <div class="stat"><span class='Rot180'><strong>Cover</strong>: 75.04%</span>
-                            <span class='Rot90'><strong>Cover</strong>: 62.70%</span></div>
+                            <div class="stat"><span class='with180'><strong>Cover</strong>: 75.04%</span>
+                            <span class='no180'><strong>Cover</strong>: 62.70%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -95,7 +95,7 @@ title: "S/Z DPC"
                     <div class="dpc-solution-display">
                         <fumen>v115@9gQ4hlzhywR4glB8Rpg0wwAtA8Q4glB8Rpg0BtF8h0?AtA8JeAgH</fumen>
                         <div class="dpc-stats">
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>70.95%</span><span class='Rot90'>61.43%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>70.95%</span><span class='no180'>61.43%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -104,7 +104,7 @@ title: "S/Z DPC"
                     <div class="dpc-solution-display">
                         <fumen>v115@9gi0zhglRpBtg0B8ilRpA8BtB8ywR4F8wwR4A8JeAg?H</fumen>
                         <div class="dpc-stats">
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>53.97%</span><span class='Rot90'>53.97%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>53.97%</span><span class='no180'>53.97%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -113,7 +113,7 @@ title: "S/Z DPC"
                     <div class="dpc-solution-display">
                         <fumen>v115@9gilzhi0glRpB8Q4Btwwg0A8RpB8R4ywF8Q4BtA8Je?AgH</fumen>
                         <div class="dpc-stats">
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>49.48%</span><span class='Rot90'>49.48%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>49.48%</span><span class='no180'>49.48%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -122,7 +122,7 @@ title: "S/Z DPC"
                     <div class="dpc-solution-display">
                         <fumen>v115@9gRpg0zhywRpg0B8Q4BtwwglA8h0B8R4ilF8Q4BtA8?JeAgH</fumen>
                         <div class="dpc-stats">
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>44.40%</span><span class='Rot90'>37.46%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>44.40%</span><span class='no180'>37.46%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -131,7 +131,7 @@ title: "S/Z DPC"
                     <div class="dpc-solution-display">
                         <fumen>v115@9gi0zhywBtg0B8RpR4glA8BtB8RpilF8R4wwA8JeAg?H</fumen>
                         <div class="dpc-stats">
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>22.86%</span><span class='Rot90'>22.86%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>22.86%</span><span class='no180'>22.86%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -145,7 +145,7 @@ title: "S/Z DPC"
                         <fumen>v115@9gRpg0zhilRpg0B8Q4ywAtA8h0B8R4wwBtF8Q4glAt?A8JeAgH</fumen>
                         <div class="dpc-stats">
                             <div class="stat"><strong>Used For</strong>: TSD/TSS</div>
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>37.14%</span><span class='Rot90'>32.22%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>37.14%</span><span class='no180'>32.22%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
@@ -155,7 +155,7 @@ title: "S/Z DPC"
                         <fumen>v115@9gBtglzhRpg0ilB8Q4ywg0A8BtB8R4wwh0F8Q4RpA8?JeAgH</fumen>
                         <div class="dpc-stats">
                             <div class="stat"><strong>Used For</strong>: TSS</div>
-                            <div class="stat"><strong>Cover</strong>: <span class='Rot180'>16.67%</span><span class='Rot90'>13.81%</span></div>
+                            <div class="stat"><strong>Cover</strong>: <span class='with180'>16.67%</span><span class='no180'>13.81%</span></div>
                             <div class="stat"><strong>Use Case</strong>: </div>
                             <div class="stat"><strong>Spin%</strong>: </div>
                             <div class="stat"><strong>Quad%</strong>: </div>
