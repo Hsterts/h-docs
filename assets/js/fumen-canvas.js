@@ -123,7 +123,7 @@ function draw(fumenPage, { numrows, numcols, cellSize, gridToggle, gridColor, tr
 
 	if(outline){
 		var index = fumenPage.index
-		var outlineField = decoder.decode(outline)[index].field;
+		var outlineField = decoder.decode(outline)[index].field
 		for (i = 0; i < numcols; i++) {
 			for (j = 0; j < numrows; j++) {
 				if(outlineField.at(i, j) != '_'){
@@ -264,7 +264,7 @@ function fumencanvas(container, figure) {
 
 	if(mirrored) {
 		fumenCodes = mirrorFumen(fumenCodes)[0];
-		outlineCodes = mirrorFumen(outlineCodes)[0];
+		if(options.outline){options.outline = mirrorFumen(options.outline)[0]};
 	}
 
 	try {

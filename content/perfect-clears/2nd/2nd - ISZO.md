@@ -84,8 +84,8 @@ ___
 		<hr class="small">
 		<h4>Extras</h4>
 		<div>
-			<figfumen size="16">v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2Ay8fRB?5ngHB</figfumen>
-			<figfumen size="16">v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AR7P9A?yngHB</figfumen>
+			<figfumen size="16">v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AS7nAB?4ngHB</figfumen>
+			<figfumen size="16">v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AY1gHB?FrvAA</figfumen>
 		</div>	
 	</details>
 </div>
@@ -240,7 +240,7 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				<div class="stat">Queue: </div>
 				<div class="stat">180/90 CHECKBOX</div>
 			</div>
-			<div class="solution-finder-outputs">
+			<div class="pc-solution-finder-outputs">
 				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
 				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
 				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
