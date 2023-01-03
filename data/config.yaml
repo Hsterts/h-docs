@@ -15,7 +15,7 @@ GitHubLink: https://github.com/hsterts/h-docs/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  The beginnings of the definitive source of modern blockstacking information.
+  A soon-to-be definitive source of modern blockstacking information.
 page_title:
   "h-docs"
 links:
