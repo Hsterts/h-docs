@@ -18,7 +18,7 @@ ___
 <div class="second-setup-body">
 	<div class="second-setup-display">
 		<div class="setup-image">
-			<figfumen>v115@NhQ4GeBtR4RpEeBtQ4RpJeAgWkAT3kTAyvTABBoo2A?RY0vAQo78A1no2Ap588AwcUrDFbEVC</figfumen>
+			<figfumen id="2nd-iszo-see-l">v115@NhQ4GeBtR4RpEeBtQ4RpJeAgWkAT3kTAyvTABBoo2A?RY0vAQo78A1no2Ap588AwcUrDFbEVC</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -226,28 +226,6 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 		</section>
 	</div>
 </center>
-<hr>
-<section id="solution-finder">
-	<div class="solution-finder-body">
-		<div class="solution-finder">
-			<h2 class="solution-finder-title">Solution Finder</h2>
-			<div class="solution-finder-display">
-				<h4>Selected Setup</h4>
-				<fumen height ="6">v115@2gRpEewhBeRpEewhCeR4Bthlwhg0AeT4Btglwhi0R4?CeglJeAgH</fumen>
-			</div>
-			<div class="solution-finder-input">
-				<div class="stat">Select Setup: </div>
-				<div class="stat">Queue: </div>
-				<div class="stat">180/90 CHECKBOX</div>
-			</div>
-			<div class="pc-solution-finder-outputs">
-				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
-				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
-				<figfumen class="solution-finder-result-fumen">v115@9gRpg0zhywRpg0B8Q4hlwwAtA8h0B8R4glBtF8Q4gl?AtA8JeAgH</figfumen>
-			</div>
-		</div>
-	</div>
-</section>
 <hr>
 <div class="credits">
 	<div class="credit-section">

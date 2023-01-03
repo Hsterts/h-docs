@@ -18,8 +18,8 @@ ___
 <div class="second-setup-body">
 	<div class="second-setup-display">
 		<div class="setup-image">
-			<figfumen class="with180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2A5//DB0ngHB</figfumen>
-            <figfumen class="no180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2AZ+P9AxngHB</figfumen>
+			<figfumen id="2nd-lszo-shoe+o" class="with180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2A5//DB0ngHB</figfumen>
+            <figfumen id="2nd-lszo-shoe+o" class="no180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2AZ+P9AxngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -111,8 +111,8 @@ ___
 <div class="second-setup-body">
     <div class="second-setup-display">
 		<div class="setup-image">
-			<figfumen class="with180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZE4UBzngHB</figfumen>
-			<figfumen class="no180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZEgRB5ngHB</figfumen>
+			<figfumen id="2nd-lszo-hill+o" class="with180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZE4UBzngHB</figfumen>
+			<figfumen id="2nd-lszo-hill+o" class="no180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZEgRB5ngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -212,8 +212,8 @@ ___
 <div class="second-setup-body">
     <div class="second-setup-display">
 		<div class="setup-image">
-			<figfumen class="no180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2A5C45A0ngHB</figfumen>
-			<figfumen class="with180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2AZE45AzngHB</figfumen>
+			<figfumen id="2nd-lszo-shoe" class="no180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2A5C45A0ngHB</figfumen>
+			<figfumen id="2nd-lszo-shoe" class="with180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2AZE45AzngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -322,8 +322,8 @@ ___
 <div class="second-setup-body">
     <div class="second-setup-display">
 		<div class="setup-image">
-			<figfumen class="no180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB0ngHB</figfumen>
-			<figfumen class="with180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB4ngHB</figfumen>
+			<figfumen id="2nd-lszo-shoe+o-z" class="no180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB0ngHB</figfumen>
+			<figfumen id="2nd-lszo-shoe+o-z" class="with180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB4ngHB</figfumen>
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -439,6 +439,8 @@ ABCD's queue-based setups are (writeup)
 		</section>
 	</div>
 </center>
+<hr>
+<div id="solution-finder-base"></div>
 <hr>
 <div class="credits">
 	<div class="credit-section">

@@ -1,9 +1,8 @@
 saveFiles = []
-data = []
 
 function getSaves(source){
 	let display = document.getElementById(source + '-display')
-	let rot = rotationMode == 'with180' ? '90' : '180'
+	let rot = rotationMode == 'with180' ? '180' : '90'
 	let selection = []
 	for(let i = 0; i < 7; i++){
 		let input = document.getElementById('TILJSZO'[i] + '-' + source).checked
@@ -31,6 +30,7 @@ function getSaves(source){
 }
 
 function loadSaveFiles() {
+	let data = []
 	let saveElements = document.getElementsByTagName('saves')
 	let saveFileNames = []
 	for(let i = 0; i < saveElements.length; i++){

@@ -9,15 +9,17 @@ enableCallouts: true
 enableSPA: true
 enableFooter: true
 enableContextualBacklinks: false
-enableRecentNotes: false
+enableRecentNotes: true
 enableGitHubEdit: false
 GitHubLink: https://github.com/hsterts/h-docs/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  The beginnings of the definitive source of Perfect Clearing information.
+  The beginnings of the definitive source of modern blockstacking information.
 page_title:
   "h-docs"
 links:
-  - link_name: PC Gang
-    link: https://discord.gg/HQ3aJM7TJws
+  - link_name: H-Docs Discord
+    link: https://discord.gg/y7dMew44wQ
+  - link_name: PC Gang Discord
+    link: https://discord.gg/HQ3aJM7TJw

@@ -191,25 +191,26 @@ function generateDiagram(code, options) {
 	}
 	var figure = document.createElement('figure');
 	figure.className = options.figure ? "fumen-figure" : "fumen-figure minimized";
-	var button = document.createElement("button");
-	button.className = "fumen-clipboard-button";
-	button.type = "button";
-	button.innerHTML = svgCopy;
-	button.addEventListener("click", () => {
-		navigator.clipboard.writeText(code).then(
-			() => {
-				button.blur();
-				button.innerHTML = svgCheck;
-				setTimeout(() => {
-					button.innerHTML = svgCopy
-					button.style.borderColor = ""
-				}, 2000);
-			},
-			(error) => (button.innerHTML = "Error")
-		);
-	});
-
-	figure.appendChild(button);
+	if(options.clipboard == "true"){
+		var button = document.createElement("button");
+		button.className = "fumen-clipboard-button";
+		button.type = "button";
+		button.innerHTML = svgCopy;
+		button.addEventListener("click", () => {
+			navigator.clipboard.writeText(code).then(
+				() => {
+					button.blur();
+					button.innerHTML = svgCheck;
+					setTimeout(() => {
+						button.innerHTML = svgCopy
+						button.style.borderColor = ""
+					}, 2000);
+				},
+				(error) => (button.innerHTML = "Error")
+			);
+		});
+		figure.appendChild(button)
+	};
 	figure.appendChild(img);
 
 	if (pages[0].comment && options.figure) {
@@ -250,12 +251,13 @@ function fumencanvas(container, figure) {
 	
 	var options = {
 		'figure': figure,
+		'clipboard': container.getAttribute('clipboard') || "true",
 		'numrows': parseFloat(container.getAttribute('height')) || 5,
 		'numcols': parseFloat(container.getAttribute('width')) || 10,
 		'cellSize': parseFloat(container.getAttribute('size')) || 22,
-		'gridColor': parseFloat(container.getAttribute('grid')),
+		'gridColor': container.getAttribute('grid'),
 		'gridToggle': container.getAttribute('grid') != null,
-		'background': parseFloat(container.getAttribute('background')),
+		'background': container.getAttribute('background'),
 		'transparency_four': container.getAttribute('background') == null,
 		'delay': parseFloat(container.getAttribute('delay')) || 500,
 		'lock': container.getAttribute('lock'),

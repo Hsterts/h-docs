@@ -23,9 +23,9 @@ html {
 }
 
 .singlePage {
-  padding: 2em 10vw;
+  padding: 80px 15vw 2em 15vw;
   @media all and (max-width: 1200px) {
-    padding: 2em 5vw;
+    padding: 80px 5vw 2em 5vw;
   }
 }
 
@@ -369,13 +369,18 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 1em 0;
-  height: 100%;
-  position: sticky;
+  padding: 0em 12.5vw 1em 12.5vw;
+  @media all and (max-width: 1200px) {
+    padding: 0em 7.5vw 1em 7.5vw;}
+  box-sizing: border-box;
+  height: 80px;
+  width: 100vw;
+  position: fixed;
   top: 0;
-  background-image: linear-gradient(180deg, var(--light) 80%, transparent);
+  left: 0;
   z-index: 999999;
-
+  background-image: linear-gradient(0deg, transparent, var(--light) 33%);
+  backdrop-filter: blur(1px);
   & > h1 {
     font-size: 2em;
   }
