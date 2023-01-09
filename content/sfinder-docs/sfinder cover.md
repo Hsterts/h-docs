@@ -1,6 +1,13 @@
 ---
 title: "Solution Finder: Cover"
 ---
+<meta name="description" content="Documentation for solution finder's cover command">
+<style>
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
+body{display: flex; justify-content: center;}
+.singlePage{width: -webkit-fill-available; max-width: 700px;}
+</style>
+
 Solution Finder's **Cover** command outputs the probability of setting up/buidling a **specified field** (or multiple), given a specified **pattern**. This output is written in the terminal and the specified **log path**.
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar cover --tetfu <fumen> --patterns <pattern>
@@ -70,114 +77,118 @@ ___
 
 ___
 ## Summary
-<div style="display: flex; justify-content: space-around;''">
-	<div style="flex: 50%">
-		<table width="40%">
-			<tr>
-				<th colspan="3">Input Parameters</th>
-			</tr>
-			<tr>
-				<th>Parameter</th>
-				<th>Shorthand</th>
-				<th>Default</th>
-			</tr>
-			<tr>
-				<td>--tetfu</td>
-				<td>-t</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--page</td>
-				<td>-P</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>--patterns</td>
-				<td>-p</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--hold</td>
-				<td>--H</td>
-				<td>true</td>
-			</tr>
-			<tr>
-				<td>--drop</td>
-				<td>-d</td>
-				<td>softdrop</td>
-			</tr>
-			<tr>
-				<td>--max-clearline</td>
-				<td>-mc</td>
-				<td>-1</td>
-			</tr>
-			<tr>
-				<td>--max-softdrop</td>
-				<td>-ms</td>
-				<td>-1</td>
-			</tr>
-			<tr>
-				<td>--last-softdrop</td>
-				<td>-l</td>
-				<td>0</td>
-			</tr>
-			<tr>
-				<td>--mirror</td>
-				<td>-m</td>
-				<td>false</td>
-			</tr>
-			</table>
-	</div>
-	<div style="flex: 40%; flex-direction: column;">
-		<div>
-			<table width="400px">
-				<tr>
-					<th colspan="3">Output Parameters</th>
-				</tr>
-				<tr>
-					<td>--priority</td>
-					<td>-P</td>
-					<td>false</td>
-				</tr>
-				<tr>
-					<td>--mode</td>
-					<td>-M</td>
-					<td>normal</td>
-				<tr>
-					<td>--output-base</td>
-					<td>-ob</td>
-					<td>output/cover.csv</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<table  width="400px">
-				<tr>
-					<th colspan="3">Miscellaneous Parameters</th>
-				</tr>
-				<tr>
-					<td>--starting-b2b</td>
-					<td>-sb</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>--log-path</td>
-					<td>-lp</td>
-					<td>output/last_output.txt</td>
-				</tr>
-				<tr>
-					<td>--field-path</td>
-					<td>-fp</td>
-					<td>input/field.txt</td>
-				</tr>
-				<tr>
-					<td>--patterns-path</td>
-					<td>-pp</td>
-					<td>input/patterns.txt</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+<div style="display: flex; flex-direction: column;">
+	<table>
+		<tr>
+			<th colspan="3">Input Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--tetfu</td>
+			<td>-t</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>--page</td>
+			<td>-P</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>--patterns</td>
+			<td>-p</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>--hold</td>
+			<td>--H</td>
+			<td>true</td>
+		</tr>
+		<tr>
+			<td>--drop</td>
+			<td>-d</td>
+			<td>softdrop</td>
+		</tr>
+		<tr>
+			<td>--max-clearline</td>
+			<td>-mc</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>--max-softdrop</td>
+			<td>-ms</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>--last-softdrop</td>
+			<td>-l</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>--mirror</td>
+			<td>-m</td>
+			<td>false</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="3">Output Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--priority</td>
+			<td>-P</td>
+			<td>false</td>
+		</tr>
+		<tr>
+			<td>--mode</td>
+			<td>-M</td>
+			<td>normal</td>
+		<tr>
+			<td>--output-base</td>
+			<td>-ob</td>
+			<td>output/cover.csv</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="3">Miscellaneous Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--starting-b2b</td>
+			<td>-sb</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>--log-path</td>
+			<td>-lp</td>
+			<td>output/last_output.txt</td>
+		</tr>
+		<tr>
+			<td>--field-path</td>
+			<td>-fp</td>
+			<td>input/field.txt</td>
+		</tr>
+		<tr>
+			<td>--patterns-path</td>
+			<td>-pp</td>
+			<td>input/patterns.txt</td>
+		</tr>
+	</table>
 </div>
 
 ___
@@ -242,3 +253,6 @@ An **example CSV output** of the cover command.
 The CSV output lists the first column for the patterns used, and extra colums are allocated for every fumen in order.
 - `X`: the fumen is not buildable for the equivalent pattern.
 - `O`: the fumen is buildable for the equivalent pattern.
+___
+## Special Uses
+1. Cover's output can be converted into an [[sfinder-docs/sfinder path|sfinder path output]] to be used to find [[sfinder-docs/custom minimals|custom minimals]], such as Quad PC minimals or T-Spin minimals.

@@ -5,7 +5,7 @@ tags:
 ---
 <meta name="description" content="Description, installation, and usage of programs that will allow you to find minimals based on a cover.csv output with Hillosanation's Cover-To-Path program." />
 <style>
-header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 5vw;}
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>

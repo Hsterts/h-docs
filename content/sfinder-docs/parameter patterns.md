@@ -3,6 +3,13 @@ title: "Parameter: Patterns"
 tags:
 - Solution Finder
 ---
+<meta name="description" content="Detailing the pattern specification for Knewjade's solution finder." />
+<style>
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
+body{display: flex; justify-content: center;}
+.singlePage{width: -webkit-fill-available; max-width: 700px;}
+</style>
+
 The **--patterns** parameter for [[sfinder-docs/solution-finder|solution-finder]] is one of the harder parameters to understand. 
 **Patterns**, in this case, is synonymous with **queues**, but potentially more broadly defined. This page is dedicated to providing a thorough explanation and examples on the various aspects and methods of specifying patterns.
 

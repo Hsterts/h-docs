@@ -1,11 +1,13 @@
 ---
 title: "Solution Finder: Path"
 ---
+<meta name="description" content="Documentation for solution finder's path command">
 <style>
-header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 5vw;}
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>
+
 [[sfinder-docs/solution-finder|Solution Finder]]'s **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
@@ -43,7 +45,7 @@ ___
 - By default, the output is in `html`.
 - With `--format html` (the default), there are two outputs (if `--max-layer` is not specified):
 	- `path_unique.html` contains a list of all the possible solves found by sfinder.
-	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[minimals|this page]].
+	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[sfinder-docs/minimals|this page]].
 - `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with nonsensical text</u>. Some more info about different csv outputs [[#Example Commands and Outputs|here]].
 
 **Max Layer** (--max-layer, -L): refers to the outputs of path when using the **html format**.
@@ -126,9 +128,15 @@ ___
 			<td>softdrop</td>
 		</tr>
 	</table>
+	<br>
 	<table>
 		<tr>
 			<th colspan="3">Output Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
 		</tr>
 		<tr>
 			<td>--format</td>
@@ -151,9 +159,15 @@ ___
 			<td>no</td>
 		</tr>
 	</table>
+	<br>
 	<table>
 		<tr>
 			<th colspan="3">Miscellaneous Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
 		</tr>
 		<tr>
 			<td>--output-base</td>
@@ -263,21 +277,16 @@ No line erasure vs with line erasure:
 <div style="display: flex; justify-content: space-around">
 	<div>
 		<figure>
-		<fumen>v115@9gD8zhF8ywG8g0wwH8i0C8JeAgH</fumen>		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
+		<fumen clipboard="false">v115@9gD8zhF8ywG8g0wwH8i0C8JeAgH</fumen>		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
 		</figure>
 	</div>
 	<div>
 		<figure>
-		<fumen>v115@9gD8zhF8i0G8RpH8Rpg0C8JeAgH</fumen>
+		<fumen clipboard="false">v115@9gD8zhF8i0G8RpH8Rpg0C8JeAgH</fumen>
 		<figcaption style="text-align: center;">Solve with line erasure</figcaption>
 		</figure>
 	</div>
 </div>
-
-Actual links to the output html:
-- 
-- <a href="../attachments_sfinder/path_unique.html">Unique solutions (path_unique.html)</a>
-- <a href="../attachments_sfinder/path_minimal.html">Minimal solutions (path_minimal.html)</a>
 
 2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
 ```YAML {title="CSV Solution Sample Output"}
@@ -308,3 +317,6 @@ ILZ, # pieces used
 v115@9gD8zhF8ilG8BtH8glBtC8JeAgWDA6SdBA, # solutions that use these pieces
 ZSIL;TZIL;... # queues the solutions work for
 ```
+___
+## Special Uses
+1. One of path's most important uses is as an input file for finding various types of [[sfinder-docs/minimals|minimals]].

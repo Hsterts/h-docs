@@ -5,7 +5,7 @@ tags:
 ---
 <meta name="description" content="The different kinds of minimals and how to generate them." />
 <style>
-header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 5vw;}
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>

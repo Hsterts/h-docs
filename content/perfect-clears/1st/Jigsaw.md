@@ -1,8 +1,9 @@
 ---
 title: "Jigsaw"
 ---
+<meta name="description" content="A perfect clear opener on-par with PCO in terms of difficulty but with better scoring or damage.">
 
-Jigsaw is a high scoring first, sacrificing solve% for scoring. It has a 100% build chance, considering mirrors, and the less efficient alternate build.
+Jigsaw is a pair of two builds and their mirrors used as a high-scoring first PC or opener. It has a 100% build chance, considering mirrors, and the less efficient alternate build.
 
 <fumen>
 v115@Chwwi0whEexwQ4g0whilRpBtR4whglBeRpwwBtQ4wh?JeAgWMAU9rSAS423DnN8nE

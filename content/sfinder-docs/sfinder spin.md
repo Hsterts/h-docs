@@ -1,7 +1,14 @@
 ---
 title: "Solution Finder: Spin"
 ---
-[[sfinder-docs/solution-finder|Solution Finder]]'s **Spin** command outputs all the ways to get a specified spin (TS0, TSS, TSD, and Mini Variants) from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
+<meta name="description" content="Documentation for solution finder's spin command" />
+<style>
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
+body{display: flex; justify-content: center;}
+.singlePage{width: -webkit-fill-available; max-width: 700px;}
+</style>
+
+[[sfinder-docs/soluton-finder|Solution Finder]]'s **Spin** command outputs all the ways to get a specified spin (TS0, TSS, TSD, and Mini Variants) from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar spin --tetfu <fumen> --patterns <pattern>
 ```

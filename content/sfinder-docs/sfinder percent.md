@@ -1,6 +1,13 @@
 ---
 title: "Solution Finder: Percent"
 ---
+<meta name="description" content="Documentation for solution finder's percent command">
+<style>
+header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
+body{display: flex; justify-content: center;}
+.singlePage{width: -webkit-fill-available; max-width: 700px;}
+</style>
+
 Solution Finder's **Percent** command outputs the probability of getting a perfect clear from a **specified field**, given a specified **pattern**. This output is written in the terminal and the specified **log path**.
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar percent --tetfu <fumen> --patterns <pattern>
@@ -52,95 +59,99 @@ ___
 - `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 ___
 ## Summary
-<div style="display: flex; justify-content: space-around;''">
-	<div style="flex: 50%">
-		<table width="40%">
-			<tr>
-				<th colspan="3">Input Parameters</th>
-			</tr>
-			<tr>
-				<th>Parameter</th>
-				<th>Shorthand</th>
-				<th>Default</th>
-			</tr>
-			<tr>
-				<td>--tetfu</td>
-				<td style="text-align: center;">-t</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--page</td>
-				<td style="text-align: center;">-P</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>--clear-line</td>
-				<td style="text-align: center;">-c</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>--patterns</td>
-				<td style="text-align: center;">-p</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--hold</td>
-				<td style="text-align: center;">--H</td>
-				<td>use</td>
-			</tr>
-			<tr>
-				<td>--drop</td>
-				<td style="text-align: center;">-d</td>
-				<td>softdrop</td>
-			</tr>
+<div style="display: flex; flex-direction: column;">
+	<table>
+		<tr>
+			<th colspan="3">Input Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--tetfu</td>
+			<td style="text-align: center;">-t</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>--page</td>
+			<td style="text-align: center;">-P</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>--clear-line</td>
+			<td style="text-align: center;">-c</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>--patterns</td>
+			<td style="text-align: center;">-p</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>--hold</td>
+			<td style="text-align: center;">--H</td>
+			<td>use</td>
+		</tr>
+		<tr>
+			<td>--drop</td>
+			<td style="text-align: center;">-d</td>
+			<td>softdrop</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="3">Output Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--tree-depth</td>
+			<td style="text-align: center;">-td</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>--failed-count</td>
+			<td style="text-align: center;">-fc</td>
+			<td>100</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="3">Miscellaneous Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--log-path</td>
+			<td style="text-align: center;">-lp</td>
+			<td>output/last_output.txt</td>
+		</tr>
+		<tr>
+			<td>--field-path</td>
+			<td style="text-align: center;">-fp</td>
+			<td>input/field.txt</td>
+		</tr>
+		<tr>
+			<td>--patterns-path</td>
+			<td style="text-align: center;">-pp</td>
+			<td>input/patterns.txt</td>
+		</tr>
+		<tr>
+			<td>--threads</td>
+			<td style="text-align: center;">-th</td>
+			<td>-1</td>
+		</tr>
 			</table>
-	</div>
-	<div style="flex: 40%; flex-direction: column;">
-		<div>
-			<table width="400px">
-				<tr>
-					<th colspan="3">Output Parameters</th>
-				</tr>
-				<tr>
-					<td>--tree-depth</td>
-					<td style="text-align: center;">-td</td>
-					<td>3</td>
-				</tr>
-				<tr>
-					<td>--failed-count</td>
-					<td style="text-align: center;">-fc</td>
-					<td>100</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<table  width="400px">
-				<tr>
-					<th colspan="3">Miscellaneous Parameters</th>
-				</tr>
-				<tr>
-					<td>--log-path</td>
-					<td style="text-align: center;">-lp</td>
-					<td>output/last_output.txt</td>
-				</tr>
-				<tr>
-					<td>--field-path</td>
-					<td style="text-align: center;">-fp</td>
-					<td>input/field.txt</td>
-				</tr>
-				<tr>
-					<td>--patterns-path</td>
-					<td style="text-align: center;">-pp</td>
-					<td>input/patterns.txt</td>
-				</tr>
-				<tr>
-					<td>--threads</td>
-					<td style="text-align: center;">-th</td>
-					<td>-1</td>
-				</tr>
-			</table>
-		</div>
-	</div>
 </div>
 
 ___

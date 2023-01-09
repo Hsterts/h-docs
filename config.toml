@@ -6,6 +6,7 @@ disablePathToLower = true
 ignoreFiles = [
     "/content/templates/*",
     "/content/private/*",
+    "/content/sfinder-docs/sfinder spin.md"
 ]
 summaryLength = 20
 paginate = 10

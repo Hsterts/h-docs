@@ -1,7 +1,9 @@
 ---
 title: Perfect Clear Opener
 ---
-Shortened as PCO. An opener for getting a perfect clear. The build rate is 100% if an [[#alternative build]] is considered.
+<meta name="description" content="The most widely-used PC opener.">
+
+Shortened as PCO. An opener for getting a perfect clear. The build rate is 100% if an [[#alternative builds|alt built]] is considered.
 
 **6-Piece (I held) PCO Sol%**: 84.64%
 
