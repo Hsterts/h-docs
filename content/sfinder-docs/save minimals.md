@@ -8,13 +8,23 @@ tags:
 header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
+.minimal-graphic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{font-size: 1.5em; margin: 0.5em;}
+@media all and (max-width: 600px){
+    .minimal-graphic{flex-direction: column;}
+    .arrow{transform: rotate(90deg);}
+}
 </style>
 
 ## Save Minimals
 Save minimals are strict minimals, but **saved pieces are prioritized**. That means the program would rather settle for a 3-solution set that has 100% Save <span class="mino">T</span> over a 2-solution set that has 100% Save <span class="mino">O</span> (if you tell it to do so).
 
-The program currently being used can prioritize multiple saves. If you ask for save T then O minimals, the solution set will maximize save <span class="mino">T</span> before finding solutions with the next specified save, and so on.
-<div style="display: flex; align-items: center; justify-content: center;">
+The program currently being used can prioritize multiple saves. If you ask for save <span class="mino">T</span> then <span class="mino">O</span> minimals, the solution set will maximize save <span class="mino">T</span> before finding solutions with the next specified save, and so on.
+<div class="minimal-graphic">
 <table style="width: auto;">
     <tr><th colspan=6>Solution Covers</th></tr>
     <tr style="height: 25px">
@@ -58,7 +68,7 @@ The program currently being used can prioritize multiple saves. If you ask for s
         <td style="width: 25px; padding: 0; background: var(--callout-note)"></td>
     </tr>
 </table>
-<div><p style="font-size: 1.5em; margin: 0.5em;">></p></div>
+<div><p class="arrow">></p></div>
 <table style="width: auto;">
     <tr><th colspan=6>Saves</th></tr>
     <tr style="height: 25px">
@@ -140,7 +150,7 @@ For most use cases, all you need for specifying wanted saves are:
     - As an example, using **`-w "T,O"`** may find a 3-solution set that saves 100% Save <span class="mino">T</span>, while **`-w "T||O"`** may find a 2-solution set that saves 50% <span class="mino">T</span> and 50% <span class="mino">O</span>.
 ___
 ## Example Path and Filter Commands
-<div style="display: flex; align-items: center;">
+<div class="minimal-graphic" style="display: flex; align-items: center;">
 <p>Here's an example run on how to get save minimals starting from generating the path file. We'll be getting the Save <span class="mino">O</span> minimals for a three-piece 2nd PC setup. This setup in particular has 100% Save <span class="mino">O</span> potential.</p>
 <div style="flex-shrink: 0"><figfumen clipboard="false">v115@LhA8GeC8FeD8AeD8JeAgH</fumen></div>
 </div>

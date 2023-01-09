@@ -8,6 +8,16 @@ tags:
 header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
+.minimal-graphic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{font-size: 1.5em; margin: 0.5em;}
+@media all and (max-width: 600px){
+    .minimal-graphic{flex-direction: column;}
+    .arrow{transform: rotate(90deg);}
+}
 </style>
 
 ## Strict Minimals
@@ -15,7 +25,7 @@ Strict minimals are **the smallest possible covering set for a given set of solu
 
 Here's an example diagram of strict minimals' output. It's not illustrative of how it actually finds the set because that's a tad bit complicated, but it finds that **only solutions A and E are necessary** to maximize cover, as opposed to sfinder requiring solutions A, C, and E.
 
-<div style="display: flex; align-items: center; justify-content: center;">
+<div class="minimal-graphic">
 <table style="width: auto;">
     <tr><th colspan=6>Solution Covers</th></tr>
     <tr style="height: 25px">
@@ -59,7 +69,7 @@ Here's an example diagram of strict minimals' output. It's not illustrative of h
         <td style="width: 25px; padding: 0; background: var(--callout-note)"></td>
     </tr>
 </table>
-<div><p style="font-size: 1.5em; margin: 0.5em;">></p></div>
+<div><p class="arrow">></p></div>
 <table style="width: auto;">
     <tr><th colspan=6>Strict</th></tr>
     <tr style="height: 25px">
@@ -125,7 +135,7 @@ Solution finder's [[sfinder-docs/sfinder path.md|Path Command]] is used to produ
     - Using the makeMinimals Script is straight-forward. Extract it into the same folder `path_minimal_strict.md` is in, then enter `py true_minimal.py` onto a terminal.
 ___
 ## Example Path and Strict-Minimal Commands
-<div style="display: flex; align-items: center;">
+<div class="minimal-graphic" style="display: flex; align-items: center;">
 <p>Here's an example run on how to get strict minimals starting from generating the path file.</p>
 <div style="flex-shrink: 0"><figfumen clipboard="false">v115@LhA8GeC8FeD8AeD8JeAgH</fumen></div>
 </div>

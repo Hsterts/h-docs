@@ -21,7 +21,7 @@ This is currently done through [SaNoy's](https://github.com/SaNoyGit/) **Cover-t
 2. Download the [unglueFumen script](https://cdn.discordapp.com/attachments/853378199525916732/982998615909871646/unglueFumen.js) and place it in the folder where `sfinder.jar` is.
 ___
 ## Example Path and Usage
-<div style="display: flex; align-items: center;">
+<div class="minimal-graphic" style="display: flex; align-items: center;">
 <div><p>
     We're going to get the minimal <strong>Quad PC</strong> solutions for this particular board. To do this we'll:
     <ol>

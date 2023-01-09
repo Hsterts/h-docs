@@ -8,13 +8,23 @@ tags:
 header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
+.minimal-graphic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{font-size: 1.5em; margin: 0.5em;}
+@media all and (max-width: 600px){
+    .minimal-graphic{flex-direction: column;}
+    .arrow{transform: rotate(90deg);}
+}
 </style>
 
 ## Solution Finder's Minimals
 Solution finder's [[sfinder-docs/sfinder path.md|Path Command]] has an HTML output called `path_minimal.html`, wherein all possible solutions are sorted by cover then scanned from highest to lowest cover, **removing all solutions whose cover has already been covered by previous setups**.
 
 Here's an example diagram of how sfinder minimals work. **sfinder finds that solutions A, C, and E are necessary** to maximize cover, as they cover new queues that aren't covered by the ones before them.
-<div style="display: flex; align-items: center; justify-content: center;">
+<div class="minimal-graphic">
 <table style="width: auto;">
     <tr><th colspan=6>Solution Covers</th></tr>
     <tr style="height: 25px">
@@ -58,7 +68,7 @@ Here's an example diagram of how sfinder minimals work. **sfinder finds that sol
         <td style="width: 25px; padding: 0; background: var(--callout-note)"></td>
     </tr>
 </table>
-<div><p style="font-size: 1.5em; margin: 0.5em;">></p></div>
+<div><p class="arrow">></p></div>
 <table style="width: auto;">
     <tr><th colspan=6>sfinder</th></tr>
     <tr style="height: 25px">
@@ -106,7 +116,7 @@ Strict minimals are **the smallest possible covering set for a given set of solu
 You can find out how to find strict minimals from [[sfinder-docs/strict minimals|this page on strict minimals]].
 
 Here's an example diagram of strict minimals' output. It's not illustrative of how it actually finds the set because that's a tad bit complicated, but it finds that **only solutions A and E are necessary** to maximize cover, as opposed to sfinder requiring solutions A, C, and E.
-<div style="display: flex; align-items: center; justify-content: center;">
+<div class="minimal-graphic">
 <table style="width: auto;">
     <tr><th colspan=6>Solution Covers</th></tr>
     <tr style="height: 25px">
@@ -150,7 +160,7 @@ Here's an example diagram of strict minimals' output. It's not illustrative of h
         <td style="width: 25px; padding: 0; background: var(--callout-note)"></td>
     </tr>
 </table>
-<div><p style="font-size: 1.5em; margin: 0.5em;">></p></div>
+<div><p class="arrow">></p></div>
 <table style="width: auto;">
     <tr><th colspan=6>Strict</th></tr>
     <tr style="height: 25px">
@@ -199,7 +209,7 @@ Save minimals are strict minimals, but **saved pieces are prioritized**. That me
 You can find out more on how to find save minimals from [[sfinder-docs/save minimals|this page on save minimals]].
 
 The program currently being used can prioritize multiple saves. If you ask for save <span class="mino">T</span> then <span class="mino"></span> minimals, the solution set will maximize save <span class="mino">T</span> before finding solutions with the next specified save, and so on.
-<div style="display: flex; align-items: center; justify-content: center;">
+<div class="minimal-graphic">
 <table style="width: auto;">
     <tr><th colspan=6>Solution Covers</th></tr>
     <tr style="height: 25px">
@@ -243,7 +253,7 @@ The program currently being used can prioritize multiple saves. If you ask for s
         <td style="width: 25px; padding: 0; background: var(--callout-note)"></td>
     </tr>
 </table>
-<div><p style="font-size: 1.5em; margin: 0.5em;">></p></div>
+<div><p class="arrow">></p></div>
 <table style="width: auto;">
     <tr><th colspan=6>Saves</th></tr>
     <tr style="height: 25px">
