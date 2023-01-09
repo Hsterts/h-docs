@@ -5,7 +5,4 @@ Yet. Another. Documentation. Website. It's mostly a hobby project to kill time, 
 1. [[sfinder-docs/solution-finder|Solution-Finder]]
 	- Learn about the most powerful tool for Tetris-related research!
 2. [[perfect-clears/perfect-clears_index|Setup Information]]
-	- Rithsagea needs a life :D
 ___
-# Test
-<fumen data-code="v115@HhglBeQ4FeglBtR4CeRphlBtQ4CeRpJeAgH"/>
