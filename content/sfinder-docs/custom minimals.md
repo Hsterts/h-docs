@@ -14,7 +14,7 @@ body{display: flex; justify-content: center;}
 A special method of generating minimals, where you can get minimal sets for **maximizing a setup's quad clear chance, T-Spin chance, etc.** by converting solution finder's  [[sfinder-docs/sfinder cover.md|cover]] output into a `path.csv` file, allowing [[sfinder-docs/strict minimals|sfinder-strict-minimal]] to work its magic.
 ___
 ## Finding Custom Cover-Based Minimals
-This is currently done through [SaNoy's](https://github.com/SaNoyGit/) **Cover-to-Path Script**.
+This is currently done through [Hillosanation's](https://github.com/Hillosanation/) **Cover-to-Path Script**.
 
 #### Downloading:
 1. Download the [Cover-to-Path script](https://cdn.discordapp.com/attachments/569728778985537587/982997795986350110/cover-to-path.py) and place it in the folder where `sfinder.jar` is.
@@ -115,7 +115,7 @@ And that's your output. You can use other `--mode` values for cover to get diffe
 		<h4>References</h4>
 		<ul>
             <li>
-                <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/SaNoyGit/">Hillosanation</a><br>
+                <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/Hillosanation/">Hillosanation</a><br>
                 <ul><li><a href="https://cdn.discordapp.com/attachments/569728778985537587/982997795986350110/cover-to-path.py">Cover-To-Path Script</a></li></ul>
                 <ul><li><a href="https://cdn.discordapp.com/attachments/853378199525916732/982998615909871646/unglueFumen.js">Unglue Fumen Script</a></li></ul>
             </li>

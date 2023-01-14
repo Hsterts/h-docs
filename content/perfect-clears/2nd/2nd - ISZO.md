@@ -65,7 +65,7 @@ ___
 			<p>The <strong>See <span class="mino">L</span> 3p</strong> ISZO setup. Only used when you can see <span class="mino">L</span> (<span title="2160/2160">100.00%</span>), or when you can't see both of <span class="mino">LJ</span> (<span title="1440/1440">100.00%</span>). Otherwise, its sol% drops down to <span title="5032/5040">99.84%</span>. Mirror accordingly.
 				<ul>
 					<li>
-						<a href="#early-i">Early<span class="mino">I</span></a>, <a href="#ls-t">See<span class="mino">LS</span></a>, and <a href="#ts-o">See<span class="mino">TS</span></a> share the <span class="mino">SZO</span> placements this setup uses. They all place the leftover <span class="mino">I</span> piece the same.
+						<a href="#i-lj-t">Early<span class="mino">I</span></a>, <a href="#ls-t">See<span class="mino">LS</span></a>, and <a href="#ts-o">See<span class="mino">TS</span></a> share the <span class="mino">SZO</span> placements this setup uses. They all place the leftover <span class="mino">I</span> piece the same.
 					</li>
 				</ul>
 			</p>
@@ -163,8 +163,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
-					<p>
-						Easy to think of as a three-dimensional lime. Similar to the <a href="i-lj-t">See <span class="mino">I</span> QB</a>.
+					<p>`
+						Easy to think of as a three-dimensional lime. Similar to the <a href="#i-lj-t">Early <span class="mino">I</span> QB</a>.
 					</p>
 				</div>
 			</div>
@@ -182,7 +182,7 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
 					<p>
-						The setup is identical to the <a href="#ls-o">See <span class="mino">LS</span> QB</a>, but swaps out <span class="mino">L</span> for <span class="mino">T</span>
+						The setup is identical to the <a href="#ls-t">See <span class="mino">LS</span> QB</a>, but swaps out <span class="mino">L</span> for <span class="mino">T</span>
 					</p>
 				</div>
 			</div>

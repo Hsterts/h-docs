@@ -166,7 +166,7 @@ ___
 <hr>
 
 ## Queue-Based Setups
-TISZ's queue-based setups are **practical** and **can be easily learned**. Not counting mirrors, <u>you only need to learn 5 setups</u> (not including <a href="#o-sz">See O</a>) <u>to reach 100% cover</u>. Additionally, the queue-based setups are mostly broken-apart versions of the general setups.
+TISZ's queue-based setups are **practical** and **can be easily learned**. Not counting mirrors, <u>you only need to learn 5 setups</u> (not including <a href="#o-sz">See<span class="mino">O</span></a>) <u>to reach 100% cover</u>. Additionally, the queue-based setups are mostly broken-apart versions of the general setups.
 <hr class="small">
 <center>
 	<div class="second-standard-queuebased-body">
