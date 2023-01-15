@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+{{ partial "head.html" . }}
+  <head>
+      <meta name="description" content="About h-docs and acknowledgements">
+      {{$about := resources.Get "styles/_about.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
+      <link href="{{$about.Permalink}}" rel="stylesheet" id="theme-link">  
+  </head>
+  <header>
+    <h1 class="page-title" id="page-title"><a href="/h-docs/">h-docs</a></h1>
+    {{ partial "configs.html" . }}
+    </header>  
+  <body>
+    {{.Content}}
+  </body>
+</html>

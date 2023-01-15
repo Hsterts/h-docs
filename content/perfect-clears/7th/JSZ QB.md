@@ -1,4 +1,5 @@
 ---
+title: JSZ Queue-Based Setups
 aliases: ["LSZ QB"]
 ---
 # Notes

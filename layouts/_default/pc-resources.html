@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+{{ partial "head.html" . }}
+  <head>
+    <meta name="description" content="Resources for everything PC related!">
+    {{$pcResources := resources.Get "styles/_pcResources.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
+    <link href="{{$pcResources.Permalink}}" rel="stylesheet" id="theme-link">
+    {{ $resourcesJS := resources.Get "js/resources.js" | resources.Fingerprint "md5" |
+    resources.Minify }}
+    <script defer src="{{$resourcesJS.Permalink}}"></script>
+  </head>
+  <header>
+    <h1 class="page-title" id="page-title"><a href="https://hsterts.github.io/h-docs/">h-docs</a></h1>
+    {{partial "configs.html" .}}
+  </header>  
+  <body>
+    {{ partial "search.html" . }}
+    <div class="singlePage">
+      <div id = "resource-panels-body">
+        <div id = "resource-panels">
+          <div class = "panel">
+            <h1>PC Resources</h1>
+            <div id = "panel-links">
+                <div id="search-icon">
+                    <p>{{ i18n "search"}} h-docs</p>
+                    <svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">{{ i18n "search_icon" }}</title><desc id="desc">{{ i18n "icon_search" }}</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+                </div>
+                <div class = "panel-link" onclick="seekPanel(2)">
+                    <h2>Practice Resources</h2>
+                </div>
+                <div class = "panel-link" onclick="seekPanel(3)">
+                  <h2>External Setup Resources</h2>
+                </div>
+                <div class = "panel-link" onclick="seekPanel(4)">
+                    <h2>Research Resources</h2>
+                </div>
+                <div class = "panel-link" onclick="seekPanel(5)">
+                    <h2>Miscellaneous Resources</h2>
+                </div>
+                <div class = "panel-link" onclick="seekPanel(6)">
+                    <h2>Tetris Clients</h2>
+                </div>
+            </div>
+          </div>
+          {{ .Content }}
+        </div>
+        <div id = "left-nav">
+          <button class = "nav-button" onclick = "moveLeft()"><</button>
+        </div>
+        <div id = "right-nav">
+          <button class = "nav-button" onclick = "moveRight()">></button>
+        </div>
+      </div>
+      <!-- Contact Info -->
+      {{ partial "contact.html" . }}
+    </div>
+  </body>
+</html>

@@ -8,6 +8,14 @@ tags:
 header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
+.minimal-graphic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media all and (max-width: 600px){
+    .minimal-graphic{flex-direction: column;}
+}
 </style>
 
 ## Custom Cover-Based Minimals
@@ -22,17 +30,19 @@ This is currently done through [SaNoy's](https://github.com/SaNoyGit/) **Cover-t
 ___
 ## Example Path and Usage
 <div class="minimal-graphic" style="display: flex; align-items: center;">
-<div><p>
-    We're going to get the minimal <strong>Quad PC</strong> solutions for this particular board. To do this we'll:
-    <ol>
-        <li>Get all the unique solutions for the field through path.</li>
-        <li>Convert it all to their glued versions.</li>
-        <li>Run cover with <code>--mode tetris-end</code>.</li>
-        <li>Convert the <code>cover.csv</code> file to <code>path.csv</code>.</li>
-        <li>Run sfinder-strict-minimals.</li>
-    </ol>
-</p></div>
-<figfumen style="flex-shrink: 0" clipboard="false" height="9">v115@VgC8GeC8GeC8GeE8CeH8AeI8AeI8AeI8AeC8JeAgH</figfumen>
+    <div>
+        <p>
+            We're going to get the minimal <strong>Quad PC</strong> solutions for this particular board. To do this we'll:
+            <ol>
+                <li>Get all the unique solutions for the field through path.</li>
+                <li>Convert it all to their glued versions.</li>
+                <li>Run cover with <code>--mode tetris-end</code>.</li>
+                <li>Convert the <code>cover.csv</code> file to <code>path.csv</code>.</li>
+                <li>Run sfinder-strict-minimals.</li>
+            </ol>
+        </p>
+    </div>
+    <figfumen style="flex-shrink: 0" clipboard="false" height="9">v115@VgC8GeC8GeC8GeE8CeH8AeI8AeI8AeI8AeC8JeAgH</figfumen>
 </div>
 
 **Getting all the unique solutions**:
@@ -78,28 +88,28 @@ The result should tell you that you need **22 solutions**. This means that those
 Afterwards you can open the `path_minimal_strict.md` or get it through Marfung's makeMinimals script.
 
 <div style="text-align: center;">
-<fumen size="10" height="9" clipboard="false">v115@VgC8i0BthlC8Rpg0whBtglC8RpQ4ywglE8R4wwH8Q4?I8whI8whI8whC8JeAgWTADX7rDy4CwBFbU9AVVt2AFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8h0R4ilC8g0R4whglRpC8g0ywAtRpE8wwBtH8At?I8whI8whI8whC8JeAgWTADX7rDy4CwBFbU9AVVt2AFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8i0whQ4hlC8RpBtR4glC8Rpg0BtQ4glE8ywH8ww?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AV1IEBFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8h0AtwhilC8g0BtR4RpC8g0AtR4glRpE8ywH8ww?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AV1IEBFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8RpQ4BthlC8RpR4BtglC8i0ywglE8g0Q4wwH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8h0R4AtRpC8g0R4BtRpC8g0ywilE8wwAtglH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8RpywAtg0C8RpglwwBtg0C8ilR4h0E8R4AtH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8glQ4ywRpC8glR4wwg0RpC8hlBti0E8Q4BtH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8ilR4RpC8BtR4g0RpC8glBtwwi0E8ywH8whI8wh?I8whI8whC8JeAgWTADX7rDy4CwBFb85AQVk2AFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8RpBti0C8RpglBtR4C8ilwwR4g0E8ywH8whI8wh?I8whI8whC8JeAgWTADX7rDy4CwBFb85AQVk2AFrvAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8ywwhAtRpC8g0wwQ4BtRpC8i0AtilE8R4glH8Q4?I8whI8whI8whC8JeAgWSADX7rDy4CwBFbMOBuccRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8RpQ4whywC8RpR4AtwwglC8i0Q4ilE8g0BtH8At?I8whI8whI8whC8JeAgWSADX7rDy4CwBFbMOBuccRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8i0R4hlC8RpywAtglC8Rpg0wwBtglE8R4AtH8wh?I8whI8whI8whC8JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8h0BtilC8g0Q4ywRpC8g0R4wwglRpE8Q4BtH8wh?I8whI8whI8whC8JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8i0whBtglC8Rpg0R4BtC8RpR4ilE8ywH8wwI8wh?I8whI8whC8JeAgWSADX7rDy4CwBFb0KBOIjRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8g0R4whilC8R4BtglRpC8i0BtRpE8ywH8wwI8wh?I8whI8whC8JeAgWSADX7rDy4CwBFb0KBOIjRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8ywAtQ4hlC8g0wwBtR4glC8i0RpQ4glE8AtRpH8?whI8whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBuCqRAyfAA?A</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8h0AtQ4ywC8g0BtR4wwglC8g0AtRpilE8RpQ4H8?whI8whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBuCqRAyfAA?A</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8BtRpi0C8ilQ4ywC8glBtR4wwg0E8RpQ4H8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8ilRpR4C8ywAti0C8glwwBtR4g0E8AtRpH8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8ywRpR4C8ilAti0C8glwwBtR4g0E8AtRpH8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
-<fumen size="10" height="9" clipboard="false">v115@VgC8BtRpywC8ilQ4i0C8glBtR4wwg0E8RpQ4H8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8i0BthlC8Rpg0whBtglC8RpQ4ywglE8R4wwH8Q4?I8whI8whI8whC8JeAgWTADX7rDy4CwBFbU9AVVt2AFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8h0R4ilC8g0R4whglRpC8g0ywAtRpE8wwBtH8At?I8whI8whI8whC8JeAgWTADX7rDy4CwBFbU9AVVt2AFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8i0whQ4hlC8RpBtR4glC8Rpg0BtQ4glE8ywH8ww?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AV1IEBFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8h0AtwhilC8g0BtR4RpC8g0AtR4glRpE8ywH8ww?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AV1IEBFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8RpQ4BthlC8RpR4BtglC8i0ywglE8g0Q4wwH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8h0R4AtRpC8g0R4BtRpC8g0ywilE8wwAtglH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8RpywAtg0C8RpglwwBtg0C8ilR4h0E8R4AtH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8glQ4ywRpC8glR4wwg0RpC8hlBti0E8Q4BtH8wh?I8whI8whI8whC8JeAgWTADX7rDy4CwBFb85AQl2KBFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8ilR4RpC8BtR4g0RpC8glBtwwi0E8ywH8whI8wh?I8whI8whC8JeAgWTADX7rDy4CwBFb85AQVk2AFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8RpBti0C8RpglBtR4C8ilwwR4g0E8ywH8whI8wh?I8whI8whC8JeAgWTADX7rDy4CwBFb85AQVk2AFrvAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8ywwhAtRpC8g0wwQ4BtRpC8i0AtilE8R4glH8Q4?I8whI8whI8whC8JeAgWSADX7rDy4CwBFbMOBuccRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8RpQ4whywC8RpR4AtwwglC8i0Q4ilE8g0BtH8At?I8whI8whI8whC8JeAgWSADX7rDy4CwBFbMOBuccRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8i0R4hlC8RpywAtglC8Rpg0wwBtglE8R4AtH8wh?I8whI8whI8whC8JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8h0BtilC8g0Q4ywRpC8g0R4wwglRpE8Q4BtH8wh?I8whI8whI8whC8JeAgWSADX7rDy4CwBFb0KBusnRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8i0whBtglC8Rpg0R4BtC8RpR4ilE8ywH8wwI8wh?I8whI8whC8JeAgWSADX7rDy4CwBFb0KBOIjRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8g0R4whilC8R4BtglRpC8i0BtRpE8ywH8wwI8wh?I8whI8whC8JeAgWSADX7rDy4CwBFb0KBOIjRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8ywAtQ4hlC8g0wwBtR4glC8i0RpQ4glE8AtRpH8?whI8whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBuCqRAyfAA?A</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8h0AtQ4ywC8g0BtR4wwglC8g0AtRpilE8RpQ4H8?whI8whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBuCqRAyfAA?A</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8BtRpi0C8ilQ4ywC8glBtR4wwg0E8RpQ4H8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8ilRpR4C8ywAti0C8glwwBtR4g0E8AtRpH8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8ywRpR4C8ilAti0C8glwwBtR4g0E8AtRpH8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
+    <fumen size="10" height="9" clipboard="false">v115@VgC8BtRpywC8ilQ4i0C8glBtR4wwg0E8RpQ4H8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
 </div>
 
 And that's your output. You can use other `--mode` values for cover to get different outputs, like T-Spin minimals for a certain setup or things like that. Read more about it over at the [[sfinder-docs/sfinder cover|sfinder cover documentation]].

@@ -1,37 +1,70 @@
-// Add your own CSS here!
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Karla:wght@200;400;600;800&family=Montserrat:wght@200;400;600;800&family=Poppins:wght@200;400;600;800&display=swap');
 
 :root {
-  --light: #f7f9fc; //background
-  --dark: #161b22; //markdown heading
+  --font-headest: "Poppins";
+  --font-body: "Karla";
+  --font-header: "Montserrat";
+  --font-mono: "Fira Code";
+
+  --light-1: rgb(250, 250, 250);
+    // background
+    // page header background
+    // page settings background
+    // .mino background
+    // .stat background
+  --light-2: rgb(240, 240, 240);
+    // search bar background
+    // <code> background
+    // clipboard background
+    // solutions <details> background
+    // pc resources gradient background (edges)
+  --light-3: rgb(255, 255, 255);
+    // fumen figure background
+    // scroll bar background
+    // codeblock background
+  --light-4: rgb(230, 230, 230);
+    // graph outline
+    // backlinks outline
+    // box shadows
+    // fumen figure outline
+    // fumen image on-hover outline
+    // table outline
+    // small <hr> color
+    // codeblock outline
+    // scroll thumb color
+    // configs outline and setting svg colors
+  --dark-1: rgb(34, 34, 34);
+    // <h3>
+    // details summary
+    // normal <hr>
+  --dark-2: rgb(34, 34, 34);
+    // text (<p>, <ul>, <text>, <a>, <tr>, <td>, <li>, <ol>, <ul>)
+    // page title (in article)
+    // <h2>
+  --dark-3: rgb(191, 191, 191); //just an in-between of lightgray and gray
   --secondary: #6a78f5; //link
   --secondarybg: #6a78f520; //link background
   --tertiary: #5666f3; //title hover
   --visited: #af7dff; //visited node
   --primary: #f28482; //current node
-  --gray: #161b22; //text on page
-  --graygray: rgb(128, 128, 128); //just an in-between of lightgray and gray
-  --lightgray: #f0f0f0; //ctrl k background
-  --lightergray: #f0f0f0BB; //figure background
-  --outlinegray: #dadada; // graph outline
-  --fumen-background: #f8f8f8;
+  --fumen-background: rgb(248, 248, 248);
   --strong: #e1503a; //**text** color
   --million-rgbs-bar-color: var(--secondary);
 }
 
 [saved-theme="dark"] {
-  --light: #0d1117 !important;
-  --dark: #c9d1d9 !important;
+  --light-1: #0d1117 !important;
+  --light-2: #292633 !important;
+  --light-3: #292633BB !important;
+  --light-4: #3d3b63 !important;
+  --dark-1: #c9d1d9 !important;
+  --dark-2: #d4d4d4 !important;
+  --dark-3: rgb(128, 128, 128) !important;
   --secondary: #647ce0 !important;
   --secondarybg: #647ce020 !important;
   --tertiary: #9cc5fd !important;
   --visited: #4a575e !important;
   --primary: #f58382 !important;
-  --gray: #d4d4d4 !important;
-  --graygray: rgb(128, 128, 128) !important;
-  --lightgray: #292633 !important;
-  --lightergray: #292633BB !important;
-  --outlinegray: #3d3b63 !important;
   --fumen-background: #34325e !important;
   --strong: #ff6a67 !important;
 }
@@ -41,9 +74,9 @@
   font-family: var(--font-headest);
   font-weight: 800;
   font-size: 1.25em;
-  background-clip: text;
   background-image:  linear-gradient(0deg, #be5c4b 40%, #f88570 60%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -60,25 +93,30 @@
 }
 
 #configs{
-  background: var(--light);
+  background: var(--light-1);
   width: 2em;
   height: 2em;
   margin: 0 2em;
   display: inline-block;
   justify-content: center;
   border-radius: 1em;
-  outline: 1px solid var(--outlinegray);
+  outline: 1px solid var(--light-4);
   position: relative;
   svg{
-    fill: var(--outlinegray);
-    stroke: var(--dark);
+    fill: var(--dark-2);
+    stroke: var(--dark-1);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 32px;
     height: 1.625em;
     width: 1.625em;
     margin: 0.125em 0.125em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .settings-logo > svg{
+    fill: var(--light-4);
   }
   & > div{
     position: absolute;
@@ -94,9 +132,9 @@
   top: 110%;
   height: 0px;
   overflow-y: hidden;
-  background: var(--light);
+  background: var(--light-1);
   border-radius: 0.8125em;
-  // box-shadow: var(--light) 0px 4px 4px 4px;
+  // box-shadow: var(--light-1) 0px 4px 4px 4px;
   transition: all 0.2s ease-in;
 }
 
@@ -119,7 +157,7 @@
   .settings-logo{transform: rotate(90deg)};
   .page-settings{
     height: 440%;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
   }
   .mirror-logo, .rotation-logo, .grid-toggle-logo{
     opacity: 1;
@@ -140,16 +178,26 @@
 
 // Fumens, Minos, Solutions
 .fumen-figure{
-  background: var(--lightgray);
+  background: var(--light-3);
   padding: 5px 1%;
-  color: var(--gray);
-  // outline: 1px solid var(--outlinegray);
-  border-radius: 3px;
+  color: var(--dark-2);
+  outline: 1px solid var(--light-4);
+  border-radius: 4px;
   display: inline-flex;
   flex-direction: column;
-  margin: 1%;
+  margin: 0.5em;
+  position: relative;
+  &:hover .fumen-clipboard-button {
+    opacity: 1;
+    outline: 1px solid var(--light-4);
+  }
   .fumen-image{
-  background: var(--fumen-background);
+    transition: 0.2s;
+    outline: 1px solid transparent;
+    background: var(--fumen-background);
+    &:hover{
+      outline: 1px solid var(--light-4);
+    }
   }
 }
 
@@ -169,13 +217,13 @@ figcaption {
 
 .fumen-image{
   margin: 0.25em 0.5em;
-  outline: var(--dark);
+  outline: var(--dark-1);
 }
 
   //minos
 .mino {
   display: inline-flex;
-  background: var(--lightergray);
+  background: var(--light-1);
   padding: 1px;
   margin: 0 2px;
   vertical-align: middle;
@@ -196,48 +244,62 @@ summary {
   text-align: left;
   list-style: none;
   cursor: pointer;
-  background: var(--lightgray);
+  background: var(--light-3);
   border-radius: 4px;
   margin: -.5em -.5em  0;
   padding: .25em;
   padding-right: 2em;
+  transition: 0.2s;
 }
 
 details{
-  color: var(--dark);
+  color: var(--dark-1);
   margin: .5em;
   padding: .5em .5em 0;
   font: 1.25em var(--font-header);
   font-weight: 800;
-  border: 1px solid var(--outlinegray);
+  border: 1px solid var(--light-4);
   border-radius: 4px;
   div{text-align: center; width: 100%;}
   position: relative;
+  transition: 0.2s;
 }
 
 details summary::after{
   position: absolute;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
   content: '\25BC';
   padding: 0 0.5ch;
   transition: 0.2s;
-  color: var(--graygray);
+  color: var(--dark-3);
 }
+
+details:not(details[open]){
+  & summary:hover {
+    padding: 0.25em 0.25em 0.5em 0.25em;
+  }
+  & summary:hover:after{
+    color: var(--dark-1);
+  }
+}
+
 
 details[open]{
   padding: .5em;
-  & summary{margin-bottom: .5em;}
+  & summary{
+    margin-bottom: .5em;
+  }
   & summary::after{
     transform: rotate(-90deg);
+    top: revert;
+    color: var(--dark-1);
   }
 }
 
 // Text formatting
-h2, h1{
-  color: var(--gray);
-}
-
 strong {
   font-weight: 600;
   color: var(--strong);
@@ -268,14 +330,14 @@ hr.small {
   width: 75%;
   margin: 0.5em auto;
   height: 2px;
-  background-color: var(--outlinegray);
+  background-color: var(--light-4);
 }
 
 hr.vertical {
 width: 2px;
 margin: auto 0.25em;
 height: 75%;
-background-color: var(--outlinegray);
+background-color: var(--light-4);
 }
 
 // Scroll Bars
@@ -285,11 +347,11 @@ background-color: var(--outlinegray);
 }
 
 *::-webkit-scrollbar-track{
-  background: var(--lightergray);
+  background: var(--light-3);
 }
 
 *::-webkit-scrollbar-thumb{
-  background-color: var(--outlinegray);
+  background-color: var(--light-4);
   border-radius: 4px;
 }
 
@@ -308,11 +370,11 @@ background-color: var(--outlinegray);
   border-radius: 4px;
   height: 150px;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0.25em 1em;
-  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+  box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   @media all and (max-width: 1000px) {
     width: 80%;
     max-width: 500px;
@@ -336,12 +398,31 @@ footer{
 // Miscellaneous Page Bits
 // .chroma:focus{outline: none;}
 
+.result-card{
+  background-color: var(--light-3) !important;
+  margin: 0 0 0.5em 0 !important;
+  border: 1px solid var(--light-4) !important;
+  border-radius: 4px !important;
+}
+
+.result-card:last-of-type{
+  margin: 0 !important;
+}
+
+.result-card p{
+  display: none;
+}
+
+.result-card h3{
+  margin: 0;
+}
+
 // Second PC Pages
 .setup-body, .second-setup-body{
   padding-top: 0.5em;
   padding-bottom: 0.2em;
   border-radius: 4px;
-  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+  box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   margin: 1em 0;
 }
 
@@ -389,7 +470,7 @@ footer{
     min-height: 270px;
     margin: 0.25em;
     border-radius: 4px;
-    box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+    box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   }
   figcaption{
     text-align: left;
@@ -438,13 +519,13 @@ footer{
   position: relative;
   margin: 0;
   padding: 0;
-  color: var(--outlinegray);
+  color: var(--light-4);
   cursor: pointer;
 }
 
 .filled{
   font-style: normal;
-  color: var(--dark);
+  color: var(--dark-1);
 }
 
 .save-input{
@@ -462,10 +543,10 @@ footer{
   height: 15vw;
   min-height: 120px;
   max-height: 150px;
-  background: var(--lightgray);
+  background: var(--light-2);
   font-size: 1em;
   font-style: normal;
-  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+  box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   border-radius: 4px;
   z-index: 10000;
   cursor: default;
@@ -473,8 +554,8 @@ footer{
     display: none;
   }
   input[type="checkbox"]:checked + label img{
-    background: var(--lightergray);
-    box-shadow: var(--outlinegray) 0 0 4px 2px inset;
+    background: var(--light-3);
+    box-shadow: var(--light-4) 0 0 4px 2px inset;
     transform: scale(0.9);
   }
   label{
@@ -483,7 +564,7 @@ footer{
     img {
       width: 2em;
       height: 2em;
-      background: var(--light);
+      background: var(--light-1);
       cursor: pointer;
       user-select: none;
     }
@@ -499,7 +580,7 @@ footer{
   padding-top: 0.5em;
   padding-bottom: 0.2em;
   border-radius: 4px;
-  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+  box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   margin: 1em 0;
   position: relative;
 }
@@ -509,11 +590,13 @@ footer{
   font-family: var(--font-body);
   font-size: 1em;
   font-weight: 400;
-  color: var(--dark);
-  outline: 1px solid var(--outlinegray);
+  color: var(--dark-1);
+  outline: 1px solid var(--light-4);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 2px;
-  background: var(--light);
+  background: var(--light-1);
   width: 90%;
   margin: 0em;
   padding: 0.125em 1em;
@@ -570,24 +653,28 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
     border-radius: 4px;
     padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: var(--lightergray);
+    background: var(--light-3);
     img{
-      outline: 1px solid var(--outlinegray);
-      background: var(--light);
-      box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+      outline: 1px solid var(--light-4);
+      background: var(--light-1);
+      box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   
     }
   }
   .dpc-setup-info{
     grid-area: info;
     padding: 0.5em 2em;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
     border-radius: 4px;
     padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
@@ -603,10 +690,12 @@ footer{
   .dpc-setup-writeup{
     grid-area: writeup;
     padding: 0.5em 2em;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
     border-radius: 4px;
     width: 100%;
     padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .dpc-solutions-body{
@@ -628,11 +717,11 @@ footer{
     display: flex;
     flex-direction: row;
     width: 90%;
-    box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+    box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
     margin: 0.5em 0;
     padding: 0.5em;
     border-radius: 4px;
-    background: var(--lightgray);
+    background: var(--light-2);
     fumen{
       flex: 1;
       display: flex;
@@ -641,11 +730,11 @@ footer{
       margin: 0 0.5em;
     }
     .fumen-figure{
-      outline: 1px solid var(--outlinegray);
+      outline: 1px solid var(--light-4);
       margin: 0;
       padding: 0;
-      background: var(--light);
-      box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+      background: var(--light-1);
+      box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
     }
     .dpc-stats{
       flex: 1.5;
@@ -671,7 +760,7 @@ footer{
 
 .opener-solution-finder{
   padding: 1em;
-  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+  box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   border-radius: 4px;
   display: grid;
   padding: 1em 5%;
@@ -705,15 +794,17 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
     border-radius: 4px;
     padding: 0.25em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: var(--lightergray);
+    background: var(--light-3);
     img{
-      outline: 1px solid var(--outlinegray);
-      background: var(--light);
-      box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+      outline: 1px solid var(--light-4);
+      background: var(--light-1);
+      box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   
     }
   }
@@ -723,19 +814,23 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
     border-radius: 4px;
     padding: 0.25em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: var(--lightergray);
+    background: var(--light-3);
   }
   .opener-solution-finder-setup-info{
     grid-area: info;
-    outline: 1px solid var(--outlinegray);
+    outline: 1px solid var(--light-4);
     border-radius: 4px;
     padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: var(--lightergray);
+    background: var(--light-3);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -746,8 +841,10 @@ footer{
     padding: 0.5em 1em;
     border-radius: 4px;
     width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+    box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -755,15 +852,17 @@ footer{
       grid-template-columns: 1fr;
     }
     .solution-finder-output-card{
-      background: var(--lightgray);
+      background: var(--light-2);
       display: flex;
       flex-direction: row;
       width: 90%;
       margin: 0.5em 0em;
       align-items: center;
       padding: 0.5em 1em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+      box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
       @media all and (max-width: 800px){
         flex-direction: column;
       }
@@ -771,8 +870,8 @@ footer{
         flex: 1;
         text-align: center;
         .fumen-image{
-          background: var(--light);
-          outline: 1px solid var(--outlinegray);
+          background: var(--light-1);
+          outline: 1px solid var(--light-4);
         }
       }
       .solution-finder-result-stats{
@@ -798,7 +897,7 @@ footer{
   position: absolute;
   top: 0em;
   right: 1em;
-  color: var(--dark);
+  color: var(--dark-1);
   font-family: var(--font-headest);
   cursor: pointer;
   z-index: 1;
@@ -843,7 +942,7 @@ footer{
 
 .pc-solution-finder{
   padding: 1em;
-  box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+  box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
   border-radius: 4px;
   max-width: 1200px;
   @media all and (max-width: 900px){
@@ -859,12 +958,12 @@ footer{
     border-top-right-radius: 6px;
     padding: 0 1em;
     margin: 0;
-    border: 1px solid var(--outlinegray);
+    border: 1px solid var(--light-4);
     border-bottom: none;
   }
   .solution-finder-title{
     text-align: left;
-    background: var(--light);
+    background: var(--light-1);
     font-family: var(--font-headest);
     text-transform: uppercase;
     font-weight: 800;
@@ -874,7 +973,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid var(--outlinegray);
+    border: 1px solid var(--light-4);
     border-top: none;
     padding: 1em 2em;
     border-bottom-right-radius: 8px;
@@ -897,8 +996,8 @@ footer{
       }
       .solution-finder-display-image{
         margin: 0;
-        border: 1px solid var(--outlinegray);
-        background: var(--lightergray);
+        border: 1px solid var(--light-4);
+        background: var(--light-3);
         border-top-left-radius: 0;
         cursor: pointer;
         transition: 0.2s;
@@ -940,8 +1039,10 @@ footer{
         font-family: var(--font-headest);
         font-weight: 600;
         text-transform: uppercase;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
-        border: 1px solid var(--outlinegray);
+        border: 1px solid var(--light-4);
         border-radius: 8px;
         border-top-left-radius: 0;
         @media all and (max-width: 900px){
@@ -950,7 +1051,7 @@ footer{
         .solution-finder-input{
           flex: 0.75;
           background: var(--fumen-background);
-          outline: 1px solid var(--outlinegray);
+          outline: 1px solid var(--light-4);
           border: none;
           border-radius: 4px;
           resize: none;
@@ -958,7 +1059,7 @@ footer{
           font-size: 0.75em;
           font-family: var(--font-mono);
           text-transform: uppercase;
-          color: var(--dark);
+          color: var(--dark-1);
           height: 1.5em;
           padding: 0 1em;
           overflow-x: shown;
@@ -972,10 +1073,10 @@ footer{
   #solution-finder-outputs{
     text-align: center;
     .fumen-figure{
-      background: var(--lightergray);
+      background: var(--light-3);
       padding: 0.25em;
       margin: 0.125em;
-      color: var(--dark);
+      color: var(--dark-1);
       .fumen-image{
         margin: 0.125em 0.25em;
       }
@@ -1009,11 +1110,11 @@ footer{
   }
   .solution-finder-selection-title{
     text-align: center;
-    background: var(--light);
+    background: var(--light-1);
     border-radius: 6px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+    box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
     width: 20ch;
     padding: 0;
     margin: 0;
@@ -1027,8 +1128,8 @@ footer{
     justify-content:  center;
     border-radius: 10px;
     border-top-left-radius: 0;
-    background: var(--light);
-    box-shadow: var(--outlinegray) 0px 4px 6px -1px, var(--outlinegray) 0px 2px 4px -1px, var(--outlinegray) 0px -1px 6px -1px;
+    background: var(--light-1);
+    box-shadow: var(--light-4) 0px 4px 6px -1px, var(--light-4) 0px 2px 4px -1px, var(--light-4) 0px -1px 6px -1px;
     .selection-fumen{
       margin: 0.5em 1em;
       cursor: pointer;
@@ -1043,7 +1144,7 @@ footer{
       filter: brightness(100%);
     }
     .selection-fumen img{
-      outline: 1px solid var(--outlinegray);
+      outline: 1px solid var(--light-4);
       user-drag: none;
       user-select: none;
       -webkit-user-drag: none;

@@ -2,7 +2,7 @@
 /* Background */
 .chroma {
   overflow: hidden !important;
-  background-color: var(--lightgray) !important;
+  background-color: var(--light-3) !important;
 }
 
 /* LineTable */
@@ -10,6 +10,8 @@
   width: auto !important;
   overflow: auto !important;
   display: block !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--light-4) !important;
 }
 
 /* LineHighlight */

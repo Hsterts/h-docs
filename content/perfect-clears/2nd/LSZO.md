@@ -273,15 +273,15 @@ ___
 		<summary>Solutions</summary>
 		<h4>Minimals</h4>
 		<div class="no180">
-			<figfumen size="16">v115@9ghlwhRph0R4A8wwglwhRpg0R4B8xwwhRpg0D8wwgl?whRpE8JeAgWTADX7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
-			<figfumen size="16">v115@9gRph0ilR4A8Rpg0wwglAtR4B8RpxwBtD8Rpg0wwAt?E8JeAgWTADX7rDy4CwBFbsABW1ZOBFrvAA</figfumen>
-			<figfumen size="16">v115@9gilzhR4A8glywRpR4B8RpBtRpD8RpwwBtE8JeAgWT?ADX7rDy4CwBFbsABVlwHBFrvAA</figfumen>
-			<figfumen size="16">v115@9gRpBtywR4A8Rpg0BtwwR4B8RpzhD8Rpi0E8JeAgWT?ADX7rDy4CwBFbU9AZV2RBFrvAA</figfumen>
-			<figfumen size="16">v115@9gRph0wwzhA8Rpg0xwilB8RpBtwwglD8Rpg0BtE8Je?AgWTADX7rDy4CwBFbU9AS1Y9AFrvAA</figfumen>
-			<figfumen size="16">v115@9gRpwhQ4BtywA8RpwhR4BtwwB8RpwhilD8RpwhglQ4?E8JeAgWTADX7rDy4CwBFbU9AQVk2AFrvAA</figfumen>
-			<figfumen size="16">v115@9gwwzhh0R4A8xwilg0R4B8BtglRpg0D8wwBtRpE8Je?AgWTADX7rDy4CwBFb85ATFzABFrvAA</figfumen>
-			<figfumen size="16">v115@9gh0wwRpzhA8g0xwRpilB8g0R4RpglD8R4wwRpE8Je?AgWSADX7rDy4CwBFb0KBORsRAyfAAA</figfumen>
-			<figfumen size="16">v115@9gRpBtilR4A8Rpwwi0R4B8Rpxwglg0D8RpwwBtE8Je?AgWSADX7rDy4CwBFb0KBusnRAyfAAA</figfumen>
+			<figfumen size='16'>v115@9ghlwhRph0R4A8wwglwhRpg0R4B8xwwhRpg0D8wwgl?whRpE8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gRph0ilR4A8Rpg0wwglAtR4B8RpxwBtD8Rpg0wwAt?E8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gilzhR4A8glywRpR4B8RpBtRpD8RpwwBtE8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gRpBtywR4A8Rpg0BtwwR4B8RpzhD8Rpi0E8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gRph0wwzhA8Rpg0xwilB8RpBtwwglD8Rpg0BtE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gRpwhQ4BtywA8RpwhR4BtwwB8RpwhilD8RpwhglQ4?E8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gwwzhh0R4A8xwilg0R4B8BtglRpg0D8wwBtRpE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gh0wwRpzhA8g0xwRpilB8g0R4RpglD8R4wwRpE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gRpBtilR4A8Rpwwi0R4B8Rpxwglg0D8RpwwBtE8Je?AgH</figfumen>
 		</div>
 		<div class="with180">
 			<figfumen size="16">v115@9ghlwhRph0R4A8wwglwhRpg0R4B8xwwhRpg0D8wwgl?whRpE8JeAgWTADX7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
@@ -299,13 +299,17 @@ ___
 		<hr class="small">
 		<h4>Extras</h4>
 		<div class="no180">
-			<figfumen size="16">v115@9gBtilh0R4A8wwzhg0R4B8xwglRpg0D8wwBtRpE8Je?AgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2AR1wABFrvAA</figfumen>
-			<figfumen size="16">v115@9gh0wwzhR4A8g0xwglRpR4B8BtwwglRpD8g0BthlE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQV+ABFrvAA</figfumen>
-			<figfumen size="16">v115@9gBtilh0R4A8wwBtRpg0R4B8xwglRpg0D8wwzhE8Je?AgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBo?o2AQlPEBFrvAA</figfumen>
-			<figfumen size="16">v115@9ghlg0zhR4A8wwgli0AtR4B8xwRpBtD8wwglRpAtE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQVNEBFrvAA</figfumen>
-			<figfumen size="16">v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQVt2AFrvAA</figfumen>
-			<figfumen size="16">v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQVt2AFrvAA</figfumen>
-			<figfumen size="16">v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgWrAlEvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVAB?Boo2AQVt2AFrvAA</figfumen>
+			<figfumen size='16'>v115@9ghlg0zhR4A8wwgli0AtR4B8xwRpBtD8wwglRpAtE8?JeAgH</figfumen>
+			<figfumen size='16'>v115@9gzhilR4A8i0wwglAtR4B8RpxwBtD8Rpg0wwAtE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gi0zhR4A8wwilRpR4B8xwBtRpD8wwglg0BtE8JeAg?H</figfumen>
+			<figfumen size='16'>v115@9gh0wwzhR4A8g0xwglRpR4B8BtwwglRpD8g0BthlE8?JeAgH</figfumen>
+			<figfumen size='16'>v115@9gBtilh0R4A8wwBtRpg0R4B8xwglRpg0D8wwzhE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gh0wwwhilR4A8g0xwwhRpR4B8BtwwwhRpD8g0Btwh?glE8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gRpBtywR4A8RpzhR4B8Rpg0BtwwD8Rpi0E8JeAgH</figfumen>
+			<figfumen size='16'>v115@9gBtilh0R4A8wwzhg0R4B8xwglRpg0D8wwBtRpE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gi0wwilR4A8zhglAtR4B8RpxwBtD8Rpg0wwAtE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gi0wwilR4A8RpxwglAtR4B8Rpg0wwBtD8zhAtE8Je?AgH</figfumen>
+			<figfumen size='16'>v115@9gBtRpwwh0R4A8glBtxwg0R4B8glzhg0D8hlRpwwE8?JeAgH</figfumen>
 		</div>
 		<div class="with180">
 			<figfumen size="16">v115@9gRph0ilR4A8Rpg0wwglAtR4B8RpxwBtD8Rpg0wwAt?E8JeAgWsAlEvXEhoo2AmXyTASILdD2488AwNM2ABlClEFMV?ABBoo2ATBwKB3ngHB</figfumen>
@@ -423,7 +427,7 @@ ___
 </div>
 <hr>
 
-## Queue-Based Setups
+<!-- ## Queue-Based Setups
 ABCD's queue-based setups are (writeup)
 <hr class="small">
 <center>
@@ -439,7 +443,7 @@ ABCD's queue-based setups are (writeup)
 		</section>
 	</div>
 </center>
-<hr>
+<hr> -->
 <div id="solution-finder-base"></div>
 <hr>
 <div class="credits">

@@ -1,12 +1,4 @@
-// Replace this with your own font imports!
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Karla:wght@200;400;600;800&family=Montserrat:wght@200;400;600;800&family=Poppins:wght@200;400;600;800&display=swap');
-
-:root {
-  --font-headest: "Poppins";
-  --font-body: "Karla";
-  --font-header: "Montserrat";
-  --font-mono: "Fira Code";
-}
 
 // typography
 html {
@@ -35,14 +27,15 @@ body {
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
-  background-color: var(--light);
+  background-color: var(--light-1);
   transition: background-color 0.1s ease-in;
 }
 
 h1, h2, h3, h4, h5, h6, thead {
-  font-family: var(--font-header);
-  color: var(--dark);
-  font-weight: revert;
+  font-family: var(--font-headest);
+  color: var(--dark-1);
+  font-weight: 600;
+  letter-spacing: 0.1ch;
   margin: 0.5rem 0 0.5rem;
   padding: 1rem auto 1rem;
 
@@ -55,13 +48,13 @@ h1, h2, h3, h4, h5, h6, thead {
   font-family: var(--font-header);
   opacity: 0.8;
   transition: color 0.3s ease;
-  color: var(--dark);
+  color: var(--dark-1);
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
   font-family: var(--font-body);
-  color: var(--gray);
-  fill: var(--gray);
+  color: var(--dark-2);
+  fill: var(--dark-2);
   font-weight: revert;
   margin: revert;
   padding: revert;
@@ -79,7 +72,7 @@ tbody, li, p {
     & summary {
       cursor: zoom-in;
       font-family: var(--font-header);
-      color: var(--dark);
+      color: var(--dark-1);
       font-weight: 600;
     }
 
@@ -117,7 +110,7 @@ tbody, li, p {
 }
 
 table {
-  border: 1px solid var(--outlinegray);
+  border: 1px solid var(--light-4);
   width: 100%;
   padding: 1.5em;
   border-collapse: collapse;
@@ -125,7 +118,7 @@ table {
 
 td, th {
   padding: 0.2em 1em;
-  border: 1px solid var(--outlinegray);
+  border: 1px solid var(--light-4);
 }
 
 img {
@@ -236,12 +229,12 @@ article {
 
   & > li > a {
     border-radius: 8px;
-    border: var(--outlinegray) 1px solid;
-    padding: 0.2em 0.5em;
+    outline: var(--light-4) 1px solid;
+    padding: 0em 0.5em;
     &::before {
       content: "#";
       margin-right: 0.3em;
-      color: var(--outlinegray);
+      color: var(--tertiary);
     }
   }
 }
@@ -286,7 +279,7 @@ code {
   font-size: 0.85em;
   padding: 0.15em 0.3em;
   border-radius: 5px;
-  background: var(--lightgray);
+  background: var(--light-4);
 }
 
 @keyframes fadeIn {
@@ -308,8 +301,8 @@ hr {
   height: 2px;
   border-radius: 1px;
   border-width: 0;
-  color: var(--dark);
-  background-color: var(--dark);
+  color: var(--dark-1);
+  background-color: var(--dark-1);
   opacity: 50%;
 }
 
@@ -335,14 +328,14 @@ hr {
       & > li {
         margin: 0.5em 0;
         padding: 0.25em 1em;
-        border: var(--outlinegray) 1px solid;
+        border: var(--light-4) 1px solid;
         border-radius: 5px
       }
     }
   }
 
   & #graph-container {
-    border: var(--outlinegray) 1px solid;
+    border: var(--light-4) 1px solid;
     border-radius: 5px;
     box-sizing: border-box;
     min-height: 250px;
@@ -379,7 +372,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999999;
-  background-image: linear-gradient(0deg, transparent, var(--light) 33%);
+  background-image: linear-gradient(0deg, transparent, var(--light-1) 33%);
   backdrop-filter: blur(1px);
   & > h1 {
     font-size: 2em;
@@ -392,7 +385,7 @@ header {
   }
 
   #search-icon {
-    background-color: var(--lightgray);
+    background-color: var(--light-2);
     border-radius: 4px;
     height: 2em;
     display: flex;
@@ -415,7 +408,7 @@ header {
     }
 
     .search-path {
-      stroke: var(--gray);
+      stroke: var(--dark-2);
       stroke-width: 2px;
       transition: stroke 0.5s ease;
     }
@@ -447,7 +440,7 @@ header {
     & > * {
       width: 100%;
       border-radius: 4px;
-      background: var(--light);
+      background: var(--light-1);
       box-shadow: 0 14px 50px rgba(27, 33, 48, 0.12), 0 10px 30px rgba(27, 33, 48, 0.16);
       margin-bottom: 2em;
     }
@@ -456,9 +449,9 @@ header {
       box-sizing: border-box;
       padding: 0.5em 1em;
       font-family: var(--font-body);
-      color: var(--dark);
+      color: var(--dark-1);
       font-size: 1.1em;
-      border: 1px solid var(--outlinegray);
+      border: 1px solid var(--light-4);
 
       &:focus {
         outline: none;
@@ -470,7 +463,7 @@ header {
         padding: 1em;
         cursor: pointer;
         transition: background 0.2s ease;
-        border: 1px solid var(--outlinegray);
+        border: 1px solid var(--light-4);
         border-bottom: none;
         width: 100%;
 
@@ -482,7 +475,7 @@ header {
         overflow: visible;
         text-transform: none;
         text-align: left;
-        background: var(--light);
+        background: var(--light-1);
         outline: none;
 
         &:hover, &:focus {
@@ -497,7 +490,7 @@ header {
         &:last-of-type {
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
-          border-bottom: 1px solid var(--outlinegray);
+          border-bottom: 1px solid var(--light-4);
         }
 
         & > h3, & > p {
@@ -516,13 +509,13 @@ header {
 
 .section-ul {
   list-style: none;
-  margin-top: 2em;
+  margin: 0;
   padding-left: 0;
-
 }
 
 .section-li {
-  margin-bottom: 1em;
+  line-height: 1em;
+  margin-bottom: 0.25em;
 
   & > .section {
     display: flex;
@@ -578,10 +571,10 @@ header {
   position: absolute;
   width: 20rem;
   display: none;
-  background-color: var(--light);
+  background-color: var(--light-1);
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid var(--outlinegray);
+  border: 1px solid var(--light-4);
   border-radius: 5px;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;

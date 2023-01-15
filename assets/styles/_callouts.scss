@@ -80,17 +80,17 @@ blockquote[class*="-callout"] {
   position: relative;
   padding-left: 0 !important;
   padding-bottom: 0.25em;
-  color: var(--dark);
-  background-color: var(--lightgray);
+  color: var(--dark-1);
+  background-color: var(--light-2);
   border-left: 6px solid var(--primary) !important;
   & > p {
     border-top-right-radius: 5px;
     padding: 0.5em 1em;
     margin: 0;
-    color: var(--gray);
+    color: var(--dark-2);
     &:first-child {
       font-weight: 600;
-      color: var(--dark);
+      color: var(--dark-1);
       padding: 0.4em 30px;
     }
   }

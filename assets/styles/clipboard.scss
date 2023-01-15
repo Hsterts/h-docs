@@ -5,11 +5,11 @@
   right: 0;
   padding: 0.69em;
   margin: 0.5em;
-  color: var(--outlinegray);
-  border-color: var(--dark);
-  background-color: var(--lightgray);
+  color: var(--light-4);
+  border-color: var(--dark-1);
+  background-color: var(--light-2);
   filter: contrast(1.1);
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 6px;
   font-size: 0.8em;
   z-index: 1;
@@ -17,7 +17,7 @@
   transition: all 0.2s;
   
   & > svg {
-    fill: var(--light);
+    fill: var(--light-1);
     filter: contrast(0.3);
   }
   
@@ -35,13 +35,10 @@
   }
 }
 
-.highlight, .fumen-figure{
+.highlight{
   position: relative;
-  
-  &:hover > .clipboard-button, &:hover > .fumen-clipboard-button {
+  &:hover > .clipboard-button {
     opacity: 1;
-    transition: 0.2s;
+    transition: 0.2s;    
   }
 }
-
-

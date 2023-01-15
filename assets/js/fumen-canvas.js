@@ -195,6 +195,7 @@ function generateDiagram(code, options) {
 		var button = document.createElement("button");
 		button.className = "fumen-clipboard-button";
 		button.type = "button";
+		button.title = "Copy fumen"
 		button.innerHTML = svgCopy;
 		button.addEventListener("click", () => {
 			navigator.clipboard.writeText(code).then(

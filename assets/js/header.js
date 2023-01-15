@@ -2,6 +2,16 @@ let mirrored = false;
 let rotationMode = `with180`;
 
 function toggleMirror(){
+	mirrored = !mirrored;
+	
+	// for the solution finder
+	let currentCode = document.getElementsByClassName('solution-finder-display-image')[0].dataset.code;
+	let rot = rotationMode == 'with180' ? '-180' : '-90'
+	let source = selectedFileName.replace(rot,'').replace('-mirror','')
+	selectSetup(source, currentCode);
+	getSolutions()
+	
+	// for the page elements
 	var unmirroredElements = document.getElementById('unmirrored')
 	var mirroredElements = document.getElementsByClassName('mirrored')
 	if(!mirrored){
@@ -15,6 +25,7 @@ function toggleMirror(){
 			mirroredElements[x].style.display = 'inline-block'
 		}
 	}
+	formatPage();
 }
 
 function switchRotation(rot){
@@ -30,6 +41,8 @@ function switchRotation(rot){
 			with180Elements[x].style.display = 'inline-block'
 			no180Elements[x].style.display = 'none'
 		}
+		selectedFileName = selectedFileName.replace('-90','-180')
+		getSolutions()
 	}
 	if(rot == 'no180'){
 		with180Toggle.setAttribute('class','rotation-logo logo')
@@ -38,6 +51,8 @@ function switchRotation(rot){
 			with180Elements[x].style.display = 'none'
 			no180Elements[x].style.display = 'inline-block'
 		}
+		selectedFileName = selectedFileName.replace('-180','-90')
+		getSolutions()
 	}
 }
 

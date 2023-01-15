@@ -1,3 +1,4 @@
+<hr>
 <div class="content-list">
   <h2>{{ i18n "recent_notes" }}</h2>
   <!--
@@ -6,7 +7,7 @@
   is a collection of pages.
   https://gohugo.io/content-management/related/
   -->
-  {{$notes := .Site.RegularPages}}
-  {{partial "page-list.html" (first 3 $notes)}}
+  {{$notes := .Site.RegularPages.ByLastmod.Reverse}}
+  {{partial "page-list.html" (first 5 $notes)}}
 </div>
 

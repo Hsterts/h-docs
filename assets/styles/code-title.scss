@@ -1,5 +1,5 @@
 .code-title {
-  color: var(--primary) ;
+  color: var(--primary);
   font-family: var(--font-mono);
   width: max-content;
   overflow-x: auto;
@@ -15,6 +15,6 @@
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
   font-size: 0.9em;
-  background-color: var(--lightgray);
+  background-color: var(--dark-2);
   filter: hue-rotate(-30deg) contrast(1.0) opacity(0.8);
 }

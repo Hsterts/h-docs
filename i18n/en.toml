@@ -20,10 +20,10 @@ other = "showing first 10 results"
 other = "Tag"
 
 [backlinks]
-other = "Backlinks"
+other = "Pages Linking Here"
 
 [no_backlinks]
-other = "No backlinks found"
+other = "Page not linked anywhere"
 
 [home]
 other = "Home"
@@ -50,7 +50,7 @@ other = "Toggle grids for fumen boards."
 other = "Edit Source"
 
 [interactive_graph]
-other = "Interactive Graph"
+other = "Related Pages"
 
 [search]
 other = "Search"

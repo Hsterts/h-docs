@@ -1,5 +1,5 @@
 ---
-title: "dpc_index"
+title: "DPC Homepage"
 ---
 
 ### DPCs
