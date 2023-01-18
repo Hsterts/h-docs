@@ -7,14 +7,17 @@ other = "↳ Home."
 [all_posts]
 other = "All {{.Title}}"
 
+[all_pages]
+other = "Page Listing"
+
 [last_updated]
 other = "Last updated"
 
 [notes_count]
 other = "notes with this tag"
 
-[first_10]
-other = "showing first 10 results"
+[first_20]
+other = "showing first 20 results"
 
 [tag]
 other = "Tag"

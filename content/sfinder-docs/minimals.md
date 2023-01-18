@@ -1,6 +1,8 @@
 ---
 title: Minimals
 tags:
+- Guide
+- Minimals
 - Solution Finder
 ---
 <meta name="description" content="The different kinds of minimals and how to generate them." />

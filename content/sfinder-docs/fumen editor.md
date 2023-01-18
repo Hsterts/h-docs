@@ -1,5 +1,9 @@
 ---
 title: Fumen
+tags:
+- Guide
+- Sfinder Parameter
+- Solution Finder
 ---
 <meta name="description" content="Discussing fumen code and the various editors and tools for it." />
 <style>

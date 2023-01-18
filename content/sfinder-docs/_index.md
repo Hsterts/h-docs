@@ -11,8 +11,9 @@ body{display: flex; justify-content: center;}
 **Solution Finder**, often referred to as **sfinder**, is a program created by [knewjade](https://github.com/knewjade), who's also responsible for various other tools. It is the cornerstone of **Tetris-related research** such as for openers, loops, and perfect clearing.
 ___
 ## Getting Started
-- You must have [[sfinder-docs/sfinder prerequisites#Java Runtime Environment|Java Runtime Environment]] installed.
-- You must have a basic understanding of using a **[[sfinder-docs/sfinder prerequisites#Command Line Interface|Command Line Interface]]**.
+- You must have **Java Runtime Environment**.
+	- Download it [here](https://www.oracle.com/java/technologies/javase-jre8-downloads.html). Installation should be straight-forward.
+- You must have a basic understanding of using a **terminal**.
 - You know how to use a [[sfinder-docs/fumen editor|Fumen Editor]].
 ___
 ## Downloading
@@ -24,7 +25,19 @@ ___
 
 ___
 ## Opening
-1. **Solution Finder** takes inputs from a [[sfinder prerequisites#Command Line Interface|command line interface]] (*CLIs*). These are entered into a terminal, most often the **PowerShell Terminal**.
+1. **Solution Finder** uses a command line interface (CLI). These are entered into a terminal, most commonly **Command Prompt** or **PowerShell Terminal**.
+>[!INFO]- Opening Command Prompt and Setting Directories
+>
+>- Find where your downloaded **sfinder.jar** file is in a File Explorer.
+>- On the window, **type `cmd` into the address bar** and press enter. This should open the command prompt with its directory already set.
+>- You can also drag and drop the sfinder folder into an already-open command prompt (you can search for it and open it from the Start Menu). This will paste the path of that folder into the input. Preface it with `cd`.
+>- You can also use `cd` to change directories; copy and paste the folder's path in the terminal as `cd C:\Path\` and it should work.
+
+>[!INFO]- Opening PowerShell and Setting Directories
+>
+>- Find where your downloaded **sfinder.jar** file is in a File Explorer.
+>- On the folder, **hold shift and right-click** to open the right-click menu, which should contain an option to "Open PowerShell Here".
+>- You can just use `cd` to change directories-- copy and paste the folder's path in the terminal as `cd C:\Path\` and it should work.
 2. There are various ways to open the PowerShell Terminal, but the simplest way is to **hold shift and right click somewhere on File Explorer in the folder where sfinder.jar is**. Don't select `sfinder.jar` while doing so.
 <center><img src = "https://i.imgur.com/XsL6WnV.png"></center>
 
@@ -46,11 +59,11 @@ Command line inputs may vary between different **sfinder commands**:
 		<th>Function</th>
 	</tr>
 	<tr>
-		<td><a href="/h-docs/sfinder-docs/sfinder-percent/">Percent</a></td>
+		<td><a href="/h-docs/sfinder-docs/percent/">Percent</a></td>
 		<td>Outputs the chances (sol%) of getting a perfect clear.</td>
 	</tr>
 	<tr>
-		<td><a href="/h-docs/sfinder-docs/sfinder-path/">Path</a></td>
+		<td><a href="/h-docs/sfinder-docs/path/">Path</a></td>
 		<td>Outputs all perfect clear solutions.</td>
 	</tr>
 	<tr>
@@ -66,7 +79,7 @@ Command line inputs may vary between different **sfinder commands**:
 		<td>Outputs all the ways a T-spin can be made from a field.</td>
 	</tr>
 	<tr>
-		<td><a href="/h-docs/sfinder-docs/sfinder-cover/">Cover</a></td>
+		<td><a href="/h-docs/sfinder-docs/cover/">Cover</a></td>
 		<td>Outputs the chances (cov%) of building a given setup.</td>
 	</tr>
 	<tr>

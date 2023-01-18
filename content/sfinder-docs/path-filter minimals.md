@@ -1,6 +1,8 @@
 ---
 title: Path-Filter Minimals
 tags:
+- Guide
+- Minimals
 - Solution Finder
 ---
 <meta name="description" content="Description, installation, and usage of a program to find a small covering set for a setup with Knewjade's Path-Filter." />

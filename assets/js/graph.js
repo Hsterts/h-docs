@@ -113,7 +113,7 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-    .attr('viewBox', [-width / 2 * 1 / scale, -height / 2 * 1 / scale, width * 1 / scale, height * 1 / scale])
+    .attr('viewBox', [-width / 2 / scale, -height / 2 / scale, width / scale, height / scale])
 
   if (enableLegend) {
     const legend = [{ Current: "var(--g-node-active)" }, { Note: "var(--g-node)" }, ...pathColors]
@@ -155,7 +155,7 @@ async function drawGraph(baseUrl, isHome, pathColors, graphConfig) {
   const nodeRadius = (d) => {
     const numOut = index.links[d.id]?.length || 0
     const numIn = index.backlinks[d.id]?.length || 0
-    return 2 + Math.sqrt(numOut + numIn)/2
+    return 2 + Math.sqrt(numOut + numIn)
   }
 
   // draw individual nodes

@@ -5,14 +5,14 @@ function htmlToElement(html) {
   return template.content.firstChild
 }
 
-function initPopover(baseURL, useContextualBacklinks, renderLatex) {
+function initPopover(baseURL, useContextualBacklinks) {
   const basePath = baseURL.replace(window.location.origin, "")
   fetchData.then(({ content }) => {
     const links = [...document.getElementsByClassName("internal-link")]
     links
       .filter(li => li.dataset.src || (li.dataset.idx && useContextualBacklinks))
       .forEach(li => {
-        var el
+        let el
         if (li.dataset.ctx) {
           const linkDest = content[li.dataset.src]
           const popoverElement = `<div class="popover">
@@ -42,7 +42,7 @@ function initPopover(baseURL, useContextualBacklinks, renderLatex) {
 
         if (el) {
           li.appendChild(el)
-          if (renderLatex) {
+          if (LATEX_ENABLED) {
             renderMathInElement(el, {
               delimiters: [
                 { left: '$$', right: '$$', display: false },

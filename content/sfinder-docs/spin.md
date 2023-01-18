@@ -1,5 +1,8 @@
 ---
 title: "Solution Finder: Spin"
+tags:
+- Guide
+- Solution Finder
 ---
 <meta name="description" content="Documentation for solution finder's spin command" />
 <style>

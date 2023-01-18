@@ -1,6 +1,8 @@
 ---
 title: Strict Minimals
 tags:
+- Guide
+- Minimals
 - Solution Finder
 ---
 <meta name="description" content="Description, installation and usage of a program to find the smallest covering set for a given setup with Eight04's Sfinder-Strict-Minimals program." />

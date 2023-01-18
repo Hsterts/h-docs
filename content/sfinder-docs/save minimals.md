@@ -1,6 +1,8 @@
 ---
 title: Save Minimals
 tags:
+- Guide
+- Minimals
 - Solution Finder
 ---
 <meta name="description" content="Description, installation, and usage of a program to find the smallest covering set for different saves for a setup with Marfung37's PC-Saves-Get program." />

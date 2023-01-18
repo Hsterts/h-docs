@@ -1,5 +1,5 @@
 ---
-title: "ガムシロ積み (Gamushiro Stacking)"
+title: "Gamushiro Stacking"
 tags:
 - TD
 - Loop

@@ -1,6 +1,8 @@
 ---
 title: Custom Minimals
 tags:
+- Guide
+- Minimals
 - Solution Finder
 ---
 <meta name="description" content="Description, installation, and usage of programs that will allow you to find minimals based on a cover.csv output with Hillosanation's Cover-To-Path program." />

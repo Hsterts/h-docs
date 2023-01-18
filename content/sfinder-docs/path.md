@@ -1,5 +1,8 @@
 ---
 title: "Solution Finder: Path"
+tags:
+- Guide
+- Solution Finder
 ---
 <meta name="description" content="Documentation for solution finder's path command">
 <style>

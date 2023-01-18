@@ -1,5 +1,8 @@
 ---
 title: "Solution Finder: Cover"
+tags:
+- Solution Finder
+- Guide
 ---
 <meta name="description" content="Documentation for solution finder's cover command">
 <style>

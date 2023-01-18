@@ -11,6 +11,7 @@ enableFooter: true
 enableContextualBacklinks: false
 enableRecentNotes: true
 enableGitHubEdit: false
+enableMermaid: true
 GitHubLink: https://github.com/hsterts/h-docs/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"

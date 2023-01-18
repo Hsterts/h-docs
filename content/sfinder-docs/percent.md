@@ -1,5 +1,8 @@
 ---
 title: "Solution Finder: Percent"
+tags:
+- Guide
+- Solution Finder
 ---
 <meta name="description" content="Documentation for solution finder's percent command">
 <style>

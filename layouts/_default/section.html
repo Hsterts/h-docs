@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 {{ partial "head.html" . }}
+{{partial "header.html" .}}
 
 <body>
 {{partial "search.html" .}}
 <div class="singlePage">
     <!-- Begin actual content -->
-    {{partial "header.html" .}}
     <article>
-        <h1>{{ i18n "all_posts" . }}</h1>
+        <h1>{{ .Title}}</h1>
+        {{partial "textprocessing.html" . }}
+        <hr>
+        <h2 id='page-list'>{{ i18n "all_pages" . }}</h2>
         {{with .Params.description}}
             <p>{{.}}</p>
         {{end}}
         {{partial "page-list.html" .Paginator.Pages.ByLastmod.Reverse }}
         {{ template "_internal/pagination.html" .}}
     </article>
+    <hr>
+    {{if $.Site.Data.config.enableFooter}}
+    <div class="page-end" id="footer">
+        <div>
+            {{partial "graph.html" .}}
+        </div>
+    </div>
+    {{end}}
     {{partial "contact.html" .}}
 </div>
 </body>

@@ -1,6 +1,8 @@
 ---
 title: "Parameter: Patterns"
 tags:
+- Guide
+- Sfinder Parameter
 - Solution Finder
 ---
 <meta name="description" content="Detailing the pattern specification for Knewjade's solution finder." />
