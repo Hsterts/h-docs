@@ -163,7 +163,7 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
-					<p>`
+					<p>
 						Easy to think of as a three-dimensional lime. Similar to the <a href="#i-lj-t">Early <span class="mino">I</span> QB</a>.
 					</p>
 				</div>
