@@ -325,7 +325,7 @@ Learn more about how to find custom minimals from [[sfinder-docs/custom minimals
             <li>
                 <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/Hillosanation/">Hillosanation</a><br>
                 <ul><li><a href="https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.0">Cover-To-Path Script</a></li></ul>
-                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.1">Unglue Fumen Script (forked from swng/FumenUtil)</a></li></ul>
+                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.2">Unglue Fumen Script (forked from swng/FumenUtil)</a></li></ul>
             </li>
 		</ul>
 	</div>

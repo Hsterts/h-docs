@@ -18,7 +18,7 @@ This is currently done through [Hillosanation's](https://github.com/Hillosanatio
 
 #### Downloading:
 1. Download the [Cover-to-Path script](https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.0) and place it in the folder where `sfinder.jar` is.
-2. Download the [unglueFumen script](https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.1) and place it in the folder where `sfinder.jar` is.
+2. Download the [unglueFumen script](https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.2) and place it in the folder where `sfinder.jar` is.
 ___
 ## Example Path and Usage
 <div class="minimal-graphic" style="display: flex; align-items: center;">
@@ -117,7 +117,7 @@ And that's your output. You can use other `--mode` values for cover to get diffe
             <li>
                 <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/Hillosanation/">Hillosanation</a><br>
                 <ul><li><a href="https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.0">Cover-To-Path Script</a></li></ul>
-                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.1">Unglue Fumen Script (script forked from swng/FumenUtil)</a></li></ul>
+                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.2">Unglue Fumen Script (script forked from swng/FumenUtil)</a></li></ul>
             </li>
 		</ul>
 	</div>
