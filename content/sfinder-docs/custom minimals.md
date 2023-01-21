@@ -17,8 +17,8 @@ ___
 This is currently done through [Hillosanation's](https://github.com/Hillosanation/) **Cover-to-Path Script**.
 
 #### Downloading:
-1. Download the [Cover-to-Path script](https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.0) and place it in the folder where `sfinder.jar` is.
-2. Download the [unglueFumen script](https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.2) and place it in the folder where `sfinder.jar` is.
+1. Download the [Cover-to-Path script](https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.1) and place it in the folder where `sfinder.jar` is.
+2. Download the [unglueFumen script](https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.3) and place it in the folder where `sfinder.jar` is.
 ___
 ## Example Path and Usage
 <div class="minimal-graphic" style="display: flex; align-items: center;">
@@ -64,7 +64,7 @@ The result should show `OR = 72.46 % [3652/5040]`.
 
 **Converting the `cover.csv` to `path.csv`**:
 ```{title="Example Cover-to-Path Command}
-py cover-to-path.py output/cover.csv
+py cover-to-path.py
 ```
 The resulting file should be in the `/output/` folder, named `cover_to_path.csv`.
 
@@ -116,8 +116,8 @@ And that's your output. You can use other `--mode` values for cover to get diffe
 		<ul>
             <li>
                 <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/Hillosanation/">Hillosanation</a><br>
-                <ul><li><a href="https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.0">Cover-To-Path Script</a></li></ul>
-                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.2">Unglue Fumen Script (script forked from swng/FumenUtil)</a></li></ul>
+                <ul><li><a href="https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.1">Cover-To-Path Script</a></li></ul>
+                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.3">Unglue Fumen Script (script forked from swng/FumenUtil)</a></li></ul>
             </li>
 		</ul>
 	</div>
