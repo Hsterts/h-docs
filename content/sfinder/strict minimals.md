@@ -121,7 +121,7 @@ ___
 3. Type in `npm install -g sfinder-strict-minimal` and press enter. This should install the necessary requirements to be able to use the program anywhere on your device.
 
 #### Creating the files that sfinder-strict-minimal works off of:
-Solution finder's [[sfinder-docs/sfinder path.md|Path Command]] is used to produce a csv file that is used to find minimals. The sfinder command is identical to a normal path command, but you must specify `--format csv` (`-f csv`) and `--key pattern` (`-k p`).
+Solution finder's [[sfinder/path|Path Command]] is used to produce a csv file that is used to find minimals. The sfinder command is identical to a normal path command, but you must specify `--format csv` (`-f csv`) and `--key pattern` (`-k p`).
 
 #### Using sfinder-strict-minimal:
 1. To use the program, simply enter `sfinder-minimal output/path.csv` into a terminal.
@@ -130,7 +130,7 @@ Solution finder's [[sfinder-docs/sfinder path.md|Path Command]] is used to produ
 > 
 > The program mostly runs for a few seconds up to a few minutes. If it lasts longer than that, there may be *too many* solutions and the result may take quite a while to produce.
 >
->[This alternative](https://github.com/knewjade/path-filter/) by [Knewjade](https://github.com/knewjade/) can be used to find a slightly larger set in exchange for a much shorter run-time. I also wrote about how to use it over <a href="/h-docs/sfinder-docs/path-filter-minimals/">here</a>.
+>[This alternative](https://github.com/knewjade/path-filter/) by [Knewjade](https://github.com/knewjade/) can be used to find a slightly larger set in exchange for a much shorter run-time. I also wrote about how to use it over <a href="/h-docs/sfinder/path-filter-minimals/">here</a>.
 2. If there are multiple minimal sets, you may need to choose between solutions. An interactive prompt (**use your arrow keys and press enter when you've chosen**) is used for the user to choose between sets of solutions. **Choose according to your needs**-- if you want ease, prioritize easy-looking solutions. If you want saves, prioritize solutions that save better pieces.
 
 3. Outputs are written to `path_minimal_strict.md`. It's placed in the directory the terminal is linked to. Opening it by itself will allow you to see the solutions if you have a markdown editor. However, you can extract the fumens from the markdown file using the makeMinimals Script [(Direct download link)](https://cdn.discordapp.com/attachments/569730842319126541/941520438528466964/makeMinimals_2.zip)
@@ -153,7 +153,7 @@ sfinder-minimal output/path.csv
 ```
 There can different sets of solutions that all qualify as a minimal set. To choose the best one, choices are presented to the user for them to choose between solutions and pin-point their ideal set. Simply use your arrow keys and press enter to choose between setups.
 
-![[sfinder-docs/attachments_sfinder/minimal-interactive.png]]
+![[sfinder/attachments_sfinder/minimal-interactive.png]]
 
 The output will be written onto ``path_minimal_strict.md``. The resulting minimals may differ depending on how you chose, but these are my results:
 <div style="text-align: center">

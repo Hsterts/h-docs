@@ -12,10 +12,10 @@ body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>
 
-The **--patterns** parameter for [[sfinder-docs/solution-finder|solution-finder]] is one of the harder parameters to understand. 
+The **--patterns** parameter for [[sfinder/|solution-finder]] is one of the harder parameters to understand. 
 **Patterns**, in this case, is synonymous with **queues**, but potentially more broadly defined. This page is dedicated to providing a thorough explanation and examples on the various aspects and methods of specifying patterns.
 
-It will be much easier (and useful) for users to understand the concepts of modern block stackers' [[7-Bag System]] which ties in closely to how patterns are defined. This page provides exercises that may require the reader to have sfinder, as it uses [[sfinder-docs/sfinder util#seq|sfinder util seq]] to allow the reader to follow along. In standard sfinder syntax, write the following for the various given examples:
+It will be much easier (and useful) for users to understand the concepts of modern block stackers' [[7-Bag System]] which ties in closely to how patterns are defined. This page provides exercises that may require the reader to have sfinder, as it uses [[sfinder/sfinder util#seq|sfinder util seq]] to allow the reader to follow along. In standard sfinder syntax, write the following for the various given examples:
 ```YAML {title="Example Util Seq Command"}
 java -jar sfinder.jar util seq -p <example input>
 ```
@@ -46,7 +46,7 @@ ___
 1. **Incorrect Bags**: This won't run into an error similar to common mistakes #2 and #3, but is the most common mistake, sometimes even undetected. Make sure the bags and pieces you're using are correct.
 	- May include overlooking `!` after writing a bag.
 2. **Not Accounting For Hold**: A field may require 7 pieces, so you may be inclined to define 7 pieces, but with hold you may be able to use up to 8 pieces. This may result in inaccurate results.
-3. **Not Enough Pieces**: when using sfinder functionalities that attempt to reach a certain field e.g. [[sfinder-docs/sfinder percent|sfinder percent]] or [[sfinder-docs/sfinder setup|sfinder setup]], you need to specify enough pieces to fill the field specified.
+3. **Not Enough Pieces**: when using sfinder functionalities that attempt to reach a certain field e.g. [[sfinder/sfinder percent|sfinder percent]] or [[sfinder/sfinder setup|sfinder setup]], you need to specify enough pieces to fill the field specified.
 	- Error message:: ``Message: Should specify equal to or more than X pieces: CurrentPieces=Y``
 4. **Duplicate Pieces**: duplicate pieces won't work. Bags should only have one of each piece.
 	- **\[TIILJ]** would return an error: ``Duplicate 'I' pieces in [] [position=3char] [SyntaxException]``.

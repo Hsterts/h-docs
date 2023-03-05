@@ -14,7 +14,7 @@ ___
 - You must have **Java Runtime Environment**.
 	- Download it [here](https://www.oracle.com/java/technologies/javase-jre8-downloads.html). Installation should be straight-forward.
 - You must have a basic understanding of using a **terminal**.
-- You know how to use a [[sfinder-docs/fumen editor|Fumen Editor]].
+- You know how to use a [[sfinder/fumen editor|Fumen Editor]].
 ___
 ## Downloading
 1. **Solution Finder** can be downloaded from knewjade's [GitHub repo](https://github.com/knewjade/solution-finder) or from this [direct download link](https://github.com/knewjade/solution-finder/releases/download/v1.41/solution-finder-1.41.zip).
@@ -59,11 +59,11 @@ Command line inputs may vary between different **sfinder commands**:
 		<th>Function</th>
 	</tr>
 	<tr>
-		<td><a href="/h-docs/sfinder-docs/percent/">Percent</a></td>
+		<td><a href="/h-docs/sfinder/percent/">Percent</a></td>
 		<td>Outputs the chances (sol%) of getting a perfect clear.</td>
 	</tr>
 	<tr>
-		<td><a href="/h-docs/sfinder-docs/path/">Path</a></td>
+		<td><a href="/h-docs/sfinder/path/">Path</a></td>
 		<td>Outputs all perfect clear solutions.</td>
 	</tr>
 	<tr>
@@ -79,7 +79,7 @@ Command line inputs may vary between different **sfinder commands**:
 		<td>Outputs all the ways a T-spin can be made from a field.</td>
 	</tr>
 	<tr>
-		<td><a href="/h-docs/sfinder-docs/cover/">Cover</a></td>
+		<td><a href="/h-docs/sfinder/cover/">Cover</a></td>
 		<td>Outputs the chances (cov%) of building a given setup.</td>
 	</tr>
 	<tr>
@@ -97,7 +97,7 @@ Command line inputs may vary between different **sfinder commands**:
 </table></center>
 
 Here are various parameters that are universal between most commands:
-1. **Tetfu** refers to the fumen codes made from [[sfinder-docs/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some can take multiple.
+1. **Tetfu** refers to the fumen codes made from [[sfinder/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some can take multiple.
 
 ```yaml {title="Single Fumen Input"}
 java -jar sfinder.jar percent --tetfu <fumen>
@@ -109,4 +109,4 @@ java -jar sfinder.jar cover --tetfu <fumen> <fumen> <fumen>
 java -jar sfinder.jar percent -t <fumen>
 ```
 
-2. **Pattern** refers to the <u>general structure</u> of the queues being considered by sfinder. Since it's one of the harder parameters to learn, patterns are discussed in its own page: [[sfinder-docs/parameter patterns|--patterns]].
+2. **Pattern** refers to the <u>general structure</u> of the queues being considered by sfinder. Since it's one of the harder parameters to learn, patterns are discussed in its own page: [[sfinder/parameter patterns|--patterns]].

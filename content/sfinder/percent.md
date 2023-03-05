@@ -11,7 +11,7 @@ body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>
 
-Solution Finder's **Percent** command outputs the probability of getting a perfect clear from a **specified field**, given a specified **pattern**. This output is written in the terminal and the specified **log path**.
+[[sfinder/|Solution Finder]]'s **Percent** command outputs the probability of getting a perfect clear from a **specified field**, given a specified **pattern**. This output is written in the terminal and the specified **log path**.
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar percent --tetfu <fumen> --patterns <pattern>
 ```
@@ -20,13 +20,13 @@ java -jar sfinder.jar percent -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field** (--tetfu, --t): the [[sfinder-docs/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+**Specified Field** (--tetfu, --t): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
 - **Page** (--page, -P): Specify the page of the fumen. The default is the first page.
 	- `--page 2` 
 - **Clear Line** (--clear-line, -c): Specify the number of line clears for a perfect clear. The default is 4
 	- `--clear-line 6`
 
-**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder-docs/parameter patterns|here]].
+**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
 - **Hold** (--hold, -H): Specify whether or not a hold slot is usable. By default, it is enabled.
 	- `--H use` or `--H avoid`
 - **Drop** (--drop, -d): Specify what movements are usable. By default, it uses `softdrop`. 

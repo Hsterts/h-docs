@@ -23,7 +23,7 @@ body{display: flex; justify-content: center;}
 </style>
 
 ## Solution Finder's Minimals
-Solution finder's [[sfinder-docs/sfinder path.md|Path Command]] has an HTML output called `path_minimal.html`, wherein all possible solutions are sorted by cover then scanned from highest to lowest cover, **removing all solutions whose cover has already been covered by previous setups**.
+Solution finder's [[sfinder/path|Path Command]] has an HTML output called `path_minimal.html`, wherein all possible solutions are sorted by cover then scanned from highest to lowest cover, **removing all solutions whose cover has already been covered by previous setups**.
 
 Here's an example diagram of how sfinder minimals work. **sfinder finds that solutions A, C, and E are necessary** to maximize cover, as they cover new queues that aren't covered by the ones before them.
 <div class="minimal-graphic">
@@ -115,7 +115,7 @@ ___
  ## Strict Minimals
 Strict minimals are **the smallest possible covering set for a given set of solutions**. It can be found through a lot of methods, but may become very computationally expensive or tedious.
 
-You can find out how to find strict minimals from [[sfinder-docs/strict minimals|this page on strict minimals]].
+You can find out how to find strict minimals from [[sfinder/strict minimals|this page on strict minimals]].
 
 Here's an example diagram of strict minimals' output. It's not illustrative of how it actually finds the set because that's a tad bit complicated, but it finds that **only solutions A and E are necessary** to maximize cover, as opposed to sfinder requiring solutions A, C, and E.
 <div class="minimal-graphic">
@@ -203,12 +203,12 @@ Here's an example diagram of strict minimals' output. It's not illustrative of h
 </table>
 </div>
 
-If a setup has *too many* solutions, you may rather opt for Knewjade's Path-Filter program used to generate very small (potentially not smallest) solution sets. Read up on that in [[sfinder-docs/path-filter minimals|this page on Path-Filter minimals]].
+If a setup has *too many* solutions, you may rather opt for Knewjade's Path-Filter program used to generate very small (potentially not smallest) solution sets. Read up on that in [[sfinder/path-filter minimals|this page on Path-Filter minimals]].
 ___
 ## Save Minimals
 Save minimals are strict minimals, but **saved pieces are prioritized**. That means the program would rather settle for a 3-solution set that saves 100% Save <span class="mino">T</span> over a 2-solution set that saves 100% <span class="mino">O</span> if you tell it to do so.
 
-You can find out more on how to find save minimals from [[sfinder-docs/save minimals|this page on save minimals]].
+You can find out more on how to find save minimals from [[sfinder/save minimals|this page on save minimals]].
 
 The program currently being used can prioritize multiple saves. If you ask for save <span class="mino">T</span> then <span class="mino"></span> minimals, the solution set will maximize save <span class="mino">T</span> before finding solutions with the next specified save, and so on.
 <div class="minimal-graphic">
@@ -298,9 +298,9 @@ The program currently being used can prioritize multiple saves. If you ask for s
 
 ___
 ## Custom Cover-Based Minimals
-A special method of generating minimals, where you can get minimal sets for maximizing a setup's quad clear chance, T-Spin chance, etc. by converting solution finder's  [[sfinder-docs/sfinder cover.md|cover]] output into a path.csv file, allowing [[sfinder-docs/strict minimals|sfinder-strict-minimal]] to work its magic.
+A special method of generating minimals, where you can get minimal sets for maximizing a setup's quad clear chance, T-Spin chance, etc. by converting solution finder's  [[sfinder/cover|cover]] output into a path.csv file, allowing [[sfinder/strict minimals|sfinder-strict-minimal]] to work its magic.
 
-Learn more about how to find custom minimals from [[sfinder-docs/custom minimals|this page on custom minimals]].
+Learn more about how to find custom minimals from [[sfinder/custom minimals|this page on custom minimals]].
 
 <hr>
 <div class="credits">

@@ -11,7 +11,7 @@ body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>
 
-Solution Finder's **Cover** command outputs the probability of setting up/buidling a **specified field** (or multiple), given a specified **pattern**. This output is written in the terminal and the specified **log path**.
+[[sfinder/|Solution Finder]]'s **Cover** command outputs the probability of setting up/buidling a **specified field** (or multiple), given a specified **pattern**. This output is written in the terminal and the specified **log path**.
 ```YAML {title="Command Structure"}
 java -jar sfinder.jar cover --tetfu <fumen> --patterns <pattern>
 ```
@@ -23,7 +23,7 @@ java -jar sfinder.jar cover -t <fumen> <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field**/s (--tetfu, --t): the [[sfinder-docs/fumen editor#Fumen Code|fumen code]]/s that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+**Specified Field**/s (--tetfu, --t): the [[sfinder/fumen editor#Fumen Code|fumen code]]/s that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
 - **Page** (--page, -P): Specify the page of the fumen.
 	- The default is `1`.
 	- `--page 2` 
@@ -31,7 +31,7 @@ ___
 	- The default is `false`.
 	- `--mirror true`
 
-**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder-docs/parameter patterns|here]].
+**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
 - **Hold** (--hold, -H): Specify whether or not a hold slot is usable.
 	- By default, it is `use`.
 	- `--H use` or `--H avoid`
@@ -258,4 +258,4 @@ The CSV output lists the first column for the patterns used, and extra colums ar
 - `O`: the fumen is buildable for the equivalent pattern.
 ___
 ## Special Uses
-1. Cover's output can be converted into an [[sfinder-docs/sfinder path|sfinder path output]] to be used to find [[sfinder-docs/custom minimals|custom minimals]], such as Quad PC minimals or T-Spin minimals.
+1. Cover's output can be converted into an [[sfinder/sfinder path|sfinder path output]] to be used to find [[sfinder/custom minimals|custom minimals]], such as Quad PC minimals or T-Spin minimals.

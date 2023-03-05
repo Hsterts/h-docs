@@ -1,26 +1,26 @@
 ---
-title: "Solution Finder: Spin"
+title: "Solution Finder: Path"
 tags:
 - Guide
 - Solution Finder
 ---
-<meta name="description" content="Documentation for solution finder's spin command" />
+<meta name="description" content="Documentation for solution finder's path command">
 <style>
 header{max-width: 700px; left: 50%; transform: translateX(-50%); padding: 0 2em;}
 body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>
 
-[[sfinder-docs/soluton-finder|Solution Finder]]'s **Spin** command outputs all the ways to get a specified spin (TS0, TSS, TSD, and Mini Variants) from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
+[[sfinder/|Solution Finder]]'s **Path** command outputs all the ways to get a perfect clear from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}
-java -jar sfinder.jar spin --tetfu <fumen> --patterns <pattern>
+java -jar sfinder.jar path --tetfu <fumen> --patterns <pattern>
 ```
 ```YAML {title="Shorthand Command Structure"}
-java -jar sfinder.jar spin -t <fumen> -p <pattern>
+java -jar sfinder.jar path -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field** (--tetfu, --t): the [[sfinder-docs/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+**Specified Field** (--tetfu, --t): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
 - **Page** (--page, -P): Specify the page of the fumen. 
 	- The default is `1` (the first page)
 	- `--page 2` 
@@ -28,7 +28,7 @@ ___
 	- The default is `4`
 	- `--clear-line 6`
 
-**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder-docs/parameter patterns|here]].
+**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
 - **Hold** (--hold, -H): Specify whether or not a hold slot is usable.
 	- By default, it is `use`.
 	- `--H use` or `--H avoid`
@@ -48,7 +48,7 @@ ___
 - By default, the output is in `html`.
 - With `--format html` (the default), there are two outputs (if `--max-layer` is not specified):
 	- `path_unique.html` contains a list of all the possible solves found by sfinder.
-	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[minimals|this page]].
+	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[sfinder/minimals|this page]].
 - `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with nonsensical text</u>. Some more info about different csv outputs [[#Example Commands and Outputs|here]].
 
 **Max Layer** (--max-layer, -L): refers to the outputs of path when using the **html format**.
@@ -64,7 +64,7 @@ ___
 
 **Split** (--split, -s): refers to the way the solution fumen is built.
 	- By default, it is set to `no` (output is a normal fumen).
-	- `--split yes` builds the solves <u>mino-by-mino</u> ([[sfinder-docs/fumen editor#Fumen Types|glued fumen]]).
+	- `--split yes` builds the solves <u>mino-by-mino</u> ([[sfinder/fumen editor#Fumen Types|glued fumen]]).
 ___
 ## Miscellaneous Parameters
 **Output Base** (--output-base, -o): Specify the path data file output.
@@ -90,115 +90,119 @@ ___
 **Cached Bit** (--cached-bit, -cb): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
 ___
 ## Summary
-<div style="display: flex; justify-content: space-around;''">
-	<div>
-		<table width="40%">
-			<tr>
-				<th colspan="3">Input Parameters</th>
-			</tr>
-			<tr>
-				<th>Parameter</th>
-				<th>Shorthand</th>
-				<th>Default</th>
-			</tr>
-			<tr>
-				<td>--tetfu</td>
-				<td style="text-align: center;">-t</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--page</td>
-				<td style="text-align: center;">-P</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>--clear-line</td>
-				<td style="text-align: center;">-c</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>--patterns</td>
-				<td style="text-align: center;">-p</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--hold</td>
-				<td style="text-align: center;">--H</td>
-				<td>use</td>
-			</tr>
-			<tr>
-				<td>--drop</td>
-				<td style="text-align: center;">-d</td>
-				<td>softdrop</td>
-			</tr>
-			</table>
-	</div>
-	<div style="flex-direction: column;">
-		<div>
-			<table width="400px">
-				<tr>
-					<th colspan="3">Output Parameters</th>
-				</tr>
-				<tr>
-					<td>--format</td>
-					<td style="text-align: center;">-f</td>
-					<td>html</td>
-				</tr>
-				<tr>
-					<td>--max-layer</td>
-					<td style="text-align: center;">-L</td>
-					<td>2</td>
-				</tr>
-				<tr>
-					<td>--key</td>
-					<td style="text-align: center;">-k</td>
-					<td>none</td>
-				</tr>
-				<tr>
-					<td>--split</td>
-					<td style="text-align: center;">-s</td>
-					<td>no</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<table  width="400px">
-				<tr>
-					<th colspan="3">Miscellaneous Parameters</th>
-				</tr>
-				<tr>
-					<td>--output-base</td>
-					<td style="text-align: center;">-o</td>
-					<td>output/path.txt</td>
-				</tr>
-				<tr>
-					<td>--log-path</td>
-					<td style="text-align: center;">-lp</td>
-					<td>output/last_output.txt</td>
-				</tr>
-				<tr>
-					<td>--field-path</td>
-					<td style="text-align: center;">-fp</td>
-					<td>input/field.txt</td>
-				</tr>
-				<tr>
-					<td>--patterns-path</td>
-					<td style="text-align: center;">-pp</td>
-					<td>input/patterns.txt</td>
-				</tr>
-				<tr>
-					<td>--threads</td>
-					<td style="text-align: center;">-th</td>
-					<td>-1</td>
-				</tr>
-				<tr>
-					<td>--cached-bit</td>
-					<td style="text-align: center;">-cb</td>
-					<td>0</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+<div style="display: flex; flex-direction: column;">
+	<table>
+		<tr>
+			<th colspan="3">Input Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--tetfu</td>
+			<td style="text-align: center;">-t</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>--page</td>
+			<td style="text-align: center;">-P</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>--clear-line</td>
+			<td style="text-align: center;">-c</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>--patterns</td>
+			<td style="text-align: center;">-p</td>
+			<td>null</td>
+		</tr>
+		<tr>
+			<td>--hold</td>
+			<td style="text-align: center;">--H</td>
+			<td>use</td>
+		</tr>
+		<tr>
+			<td>--drop</td>
+			<td style="text-align: center;">-d</td>
+			<td>softdrop</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="3">Output Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--format</td>
+			<td style="text-align: center;">-f</td>
+			<td>html</td>
+		</tr>
+		<tr>
+			<td>--max-layer</td>
+			<td style="text-align: center;">-L</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>--key</td>
+			<td style="text-align: center;">-k</td>
+			<td>none</td>
+		</tr>
+		<tr>
+			<td>--split</td>
+			<td style="text-align: center;">-s</td>
+			<td>no</td>
+		</tr>
+	</table>
+	<br>
+	<table>
+		<tr>
+			<th colspan="3">Miscellaneous Parameters</th>
+		</tr>
+		<tr>
+			<th>Parameter</th>
+			<th>Shorthand</th>
+			<th>Default</th>
+		</tr>
+		<tr>
+			<td>--output-base</td>
+			<td style="text-align: center;">-o</td>
+			<td>output/path.txt</td>
+		</tr>
+		<tr>
+			<td>--log-path</td>
+			<td style="text-align: center;">-lp</td>
+			<td>output/last_output.txt</td>
+		</tr>
+		<tr>
+			<td>--field-path</td>
+			<td style="text-align: center;">-fp</td>
+			<td>input/field.txt</td>
+		</tr>
+		<tr>
+			<td>--patterns-path</td>
+			<td style="text-align: center;">-pp</td>
+			<td>input/patterns.txt</td>
+		</tr>
+		<tr>
+			<td>--threads</td>
+			<td style="text-align: center;">-th</td>
+			<td>-1</td>
+		</tr>
+		<tr>
+			<td>--cached-bit</td>
+			<td style="text-align: center;">-cb</td>
+			<td>0</td>
+		</tr>
+	</table>
 </div>
 
 ___
@@ -275,19 +279,17 @@ S-Spawn J-Spawn I-Spawn / 7.6 % [64]
 No line erasure vs with line erasure:
 <div style="display: flex; justify-content: space-around">
 	<div>
-		<figure class="fumen">v115@BhAtFehlBtR4Beg0B8glAtR4ywg0B8glD8wwh0JeAg?H
+		<figure>
+		<fumen clipboard="false">v115@9gD8zhF8ywG8g0wwH8i0C8JeAgH</fumen>		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
 		</figure>
 	</div>
 	<div>
-		<figure class="fumen">v115@KhAtAeR4Beg0B8BtR4ywg0B8AtD8wwh0JeAgH
-		</figure>
-	</div>
-	<div>
-		<figure class="fumen">v115@DhAtHeBtBeg0B8ilAtywg0B8glD8wwh0JeAgH
+		<figure>
+		<fumen clipboard="false">v115@9gD8zhF8i0G8RpH8Rpg0C8JeAgH</fumen>
+		<figcaption style="text-align: center;">Solve with line erasure</figcaption>
 		</figure>
 	</div>
 </div>
-
 
 2. **With --format csv --key solution**, the output file (`output/path.csv`) contains rows that have the path info <u>sorted by solution</u>:
 ```YAML {title="CSV Solution Sample Output"}
@@ -318,3 +320,6 @@ ILZ, # pieces used
 v115@9gD8zhF8ilG8BtH8glBtC8JeAgWDA6SdBA, # solutions that use these pieces
 ZSIL;TZIL;... # queues the solutions work for
 ```
+___
+## Special Uses
+1. One of path's most important uses is as an input file for finding various types of [[sfinder/minimals|minimals]].

@@ -113,7 +113,7 @@ The program currently being used can prioritize multiple saves. If you ask for s
 
 ___
 ## Finding Save Minimals
-Save minimals are currently being found using [Marfung37](https://github.com/Marfung37/)'s [PC-Saves-Get](https://github.com/Marfung37/PC-Saves-Get) program. It requires Python3 and NodeJS and will work off of sfinder's [[sfinder-docs/sfinder path.md|Path Command]] the same way [[sfinder-docs/strict minimals|strict minimals]] do.
+Save minimals are currently being found using [Marfung37](https://github.com/Marfung37/)'s [PC-Saves-Get](https://github.com/Marfung37/PC-Saves-Get) program. It requires Python3 and NodeJS and will work off of sfinder's [[sfinder/sfinder path.md|Path Command]] the same way [[sfinder/strict minimals|strict minimals]] do.
 
 #### Downloading Python3:
 Go to the [Python3 download page](https://www.python.org/downloads/). It should be a straight-forward installation.
@@ -130,7 +130,7 @@ In a terminal, enter the following separately
 - `npm install -g sfinder-strict-minimal` for generating minimals.
 
 #### Creating the files that sfinder-strict-minimal works off of:
-Solution finder's [[sfinder-docs/sfinder path.md|Path Command]] is used to produce a `.csv` file that is used to find minimals. The sfinder command is identical to a normal path file, but you must specify `--format csv` (`-f csv`) and `--key pattern` (`-k p`).
+Solution finder's [[sfinder/sfinder path.md|Path Command]] is used to produce a `.csv` file that is used to find minimals. The sfinder command is identical to a normal path file, but you must specify `--format csv` (`-f csv`) and `--key pattern` (`-k p`).
 
 #### Using PC-Saves-Get:
 The commands for the program is structured similar to sfinder. The following explanations are excerpts of important parameters from the [official documentation](https://github.com/Marfung37/PC-Saves-Get/blob/main/README.md).
