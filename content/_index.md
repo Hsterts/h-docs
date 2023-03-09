@@ -1,8 +1,8 @@
 ---
 title: H-Docs
 ---
-[[sfinder-docs/solution-finder|Solution-Finder]] Learn about the most powerful tool for Tetris-related research!
+[[sfinder|Solution-Finder]]
 
-[[perfect-clears/|Setup Information]]
+[[perfect-clears/|Perfect Clear Setup Information]]
 
-[[openers/|Openers]]
+[[openers|Openers]]
