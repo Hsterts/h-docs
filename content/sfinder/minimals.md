@@ -325,9 +325,9 @@ Learn more about how to find custom minimals from [[sfinder/custom minimals|this
                 <ul><li><a href="https://github.com/knewjade/path-filter/">Path-Filter</a></li></ul>
             </li>
             <li>
-                <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/SaNoyGit/">Hillosanation</a><br>
-                <ul><li><a href="https://cdn.discordapp.com/attachments/569728778985537587/982997795986350110/cover-to-path.py">Cover-To-Path Script</a></li></ul>
-                <ul><li><a href="https://cdn.discordapp.com/attachments/853378199525916732/982998615909871646/unglueFumen.js">Unglue Fumen Script</a></li></ul>
+                <strong>Custom Cover-Based Minimals</strong>: <a href="https://github.com/Hillosanation/">Hillosanation</a><br>
+                <ul><li><a href="https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.1">Cover-To-Path Script</a></li></ul>
+                <ul><li><a href="https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.3">Unglue Fumen Script (forked from swng/FumenUtil)</a></li></ul>
             </li>
 		</ul>
 	</div>
