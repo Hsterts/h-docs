@@ -121,6 +121,9 @@ tags:
         </center>
     </div>
 </div>
+<blockquote class="warning-callout">
+    <p>WIP</p>
+</blockquote>
 
 ---
 ## 2nd Bag
@@ -311,7 +314,3 @@ Some of the examples here are rarely practical. Some donations should only be do
 ---
 ## 3rd Bag
 Gamushiro's 3rd bag non-PC continuations is very easy to freestyle. The following examples are non-exhaustive, but should serve as good examples of what Gamushiro can continued as.
-<div class="setup-body">
-<fumen delay="1000" height="10" outline="v115@9gC8GeC8AeC8AeA8AeC8AeC8BeD8EeA8KeAgHVgA8I?eA8IeC8GeC8FeA8CAB8AeD8CAA8CAA8AAA8CAA8CAA8AeDA?EeAAKeAgH">v115@9gyhAeglQpAtCeyhAeglQpAtAewwAeyhAeglQpAtBe?wwyhEewwKeAgHVgwhIewhIewhRpGewhRpFewwCeg0AtwSgW?glxwCeg0CeglAewwCeg0CeglVeAgH</fumen>
-</div>
-

@@ -94,7 +94,7 @@ tags:
 <div id="intro">
     <div id="intro-text">
         <p>
-            <strong>Mountainous Stacking 2</strong>, or <strong>MS2</strong> is a Triple-Double T-Spin opener created by <strong>PandaEdit158/Agent 1568AH</strong>. It is very similar to Gamushiro Stacking: it grants reliable 8-line Perfect Clear chances or a favorable midgame board without the PC.<br>
+            <strong>Mountainous Stacking 2</strong>, or <strong>MS2</strong> is a Triple-Double T-Spin opener created by <strong>PandaEdit158/Agent 1568AH</strong>. It is very similar to <a href="/h-docs/openers/Gamushiro-Stacking/">Gamushiro Stacking</a>; it grants reliable 8-line Perfect Clear chances or a favorable midgame board without the PC.<br>
             Compared to similar popular “Wasted <span class="mino">T</span>” openers such as DT-Cannon and BT-Cannon, MS2 boasts numerous advantages:
             <ul>
                 <li>Reliable PC and combo downstack chances.</li>
@@ -108,7 +108,7 @@ tags:
         <blockquote class="danger-callout">
         <p>Notice</p>
         <p>The following information was researched with 180 spins <strong>only</strong>. This page may be inaccurate when used in clients without 180 spins.</p>
-        </block>
+        </blockquote>
     </div>
     <hr class="only-for-mobile">
     <div id="bag-1">
@@ -121,6 +121,9 @@ tags:
         </center>
     </div>
 </div>
+<blockquote class="warning-callout">
+    <p>WIP</p>
+</blockquote>
 
 ---
 ## 2nd Bag
@@ -269,7 +272,3 @@ The leftover <span class="mino">L</span> piece from the first bag is placed in o
 ---
 ## 3rd Bag
 MS2's 3rd bag non-PC continuations is very easy to freestyle. The following examples are non-exhaustive, but should serve as good examples of what MS2 can continued as.
-<div class="setup-body">
-<fumen delay="1000" height="10" outline="v115@9gC8GeC8AeC8AeA8AeC8AeC8BeD8EeA8KeAgHVgA8I?eA8IeC8GeC8FeA8CAB8AeD8CAA8CAA8AAA8CAA8CAA8AeDA?EeAAKeAgH">v115@9gyhAeglQpAtCeyhAeglQpAtAewwAeyhAeglQpAtBe?wwyhEewwKeAgHVgwhIewhIewhRpGewhRpFewwCeg0AtwSgW?glxwCeg0CeglAewwCeg0CeglVeAgH</fumen>
-</div>
-
