@@ -56,9 +56,9 @@ Open the `path_unique.html` file in the `/output/` folder. At the top of the pag
 
 **Run cover with `--mode tetris-end`**:
 ```{title="Example Cover Command"}
-java -jar sfinder.jar cover -p *! -m tetris-end
+java -jar sfinder.jar cover -p *! -M tetris-end
 ```
-Since you don't specify the `--tetfu` parameter, the `input.txt` file is what's being used for this command. Use the same `-p` value as the path command from earlier. `-m tetris-end` makes it so that cover is only returned as successful if the last clear in the sequence is a quad or tetris line clear.
+Since you don't specify the `--tetfu` parameter, the `input.txt` file is what's being used for this command. Use the same `-p` value as the path command from earlier. `-M tetris-end` makes it so that cover is only returned as successful if the last clear in the sequence is a quad or tetris line clear.
 
 The result should show `OR = 72.46 % [3652/5040]`.
 
