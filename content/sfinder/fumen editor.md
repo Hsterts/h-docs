@@ -16,17 +16,15 @@ body{display: flex; justify-content: center;}
 ___
 ## Fumen Editor User Interface
 
-<div style="display: flex; justify-content: space-around">
-	<div>
-		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/fumen-zui.png?raw=true">
-	</div>
-	<div>
-		<p>
-		The Original Fumen Editor
-		</p>
-	</div>
-</div>
+<figure>
+	<img src="../attachments_sfinder/fumen-zui.png?raw=true">
+	<figcaption>
+		<p style="margin:0px">The Original Fumen Editor</p>
+	</figcaption>
+</figure>
 
 ## Fumen Code
+
+WIP, use [this](https://docs.google.com/presentation/d/165wmbxVzTuBMxG4vjk8SwD3-9uLAkVAWeBVW7QTrfWQ/edit?usp=sharing) as reference
 
 ## Fumen 
