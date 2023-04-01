@@ -20,44 +20,44 @@ java -jar sfinder.jar percent -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field** (--tetfu, --t): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
-- **Page** (--page, -P): Specify the page of the fumen. The default is the first page.
+**Specified Field** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+- **Page** (`--page`, `-P`): Specify the page of the fumen. The default is the first page.
 	- `--page 2` 
 - **Clear Line** (--clear-line, -c): Specify the number of line clears for a perfect clear. The default is 4
 	- `--clear-line 6`
 
-**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
-- **Hold** (--hold, -H): Specify whether or not a hold slot is usable. By default, it is enabled.
+**Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
+- **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable. By default, it is enabled.
 	- `--H use` or `--H avoid`
-- **Drop** (--drop, -d): Specify what movements are usable. By default, it uses `softdrop`. 
+- **Drop** (`--drop`, `-d`): Specify what movements are usable. By default, it uses `softdrop`. 
 	- `--drop harddrop`: only harddrop and kicks.
 	- `--drop softdrop`: enabled softdrop and kicks.
 	- `--drop 180`: softdrop but with 180 spins.
 	- `--drop T-softdrop`: only the T piece is softdropped.
 ___
 ## Output Parameters
-**Tree Depth** (--tree-depth, -td): determines the depth of the tree diagram of the output. The tree output checks for the sol% of the field if the first few pieces of the queue is known.
+**Tree Depth** (`--tree-depth`, `-td`): determines the depth of the tree diagram of the output. The tree output checks for the sol% of the field if the first few pieces of the queue is known.
 - By default, tree depth is 3.
 - `--tree-depth 1`
 
-**Fail Count** (--fail-count, -fc): determines the number of fail queues displayed at the end of the output.
+**Fail Count** (`--fail-count`, `-fc`): determines the number of fail queues displayed at the end of the output.
 - By default, fail count is 100.
 - `--fail-count -1` displays as many fail queues as possible.
 ___
 ## Miscellaneous Parameters
-**Log path** (--log-path, -lp): create a .txt file output from the output of the command.
+**Log path** (`--log-path`, `-lp`): create a .txt file output from the output of the command.
 - By default, the log path is `output/last_output.txt`.
 - `--log-path output/chances.txt`
 
-**Specified Field from a file** (--field-path, -fp): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
+**Specified Field from a file** (`--field-path`, `-fp`): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
 - By default, the field path is `input/field.txt`.
 - `--field-path input/sdpc.txt`
 
-**Patterns from a file** (--patterns-path, -pp): instead of defining patterns using `--patterns`, you can specify a .txt file that contains either the actual queues, or patterns.
+**Patterns from a file** (`--patterns-path`, `-pp`): instead of defining patterns using `--patterns`, you can specify a .txt file that contains either the actual queues, or patterns.
 - By default, the patterns path is `input/patterns.txt`.
 - `--patterns-path input/filteredqueue.txt`
 
-**Threads** (--threads, --th): Specify the number of threads to use when sfinder is running.
+**Threads** (`--threads`, `-th`): Specify the number of threads to use when sfinder is running.
 - By default, the number of threads used is 1.
 - `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 ___
