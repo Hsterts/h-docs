@@ -7,13 +7,13 @@ Insert a fumen code into Rith's custom \<fumen> tags as you would in standard HT
 Changing the name of the tag from \<fumen> to \<figfumen> will generate its inner comment as a fig caption.
 ___
 ### \<fumen> tag attributes:
-**Height**: number of rows to render. Default is 5, max is 23.
+**Height**: number of rows to render (starting from the bottom). Default is 5, max is 23.
 <div style="display: flex; justify-content: space-around;">
 \<fumen height = '15'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
 <fumen height = '15'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
 </div>
 
-**Width**: number of columns to render (LTR). Default and maximum is 10.
+**Width**: number of columns to render (starting from the left). Default and maximum is 10.
 <div style="display: flex; justify-content: space-around;">
 \<fumen width = '4'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
 <fumen width = '4'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
@@ -52,13 +52,12 @@ ___
 Fumens within \<fumen> tags are automatically mirrored. The only consideration for writing is almost the same as [[#Rotation States]]. Two elements with the classes "Unmirrored" and "Mirrored".
 
 <div style="display: flex; justify-content: space-around;">
-	\<figure><br>
-		\<fumen>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen><br>
-		\<figcaption><br>
-			\<span class="Unmirrored">Unmirrored Text\</span>\<span class="Mirrored">txeT derorriM\</span><br>
-		\</figcaption><br>
-	\</figure>
-	
+	<figure><br>
+		<fumen>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen><br>
+		<figcaption><br>
+			<span class="Unmirrored">Unmirrored Text</span><span class="Mirrored">txeT derorriM</span><br>
+		</figcaption><br>
+	</figure>
 	<figure>
 		<fumen>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
 		<figcaption>
