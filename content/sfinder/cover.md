@@ -38,11 +38,12 @@ ___
 <div style="display: flex; flex-direction: column;">
 	<table>
 		<tr>
-			<td><b>Selected option</b></td>
+			<td><b>Option</b></td>
 			<td><b>Harddrop</b></td>
 			<td><b>Softdrop</b></td>
 			<td><b>90 spins</b></td>
 			<td><b>180 spins</b></td>
+			<td><b>Must also do:</b></td>
 		</tr>
 		<tr>
 			<td>harddrop</td>
@@ -50,6 +51,7 @@ ___
 			<td>✗</td>
 			<td>✗</td>
 			<td>✗</td>
+			<td rowspan="3">-</td>
 		</tr>
 		<tr>
 			<td>softdrop</td>
@@ -67,15 +69,35 @@ ___
 		</tr>
 		<tr>
 			<td>t-softdrop</td>
-			<td>✓</td>
-			<td>T only</td>
-			<td>T only</td>
-			<td>✗</td>
+			<td rowspan="6">✓</td>
+			<td rowspan="6">T only</td>
+			<td rowspan="6">T only</td>
+			<td rowspan="6">✗</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>tsz</td>
+			<td>Any T-spin</td>
+		</tr>
+		<tr>
+			<td>tsm</td>
+			<td>tss/tsd/tst (and/or minis)</td>
+		</tr>
+		<tr>
+			<td>tss</td>
+			<td>tss/tsd/tst</td>
+		</tr>
+		<tr>
+			<td>tsd</td>
+			<td>tsd/tst</td>
+		</tr>
+		<tr>
+			<td>tst</td>
+			<td>tst only</td>
 		</tr>
 	</table>
 </div>
 
-<!-- TODO: note there are also the many t-spin specific drop modes that are not listed. -->
 <!-- TODO: note the availability of the 180 option in sfinder v1.40 is configurable, since kick tables are customizable since then. -->
 
 - **Last Softdrop** (`--last-softdrop`, `-l`): Allows the last nth pieces to use softdrop regardless of the value of `--drop`.
