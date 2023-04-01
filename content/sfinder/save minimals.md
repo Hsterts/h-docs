@@ -113,7 +113,7 @@ The program currently being used can prioritize multiple saves. If you ask for s
 
 ___
 ## Finding Save Minimals
-Save minimals are currently being found using [Marfung37](https://github.com/Marfung37/)'s [PC-Saves-Get](https://github.com/Marfung37/PC-Saves-Get) program. It requires Python3 and NodeJS and will work off of sfinder's [[sfinder/sfinder path.md|Path Command]] the same way [[sfinder/strict minimals|strict minimals]] do.
+Save minimals are currently being found using [Marfung37](https://github.com/Marfung37/)'s [PC-Saves-Get](https://github.com/Marfung37/PC-Saves-Get) program. It requires Python3 and NodeJS and will work off of sfinder's [[sfinder/path.md|Path Command]] the same way [[sfinder/strict minimals|strict minimals]] do.
 
 #### Downloading Python3:
 Go to the [Python3 download page](https://www.python.org/downloads/). It should be a straight-forward installation.
@@ -130,7 +130,7 @@ In a terminal, enter the following separately
 - `npm install -g sfinder-strict-minimal` for generating minimals.
 
 #### Creating the files that sfinder-strict-minimal works off of:
-Solution finder's [[sfinder/sfinder path.md|Path Command]] is used to produce a `.csv` file that is used to find minimals. The sfinder command is identical to a normal path file, but you must specify `--format csv` (`-f csv`) and `--key pattern` (`-k p`).
+Solution finder's [[sfinder/path.md|Path Command]] is used to produce a `.csv` file that is used to find minimals. The sfinder command is identical to a normal path file, but you must specify `--format csv` (`-f csv`) and `--key pattern` (`-k p`).
 
 #### Using PC-Saves-Get:
 The commands for the program is structured similar to sfinder. The following explanations are excerpts of important parameters from the [official documentation](https://github.com/Marfung37/PC-Saves-Get/blob/main/README.md).
@@ -144,7 +144,7 @@ py sfinder-saves.py filter -w [Wanted Saves] -p [Pieces Used]
 
 #### **`-w`** Usage and Examples:
 For most use cases, all you need for specifying wanted saves are:
-- **`-w "I,LS,LSZ"`** a plain list of saves you wish to get. These are priotized according to what's written first.
+- **`-w "I,LS,LSZ"`** a plain list of saves you wish to get. These are prioritized according to what's written first.
     - If the path.csv file saves more pieces than specified in the `-w` parameter, it'll find all saves that include those pieces: **`-w "I"`** may match `TILJ`, `ISZO`, `ILSZ` etc. while **`-w "LSZ"`** may match `TLSZ`,`LSZO`, etc.
 - **`-w "!O"`** the "NOT" operator (`!`). It negates the given specification.
     - As an example, using **`-w "!O"`** will match `TISZ`, `LJSZ`, etc.-- any save that does not contain <span class="mino">O</span>.
@@ -188,7 +188,7 @@ The setup also has a 42.46% chance for saving <span class="mino">T</span>, so he
 py sfinder-saves.py filter -w 'T,O' -p T,*! -bs
 ```
 
-The resulting minimals should be the following. If you double-check with cover, this set ,does max out the setup's potential 42.46% save <span class="mino">T</span> before filling in the rest of the missing cover with save <span class="mino">O</span>.
+The resulting minimals should be the following. If you double-check with cover, this set does max out the setup's potential 42.46% save <span class="mino">T</span> before filling in the rest of the missing cover with save <span class="mino">O</span>.
 <br>
 <div style="text-align: center">
 <figfumen clipboard="false" size=15>v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWaA0CwKB2ngHBFbcRASEJEBQLaHBQecRAylAAA</figfumen>
