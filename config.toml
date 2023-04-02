@@ -31,5 +31,6 @@ enableGitInfo = true
     [frontmatter]
         lastmod = ["lastmod", ":git", "date", "publishDate"]
         publishDate = ["publishDate", "date"]
-    [markup.goldmark.renderer]
-        unsafe = true
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true

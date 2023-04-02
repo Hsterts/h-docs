@@ -35,70 +35,7 @@ ___
 - **Drop** (`--drop`, `-d`): Specify what movements are usable.
 	- By default, it uses `softdrop`. 
 
-<div style="display: flex; flex-direction: column;">
-	<table>
-		<tr>
-			<td><b>Option</b></td>
-			<td><b>Harddrop</b></td>
-			<td><b>Softdrop</b></td>
-			<td><b>90 spins</b></td>
-			<td><b>180 spins</b></td>
-			<td><b>Must also do:</b></td>
-		</tr>
-		<tr>
-			<td>harddrop</td>
-			<td>✓</td>
-			<td>✗</td>
-			<td>✗</td>
-			<td>✗</td>
-			<td rowspan="3">-</td>
-		</tr>
-		<tr>
-			<td>softdrop</td>
-			<td>✓</td>
-			<td>✓</td>
-			<td>✓</td>
-			<td>✗</td>
-		</tr>
-		<tr>
-			<td>180</td>
-			<td>✓</td>
-			<td>✓</td>
-			<td>✓</td>
-			<td>✓</td>
-		</tr>
-		<tr>
-			<td>t-softdrop</td>
-			<td rowspan="6">✓</td>
-			<td rowspan="6">T only</td>
-			<td rowspan="6">T only</td>
-			<td rowspan="6">✗</td>
-			<td>-</td>
-		</tr>
-		<tr>
-			<td>tsz</td>
-			<td>Any T-spin</td>
-		</tr>
-		<tr>
-			<td>tsm</td>
-			<td>tss/tsd/tst (and/or minis)</td>
-		</tr>
-		<tr>
-			<td>tss</td>
-			<td>tss/tsd/tst</td>
-		</tr>
-		<tr>
-			<td>tsd</td>
-			<td>tsd/tst</td>
-		</tr>
-		<tr>
-			<td>tst</td>
-			<td>tst only</td>
-		</tr>
-	</table>
-</div>
-
-<!-- TODO: note the availability of the 180 option in sfinder v1.40 is configurable, since kick tables are customizable since then. -->
+{{< sfinder-parameters/drop t-spin-table="true" >}}
 
 - **Last Softdrop** (`--last-softdrop`, `-l`): Allows the last nth pieces to use softdrop regardless of the value of `--drop`.
 
@@ -276,34 +213,34 @@ ___
 An **example CSV output** of the cover command.
 <center>
 <table style="text-align: center;">
-<tr>
-<th width="100px;">sequence</th>
-<th width="100px;">vhFRQJU...</th>
-<th width="100px;">vhFRQJP...</th>
-</tr>
-<tr>
-<td>TILJSZO</td>
-<td>X</td>
-<td>O</td>
-</tr>
-<tr>
-<td>TILJSOZ</td>
-<td>X</td>
-<td>O</td>
-</tr>
-<tr>
-<td>TILJZSO</td>
-<td>X</td>
-<td>O</td>
-</tr>
-<tr>
-<td>TILJZOS</td>
-<td>X</td>
-<td>O</td>
-</tr>
-<tr>
-<td colspan="3">5036 more lines...</td>
-</tr>
+	<tr>
+		<th width="100px;">sequence</th>
+		<th width="100px;">v115@vhFRQJU...</th>
+		<th width="100px;">v115@vhFRQJP...</th>
+	</tr>
+	<tr>
+		<td>TILJSZO</td>
+		<td>X</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<td>TILJSOZ</td>
+		<td>X</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<td>TILJZSO</td>
+		<td>X</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<td>TILJZOS</td>
+		<td>X</td>
+		<td>O</td>
+	</tr>
+	<tr>
+    	<td colspan="3">5036 more lines...</td>
+	</tr>
 </table>
 </center>
 

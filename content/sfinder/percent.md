@@ -30,10 +30,8 @@ ___
 - **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable. By default, it is enabled.
 	- `--H use` or `--H avoid`
 - **Drop** (`--drop`, `-d`): Specify what movements are usable. By default, it uses `softdrop`. 
-	- `--drop harddrop`: only harddrop and kicks.
-	- `--drop softdrop`: enabled softdrop and kicks.
-	- `--drop 180`: softdrop but with 180 spins.
-	- `--drop T-softdrop`: only the T piece is softdropped.
+
+{{< sfinder-parameters/drop t-spin-table="false" >}}
 ___
 ## Output Parameters
 **Tree Depth** (`--tree-depth`, `-td`): determines the depth of the tree diagram of the output. The tree output checks for the sol% of the field if the first few pieces of the queue is known.

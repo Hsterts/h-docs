@@ -33,15 +33,8 @@ ___
 	- By default, it is `use`.
 	- `--H use` or `--H avoid`
 - **Drop** (`--drop`, `-d`): Specify what movements sfinder uses to try and find solutions.
-	- By default, it uses `softdrop`. 
-	- `--drop harddrop`: only harddrop and kicks.
-	- `--drop softdrop`: enabled softdrop and kicks.
-	- `--drop 180`: softdrop but with 180 spins.
-	- `--drop T-softdrop`: only the T piece is softdropped.
-	- `--drop any-tspin`: only the T piece is softdropped, and it must get any type of T-spin including a T-spin zero and minis.
-	- `--drop tss`: only the T piece is softdropped, and it must get a T-spin single, double, or triple.
-	- `--drop tsd`: only the T piece is softdropped, and it must get a T-spin double, or triple.
-	- `--drop tst`: only the T piece is softdropped, and it must get a T-spin triple.
+
+{{< sfinder-parameters/drop t-spin-table="true" >}}
 ___
 ## Output Parameters
 **Format** (`--format`, `-f`): Dictates the way the path output is written onto a file.
