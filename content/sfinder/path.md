@@ -35,6 +35,22 @@ ___
 - **Drop** (`--drop`, `-d`): Specify what movements sfinder uses to try and find solutions.
 
 {{< sfinder-parameters/drop t-spin-table="true" >}}
+
+**Specified only** (`--specified-only`, `-so`): 
+>[!WARNING] WIP
+> 
+> This section isn't filled out yet.
+
+**Reserved minos** (`--reserved`, `-r`): 
+>[!WARNING] WIP
+> 
+> This section isn't filled out yet.
+
+**Kick table** (`--kicks`, `-K`):
+> [!WARNING] WIP
+>
+> This section isn't filled out yet.
+
 ___
 ## Output Parameters
 **Format** (`--format`, `-f`): Dictates the way the path output is written onto a file.
@@ -45,15 +61,15 @@ ___
 - `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with nonsensical text</u>. Some more info about different csv outputs [[#Example Commands and Outputs|here]].
 
 **Max Layer** (`--max-layer`, `-L`): refers to the outputs of path when using the **html format**.
-	- By default, it is set to `2` (outputs both `path_unique.html` and `path_minimal.html`)
-	- The only other option is `-L 1`, where it only outputs `path_unique.html`.
+- By default, it is set to `2` (outputs both `path_unique.html` and `path_minimal.html`)
+- The only other option is `-L 1`, where it only outputs `path_unique.html`.
 
 **Key** (`--key`, `-k`): refers to the way the path result is sorted when using the **csv format**.
-	- By default, it is set to `none`.
-	- `--key solution` outputs the path info <u>grouped by solution</u>.
-	- `--key pattern` outputs the path info <u>grouped by queue</u>.
-	- `--key use` outputs the path info <u>grouped by pieces used</u>
-	- The parameters may also be shortened to just the first name (`--key use` = `-k u`).
+- By default, it is set to `none`.
+- `--key solution` outputs the path info <u>grouped by solution</u>.
+- `--key pattern` outputs the path info <u>grouped by queue</u>.
+- `--key use` outputs the path info <u>grouped by pieces used</u>
+- The parameters may also be shortened to just the first name (`--key use` = `-k u`).
 
 **Split** (`--split`, `-s`): refers to the way the solution fumen is built.
 	- By default, it is set to `no` (output is a normal fumen).
@@ -122,6 +138,21 @@ ___
 			<td>--drop</td>
 			<td style="text-align: center;">-d</td>
 			<td>softdrop</td>
+		</tr>
+		<tr>
+			<td>--kicks</td>
+			<td style="text-align: center;">-K</td>
+			<td>srs</td>
+		</tr>
+		<tr>
+			<td>--specified-only</td>
+			<td style="text-align: center;">-so</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<td>--reserved</td>
+			<td style="text-align: center;">-r</td>
+			<td>false</td>
 		</tr>
 	</table>
 	<br>

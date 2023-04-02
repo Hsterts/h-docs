@@ -74,10 +74,6 @@ ___
 - By default, the patterns path is `input/patterns.txt`.
 - `--patterns-path input/filteredqueue.txt`
 
-**Threads** (`--threads`, `-th`): Specify the number of threads to use when sfinder is running. Basically, threads are tiny virtual CPUs used to calculate stuff. <u>Almost no need to ever touch this.</u>
-- By default, the number of threads used is 1.
-- `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
-
 **Cached Bit** (`--cached-bit`, `-cb`): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
 ___
 ## Summary
@@ -166,11 +162,6 @@ ___
 					<td>--patterns-path</td>
 					<td style="text-align: center;">-pp</td>
 					<td>input/patterns.txt</td>
-				</tr>
-				<tr>
-					<td>--threads</td>
-					<td style="text-align: center;">-th</td>
-					<td>-1</td>
 				</tr>
 				<tr>
 					<td>--cached-bit</td>

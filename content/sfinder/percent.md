@@ -32,15 +32,20 @@ ___
 - **Drop** (`--drop`, `-d`): Specify what movements are usable. By default, it uses `softdrop`. 
 
 {{< sfinder-parameters/drop t-spin-table="false" >}}
+
+**Kick table** (`--kicks`, `-K`):
+> [!WARNING] WIP
+>
+> This section isn't filled out yet.
 ___
 ## Output Parameters
 **Tree Depth** (`--tree-depth`, `-td`): determines the depth of the tree diagram of the output. The tree output checks for the sol% of the field if the first few pieces of the queue is known.
 - By default, tree depth is 3.
 - `--tree-depth 1`
 
-**Fail Count** (`--fail-count`, `-fc`): determines the number of fail queues displayed at the end of the output.
-- By default, fail count is 100.
-- `--fail-count -1` displays as many fail queues as possible.
+**Failed Count** (`--failed-count`, `-fc`): determines the number of failed queues displayed at the end of the output.
+- By default, failed count is 100.
+- `--failed-count -1` displays as many failed queues as possible.
 ___
 ## Miscellaneous Parameters
 **Log path** (`--log-path`, `-lp`): create a .txt file output from the output of the command.
@@ -99,6 +104,11 @@ ___
 			<td>--drop</td>
 			<td style="text-align: center;">-d</td>
 			<td>softdrop</td>
+		</tr>
+		<tr>
+			<td>--kicks</td>
+			<td style="text-align: center;">-K</td>
+			<td>srs</td>
 		</tr>
 	</table>
 	<br>
@@ -203,7 +213,7 @@ Success pattern tree [Head 1 pieces]:
 ? Z -> 52.50 %
 ? O -> 47.50 %
 
-# Fail Count (--fail-count, -fc)
+# Failed Count (--failed-count, -fc)
 -------------------
 Fail pattern (max. 5)
 [J, L, T, O]

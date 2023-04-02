@@ -24,7 +24,7 @@ java -jar sfinder.jar cover -t <fumen> <fumen> -p <pattern>
 ___
 ## Input Parameters
 **Specified Field(s)** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code(s)]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used. Input multiple fumens for fields by separating the fumens with spaces.
-- **Mirror** (--mirror, -m): Whether or not to include the mirrors for all inputted fumens. The outputs will mark mirrored `fumen` inputs as `fumen#mirror`.
+- **Mirror** (`--mirror`, `-m`): Whether or not to include the mirrors for all inputted fumens. The outputs will mark mirrored `fumen` inputs as `fumen#mirror`.
 	- The default is `false`.
 	- `--mirror true`
 
@@ -37,9 +37,12 @@ ___
 
 {{< sfinder-parameters/drop t-spin-table="true" >}}
 
-- **Last Softdrop** (`--last-softdrop`, `-l`): Allows the last nth pieces to use softdrop regardless of the value of `--drop`.
+- **Last Softdrop** (`--last-sd`, `-l`): Allows the last nth pieces to use softdrop regardless of the value of `--drop`.
 
 **Mode** (`--mode`, `--M`): specifying the condition by which cover will return as successful or failed.
+> [!WARNING] WIP
+>
+> This section can be improved by showcasing the possible modes.
 - **Max Clear Line** (`--clear-line`, `-c`): Specify the number of line clears cover may use. 
 	- By default, it is `-1`, meaning there is no limit.
 	- `--max-clearline 1` for a 4-line high perfect clear field may allow you to get that field's quad clear chance.
@@ -51,17 +54,26 @@ ___
 **Starting B2B** (`--starting-b2b`, `-sb`): specifying the number of B2B clears is required for a successful output.
 - By default, it uses `0`, meaning no B2B is required.
 - `--starting-b2b 2`
+
+**Kick table** (`--kicks`, `-K`):
+> [!WARNING] WIP
+>
+> This section isn't filled out yet.
 ___
 ## Output Parameters
 **Priority** (`--priority`, `-P`): Only one setup can be marked as `O` for all the fumens provided. This will be the first setup that is buildable in the order of the fumens given in `--tetfu`.
 - By default, priority is `True`.
 - `--priority True`
 
-**Fail Count** (`--fail-count`, `-fc`): determines the number of fail queues displayed at the end of the output.
-- By default, fail count is `100`.
-- `--fail-count -1` displays as many fail queues as possible.
+**Failed Count** (`--failed-count`, `-fc`): determines the number of failed queues displayed at the end of the output.
+- By default, failed count is `100`.
+- `--failed-count -1` displays as many failed queues as possible.
 ___
 ## Miscellaneous Parameters
+**Output Base** (`--output-base`, `-o`): Specify the path data file output.
+- By default, the path data is written into `output/path.csv, path_minimal.html, or path_unique.html` (depending on your path command).
+- `--output-base output/tubpath.csv`
+
 **Log path** (`--log-path`, `-lp`): create a .txt file output from the output of the command.
 - By default, the log path is `output/last_output.txt`.
 - `--log-path output/chances.txt`
@@ -117,7 +129,7 @@ ___
 			<td>-1</td>
 		</tr>
 		<tr>
-			<td>--last-softdrop</td>
+			<td>--last-sd</td>
 			<td>-l</td>
 			<td>0</td>
 		</tr>
@@ -125,6 +137,11 @@ ___
 			<td>--mirror</td>
 			<td>-m</td>
 			<td>false</td>
+		</tr>
+		<tr>
+			<td>--kicks</td>
+			<td>-K</td>
+			<td>srs</td>
 		</tr>
 	</table>
 	<br>
@@ -148,7 +165,7 @@ ___
 			<td>normal</td>
 		<tr>
 			<td>--output-base</td>
-			<td>-ob</td>
+			<td>-o</td>
 			<td>output/cover.csv</td>
 		</tr>
 	</table>
