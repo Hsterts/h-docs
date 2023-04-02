@@ -71,7 +71,7 @@ ___
 ___
 ## Miscellaneous Parameters
 **Output Base** (`--output-base`, `-o`): Specify the path data file output.
-- By default, the path data is written into `output/path.csv, path_minimal.html, or path_unique.html` (depending on your path command).
+- By default, the path data is written into `output/path.csv`, `path_minimal.html`, or `path_unique.html` (depending on your path command).
 - `--output-base output/tubpath.csv`
 
 **Log path** (`--log-path`, `-lp`): create a .txt file output from the output of the command.
