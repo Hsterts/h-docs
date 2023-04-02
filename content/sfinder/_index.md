@@ -37,7 +37,7 @@ ___
 >
 >- Find where your downloaded **sfinder.jar** file is in a File Explorer.
 >- On the folder, **hold shift and right-click** to open the right-click menu, which should contain an option to "Open PowerShell Here".
->- You can just use `cd` to change directories-- copy and paste the folder's path in the terminal as `cd C:\Path\` and it should work.
+>- You can just use `cd` to change directories -- copy and paste the folder's path in the terminal as `cd C:\Path\` and it should work.
 2. There are various ways to open the PowerShell Terminal, but the simplest way is to **hold shift and right click somewhere on File Explorer in the folder where sfinder.jar is**. Don't select `sfinder.jar` while doing so.
 <center><img src = "https://i.imgur.com/XsL6WnV.png"></center>
 
@@ -75,7 +75,7 @@ Command line inputs may vary between different **sfinder commands**:
 		<td>Outputs all the ways combo (REN) can be continued.</td>
 	</tr>
 	<tr>
-		<td>Spin</td>
+		<td><a href="/h-docs/sfinder/spin/">Spin</a></td>
 		<td>Outputs all the ways a T-spin can be made from a field.</td>
 	</tr>
 	<tr>
@@ -109,4 +109,4 @@ java -jar sfinder.jar cover --tetfu <fumen> <fumen> <fumen>
 java -jar sfinder.jar percent -t <fumen>
 ```
 
-2. **Pattern** refers to the <u>general structure</u> of the queues being considered by sfinder. Since it's one of the harder parameters to learn, patterns are discussed in its own page: [[sfinder/parameter patterns|--patterns]].
+2. **Pattern** refers to the <u>general structure</u> of the queues being considered by sfinder. Since it's one of the harder parameters to learn, patterns are discussed in its own page: [[sfinder/parameter patterns|\-\-patterns]].
