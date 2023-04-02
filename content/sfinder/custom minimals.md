@@ -11,7 +11,7 @@ body{display: flex; justify-content: center;}
 </style>
 
 ## Custom Cover-Based Minimals
-A special method of generating minimals, where you can get minimal sets for **maximizing a setup's quad clear chance, T-Spin chance, etc.** by converting solution finder's  [[sfinder-docs/sfinder cover.md|cover]] output into a `path.csv` file, allowing [[sfinder-docs/strict minimals|sfinder-strict-minimal]] to work its magic.
+A special method of generating minimals, where you can get minimal sets for **maximizing a setup's quad clear chance, T-Spin chance, etc.** by converting solution finder's  [[sfinder/cover.md|cover]] output into a `path.csv` file, allowing [[sfinder/strict minimals|sfinder-strict-minimal]] to work its magic.
 ___
 ## Finding Custom Cover-Based Minimals
 This is currently done through [Hillosanation's](https://github.com/Hillosanation/) **Cover-to-Path Script**.
@@ -102,7 +102,7 @@ Afterwards you can open the `path_minimal_strict.md` or get it through Marfung's
 <fumen size="10" height="9" clipboard="false">v115@VgC8BtRpywC8ilQ4i0C8glBtR4wwg0E8RpQ4H8whI8?whI8whI8whC8JeAgWSADX7rDy4CwBFbEEBOrwRAyfAAA</fumen>
 </div>
 
-And that's your output. You can use other `--mode` values for cover to get different outputs, like T-Spin minimals for a certain setup or things like that. Read more about it over at the [[sfinder-docs/sfinder cover|sfinder cover documentation]].
+And that's your output. You can use other `--mode` values for cover to get different outputs, like T-Spin minimals for a certain setup or things like that. Read more about it over at the [[sfinder/cover.md|sfinder cover documentation]].
 
 <hr>
 <div class="credits">

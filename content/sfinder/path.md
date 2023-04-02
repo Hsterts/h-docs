@@ -20,74 +20,83 @@ java -jar sfinder.jar path -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field** (--tetfu, --t): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
-- **Page** (--page, -P): Specify the page of the fumen. 
+**Specified Field** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+- **Page** (`--page`, `-P`): Specify the page of the fumen. 
 	- The default is `1` (the first page)
 	- `--page 2` 
-- **Clear Line** (--clear-line, -c): Specify the number of line clears for a perfect clear. 
+- **Clear Line** (`--clear-line`, `-c`): Specify the number of line clears for a perfect clear. 
 	- The default is `4`
 	- `--clear-line 6`
 
-**Patterns** (--patterns, -p): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
-- **Hold** (--hold, -H): Specify whether or not a hold slot is usable.
+**Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
+- **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable.
 	- By default, it is `use`.
-	- `--H use` or `--H avoid`
-- **Drop** (--drop, -d): Specify what movements sfinder uses to try and find solutions.
-	- By default, it uses `softdrop`. 
-	- `--drop harddrop`: only harddrop and kicks.
-	- `--drop softdrop`: enabled softdrop and kicks.
-	- `--drop 180`: softdrop but with 180 spins.
-	- `--drop T-softdrop`: only the T piece is softdropped.
-	- `--drop any-tspin`: only the T piece is softdropped, and it must get any type of T-spin including a T-spin zero and minis.
-	- `--drop tss`: only the T piece is softdropped, and it must get a T-spin single, double, or triple.
-	- `--drop tsd`: only the T piece is softdropped, and it must get a T-spin double, or triple.
-	- `--drop tst`: only the T piece is softdropped, and it must get a T-spin triple.
+	- `-H use` or `-H avoid`
+- **Drop** (`--drop`, `-d`): Specify what movements sfinder uses to try and find solutions.
+
+{{< sfinder-parameters/drop t-spin-table="true" >}}
+
+**Specified only** (`--specified-only`, `-so`): 
+>[!WARNING] WIP
+> 
+> This section isn't filled out yet.
+
+**Reserved minos** (`--reserved`, `-r`): 
+>[!WARNING] WIP
+> 
+> This section isn't filled out yet.
+
+**Kick table** (`--kicks`, `-K`):
+> [!WARNING] WIP
+>
+> This section isn't filled out yet.
+
 ___
 ## Output Parameters
-**Format** (--format, -f): Dictates the way the path output is written onto a file.
+**Format** (`--format`, `-f`): Dictates the way the path output is written onto a file.
 - By default, the output is in `html`.
 - With `--format html` (the default), there are two outputs (if `--max-layer` is not specified):
 	- `path_unique.html` contains a list of all the possible solves found by sfinder.
 	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[sfinder/minimals|this page]].
 - `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with nonsensical text</u>. Some more info about different csv outputs [[#Example Commands and Outputs|here]].
 
-**Max Layer** (--max-layer, -L): refers to the outputs of path when using the **html format**.
-	- By default, it is set to `2` (outputs both `path_unique.html` and `path_minimal.html`)
-	- The only other option is `-L 1`, where it only outputs `path_unique.html`.
+**Max Layer** (`--max-layer`, `-L`): refers to the outputs of path when using the **html format**.
+- By default, it is set to `2` (outputs both `path_unique.html` and `path_minimal.html`)
+- The only other option is `-L 1`, where it only outputs `path_unique.html`.
 
-**Key** (--key, -k): refers to the way the path result is sorted when using the **csv format**.
-	- By default, it is set to `none`.
-	- `--key solution` outputs the path info <u>grouped by solution</u>.
-	- `--key pattern` outputs the path info <u>grouped by queue</u>.
-	- `--key use` outputs the path info <u>grouped by pieces used</u>
-	- The parameters may also be shortened to just the first name (`--key use` = `-k u`).
+**Key** (`--key`, `-k`): refers to the way the path result is sorted when using the **csv format**.
+- By default, it is set to `none`.
+- `--key solution` outputs the path info <u>grouped by solution</u>.
+- `--key pattern` outputs the path info <u>grouped by queue</u>.
+- `--key use` outputs the path info <u>grouped by pieces used</u>
+- The parameters may also be shortened to just the first name (`--key use` = `-k u`).
 
-**Split** (--split, -s): refers to the way the solution fumen is built.
+**Split** (`--split`, `-s`): refers to the way the solution fumen is built.
 	- By default, it is set to `no` (output is a normal fumen).
 	- `--split yes` builds the solves <u>mino-by-mino</u> ([[sfinder/fumen editor#Fumen Types|glued fumen]]).
 ___
 ## Miscellaneous Parameters
-**Output Base** (--output-base, -o): Specify the path data file output.
-- By default, the path data is written into `output/path.csv, path_minimal.html, or path_unique.html` (depending on your path command).
+**Output Base** (`--output-base`, `-o`): Specify the path data file output.
+- By default, the path data is written into `output/path.csv`, `path_minimal.html`, or `path_unique.html` (depending on your path command).
 - `--output-base output/tubpath.csv`
 
-**Log path** (--log-path, -lp): Specify the .txt file output from the output of the command.
+**Log path** (`--log-path`, `-lp`): Specify the .txt file output from the output of the command.
 - By default, the log path is `output/last_output.txt`.
 - `--log-path output/foundpaths.txt`
 
-**Specified Field from a file** (--field-path, -fp): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
+**Specified Field from a file** (`--field-path`, `-fp`): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
 - By default, the field path is `input/field.txt`.
 - `--field-path input/sdpc.txt`
 
-**Patterns from a file** (--patterns-path, -pp): instead of defining patterns using `--patterns`, you can specify a .txt file that contains either the actual queues, or patterns.
+**Patterns from a file** (`--patterns-path`, `-pp`): instead of defining patterns using `--patterns`, you can specify a .txt file that contains either the actual queues, or patterns.
 - By default, the patterns path is `input/patterns.txt`.
 - `--patterns-path input/filteredqueue.txt`
 
-**Threads** (--threads, --th): Specify the number of threads to use when sfinder is running. Basically, threads are tiny virtual CPUs used to calculate stuff. <u>Almost no need to ever touch this.</u>
+**Threads** (`--threads`, `-th`): Specify the number of threads to use when sfinder is running. Basically, threads are tiny virtual CPUs used to calculate stuff. <u>Almost no need to ever touch this.</u>
 - By default, the number of threads used is 1.
 - `--threads 0` will allow sfinder to use as many threads as is present in the execution environment.
 
-**Cached Bit** (--cached-bit, -cb): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
+**Cached Bit** (`--cached-bit`, `-cb`): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
 ___
 ## Summary
 <div style="display: flex; flex-direction: column;">
@@ -122,13 +131,28 @@ ___
 		</tr>
 		<tr>
 			<td>--hold</td>
-			<td style="text-align: center;">--H</td>
+			<td style="text-align: center;">-H</td>
 			<td>use</td>
 		</tr>
 		<tr>
 			<td>--drop</td>
 			<td style="text-align: center;">-d</td>
 			<td>softdrop</td>
+		</tr>
+		<tr>
+			<td>--kicks</td>
+			<td style="text-align: center;">-K</td>
+			<td>srs</td>
+		</tr>
+		<tr>
+			<td>--specified-only</td>
+			<td style="text-align: center;">-so</td>
+			<td>yes</td>
+		</tr>
+		<tr>
+			<td>--reserved</td>
+			<td style="text-align: center;">-r</td>
+			<td>false</td>
 		</tr>
 	</table>
 	<br>

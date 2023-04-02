@@ -20,16 +20,16 @@ body{display: flex; justify-content: center;}
 }
 </style>
 
-A demonstration of the use of [SaNoy's](https://github.com/SaNoyGit/) **Cover-to-Path Script**.
-### Downloading Cover-To-Path
-1. Download the [Cover-to-Path script](https://cdn.discordapp.com/attachments/569728778985537587/982997795986350110/cover-to-path.py) and place it in the folder where `sfinder.jar` is.
-2. Download the [unglueFumen script](https://cdn.discordapp.com/attachments/853378199525916732/982998615909871646/unglueFumen.js) and place it in the folder where `sfinder.jar` is.
+A demonstration of the use of [Hillosanation's](https://github.com/Hillosanation/) **Cover-to-Path Script**.
+### Downloading
+1. Download the [Cover-to-Path script](https://github.com/Hillosanation/cover-to-path/releases/tag/v0.1.1) and place it in the folder where `sfinder.jar` is.
+2. Download the [unglueFumen script](https://github.com/Hillosanation/GluingFumens/releases/tag/v0.0.3) and place it in the folder where `sfinder.jar` is.
 
-### Downloade NodeJS and a unglueFumen Dependency:
+### Download NodeJS and a unglueFumen Dependency:
 1. Go to the [NodeJS download page](https://nodejs.org/en/download/). Installing it should be straight-forward.
     - When installing, make sure that **`NodeJS` and `npm` are added to PATH**. This appears in the **Custom Setup** step of installation.
 2. Open a terminal (Command Prompt, PowerShell, etc.)
-3. Set your directory to the sfinder folder. Type in `npm install yargs` and press enter.
+3. Set your directory to the sfinder folder, then enter `npm install yargs`.
 ___
 ## Example Path and Usage
 <div class="minimal-graphic" style="display: flex; align-items: center;">

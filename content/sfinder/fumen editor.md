@@ -12,21 +12,25 @@ body{display: flex; justify-content: center;}
 .singlePage{width: -webkit-fill-available; max-width: 700px;}
 </style>
 
+>[!WARNING] Work In Progress
+>
+>This page is currently being worked on! For the meantime, assume that none of the information presented here is correct.
+
 **Fumen** is a board editor made by [knewjade](https://github.com/knewjade). It is the most commonly used board editor and allows the exporting of multiple board states in a <u>single fumen code</u>. This page breaks down all the various forms and features of fumen (and how it works).
 ___
 ## Fumen Editor User Interface
 
-<div style="display: flex; justify-content: space-around">
-	<div>
-		<img src="https://github.com/Hsterts/h-docs/blob/hugo/content/sfinder-docs/attachments/fumen-zui.png?raw=true">
-	</div>
-	<div>
-		<p>
-		The Original Fumen Editor
-		</p>
-	</div>
-</div>
+<figure>
+	<img src="../attachments_sfinder/fumen-zui.png?raw=true">
+	<figcaption>
+		<p style="margin:0px">The Original Fumen Editor</p>
+	</figcaption>
+</figure>
 
 ## Fumen Code
 
+WIP, use [this](https://docs.google.com/presentation/d/165wmbxVzTuBMxG4vjk8SwD3-9uLAkVAWeBVW7QTrfWQ/edit?usp=sharing) as reference
+
 ## Fumen 
+
+## Fumen Types
