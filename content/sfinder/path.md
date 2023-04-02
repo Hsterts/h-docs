@@ -20,7 +20,7 @@ java -jar sfinder.jar path -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field** (`--tetfu`, `--t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+**Specified Field** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
 - **Page** (`--page`, `-P`): Specify the page of the fumen. 
 	- The default is `1` (the first page)
 	- `--page 2` 
@@ -31,7 +31,7 @@ ___
 **Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
 - **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable.
 	- By default, it is `use`.
-	- `--H use` or `--H avoid`
+	- `-H use` or `-H avoid`
 - **Drop** (`--drop`, `-d`): Specify what movements sfinder uses to try and find solutions.
 
 {{< sfinder-parameters/drop t-spin-table="true" >}}
@@ -115,7 +115,7 @@ ___
 		</tr>
 		<tr>
 			<td>--hold</td>
-			<td style="text-align: center;">--H</td>
+			<td style="text-align: center;">-H</td>
 			<td>use</td>
 		</tr>
 		<tr>

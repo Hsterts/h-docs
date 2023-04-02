@@ -23,7 +23,7 @@ java -jar sfinder.jar cover -t <fumen> <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field(s)** (`--tetfu`, `--t`): the [[sfinder/fumen editor#Fumen Code|fumen code(s)]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used. Input multiple fumens for fields by separating the fumens with spaces.
+**Specified Field(s)** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code(s)]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used. Input multiple fumens for fields by separating the fumens with spaces.
 - **Mirror** (--mirror, -m): Whether or not to include the mirrors for all inputted fumens. The outputs will mark mirrored `fumen` inputs as `fumen#mirror`.
 	- The default is `false`.
 	- `--mirror true`
@@ -31,7 +31,7 @@ ___
 **Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
 - **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable.
 	- By default, it is `use`.
-	- `--H use` or `--H avoid`
+	- `-H use` or `-H avoid`
 - **Drop** (`--drop`, `-d`): Specify what movements are usable.
 	- By default, it uses `softdrop`. 
 
@@ -98,7 +98,7 @@ ___
 		</tr>
 		<tr>
 			<td>--hold</td>
-			<td>--H</td>
+			<td>-H</td>
 			<td>true</td>
 		</tr>
 		<tr>

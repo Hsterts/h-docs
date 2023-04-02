@@ -24,7 +24,7 @@ java -jar sfinder.jar spin -t <fumen> -p <pattern>
 ```
 ___
 ## Input Parameters
-**Specified Field** (`--tetfu`, `--t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
+**Specified Field** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
 - **Page** (`--page`, `-P`): Specify the page of the fumen. 
 	- The default is `1` (the first page)
 	- `--page 2` 

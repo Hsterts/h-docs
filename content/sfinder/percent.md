@@ -28,7 +28,7 @@ ___
 
 **Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
 - **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable. By default, it is enabled.
-	- `--H use` or `--H avoid`
+	- `-H use` or `-H avoid`
 - **Drop** (`--drop`, `-d`): Specify what movements are usable. By default, it uses `softdrop`. 
 
 {{< sfinder-parameters/drop t-spin-table="false" >}}
@@ -92,7 +92,7 @@ ___
 		</tr>
 		<tr>
 			<td>--hold</td>
-			<td style="text-align: center;">--H</td>
+			<td style="text-align: center;">-H</td>
 			<td>use</td>
 		</tr>
 		<tr>
