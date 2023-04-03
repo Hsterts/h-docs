@@ -133,7 +133,7 @@ Solution finder's [[sfinder/path|Path Command]] is used to produce a csv file th
 >[This alternative](https://github.com/knewjade/path-filter/) by [Knewjade](https://github.com/knewjade/) can be used to find a slightly larger set in exchange for a much shorter run-time. I also wrote about how to use it over <a href="/h-docs/sfinder/path-filter-minimals/">here</a>.
 2. If there are multiple minimal sets, you may need to choose between solutions. An interactive prompt (**use your arrow keys and press enter when you've chosen**) is used for the user to choose between sets of solutions. **Choose according to your needs**-- if you want ease, prioritize easy-looking solutions. If you want saves, prioritize solutions that save better pieces.
 
-3. Outputs are written to `path_minimal_strict.md`. It's placed in the directory the terminal is linked to. Opening it by itself will allow you to see the solutions if you have a markdown editor. However, you can extract the fumens from the markdown file using the makeMinimals Script [(Direct download link)](https://cdn.discordapp.com/attachments/569730842319126541/941520438528466964/makeMinimals_2.zip)
+3. Outputs are written to `path_minimal_strict.md`. It's placed in the directory the terminal is linked to. Opening it by itself will allow you to see the solutions if you have a markdown editor. However, you can extract the fumens from the markdown file using the [makeMinimals Script](https://github.com/Marfung37/makeMinimals)
     - Using the makeMinimals Script is straight-forward. Extract it into the same folder `path_minimal_strict.md` is in, then enter `py true_minimal.py` onto a terminal.
 ___
 ## Example Path and Strict-Minimal Commands

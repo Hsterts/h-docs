@@ -75,7 +75,7 @@ sfinder-minimal output/cover_to_path.csv
 ```
 The result should tell you that you need **22 solutions**. This means that those **22 solutions are required to reach 72.46% Quad PC chances** for this setup. This is our output.
 
-Afterwards you can open the `path_minimal_strict.md` or get it through Marfung's makeMinimals script.
+Afterwards you can open the `path_minimal_strict.md` or get it through Marfung's [makeMinimals script](https://github.com/Marfung37/makeMinimals).
 
 <div style="text-align: center;">
 <fumen size="10" height="9" clipboard="false">v115@VgC8i0BthlC8Rpg0whBtglC8RpQ4ywglE8R4wwH8Q4?I8whI8whI8whC8JeAgWTADX7rDy4CwBFbU9AVVt2AFrvAA</fumen>
