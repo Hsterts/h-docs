@@ -153,7 +153,7 @@ sfinder-minimal output/path.csv
 ```
 There can different sets of solutions that all qualify as a minimal set. To choose the best one, choices are presented to the user for them to choose between solutions and pin-point their ideal set. Simply use your arrow keys and press enter to choose between setups.
 
-![[sfinder/attachments_sfinder/minimal-interactive.png]]
+![Image of terminal when choosing between different minimal sets.](sfinder/attachments_sfinder/minimal-interactive.png)
 
 The output will be written onto ``path_minimal_strict.md``. The resulting minimals may differ depending on how you chose, but these are my results:
 <div style="text-align: center">
