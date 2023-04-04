@@ -279,7 +279,7 @@ details summary::after{
 
 details:not(details[open]){
   & summary:hover {
-    padding: 0.25em 0.25em 0.5em 0.25em;
+    padding-bottom: 0.5em;
   }
   & summary:hover:after{
     color: var(--dark-1);
