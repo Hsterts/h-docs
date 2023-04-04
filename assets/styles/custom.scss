@@ -246,32 +246,34 @@ summary {
   cursor: pointer;
   background: var(--light-3);
   border-radius: 4px;
-  margin: -.5em -.5em  0;
   padding: .25em .5em;
   transition: 0.2s;
+  font-size: 1.25em;
+  font-weight: 800;
 }
 
 details{
   color: var(--dark-1);
   margin: .5em;
-  padding: .5em .5em 0;
-  font: 1.25em var(--font-header);
-  font-weight: 800;
-  border: 1px solid var(--light-4);
-  border-radius: 4px;
+  // font: 1.25em var(--font-header);
+  font-family: var(--font-body);
   div{text-align: center; width: 100%;}
   position: relative;
   transition: 0.2s;
+  border: 1px solid var(--light-4);
+  border-radius: 4px;
+  & div {
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  & h4 { // temporary fix for stuff like LSZO 2nd
+    font-size: 1.25em;
+  }
 }
 
 details summary::after{
   position: relative;
-  // right: 0;
-  // top: 50%;
-  // transform: translateY(-50%);
-  display: inline-block;
   content: '\25BC';
-  padding: 0 0.5ch;
   transition: 0.2s;
   color: var(--dark-3);
   float: right;
@@ -288,10 +290,9 @@ details:not(details[open]){
 
 
 details[open]{
-  padding: .5em;
-  // & summary{
-  //   margin-bottom: .5em;
-  // }
+  & summary {
+    padding-bottom: 0.5em;
+  }
   & summary::after{
     transform: rotate(-90deg);
     top: revert;
