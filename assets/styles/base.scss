@@ -61,6 +61,25 @@ p, ul, text, a, tr, td, li, ol, ul {
   padding: revert;
 }
 
+.version-text {
+  font-family: var(--font-body);
+  color: var(--tertiary);
+  fill: var(--tertiary);
+  font-weight: 600;
+  margin: revert;
+  padding: revert;
+}
+
+.default-value-text {
+  font-family: var(--font-body);
+  font-size: 15pt;
+  color: var(--dark-3);
+  fill: var(--dark-3);
+  font-weight: 400;
+  margin: 0 0 0 20px;
+  padding: revert;
+}
+
 tbody, li, p {
   line-height: 1.5em;
 }
