@@ -52,6 +52,14 @@ Every command line input starts with `java -jar sfinder.jar <command>`. The rest
 java -jar sfinder.jar <command> --parameter <value> --parameter <value>
 ```
 
+>[!INFO] Version Details
+> 
+> Some commands may behave differently depending on the version of sfinder you are using. 
+> 
+> The output of sfinder contains `Version: x.xx` which tells you the version of sfinder you are using.
+> 
+> All pages in this site, unless otherwise stated, will assume you are using a version of sfinder that is **at least v1.00**.
+
 Command line inputs may vary between different **sfinder commands**:
 <center><table width="80%">
 	<tr>
