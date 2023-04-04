@@ -247,8 +247,7 @@ summary {
   background: var(--light-3);
   border-radius: 4px;
   margin: -.5em -.5em  0;
-  padding: .25em;
-  padding-right: 2em;
+  padding: .25em .5em;
   transition: 0.2s;
 }
 
@@ -266,15 +265,16 @@ details{
 }
 
 details summary::after{
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  // right: 0;
+  // top: 50%;
+  // transform: translateY(-50%);
   display: inline-block;
   content: '\25BC';
   padding: 0 0.5ch;
   transition: 0.2s;
   color: var(--dark-3);
+  float: right;
 }
 
 details:not(details[open]){
