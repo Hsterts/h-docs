@@ -13,7 +13,7 @@ body{display: flex; justify-content: center;}
 
 >[!WARNING] Work In Progress
 >
->This page is currently being worked on! For the meantime, assume that none of the information presented here is correct.
+> This page is currently being worked on! For the meantime, assume that none of the information presented here is correct.
 
 [[sfinder/|Solution Finder]]'s **Spin** command outputs all the ways to get a specified spin (TS0, TSS, TSD, and Mini Variants) from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
 ```YAML {title="Command Structure"}

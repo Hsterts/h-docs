@@ -34,7 +34,7 @@ ___
 {{< sfinder-parameters/drop t-spin-table="false" >}}
 
 **Kick table** (`--kicks`, `-K`):
-> [!WARNING] WIP
+>[!WARNING] WIP
 >
 > This section isn't filled out yet.
 ___

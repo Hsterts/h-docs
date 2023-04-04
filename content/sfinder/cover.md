@@ -40,7 +40,7 @@ ___
 - **Last Softdrop** (`--last-sd`, `-l`): Allows the last nth pieces to use softdrop regardless of the value of `--drop`.
 
 **Mode** (`--mode`, `--M`): specifying the condition by which cover will return as successful or failed.
-> [!WARNING] WIP
+>[!WARNING] WIP
 >
 > This section can be improved by showcasing the possible modes.
 - **Max Clear Line** (`--clear-line`, `-c`): Specify the number of line clears cover may use. 
@@ -56,7 +56,7 @@ ___
 - `--starting-b2b 2`
 
 **Kick table** (`--kicks`, `-K`):
-> [!WARNING] WIP
+>[!WARNING] WIP
 >
 > This section isn't filled out yet.
 ___
