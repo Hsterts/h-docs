@@ -107,14 +107,16 @@ Command line inputs may vary between different **sfinder commands**:
 Here are various parameters that are universal between most commands:
 1. **Tetfu** refers to the fumen codes made from [[sfinder/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some can take multiple.
 
-```yaml {title="Single Fumen Input"}
-java -jar sfinder.jar percent --tetfu <fumen>
-```
-```yaml {title="Multiple Fumen Inputs"}
-java -jar sfinder.jar cover --tetfu <fumen> <fumen> <fumen>
-```
-```yaml {title="Shorthand for Tetfu"}
-java -jar sfinder.jar percent -t <fumen>
-```
+2. **Pattern** refers to the <u>general structure</u> of the queues being considered by sfinder. Since it's one of the harder parameters to learn, patterns are discussed in [[sfinder/parameter patterns|its own page]].
 
-2. **Pattern** refers to the <u>general structure</u> of the queues being considered by sfinder. Since it's one of the harder parameters to learn, patterns are discussed in its own page: [[sfinder/parameter patterns|\-\-patterns]].
+In general, the main parameters of a command looks like this: 
+
+```YAML {title="Command Structure"}
+java -jar sfinder.jar <command> --tetfu <fumen> --patterns <pattern>
+```
+```YAML {title="Shorthand Command Structure"}
+java -jar sfinder.jar <command> -t <fumen> -p <pattern>
+```
+```YAML {title="Specifying Multiple Fumens"}
+java -jar sfinder.jar <command> -t <fumen> <fumen> -p <pattern>
+```
