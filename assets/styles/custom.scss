@@ -289,9 +289,9 @@ details:not(details[open]){
 
 details[open]{
   padding: .5em;
-  & summary{
-    margin-bottom: .5em;
-  }
+  // & summary{
+  //   margin-bottom: .5em;
+  // }
   & summary::after{
     transform: rotate(-90deg);
     top: revert;
