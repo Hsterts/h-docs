@@ -1,0 +1,1 @@
+Whether or not to include the mirrors for all inputted fumens. The outputs will mark mirrored `fumen` inputs as `fumen#mirror`.

@@ -1,0 +1,1 @@
+Instead of defining patterns using `--patterns`, you can specify a `.txt` file that contains either the actual queues, or patterns.

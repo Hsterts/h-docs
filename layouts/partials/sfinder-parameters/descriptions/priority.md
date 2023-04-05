@@ -1,0 +1,1 @@
+Only one setup can be marked as `O` for all the fumens provided. This will be the first setup that is buildable in the order of the fumens given in `--tetfu`.

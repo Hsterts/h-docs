@@ -56,53 +56,23 @@ java -jar sfinder.jar <command> --parameter <value> --parameter <value>
 > 
 > Some commands may behave differently depending on the version of sfinder you are using. 
 > 
-> The output of sfinder contains `Version: x.xx` which tells you the version of sfinder you are using.
+> The log file of sfinder contains `Version: x.xx` which tells you the version of sfinder you are using.
 > 
 > All pages in this site, unless otherwise stated, will assume you are using a version of sfinder that is **at least v1.00**.
 
 Command line inputs may vary between different **sfinder commands**:
-<center><table width="80%">
-	<tr>
-		<th width="120px">Command</th>
-		<th>Function</th>
-	</tr>
-	<tr>
-		<td><a href="/h-docs/sfinder/percent/">Percent</a></td>
-		<td>Outputs the chances (sol%) of getting a perfect clear.</td>
-	</tr>
-	<tr>
-		<td><a href="/h-docs/sfinder/path/">Path</a></td>
-		<td>Outputs all perfect clear solutions.</td>
-	</tr>
-	<tr>
-		<td>Setup</td>
-		<td>Outputs all the possible ways to build a specified setup.</td>
-	</tr>
-	<tr>
-		<td>REN</td>
-		<td>Outputs all the ways combo (REN) can be continued.</td>
-	</tr>
-	<tr>
-		<td><a href="/h-docs/sfinder/spin/">Spin</a></td>
-		<td>Outputs all the ways a T-spin can be made from a field.</td>
-	</tr>
-	<tr>
-		<td><a href="/h-docs/sfinder/cover/">Cover</a></td>
-		<td>Outputs the chances (cov%) of building a given setup.</td>
-	</tr>
-	<tr>
-		<td>Util Fig</td>
-		<td>Outputs images based on entered fumens.</td>
-	</tr>
-	<tr>
-		<td>Util Fumen</td>
-		<td>Modifies fumens based on entered operation.</td>
-	</tr>
-	<tr>
-		<td>Util Seq</td>
-		<td>Outputs a list of queues from user input.</td>
-	</tr>
-</table></center>
+
+| Command | Function |
+| --- | --- |
+| [[Percent]] | Outputs the chances (sol%) of getting a perfect clear. |
+| [[Path]] | Outputs all perfect clear solutions. |
+| [[Setup]] | Outputs all the possible ways to build a specified setup. |
+| [[Combo]] | Outputs all the ways combo (REN) can be continued. |
+| [[Spin]] | Outputs all the ways a T-spin can be made from a field. |
+| [[Cover]] | Outputs the chances (cov%) of building a given setup. |
+| [[Util Fig]] | Outputs images based on entered fumens. |
+| [[Util Fumen]] | Modifies fumens based on entered operation. |
+| [[Util Seq]] | Outputs a list of queues from user input. |
 
 Here are various parameters that are universal between most commands:
 1. **Tetfu** refers to the fumen codes made from [[sfinder/fumen editor|Fumen Editors]]. They are used to specify the field for each type of operation. Some commands take *only one* fumen input, but some can take multiple.

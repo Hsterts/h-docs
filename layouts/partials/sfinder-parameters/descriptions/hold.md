@@ -1,0 +1,1 @@
+Specify whether or not a hold slot is usable.
