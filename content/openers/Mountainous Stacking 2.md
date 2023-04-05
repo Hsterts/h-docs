@@ -117,7 +117,7 @@ tags:
             <p>The first bag is always buildable, keeping either <span class="mino">L</span> or <span class="mino">J</span> in hold depending on which one comes first.</p>
         </p>
         <center>
-            <figfumen size="33">v115@9gwhQ4HewhR4DewwBewhg0Q4AeBtxwRpwhi0AeBtww?RpJeAgWMBCSZTASoeRASICvDFbcYCz735AQo78A1no2AiQG?DEkC2CEloo2AJ688AwtGbEFbcEEJciNEyoo2ApN98AwUDKE?zuSrDyoqxA</figfumen>
+            <figfumen size="33">v115@9gwhQ4HewhR4DewwBewhg0Q4AeBtxwRpwhi0AeBtww?RpJeAgWPBCSZTASoeRASICvDFbcYCz7XRASom2AwngHBFbU?fD1uMoDBkkrDFb82Dmoo2AJv0TASoF5DSsjXEFb82Dzoo2A?jX5aEJ3MXEFHhAA</figfumen>
         </center>
     </div>
 </div>
@@ -159,38 +159,41 @@ The leftover <span class="mino">L</span> piece from the first bag is placed in o
 		</div>
     </div>
     <details>
-    <summary><span class="mino">OIS</span> Solutions</summary>
-    <h3>Minimals</h3>
-        <div class="solutions with180">
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0zhhlC8i0R4AtglE8R4BtglD8ywAtG8wwF8Je?AgH</fumen><figcaption>Cover: 39.29%<br>Save: O</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rph0ywC8Rpg0R4wwglE8R4ilD8zhG8g0F8JeAg?H</fumen><figcaption>Cover: 24.44%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8zhAtRpC8i0BtRpE8g0AtilD8ywglG8wwF8JeAg?H</fumen><figcaption>Cover: 23.77%<br>Save: S</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilzhC8glywg0RpE8R4g0RpD8R4h0G8wwF8JeAg?H</fumen><figcaption>Cover: 20.08%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0BtzhC8i0hlRpE8BtglRpD8ywglG8wwF8JeAg?H</fumen><figcaption>Cover: 19.40%<br>Save: S</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpg0R4hlC8Rpi0AtglE8R4BtglD8ywAtG8wwF8?JeAgH</fumen><figcaption>Cover: 19.05%<br>Save: I</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rph0Q4hlC8Rpg0wwR4glE8ywQ4glD8zhG8g0F8?JeAgH</fumen><figcaption>Cover: 17.78%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpzhg0C8RpBtR4g0E8wwBth0D8xwR4G8wwF8Je?AgH</fumen><figcaption>Cover: 14.60%<br>Save: L</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilzhC8glQ4i0RpE8ywRpD8R4wwg0G8Q4F8JeAg?H</fumen><figcaption>Cover: 13.57%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpzhg0C8RpBtR4g0E8wwR4h0D8xwBtG8wwF8Je?AgH</fumen><figcaption>Cover: 10.48%<br>Save: L</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8RpBti0C8RpwwBtR4E8xwR4g0D8zhG8wwF8JeAg?H</fumen><figcaption>Cover: 9.52%<br>Save: L</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8RpilR4C8RpglAti0E8BtR4g0D8zhG8AtF8JeAg?H</fumen><figcaption>Cover: 9.52%<br>Save: T</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ywR4Atg0C8zhBtg0E8R4Ath0D8wwilG8glF8Je?AgH</fumen><figcaption>Cover: 8.89%<br>Save: O</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8i0zhC8BtQ4hlRpE8R4glRpD8BtQ4glG8g0F8Je?AgH</fumen><figcaption>Cover: 8.89%<br>Save: T</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0ywAtRpC8i0BtRpE8R4ilD8R4AtglG8wwF8Je?AgH</fumen><figcaption>Cover: 8.10%<br>Save: I</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ywQ4ilC8i0R4RpE8g0AtQ4RpD8wwBtglG8AtF8?JeAgH</fumen><figcaption>Cover: 7.14%<br>Save: I</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Q4hlzhC8R4glAtg0RpE8Btg0RpD8Q4Ath0G8gl?F8JeAgH</fumen><figcaption>Cover: 6.67%<br>Save: T</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Q4BthlRpC8R4BtglRpE8wwzhD8Q4xwglG8wwF8?JeAgH</fumen><figcaption>Cover: 6.35%<br>Save: J</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilAtg0RpC8glQ4Btg0RpE8AtzhD8R4h0G8Q4F8?JeAgH</fumen><figcaption>Cover: 4.13%<br>Save: T</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Q4i0ilC8R4whg0AtRpE8whBtRpD8Q4whAtglG8?whF8JeAgH</fumen><figcaption>Cover: 3.81%<br>Save: T</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0ywBtglC8i0R4BtE8R4ilD8zhG8wwF8JeAgH</fumen><figcaption>Cover: 3.17%<br>Save: O</ficaption></figure>
-        </div>
-        <h3>Extras</h3>
-        <div class="solutions with180">
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilzhC8glQ4ywRpE8i0RpD8R4wwg0G8Q4F8JeAg?H</fumen><figcaption>Cover: 15.56%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rph0BtglC8Rpg0Q4ilE8g0R4BtD8ywQ4G8wwF8?JeAgH</fumen><figcaption>Cover: 11.98%<br>Save: I</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8zhBtglC8i0Q4ilE8g0R4BtD8ywQ4G8wwF8JeAg?H</fumen><figcaption>Cover: 11.59%<br>Save: O</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8i0Q4ilC8zhglRpE8g0R4RpD8ywQ4G8wwF8JeAg?H</fumen><figcaption>Cover: 2.54%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpzhg0C8RpBtR4g0E8wwR4h0D8xwBtG8wwF8Je?AgH</fumen><figcaption>Cover: 10.48%<br>Save: L</ficaption></figure>
+        <summary><span class="mino">OIS</span> Solutions</summary>
+        <div>
+            <h3>Minimals</h3>
+            <!-- TODO: make a fumen gallery partial that takes in the fumens (and cover, save, etc.) Instead of spamming figures-->
+            <div class="solutions with180">
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0zhhlC8i0R4AtglE8R4BtglD8ywAtG8wwF8Je?AgH</fumen><figcaption>Cover: 39.29%<br>Save: O</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rph0ywC8Rpg0R4wwglE8R4ilD8zhG8g0F8JeAg?H</fumen><figcaption>Cover: 24.44%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8zhAtRpC8i0BtRpE8g0AtilD8ywglG8wwF8JeAg?H</fumen><figcaption>Cover: 23.77%<br>Save: S</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilzhC8glywg0RpE8R4g0RpD8R4h0G8wwF8JeAg?H</fumen><figcaption>Cover: 20.08%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0BtzhC8i0hlRpE8BtglRpD8ywglG8wwF8JeAg?H</fumen><figcaption>Cover: 19.40%<br>Save: S</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpg0R4hlC8Rpi0AtglE8R4BtglD8ywAtG8wwF8?JeAgH</fumen><figcaption>Cover: 19.05%<br>Save: I</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rph0Q4hlC8Rpg0wwR4glE8ywQ4glD8zhG8g0F8?JeAgH</fumen><figcaption>Cover: 17.78%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpzhg0C8RpBtR4g0E8wwBth0D8xwR4G8wwF8Je?AgH</fumen><figcaption>Cover: 14.60%<br>Save: L</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilzhC8glQ4i0RpE8ywRpD8R4wwg0G8Q4F8JeAg?H</fumen><figcaption>Cover: 13.57%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpzhg0C8RpBtR4g0E8wwR4h0D8xwBtG8wwF8Je?AgH</fumen><figcaption>Cover: 10.48%<br>Save: L</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8RpBti0C8RpwwBtR4E8xwR4g0D8zhG8wwF8JeAg?H</fumen><figcaption>Cover: 9.52%<br>Save: L</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8RpilR4C8RpglAti0E8BtR4g0D8zhG8AtF8JeAg?H</fumen><figcaption>Cover: 9.52%<br>Save: T</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ywR4Atg0C8zhBtg0E8R4Ath0D8wwilG8glF8Je?AgH</fumen><figcaption>Cover: 8.89%<br>Save: O</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8i0zhC8BtQ4hlRpE8R4glRpD8BtQ4glG8g0F8Je?AgH</fumen><figcaption>Cover: 8.89%<br>Save: T</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0ywAtRpC8i0BtRpE8R4ilD8R4AtglG8wwF8Je?AgH</fumen><figcaption>Cover: 8.10%<br>Save: I</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ywQ4ilC8i0R4RpE8g0AtQ4RpD8wwBtglG8AtF8?JeAgH</fumen><figcaption>Cover: 7.14%<br>Save: I</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Q4hlzhC8R4glAtg0RpE8Btg0RpD8Q4Ath0G8gl?F8JeAgH</fumen><figcaption>Cover: 6.67%<br>Save: T</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Q4BthlRpC8R4BtglRpE8wwzhD8Q4xwglG8wwF8?JeAgH</fumen><figcaption>Cover: 6.35%<br>Save: J</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilAtg0RpC8glQ4Btg0RpE8AtzhD8R4h0G8Q4F8?JeAgH</fumen><figcaption>Cover: 4.13%<br>Save: T</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Q4i0ilC8R4whg0AtRpE8whBtRpD8Q4whAtglG8?whF8JeAgH</fumen><figcaption>Cover: 3.81%<br>Save: T</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8g0ywBtglC8i0R4BtE8R4ilD8zhG8wwF8JeAgH</fumen><figcaption>Cover: 3.17%<br>Save: O</ficaption></figure>
+            </div>
+            <h3>Extras</h3>
+            <div class="solutions with180">
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8ilzhC8glQ4ywRpE8i0RpD8R4wwg0G8Q4F8JeAg?H</fumen><figcaption>Cover: 15.56%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rph0BtglC8Rpg0Q4ilE8g0R4BtD8ywQ4G8wwF8?JeAgH</fumen><figcaption>Cover: 11.98%<br>Save: I</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8zhBtglC8i0Q4ilE8g0R4BtD8ywQ4G8wwF8JeAg?H</fumen><figcaption>Cover: 11.59%<br>Save: O</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8i0Q4ilC8zhglRpE8g0R4RpD8ywQ4G8wwF8JeAg?H</fumen><figcaption>Cover: 2.54%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgB8Rpzhg0C8RpBtR4g0E8wwR4h0D8xwBtG8wwF8Je?AgH</fumen><figcaption>Cover: 10.48%<br>Save: L</ficaption></figure>
+            </div>
         </div>
     </details>
 </div>
@@ -207,28 +210,78 @@ The leftover <span class="mino">L</span> piece from the first bag is placed in o
         </div>
     </div>
     <details>
-    <summary><span class="mino">SO</span> Solutions</summary>
-    <h3>Minimals</h3>
-        <div class="solutions with180">
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhili0D8glR4Rpg0D8R4A8RpD8ywH8wwE8JeAgH</fumen><figcaption>Cover: 40.18%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhh0AtglRpD8g0BtglRpD8g0AtA8hlD8ywH8wwE8?JeAgH</fumen><figcaption>Cover: 35.19%<br>Save: S</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhi0ilD8Rpg0glR4D8RpA8R4D8ywH8wwE8JeAgH</fumen><figcaption>Cover: 31..80%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhh0AtilD8g0BtglR4D8g0AtA8R4D8ywH8wwE8Je?AgH</fumen><figcaption>Cover: 31.32%<br>Save: O</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhg0R4glRpD8i0glRpD8R4A8hlD8ywH8wwE8JeAg?H</fumen><figcaption>Cover: 31.24%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhRpglg0R4D8ili0D8RpA8R4D8ywH8wwE8JeAgH</fumen><figcaption>Cover: 21.9%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhh0AtglRpD8g0BtglRpD8R4A8hlD8R4AtH8g0E8?JeAgH</fumen><figcaption>Cover: 20.29%<br>Save: T</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhRpglh0AtD8ilg0BtD8RpA8g0AtD8ywH8wwE8Je?AgH</fumen><figcaption>Cover: 19.73%<br>Save: S</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhQ4ilRpD8R4BtRpD8wwQ4A8BtD8xwglH8wwE8Je?AgH</fumen><figcaption>Cover: 14.65%<br>Save: J</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhili0D8ywRpg0D8R4A8RpD8R4wwH8glE8JeAgH</fumen><figcaption>Cover: 12.40%<br>Save: Z</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhilh0AtD8ywg0BtD8R4A8g0AtD8R4wwH8glE8Je?AgH</fumen><figcaption>Cover: 9.02%<br>Save: O</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhwwilRpD8Q4glBtRpD8R4A8BtD8xwQ4H8wwE8Je?AgH</fumen><figcaption>Cover: 4.19%<br>Save: J</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhwwRph0AtD8Q4Rpg0BtD8R4A8g0AtD8xwQ4H8ww?E8JeAgH</fumen><figcaption>Cover: 4.19%<br>Save: L</ficaption></figure>
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhwwg0BtRpD8Q4i0RpD8R4A8BtD8xwQ4H8wwE8Je?AgH</fumen><figcaption>Cover: 2.58%<br>Save: L</ficaption></figure>
-        </div>
-    <h3>Extras</h3>
-        <div class="solutions with180">
-            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhh0AtRpglD8g0BtilD8g0AtA8RpD8ywH8wwE8Je?AgH</fumen><figcaption>Cover: 17.8%<br>Save: S</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgzhglg0BtRpD8gli0RpD8hlA8BtD8ywH8wwE8JeAg?H</fumen><figcaption>Cover: 12.9%<br>Save: S</ficaption></figure>
+        <summary><span class="mino">SO</span> Solutions</summary>
+        <div>
+            <h3>Minimals</h3>
+            <div class="solutions with180">
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhili0D8glR4Rpg0D8R4A8RpD8ywH8wwE8JeAgH</fumen>
+                    <figcaption>Cover: 40.18%<br>Save: Z</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhh0AtglRpD8g0BtglRpD8g0AtA8hlD8ywH8wwE8?JeAgH</fumen>
+                    <figcaption>Cover: 35.19%<br>Save: S</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhi0ilD8Rpg0glR4D8RpA8R4D8ywH8wwE8JeAgH</fumen>
+                    <figcaption>Cover: 31.80%<br>Save: Z</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhh0AtilD8g0BtglR4D8g0AtA8R4D8ywH8wwE8Je?AgH</fumen>
+                    <figcaption>Cover: 31.32%<br>Save: O</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhg0R4glRpD8i0glRpD8R4A8hlD8ywH8wwE8JeAg?H</fumen>
+                    <figcaption>Cover: 31.24%<br>Save: Z</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhRpglg0R4D8ili0D8RpA8R4D8ywH8wwE8JeAgH</fumen>
+                    <figcaption>Cover: 21.9%<br>Save: Z</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhh0AtglRpD8g0BtglRpD8R4A8hlD8R4AtH8g0E8?JeAgH</fumen>
+                    <figcaption>Cover: 20.29%<br>Save: T</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhRpglh0AtD8ilg0BtD8RpA8g0AtD8ywH8wwE8Je?AgH</fumen>
+                    <figcaption>Cover: 19.73%<br>Save: S</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhQ4ilRpD8R4BtRpD8wwQ4A8BtD8xwglH8wwE8Je?AgH</fumen>
+                    <figcaption>Cover: 14.65%<br>Save: J</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhili0D8ywRpg0D8R4A8RpD8R4wwH8glE8JeAgH</fumen>
+                    <figcaption>Cover: 12.40%<br>Save: Z</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhilh0AtD8ywg0BtD8R4A8g0AtD8R4wwH8glE8Je?AgH</fumen>
+                    <figcaption>Cover: 9.02%<br>Save: O</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhwwilRpD8Q4glBtRpD8R4A8BtD8xwQ4H8wwE8Je?AgH</fumen>
+                    <figcaption>Cover: 4.19%<br>Save: J</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhwwRph0AtD8Q4Rpg0BtD8R4A8g0AtD8xwQ4H8ww?E8JeAgH</fumen>
+                    <figcaption>Cover: 4.19%<br>Save: L</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhwwg0BtRpD8Q4i0RpD8R4A8BtD8xwQ4H8wwE8Je?AgH</fumen>
+                    <figcaption>Cover: 2.58%<br>Save: L</ficaption>
+                </figure>
+                </div>
+                <h3>Extras</h3>
+                <div class="solutions with180">
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhh0AtRpglD8g0BtilD8g0AtA8RpD8ywH8wwE8Je?AgH</fumen>
+                    <figcaption>Cover: 17.8%<br>Save: S</ficaption>
+                </figure>
+                <figure class="fumen-figure">
+                    <fumen height="6" size="16">v115@zgzhglg0BtRpD8gli0RpD8hlA8BtD8ywH8wwE8JeAg?H</fumen>
+                    <figcaption>Cover: 12.9%<br>Save: S</ficaption>
+                </figure>
+            </div>
         </div>
     </details>
 </div>
@@ -247,24 +300,26 @@ The leftover <span class="mino">L</span> piece from the first bag is placed in o
         </div>
     </div>
     <details>
-    <summary><span class="mino">IS</span> Solutions</summary>
-    <h3>Minimals</h3>
-        <div class="solutions">
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpg0zhilRpi0R4glF8R4G8ywH8wwE8JeAgH</fumen><figcaption>Cover: 61.18%<br>Save: Z</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpilg0zhRpglBti0F8BtG8ywH8wwE8JeAgH</fumen><figcaption>Cover: 53.93%<br>Save: S</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgg0zhRpili0BtRpglF8BtG8ywH8wwE8JeAgH</fumen><figcaption>Cover: 51.23%<br>Save: S</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4ywzhRpR4wwilF8h0G8Q4g0glH8g0E8JeAgH</fumen><figcaption>Cover: 25.55%<br>Save: Z</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpzhAtilRpywBtglF8h0G8wwg0AtH8g0E8JeAgH</fumen><figcaption>Cover: 25.55%<br>Save: S</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4ywAtilRpR4wwBtglF8h0G8Q4g0AtH8g0E8Je?AgH</fumen><figcaption>Cover: 20.64%<br>Save: I</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpzhAtilRpi0BtglF8R4G8R4AtH8g0E8JeAgH</fumen><figcaption>Cover: 18.67%<br>Save: T</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4i0AtilRpR4whBtglF8whAtG8Q4whg0H8whE8?JeAgH</fumen><figcaption>Cover: 14.74%<br>Save: T</ficaption></figure>
-        </div>
-    <h3>Extras</h3>
-        <div class="solutions">
-<figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4zhilRpR4ywglF8h0G8Q4g0wwH8g0E8JeAgH</fumen><figcaption>Cover: 24.8%<br>Save: Z</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpywAtzhRpi0ilF8g0glG8wwBtH8AtE8JeAgH</fumen><figcaption>Cover: 13.3%<br>Save: S</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpg0ywzhRpi0ilF8R4G8R4glH8wwE8JeAgH</fumen><figcaption>Cover: 16.7%<br>Save: Z</ficaption></figure>
-	    <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpg0ywAtilRpi0BtglF8R4G8R4AtH8wwE8JeAgH</fumen><figcaption>Cover: 14.3%<br>Save: I</ficaption></figure>
+        <summary><span class="mino">IS</span> Solutions</summary>
+        <div>
+            <h3>Minimals</h3>
+            <div class="solutions">
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpg0zhilRpi0R4glF8R4G8ywH8wwE8JeAgH</fumen><figcaption>Cover: 61.18%<br>Save: Z</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpilg0zhRpglBti0F8BtG8ywH8wwE8JeAgH</fumen><figcaption>Cover: 53.93%<br>Save: S</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgg0zhRpili0BtRpglF8BtG8ywH8wwE8JeAgH</fumen><figcaption>Cover: 51.23%<br>Save: S</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4ywzhRpR4wwilF8h0G8Q4g0glH8g0E8JeAgH</fumen><figcaption>Cover: 25.55%<br>Save: Z</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpzhAtilRpywBtglF8h0G8wwg0AtH8g0E8JeAgH</fumen><figcaption>Cover: 25.55%<br>Save: S</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4ywAtilRpR4wwBtglF8h0G8Q4g0AtH8g0E8Je?AgH</fumen><figcaption>Cover: 20.64%<br>Save: I</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpzhAtilRpi0BtglF8R4G8R4AtH8g0E8JeAgH</fumen><figcaption>Cover: 18.67%<br>Save: T</ficaption></figure>
+            <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4i0AtilRpR4whBtglF8whAtG8Q4whg0H8whE8?JeAgH</fumen><figcaption>Cover: 14.74%<br>Save: T</ficaption></figure>
+            </div>
+            <h3>Extras</h3>
+            <div class="solutions">
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpQ4zhilRpR4ywglF8h0G8Q4g0wwH8g0E8JeAgH</fumen><figcaption>Cover: 24.8%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpywAtzhRpi0ilF8g0glG8wwBtH8AtE8JeAgH</fumen><figcaption>Cover: 13.3%<br>Save: S</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpg0ywzhRpi0ilF8R4G8R4glH8wwE8JeAgH</fumen><figcaption>Cover: 16.7%<br>Save: Z</ficaption></figure>
+                <figure class="fumen-figure"><fumen height="6" size="16">v115@zgRpg0ywAtilRpi0BtglF8R4G8R4AtH8wwE8JeAgH</fumen><figcaption>Cover: 14.3%<br>Save: I</ficaption></figure>
+            </div>
         </div>
     </details>
 </div>

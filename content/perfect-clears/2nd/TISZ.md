@@ -77,15 +77,17 @@ ___
 	</div>
 	<details>
 		<summary>Solutions</summary>
-		<h4>Minimals</h4>
 		<div>
-			<figfumen>v115@9gh0BtywR4whg0B8BtwwR4glwhg0E8ilwhI8whJeAg?WTADX7rDy4CwBFb0KBW1ZOBFrvAA </figfumen>
-			<figfumen>v115@9gh0Btywhlwhg0B8BtwwRpglwhg0E8RpglwhI8whJe?AgWTADX7rDy4CwBFbkRBQlwHBFrvAA</figfumen>
-			<hr class="small">
-			<h4>Extras</h4>
-			<figfumen>v115@9gh0Btzhhlg0B8BtywR4g0E8wwR4glI8glJeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AS+H?OB2ngHB</figfumen>
-			<figfumen>v115@9gh0BtzhR4g0B8Btywhlg0E8wwR4glI8glJeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AS+H?OB2ngHB </figfumen>
-			<figfumen>v115@9gh0ywR4hlwhg0B8wwR4Rpglwhg0E8RpglwhI8whJe?AgWoAlEvXEhoo2AmXyTASomgEB3M2ABlClEFMVABBoo2AY4?3UB1ngHB</figfumen>
+			<h4>Minimals</h4>
+			<div>
+				<figfumen>v115@9gh0BtywR4whg0B8BtwwR4glwhg0E8ilwhI8whJeAg?WTADX7rDy4CwBFb0KBW1ZOBFrvAA </figfumen>
+				<figfumen>v115@9gh0Btywhlwhg0B8BtwwRpglwhg0E8RpglwhI8whJe?AgWTADX7rDy4CwBFbkRBQlwHBFrvAA</figfumen>
+				<hr class="small">
+				<h4>Extras</h4>
+				<figfumen>v115@9gh0Btzhhlg0B8BtywR4g0E8wwR4glI8glJeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AS+H?OB2ngHB</figfumen>
+				<figfumen>v115@9gh0BtzhR4g0B8Btywhlg0E8wwR4glI8glJeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AS+H?OB2ngHB </figfumen>
+				<figfumen>v115@9gh0ywR4hlwhg0B8wwR4Rpglwhg0E8RpglwhI8whJe?AgWoAlEvXEhoo2AmXyTASomgEB3M2ABlClEFMVABBoo2AY4?3UB1ngHB</figfumen>
+			</div>
 		</div>
 	</details>
 </div>
@@ -150,17 +152,19 @@ ___
 	</div>
 	<details>
 		<summary>Solutions</summary>
-		<h4>Minimals</h4>
 		<div>
-			<figfumen>v115@9gwhh0R4Btywwhg0R4B8Btwwglwhg0E8ilwhI8JeAg?WTADX7rDy4CwBFbMOBWl+UBFrvAA </figfumen>
-			<figfumen>v115@9gwhh0R4ywhlwhg0R4B8wwRpglwhg0E8RpglwhI8Je?AgWTADX7rDy4CwBFbkRBQlwHBFrvAA </figfumen>
-		</div>
-		<hr class="small">
-		<h4>Extras</h4>
-		<div>
-			<figfumen>v115@9gwhh0R4Btilwhg0R4B8BtRpwhg0E8glRpwhI8JeAg?WsAlEvXEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2?ASEYHB3ngHB</figfumen>
-			<figfumen>v115@9gilR4i0RpglAtR4B8zhBtE8g0RpAtI8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AZlf9A?FrvAA </figfumen>
-			<figfumen>v115@9gilR4zhg0glAtR4B8ywg0BtE8wwh0AtI8JeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AyCI?OB4ngHB</figfumen>
+			<h4>Minimals</h4>
+			<div>
+				<figfumen>v115@9gwhh0R4Btywwhg0R4B8Btwwglwhg0E8ilwhI8JeAg?WTADX7rDy4CwBFbMOBWl+UBFrvAA </figfumen>
+				<figfumen>v115@9gwhh0R4ywhlwhg0R4B8wwRpglwhg0E8RpglwhI8Je?AgWTADX7rDy4CwBFbkRBQlwHBFrvAA </figfumen>
+			</div>
+			<hr class="small">
+			<h4>Extras</h4>
+			<div>
+				<figfumen>v115@9gwhh0R4Btilwhg0R4B8BtRpwhg0E8glRpwhI8JeAg?WsAlEvXEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2?ASEYHB3ngHB</figfumen>
+				<figfumen>v115@9gilR4i0RpglAtR4B8zhBtE8g0RpAtI8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AZlf9A?FrvAA </figfumen>
+				<figfumen>v115@9gilR4zhg0glAtR4B8ywg0BtE8wwh0AtI8JeAgWsAl?EvXEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AyCI?OB4ngHB</figfumen>
+			</div>
 		</div>
 	</details>
 </div>

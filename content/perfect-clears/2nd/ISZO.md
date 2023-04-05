@@ -73,20 +73,22 @@ ___
 	</div>
 	<details>
 		<summary>Solutions</summary>
-		<h4>Minimals</h4>
 		<div>
-			<figfumen size="16">v115@9gwhglQ4Bti0RpwhglR4BtA8g0RpwhhlQ4F80hE8Je?AgWTADX7rDy4CwBFb0KBW1ZOBFrvAA</figfumen>
-			<figfumen size="16">v115@9gwhh0Btzhglwhg0R4BtA8ilwhR4wwF8whg0ywE8Je?AgWTADX7rDy4CwBFbsABTFzABFrvAA</figfumen>
-			<figfumen size="16">v115@9gwhQ4Btwwi0RpwhR4ywA8g0RpwhilF8whglQ4BtE8?JeAgWTADX7rDy4CwBFbsABS1Y9AFrvAA</figfumen>
-			<figfumen size="16">v115@9gxhili0RpxhglAtR4A8g0RpxhBtF8xhAtR4E8JeAg?WTADX7rDy4CwBFbU9AQVk2AFrvAA</figfumen>
-			<figfumen size="16">v115@9gwhilwwi0RpwhBtywA8g0RpwhglBtF80hE8JeAgWT?ADX7rDy4CwBFb85ARl+5AFrvAA</figfumen>
-		</div>	
-		<hr class="small">
-		<h4>Extras</h4>
-		<div>
-			<figfumen size="16">v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AS7nAB?4ngHB</figfumen>
-			<figfumen size="16">v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AY1gHB?FrvAA</figfumen>
-		</div>	
+			<h4>Minimals</h4>
+			<div>
+				<figfumen size="16">v115@9gwhglQ4Bti0RpwhglR4BtA8g0RpwhhlQ4F80hE8Je?AgWTADX7rDy4CwBFb0KBW1ZOBFrvAA</figfumen>
+				<figfumen size="16">v115@9gwhh0Btzhglwhg0R4BtA8ilwhR4wwF8whg0ywE8Je?AgWTADX7rDy4CwBFbsABTFzABFrvAA</figfumen>
+				<figfumen size="16">v115@9gwhQ4Btwwi0RpwhR4ywA8g0RpwhilF8whglQ4BtE8?JeAgWTADX7rDy4CwBFbsABS1Y9AFrvAA</figfumen>
+				<figfumen size="16">v115@9gxhili0RpxhglAtR4A8g0RpxhBtF8xhAtR4E8JeAg?WTADX7rDy4CwBFbU9AQVk2AFrvAA</figfumen>
+				<figfumen size="16">v115@9gwhilwwi0RpwhBtywA8g0RpwhglBtF80hE8JeAgWT?ADX7rDy4CwBFb85ARl+5AFrvAA</figfumen>
+			</div>	
+			<hr class="small">
+			<h4>Extras</h4>
+			<div>
+				<figfumen size="16">v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AS7nAB?4ngHB</figfumen>
+				<figfumen size="16">v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AY1gHB?FrvAA</figfumen>
+			</div>
+		</div>
 	</details>
 </div>
 <hr>

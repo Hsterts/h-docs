@@ -3,7 +3,7 @@
 <aside class="mainTOC">
     <details {{ if $.Site.Data.config.openToc }}open {{ end }}>
         <summary>{{ i18n "toc" }}</summary>
-        {{ .TableOfContents }}
+        <div>{{ .TableOfContents }}</div>
     </details>
 </aside>
 {{end}}

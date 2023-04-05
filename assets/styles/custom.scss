@@ -234,7 +234,7 @@ figcaption {
   }
 }
 
-h3 > .mino > img{
+h3 > .mino > img{ //refactor?
   width: 22px;
   height: 22px;
   padding: 2px;
@@ -277,9 +277,6 @@ details{
     & p:last-child {
       margin-bottom: 0px;
     }
-  }
-  & h4 { // temporary fix for stuff like LSZO 2nd
-    font-size: 1.25em;
   }
 }
 

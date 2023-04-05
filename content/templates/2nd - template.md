@@ -43,11 +43,13 @@ ___
 	</div>
 	<details>
 		<summary>Solutions</summary>
-		<h4>Minimals</h4>
-		<fumen></fumen>
-		<hr class="small">
-		<h4>Extra Solutions</h4>
-		<fumen></fumen>
+		<div>
+			<h4>Minimals</h4>
+			<fumen></fumen>
+			<hr class="small">
+			<h4>Extra Solutions</h4>
+			<fumen></fumen>
+		</div>
 	</details>
 </div>
 <hr>
