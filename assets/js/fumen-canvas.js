@@ -1,4 +1,4 @@
-const { decoder, encoder } = require('tetris-fumen');
+const { decoder } = require('tetris-fumen');
 
 allGridToggle = false
 
@@ -309,6 +309,7 @@ function minocanvas(container) {
 	}
 }
 
+// TODO: make fumen/figfumen self-closing tags, with the fumen code being explicitly a src property
 function formatPage() {
 	Array.from(document.getElementsByTagName('fumen')).forEach(tag => fumencanvas(tag, false));
 	Array.from(document.getElementsByTagName('figfumen')).forEach(tag => fumencanvas(tag, true));
