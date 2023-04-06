@@ -249,11 +249,11 @@ function fumencanvas(container, figure) {
 	if(container.dataset.code == null) container.dataset.code = container.innerHTML;
 	var fumenCodes = container.dataset.code;
 	container.innerText = '';
-	
+
 	var options = {
 		'figure': figure,
 		'clipboard': container.getAttribute('clipboard') || "true",
-		'numrows': parseFloat(container.getAttribute('height')) || 5,
+		'numrows': parseFloat(container.getAttribute('height')) || 5, //TODO: automatically evaluate height when not specified, already implemented in Fumenities
 		'numcols': parseFloat(container.getAttribute('width')) || 10,
 		'cellSize': parseFloat(container.getAttribute('size')) || 22,
 		'gridColor': container.getAttribute('grid'),
@@ -280,7 +280,7 @@ function minocanvas(container) {
 	if(container.getAttribute('mino') == null) container.setAttribute('mino', container.innerText);
 	var input = container.getAttribute('mino');
 	container.innerText = '';
-	
+
 	if(mirrored) {
 		let res = '';
 		for(let char of input) {
@@ -298,7 +298,7 @@ function minocanvas(container) {
 
 		input = res;
 	}
-	
+
 	for (let i = 0; i < input.length; i++) {
 		if ('TILJSZO'.indexOf(input[i]) != -1) {
 			var img = document.createElement('img');
