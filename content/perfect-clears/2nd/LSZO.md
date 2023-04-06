@@ -265,8 +265,7 @@ ___
 			The <strong>"Shoe"</strong> LSZO Setup.
 				<ul>
 					<li>If you can see <span class="mino">T</span>, the setup is 
-						<span title="2120/2160" class="no180">98.15%</span>
-						<span title="2156/2160" class="with180">99.81%</span>.</li>
+						<span title="2120/2160" class="no180">98.15%</span><span title="2156/2160" class="with180">99.81%</span>.</li>
 					<li>If you can see <span class="mino">SZ</span>, the setup is 100%.</li>
 					<li>If you can see <span class="mino">I</span>, the setup is <span class="with180">99.44%</span><span class="no180">99.35%</span>.</li>
 				</ul>

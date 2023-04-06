@@ -106,9 +106,10 @@ async function loadSolutionFiles() {
 	console.log(solutionFileNames.length + ' solution files loaded.')
 }
 
+//TODO: this file definitely doensn't belong in js, move to hugo partial
 function generatePCSF(){
-        let base = document.getElementById('solution-finder-base')
-        if(base){
+    let base = document.getElementById('solution-finder-base')
+    if(base){
         let section = document.createElement('section')
         section.setAttribute('id','solution-finder')
         let body = document.createElement('div')
