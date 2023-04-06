@@ -1,97 +1,116 @@
-saveFiles = []
+"use strict"
+var saveFiles = [] //cache save files used in this page
+const pieces = 'TILJSZO'
 
-function getSaves(source){
+//currently only gets saves from the <saves>, make it a parameter
+function getSaves(source) { //hooked to onclick event
 	let display = document.getElementById(source + '-display')
 	let rot = rotationMode == 'with180' ? '180' : '90'
-	let selection = []
-	for(let i = 0; i < 7; i++){
-		let input = document.getElementById('TILJSZO'[i] + '-' + source).checked
-		if(input){selection.push('TILJSZO'[i])}
-	}
-	if(selection.length){
-		let toCall = source + '-' + rot
-		let file = saveFiles[toCall]
-		let count = 0;
-		for(let i = 0; i < file.length - 1; i++){
-			let row = file[i + 1]
-			let cover = 0
-			for(let x = 0; x < selection.length; x++){
-				let column = 'TILJSZO'.indexOf(selection[x])
-				if(row[column] == 'O'){cover = 1}
-			}
-			count += cover;
+	let saveFile = JSON.parse(JSON.stringify(saveFiles[source + '-' + rot]))
+	let saveFilePieceOrder = saveFile.shift() //remove first line listing the tetrominos
+
+	let selectedPieces = []
+	console.log(saveFilePieceOrder, selectedPieces, source + '-' + rot)
+	for (let piece of pieces) {
+		let isPieceChosen = document.getElementById(piece + '-' + source).checked
+		if (isPieceChosen) {
+			selectedPieces.push(piece)
 		}
-		display.innerHTML = '<strong>' + selection.join('') + '</strong>: ' + (count/(file.length-1)*100).toFixed(2) + '%'
-		display.className = 'save-selection filled'
+	}
+
+	if (selectedPieces.length >= 1){
+		let count = 0;
+		for (let saveRow of saveFile) {
+			if (saveRow.some((canSavePiece, index) => selectedPieces.includes(saveFilePieceOrder[index]) && canSavePiece == "O")) { //saveFilePieceOrder should be TILJSZO but just to be safe
+				count += 1 //at least one of the selected pieces can be saved
+			}
+		}
+		display.innerHTML = '<strong>' + selectedPieces.join('') + '</strong>: ' + (count/(saveFile.length)*100).toFixed(2) + '%'
+		display.classList.add('filled')
 	} else {
 		display.innerHTML = 'Select Save...'
-		display.className = 'save-selection'
+		display.classList.remove('filled')
 	}
 }
 
-function loadSaveFiles() {
-	let data = []
-	let saveElements = document.getElementsByTagName('saves')
-	let saveFileNames = []
-	for(let i = 0; i < saveElements.length; i++){
-		let sourceMain = saveElements[i].getAttribute('src')
-		let source90 = sourceMain + '-90'
-		let source180 = sourceMain + '-180'
-		saveFileNames.push(source90)
-		saveFileNames.push(source180)
+function getSavesPercentage(source, usedPieces) {
+	let rot = rotationMode == 'with180' ? '180' : '90'
+	let saveFile = saveFiles[source + '-' + rot]
+	let saveFilePieceOrder = saveFile.shift() //remove first line listing the tetrominos
+
+	let count = 0;
+	for (let saveRow of saveFile) {
+		if (saveRow.some((coverResult, index) => usedPieces.includes(saveFilePieceOrder[index]) && coverResult == "O")) {
+			count += 1 //at least one of the selected pieces can be saved
+		}
 	}
-	for(let i = 0; i < saveFileNames.length; i++){
-		let saveFileName = saveFileNames[i]
+
+	return (count/(saveFile.length)*100).toFixed(2)
+}
+
+function loadSaveFiles() {
+	let saveFileNames = []
+	for (let saveElement of document.getElementsByTagName('saves')) {
+		let sourceMain = saveElement.getAttribute('src')
+		saveFileNames.push(sourceMain + '-90', sourceMain + '-180')
+	}
+	for (let saveFileName of saveFileNames) {
 		let url = window.location.origin + '/h-docs/attachments_saves/' + saveFileName + '.csv'
 		fetch(url)
-			.then((r) => r.text())
-			.then((t) => {
-				data = $.csv.toArrays(t)
-				saveFiles[saveFileName] = data
+			.then((response) => response.text())
+			.then((text) => {
+				saveFiles[saveFileName] = $.csv.toArrays(text)
 			})
 	}
 	console.log(saveFileNames.length + ' save files loaded.')
 }
 
 function generateSaveInputs(){
-	let saveTags = document.getElementsByTagName('saves')
-	for(let i = 0; i < saveTags.length; i++){
-		if(saveTags[i].children.length > 0) continue
-		let source = saveTags[i].getAttribute('src')
-		let main = document.createElement('div')
+	for (let saveTag of document.getElementsByTagName('saves')) {
+		if (saveTag.childElementCount > 0) continue;
+		let source = saveTag.getAttribute('src')
+
+		let main = document.createElement('div') //this is needed to pin pieceContainer below the display
 		main.id = source + '-main'
-		main.className = 'save-selection'
+		main.classList.add('save-selection')
+
 		let display = document.createElement('div')
 		display.id = source + '-display'
 		display.innerText = 'Select Save...'
-		display.className = 'save-selection'
-		display.setAttribute('onclick','document.getElementById("' + source + '-inputs").style.display = "grid"; document.getElementById("' + source + '-inputs").focus()')
-		let inputs = document.createElement('div')
-		inputs.className = 'save-input'
-		inputs.id = source + '-inputs'
-		inputs.setAttribute('tabindex', '0')
-		inputs.setAttribute('onblur','document.getElementById("' + source + '-inputs").style.display = "none";')
-		for(let x = 0; x < 7; x++){
-			let piece = 'TILJSZO'[x]
+		display.classList.add('save-selection')
+		
+		let pieceContainer = document.createElement('div')
+		pieceContainer.id = source + '-container'
+		pieceContainer.classList.add('save-input')
+		pieceContainer.setAttribute('tabindex', '0')
+
+		display.addEventListener('click', () => {
+			pieceContainer.style.display = "grid"
+			pieceContainer.focus()
+		})
+		pieceContainer.addEventListener('focusout', () => {
+			pieceContainer.style.display = "none"
+		})
+		
+		for (let piece of pieces) {
 			let input = document.createElement('input')
 			input.id = piece + '-' + source
 			input.type = 'checkbox'
-			input.setAttribute('onclick', "getSaves('" + source + "')")
+			input.addEventListener('click', () => getSaves(source))
 			
 			let label = document.createElement('label')
-			label.setAttribute('for', piece + '-' + source)
+			label.htmlFor = piece + '-' + source
 			
-				let span = document.createElement('span')
-				span.className = 'mino'
-				span.innerText = piece
+			let span = document.createElement('span')
+			span.className = 'mino'
+			span.innerText = piece
 			
-			inputs.append(input)
-			inputs.append(label)
 			label.append(span)
+			pieceContainer.append(input, label)
 		}
-		saveTags[i].append(display)
-		main.append(inputs)
-		saveTags[i].append(main)
+
+		main.append(pieceContainer)
+		saveTag.append(display, main)
 	}
 }
 
