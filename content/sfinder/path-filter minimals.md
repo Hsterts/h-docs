@@ -49,33 +49,33 @@ After entering this, the program starts printing outputs.
 This is the final output I chose. It has 27 solutions.
 <br>
 <div style="text-align: center">
-<fumen size=10 clipboard="false">v115@zgB8Q4ywwhE8R4RpwhE8g0Q4RpwhE8i0ilF8wwglwh?C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8Q4zhE8R4ywE8ilBtE8glQ4g0wwBtF8i0C8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8Rpi0E8RpBtg0E8ilBtE8glywR4F8wwR4C8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8RpywE8RpglwwAtE8ilBtE8i0AtR4F8g0R4C8Je?AgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8RpywE8ilBtE8glzhE8Rpg0wwBtF8i0C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8g0ywAtE8i0BtE8RpwwAtglE8RpzhF8ilC8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8g0zhE8i0RpE8ilRpE8glywR4F8wwR4C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8glQ4g0BtE8glR4RpE8hlQ4RpE8zhBtF8i0C8Je?AgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8h0AtRpE8g0BtRpE8g0AtilE8zhR4F8glR4C8Je?AgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8h0ywE8g0RpwwglE8g0RpBtE8zhBtF8ilC8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8h0ywE8hlwhRpE8g0glwhRpE8g0glwhwwR4F8wh?R4C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8i0R4E8zhglE8RpR4glE8RpBthlF8g0BtC8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8i0hlE8zhglE8Rpg0AtglE8RpBtR4F8AtR4C8Je?AgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8ilR4E8glzhE8RpR4wwE8Rpg0ywF8i0C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8ilRpE8glAtg0RpE8Bti0E8AtywR4F8wwR4C8Je?AgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whBtRpE8whglg0RpE8whgli0E8whhlywF8Btww?C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whQ4BtwwE8whR4xwE8whRpg0wwE8whRpi0F8Q4?BtC8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whQ4ywE8whR4wwglE8whg0Q4BtE8whi0BtF8il?C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whg0ilE8whi0AtE8whRpBtE8whRpAtR4F8glR4?C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whh0R4E8whg0R4glE8whg0BtglE8whywhlF8ww?BtC8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whh0hlE8whg0RpglE8whg0RpglE8whBtywF8Bt?wwC8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whh0hlE8whg0RpglE8whg0RpglE8whywR4F8ww?R4C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8whilwwE8whRpxwE8whRpAtwwE8whglBtR4F8At?R4C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8ywRpE8ilRpE8glwwg0BtE8zhBtF8i0C8JeAgH</fumen>
-<fumen size=10 clipboard="false">v115@zgB8zhglE8h0ilE8g0RpR4E8g0RpywF8R4wwC8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8zhglE8h0ywE8g0RpBtE8g0RpwwBtF8ilC8JeAg?H</fumen>
-<fumen size=10 clipboard="false">v115@zgB8zhglE8i0R4E8Rpg0BtE8RpR4BtF8ilC8JeAgH</fumen>
+<fumen src="v115@zgB8Q4ywwhE8R4RpwhE8g0Q4RpwhE8i0ilF8wwglwh?C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8Q4zhE8R4ywE8ilBtE8glQ4g0wwBtF8i0C8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8Rpi0E8RpBtg0E8ilBtE8glywR4F8wwR4C8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8RpywE8RpglwwAtE8ilBtE8i0AtR4F8g0R4C8Je?AgH" size=10 clipboard="false">
+<fumen src="v115@zgB8RpywE8ilBtE8glzhE8Rpg0wwBtF8i0C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8g0ywAtE8i0BtE8RpwwAtglE8RpzhF8ilC8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8g0zhE8i0RpE8ilRpE8glywR4F8wwR4C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8glQ4g0BtE8glR4RpE8hlQ4RpE8zhBtF8i0C8Je?AgH" size=10 clipboard="false">
+<fumen src="v115@zgB8h0AtRpE8g0BtRpE8g0AtilE8zhR4F8glR4C8Je?AgH" size=10 clipboard="false">
+<fumen src="v115@zgB8h0ywE8g0RpwwglE8g0RpBtE8zhBtF8ilC8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8h0ywE8hlwhRpE8g0glwhRpE8g0glwhwwR4F8wh?R4C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8i0R4E8zhglE8RpR4glE8RpBthlF8g0BtC8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8i0hlE8zhglE8Rpg0AtglE8RpBtR4F8AtR4C8Je?AgH" size=10 clipboard="false">
+<fumen src="v115@zgB8ilR4E8glzhE8RpR4wwE8Rpg0ywF8i0C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8ilRpE8glAtg0RpE8Bti0E8AtywR4F8wwR4C8Je?AgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whBtRpE8whglg0RpE8whgli0E8whhlywF8Btww?C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whQ4BtwwE8whR4xwE8whRpg0wwE8whRpi0F8Q4?BtC8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whQ4ywE8whR4wwglE8whg0Q4BtE8whi0BtF8il?C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whg0ilE8whi0AtE8whRpBtE8whRpAtR4F8glR4?C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whh0R4E8whg0R4glE8whg0BtglE8whywhlF8ww?BtC8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whh0hlE8whg0RpglE8whg0RpglE8whBtywF8Bt?wwC8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whh0hlE8whg0RpglE8whg0RpglE8whywR4F8ww?R4C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8whilwwE8whRpxwE8whRpAtwwE8whglBtR4F8At?R4C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8ywRpE8ilRpE8glwwg0BtE8zhBtF8i0C8JeAgH" size=10 clipboard="false">
+<fumen src="v115@zgB8zhglE8h0ilE8g0RpR4E8g0RpywF8R4wwC8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8zhglE8h0ywE8g0RpBtE8g0RpwwBtF8ilC8JeAg?H" size=10 clipboard="false">
+<fumen src="v115@zgB8zhglE8i0R4E8Rpg0BtE8RpR4BtF8ilC8JeAgH" size=10 clipboard="false">
 </div>
 <hr>
 <div class="credits">
