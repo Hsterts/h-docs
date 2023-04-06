@@ -23,6 +23,7 @@ function selectSetup(source, setupCode){
 function getSolutions(){
     let outputs = document.getElementById('solution-finder-outputs')
     let query = document.getElementsByClassName('solution-finder-input')[0]
+    if (!query) return
     query.value = query.value.toUpperCase().replace(/[^TILJSZO]/,'')
     let queue = query.value
     console.log(selectedFileName)

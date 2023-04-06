@@ -26,6 +26,9 @@ function toggleMirror(){
 
 function switchRotation(rot){
 	rotationMode = rot
+	if (!selectedFileName) {
+		var selectedFileName = "" //temporary fix until I change sfinder implementation 
+	}
 	var with180Toggle = document.getElementById('with-180-toggle')
 	var no180Toggle = document.getElementById('no-180-toggle')
 	var with180Elements = document.querySelectorAll('.with180')
