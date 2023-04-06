@@ -9,32 +9,32 @@ ___
 ### \<fumen> tag attributes:
 **Height**: number of rows to render (starting from the bottom). Default is 5, max is 23.
 <div style="display: flex; justify-content: space-around;">
-\<fumen height = '15'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
-<fumen height = '15'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
+\<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" height = '15'>
+<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" height = '15'>
 </div>
 
 **Width**: number of columns to render (starting from the left). Default and maximum is 10.
 <div style="display: flex; justify-content: space-around;">
-\<fumen width = '4'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
-<fumen width = '4'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
+\<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" width = '4'>
+<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" width = '4'>
 </div>
 
 **Size**: pixel dimensions of a single mino. Default is 22.
 <div style="display: flex; justify-content: space-around;">
-\<fumen size = '23'\>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
-<fumen size = '23'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
+\<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" size = '23'\>
+<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" size = '23'>
 </div>
 
 **Grid**: hex code color of grid. If unspecified, no grid is rendered.
 <div style="display: flex; justify-content: space-around;">
-\<fumen grid = '#00FFFF'\>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
-<fumen grid = '#00FFFF'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
+\<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" grid = '#00FFFF'\>
+<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" grid = '#00FFFF'>
 </div>
 
 **Background**: hex code color of background. If unspecified, background is transparent.
 <div style="display: flex; justify-content: space-around;">
-\<fumen background = '#00FFFF'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
-<fumen background = '#00FFFF'>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
+\<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" background = '#00FFFF'>
+<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH" background = '#00FFFF'>
 </div>
 
 ___
@@ -53,13 +53,13 @@ Fumens within \<fumen> tags are automatically mirrored. The only consideration f
 
 <div style="display: flex; justify-content: space-around;">
 	<figure><br>
-		<fumen>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen><br>
+		<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH"><br>
 		<figcaption><br>
 			<span class="Unmirrored">Unmirrored Text</span><span class="Mirrored">txeT derorriM</span><br>
 		</figcaption><br>
 	</figure>
 	<figure>
-		<fumen>v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH</fumen>
+		<fumen src="v115@9gBtDewhilwwBtCewhglRpxwR4Bewhg0RpwwR4Cewh?i0JeAgH">
 		<figcaption>
 			<span class="Unmirrored">Unmirrored Text</span><span class="Mirrored">txeT derorriM</span>
 		</figcaption>

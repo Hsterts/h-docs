@@ -158,8 +158,8 @@ There can different sets of solutions that all qualify as a minimal set. To choo
 
 The output will be written onto ``path_minimal_strict.md``. The resulting minimals may differ depending on how you chose, but these are my results:
 <div style="text-align: center">
-<br><figfumen clipboard="false" size=15>v115@9gywR4whh0hlxwR4A8whg0RpglxwC8whg0RpglwwD8?whD8JeAgWTADX7rDy4CwBFbkRBZ1AVBFrvAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWTADX7rDy4CwBFb0KBW1ZOBFrvAA</figfumen>
+<br><figfumen src="v115@9gywR4whh0hlxwR4A8whg0RpglxwC8whg0RpglwwD8?whD8JeAgWTADX7rDy4CwBFbkRBZ1AVBFrvAA" clipboard="false" size=15>
+<figfumen src="v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWTADX7rDy4CwBFb0KBW1ZOBFrvAA" clipboard="false" size=15>
 </div>
 
 As a bonus, you can get the fumen codes extracted from ``path_minimal_strict.md`` by using the makeMinimals script.

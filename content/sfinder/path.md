@@ -116,13 +116,13 @@ No line erasure vs with line erasure:
 <div style="display: flex; justify-content: space-around">
 	<div>
 		<figure>
-      		<fumen clipboard="false">v115@9gD8zhF8ywG8g0wwH8i0C8JeAgH</fumen>
+      		<fumen src="v115@9gD8zhF8ywG8g0wwH8i0C8JeAgH" clipboard="false">
       		<figcaption style="text-align: center;">Solve with no line erasure</figcaption>
 		</figure>
 	</div>
 	<div>
 		<figure>
-			<fumen clipboard="false">v115@9gD8zhF8i0G8RpH8Rpg0C8JeAgH</fumen>
+			<fumen src="v115@9gD8zhF8i0G8RpH8Rpg0C8JeAgH" clipboard="false">
 			<figcaption style="text-align: center;">Solve with line erasure</figcaption>
 		</figure>
 	</div>

@@ -246,8 +246,7 @@ function generateDiagram(code, options) {
 }
 
 function fumencanvas(container, figure) {
-	if(container.dataset.code == null) container.dataset.code = container.innerHTML;
-	var fumenCodes = container.dataset.code;
+	var fumenCodes = container.dataset.code ?? container.getAttribute('src');
 	container.innerText = '';
 	
 	var options = {
