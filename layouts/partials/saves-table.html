@@ -1,0 +1,53 @@
+<!-- Ported from get-saves-csv.js -->
+{{ $savesSource := .Params.savesSource }}
+<!-- Generate a save table from the given file name, has depenancy on get-saves-csv.js -->
+
+<!-- TODO: I want the onclick event to propagate, input -> saves, so that I can replace the id of the labels and inputs into a class of only its mino, so:
+    <input id="<piece+savesSource>" type="checkbox"> -> <input class="<piece>" type="checkbox">
+    then I can handle the saves stuff from a click EventListener from <saves>, collecting the piece information from the input and the file information from the saves.
+-->
+
+<!-- depreciate setup-info -->
+<div class="setup-info">
+    <table class="saves-table" src="{{ $savesSource }}">
+        <tr>		
+            <th colspan=2>Saves</th>	
+        </tr>
+        <tr>		
+            <td id="save-t">	
+                <strong>T</strong>: 
+            </td>	
+            <td id="save-to">	
+                <strong>TO</strong>:    
+            </td>	
+        </tr>
+        <tr>
+            <td id="save-tio">
+                <strong>TIO</strong>:   
+            </td>	
+            <td id="avoid-sz">
+                <strong>No SZ</strong>: 
+            </td>
+        </tr>		
+        <tr>		
+            <td id="save-osz">
+                <strong>OSZ</strong>:   
+            </td>	
+            <td>	
+                <saves> <!-- TODO: move the src from here to table -->
+                    <div class="saves-display save-selection">Select Save...</div>
+                    <div class="saves-main save-selection">
+                        <div class="saves-input hidden" tabindex="0">
+                            {{ range $index, $piece := (split "TILJSZO" "") }}
+                            <label>
+                                <input class="{{ $piece }}" type="checkbox">
+                                <span class="mino">{{ $piece }}</span>
+                            </label>
+                            {{ end }}
+                        </div>
+                    </div>
+                </saves>
+            </td>	
+        </tr>		
+    </table>					
+</div>

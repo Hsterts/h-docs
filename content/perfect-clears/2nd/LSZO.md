@@ -14,6 +14,7 @@ LSZO is one of the **worst** queues for 2nd PC. **3-piece setups** are preferred
 Practice **LSZO 2nd**: [Confidential Usermode](https://himitsuconfidential.github.io/downstack-practice/usermode.html/=[LSZO]p4,*p7)
 ___
 ## General Setups
+
 <hr class="small">
 <div class="second-setup-body">
 	<div class="second-setup-display">
@@ -21,47 +22,7 @@ ___
 			<figfumen id="2nd-lszo-shoe+o" class="with180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2A5//DB0ngHB</figfumen>
             <figfumen id="2nd-lszo-shoe+o" class="no180">v115@GhAtHeBtRpDeR4AtglRpCeR4ilJeAgWUAT3kTAyvTA?BBoo2AZ+P9AxngHB</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='0/5040' class='no180'>0.00%</span>
-						<span title='0/5040' class='with180'>0.00%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='1324/5040' class='no180'>26.27%</span>
-						<span title='1324/5040' class='with180'>26.27%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='2354/5040' class='no180'>46.71%</span>
-						<span title='2354/5040' class='with180'>46.71%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='394/5040' class='no180'>7.82%</span>
-						<span title='446/5040' class='with180'>8.85%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='3766/5040' class='no180'>74.72%</span>
-						<span title='3862/5040' class='with180'>76.63%</span>
-					</td>	
-					<td>
-						<saves src="2nd-lszo-shoe+o">
-					</td>
-				</tr>		
-			</table>								
-		</div>
+		{{< saves-table savesSource="2nd-lszo-shoe+o" >}}
 		<div class="setup-writeup">
 			<p>The <strong>"Shoe + O"</strong> LSZO Setup. This setup is not recommended. Refer to <strong>3-piece setups</strong> below. <strong>Queue-based setups</strong> for better sol% and saves exist, but are mostly impractical.
 			<ul>
@@ -110,53 +71,14 @@ ___
 		</div>
 	</details>
 </div>
+
 <div class="second-setup-body">
     <div class="second-setup-display">
 		<div class="setup-image">
 			<figfumen id="2nd-lszo-hill+o" class="with180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZE4UBzngHB</figfumen>
 			<figfumen id="2nd-lszo-hill+o" class="no180">v115@GhAtHeBtRpFeAtglRpEeilJeAgWUAT3kTAyvTABBoo?2AZEgRB5ngHB</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='0/5040' class='no180'>0.00%</span>
-						<span title='0/5040' class='with180'>0.00%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='1416/5040' class='no180'>28.10%</span>
-						<span title='1480/5040' class='with180'>29.37%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='3144/5040' class='no180'>62.38%</span>
-						<span title='3196/5040' class='with180'>63.41%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='4880/5040' class='no180'>96.83%</span>
-						<span title='4888/5040' class='with180'>96.98%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='4228/5040' class='no180'>83.89%</span>
-						<span title='4252/5040' class='with180'>84.37%</span>
-					</td>	
-					<td>
-						<saves src="2nd-lszo-hill+o">
-					</td>	
-				</tr>		
-			</table>				
-		</div>
+		{{< saves-table savesSource="2nd-lszo-hill+o" >}}
 		<div class="setup-writeup">
 			<p>
 			The <strong>"Jeremy + O"</strong> LSZO Setup.
@@ -219,47 +141,7 @@ ___
 			<figfumen id="2nd-lszo-shoe" class="no180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2A5C45A0ngHB</figfumen>
 			<figfumen id="2nd-lszo-shoe" class="with180">v115@GhAtHeBtFeR4AtglEeR4ilJeAgWUAT3kTAyvTABBoo?2AZE45AzngHB</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='0/5040' class='no180'>0.00%</span>
-						<span title='0/5040' class='with180'>0.00%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='2705/5040' class='no180'>53.67%</span>
-						<span title='2756/5040' class='with180'>54.68%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='3120/5040' class='no180'>61.90%</span>
-						<span title='3120/5040' class='with180'>61.90%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='4770/5040' class='no180'>94.64%</span>
-						<span title='4722/5040' class='with180'>93.69%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='4102/5040' class='no180'>81.39%</span>
-						<span title='4186/5040' class='with180'>83.06%</span>
-					</td>	
-					<td>	
-						<saves src="2nd-lszo-shoe">
-					</td>	
-				</tr>		
-			</table>			
-		</div>
+		{{< saves-table savesSource="2nd-lszo-shoe" >}}
 		<div class="setup-writeup">
 			<p>
 			The <strong>"Shoe"</strong> LSZO Setup.
@@ -334,47 +216,7 @@ ___
 			<figfumen id="2nd-lszo-shoe+o-z" class="no180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB0ngHB</figfumen>
 			<figfumen id="2nd-lszo-shoe+o-z" class="with180">v115@RhRpDeR4AeglRpCeR4ilJeAgWUAT3kTAyvTABBoo2A?5CoAB4ngHB</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='0/5040' class='no180'>0.00%</span>
-						<span title='0/5040' class='with180'>0.00%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='1496/5040' class='no180'>29.68%</span>
-						<span title='1496/5040' class='with180'>29.68%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='2728/5040' class='no180'>54.13%</span>
-						<span title='2728/5040' class='with180'>54.13%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='4724/5040' class='no180'>93.73%</span>
-						<span title='4732/5040' class='with180'>93.89%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='3974/5040' class='no180'>78.85%</span>
-						<span title='3974/5040' class='with180'>78.85%</span>
-					</td>	
-					<td>	
-						<saves src="2nd-lszo-shoe+o-z">
-					</td>	
-				</tr>		
-			</table>					
-		</div>
+		{{< saves-table savesSource="2nd-lszo-shoe+o-z" >}}
 		<div class="setup-writeup">
 			<p>
 			The <strong>"Shoe + O - Z"</strong> LSZO Setup.

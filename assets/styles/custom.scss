@@ -563,7 +563,7 @@ footer{
   position: absolute;
   left: 0;
   top: 110%;
-  display: none;
+  display: grid;
   align-content: space-around;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -581,17 +581,17 @@ footer{
   border-radius: 4px;
   z-index: 10000;
   cursor: default;
-  input[type="checkbox"]{
-    display: none;
-  }
-  input[type="checkbox"]:checked + label img{
-    background: var(--light-3);
-    box-shadow: var(--light-4) 0 0 4px 2px inset;
-    transform: scale(0.9);
-  }
   label{
     width: 100%;
     text-align: center;
+    input[type="checkbox"]{
+      display: none;
+    }
+    & input[type="checkbox"]:checked ~ span img {
+      background: var(--light-3);
+      box-shadow: var(--light-4) 0 0 4px 2px inset;
+      transform: scale(0.9);
+    }
     img {
       width: 2em;
       height: 2em;

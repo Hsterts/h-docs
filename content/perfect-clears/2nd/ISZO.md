@@ -20,47 +20,7 @@ ___
 		<div class="setup-image">
 			<figfumen id="2nd-iszo-see-l">v115@NhQ4GeBtR4RpEeBtQ4RpJeAgWkAT3kTAyvTABBoo2A?RY0vAQo78A1no2Ap588AwcUrDFbEVC</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='1772/2160' class='no180'>82.04%</span>
-						<span title='1772/2160' class='with180'>82.04%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='2082/2160' class='no180'>96.39%</span>
-						<span title='2082/2160' class='with180'>96.39%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='2091/2160' class='no180'>96.81%</span>
-						<span title='2091/2160' class='with180'>96.81%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='4971/5040' class='no180'>96.81%</span>
-						<span title='4971/5040' class='with180'>96.81%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='2142/2160' class='no180'>99.17%</span>
-						<span title='2142/2160' class='with180'>99.17%</span>
-					</td>	
-					<td>	
-						<saves src="2nd-iszo-see-L">
-					</td>	
-				</tr>		
-			</table>			
-		</div>
+		{{< saves-table savesSource="2nd-iszo-see-l" >}}
 		<div class="setup-writeup">
 			<p>The <strong>See <span class="mino">L</span> 3p</strong> ISZO setup. Only used when you can see <span class="mino">L</span> (<span title="2160/2160">100.00%</span>), or when you can't see both of <span class="mino">LJ</span> (<span title="1440/1440">100.00%</span>). Otherwise, its sol% drops down to <span title="5032/5040">99.84%</span>. Mirror accordingly.
 				<ul>

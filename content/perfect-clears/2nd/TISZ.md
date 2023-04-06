@@ -21,47 +21,7 @@ ___
 		<div class="setup-image">
 			<figfumen>v115@IhBtHewwBtR4DeywR4zhKeAgWVAT3kTAyvTABBoo2A?RY0vAQo78AVAAAA</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='0/5040' class='no180'>0.00%</span>
-						<span title='0/5040' class='with180'>0.00%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='3984/5040' class='no180'>79.05%</span>
-						<span title='3984/5040' class='with180'>79.05%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='3984/5040' class='no180'>79.05%</span>
-						<span title='3984/5040' class='with180'>79.05%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='3984/5040' class='no180'>79.05%</span>
-						<span title='3984/5040' class='with180'>79.05%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='5040/5040' class='no180'>100.00%</span>
-						<span title='5040/5040' class='with180'>100.00%</span>
-					</td>	
-					<td>	
-						<saves src="2nd-tisz-flat">
-					</td>	
-				</tr>		
-			</table>
-		</div>
+		{{< saves-table savesSource="2nd-tisz-flat" >}}
 		<div class="setup-writeup">
 			<p>The <strong>"Flat"</strong> TISZ Setup. This setup is <strong>mainly used for Ultra</strong>, as it can be executed easily and quickly, <u>only</u> saves <span class="mino">OSZ</span> and has decent quad chances <span title="2160/5040">(42.86%).</span>
 				<ul>
@@ -96,47 +56,7 @@ ___
 		<div class="setup-image">
 			<figfumen>v115@LhBtFeR4wwBtDeR4ywzhJeAgWVAT3kTAyvTABBoo2A?RY0vAQo78AVAAAA</figfumen>
 		</div>
-		<div class="setup-info">
-			<table>			
-				<tr>		
-					<th colspan=2>Saves</th>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>T</strong>: 
-						<span title='1760/5040' class='no180'>34.92%</span>
-						<span title='1760/5040' class='with180'>34.92%</span>
-					</td>	
-					<td>	
-						<strong>TO</strong>: 
-						<span title='4232/5040' class='no180'>83.97%</span>
-						<span title='4232/5040' class='with180'>83.97%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>TIO</strong>: 
-						<span title='4436/5040' class='no180'>88.02%</span>
-						<span title='4436/5040' class='with180'>88.02%</span>
-					</td>	
-					<td>	
-						<strong>No SZ</strong>: 
-						<span title='4628/5040' class='no180'>91.83%</span>
-						<span title='4628/5040' class='with180'>91.83%</span>
-					</td>	
-				</tr>		
-				<tr>		
-					<td>	
-						<strong>OSZ</strong>: 
-						<span title='5040/5040' class='no180'>100.00%</span>
-						<span title='5040/5040' class='with180'>100.00%</span>
-					</td>	
-					<td>	
-						<saves src="2nd-tisz-bumpy">
-					</td>	
-				</tr>		
-			</table>			
-		</div>
+		{{< saves-table savesSource="2nd-tisz-bumpy" >}}
 		<div class="setup-writeup">
 			<p>The <strong>"Bumpy"</strong> TISZ setup. This setup is has <strong>Save</strong><span class="mino">T</span> while basically still having identical solutions to the "Flat" setup, and has decent quad chances <span title="1680/5040">(33.33%).</span>
 				<ul>
