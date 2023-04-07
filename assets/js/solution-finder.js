@@ -59,19 +59,17 @@ function getSolutions(){
         queueInput.value = queueInput.value.toUpperCase().replace(/[^TILJSZO]/,'') //update display
         let queue = queueInput.value
 
-        console.log(solutionFiles[selectedFileName])
-        //TODO: parse the csv first before using it
-        //if the queue matches the thing, then continue processing, otherwise show the intended queue composition (instead of adding it when you don't find a match)
         let data = solutionFiles[selectedFileName]
         let firstCol = data.map(row => row[0])
         let queueIndex = firstCol.indexOf(queue)
 
         let queueCompRow = firstCol.indexOf('queuecomp')
         let queueComp = data[queueCompRow][1]
-
+        
         let queueCompositionElement = document.getElementsByClassName('queue-composition')[0]
         queueCompositionElement.innerHTML = queueComp
-
+        
+        //if the queue matches the pattern, then continue processing, otherwise show the intended queue composition (instead of adding it when you don't find a match)
         if (queueCompositionMatches(queueComp, queue)) {
             queueCompositionElement.classList.add('hidden')
             outputs.innerHTML = ''
@@ -118,34 +116,34 @@ function getSolutions(){
 }
 
 async function loadSolutionFiles() {
-    let inputArea = document.getElementsByClassName('solution-finder-input')[0]
-    inputArea.value = 'Loading...'
-    inputArea.disabled = true
-    inputArea.classList.add('solution-finder-loading')
-
     let setupElements = Array.from(document.getElementsByClassName('setup-image'))
-    let sourceFileNames = setupElements.map(element => element.children[0].getAttribute('id')) //only take the first image?
+    let sourceFileNames = setupElements.map(element => element.children[0].getAttribute('id')) //only take the first image, the setups differ by spin but not shape
 	let solutionFileNames = sourceFileNames.flatMap(sourceFileName => [sourceFileName + '-90', sourceFileName + '-180', sourceFileName + '-90-mirror', sourceFileName + '-180-mirror'])
 	
-    await Promise.all(solutionFileNames.map(async solutionFileName => {
+    return Promise.allSettled(solutionFileNames.map(async solutionFileName => { //ignores all invalid files
         let url = window.location.origin + '/h-docs/attachments_solutions/' + solutionFileName + '.csv'
+
         return fetch(url)
             .then(response => response.text())
-            .then(text => solutionFiles[solutionFileName] = $.csv.toArrays(text))
-    })).then(() => {
-        inputArea.value = ''
-        inputArea.disabled = false
-        inputArea.classList.remove('solution-finder-loading')
-        console.trace(solutionFileNames.length + ' solution files loaded.')
-    })
+            .then(text => $.csv.toArrays(text))
+            .then(csv => solutionFiles[solutionFileName] = csv)
+    }))
 }
 
-const solutionFilesLoaded = new Promise(function(resolve, reject) {
-    loadSolutionFiles().then(() => resolve())
+const solutionFilesLoaded = new Promise((resolve, reject) => {
+    loadSolutionFiles()
+        .then(() => {
+            let inputArea = document.getElementsByClassName('solution-finder-input')[0]
+            inputArea.value = ''
+            inputArea.disabled = false
+            inputArea.classList.remove('solution-finder-loading')
+            console.log(Object.keys(solutionFiles).length + ' solution files loaded.')
+            resolve()
+        })
 })
 
 function generatePCSF(){
-    if (!document.getElementById('solution-finder')) return //if solution finder is not present, don't do anything
+    if (!document.getElementById('solution-finder')) throw Error("solution-finder should be present to include this script.") //solution finder is not present
 
     document.getElementsByClassName("solution-finder-display-image")[0].addEventListener('click', () => {
         document.getElementById('solution-finder-selection-main').classList.remove('hidden')
@@ -155,7 +153,7 @@ function generatePCSF(){
     //take in all setup-image elements in the page as setups
     for (let setupElements of document.getElementsByClassName('setup-image')) {
         let setupName = setupElements.children[0].getAttribute('id')
-        let setupCode = setupElements.children[0].innerText
+        let setupCode = setupElements.children[0].innerText //from <fumen> format
         let fumen = document.createElement('fumen')
         fumen.innerText = setupCode
         fumen.setAttribute('id', setupName + '-selection-fumen')
