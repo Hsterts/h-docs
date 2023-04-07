@@ -168,7 +168,7 @@
 }
 
 .hidden{
-  display: none;
+  display: none !important;
 }
 
 .with180{display: inline-block;}
@@ -1053,6 +1053,10 @@ footer{
       }
       .solution-finder-input-title{
         align-self: flex-start;
+        .queue-composition {
+          opacity: 0.5; 
+          font-weight: 400;
+        }
       }
       .input-item{
         flex: 0.25;
@@ -1090,6 +1094,12 @@ footer{
           height: 1.5em;
           padding: 0 1em;
           overflow-x: shown;
+          .solution-finder-loading {
+            opacity: 0.5;
+            text-transform: capitalize;
+            font-family: var(--font-body);
+            font-style: italic;
+          }
         }
       }
     }

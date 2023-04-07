@@ -435,6 +435,8 @@ ___
 </div>
 <hr>
 
+{{< solution-finder >}}
+
 <!-- ## Queue-Based Setups
 ABCD's queue-based setups are (writeup)
 <hr class="small">
