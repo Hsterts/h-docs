@@ -6,6 +6,7 @@ title: "2nd: LSZO"
     name="description"
     content="LSZO 2nd's Standard and Queue-Based Setups"
   />
+  {{< solution-finder-script >}}
 </head>
 
 LSZO is one of the **worst** queues for 2nd PC. **3-piece setups** are preferred in order to increase solve percentage. Saving <span class="mino">T</span> is impossible on this queue. A huge amount of <a href="#queue-based-setups">queue-based setups</a> are used to optimize saves.
@@ -275,6 +276,8 @@ ___
 	</details>
 </div>
 <hr>
+
+{{< solution-finder >}}
 
 <!-- ## Queue-Based Setups
 ABCD's queue-based setups are (writeup)
