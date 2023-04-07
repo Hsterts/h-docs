@@ -153,9 +153,9 @@ function generatePCSF(){
     //take in all setup-image elements in the page as setups
     for (let setupElements of document.getElementsByClassName('setup-image')) {
         let setupName = setupElements.children[0].getAttribute('id')
-        let setupCode = setupElements.children[0].innerText //from <fumen> format
+        let setupCode = setupElements.children[0].getAttribute('src') //from <fumen> format
         let fumen = document.createElement('fumen')
-        fumen.innerText = setupCode
+        fumen.setAttribute('src', setupCode)
         fumen.setAttribute('id', setupName + '-selection-fumen')
         fumen.setAttribute('clipboard', false)
         fumen.addEventListener('click', () => selectSetup(setupName, setupCode))
@@ -165,7 +165,7 @@ function generatePCSF(){
     //temp arrangement to make preview image work
     let setupElements = document.getElementsByClassName('setup-image')[0]
     let setupName = setupElements.children[0].getAttribute('id')
-    let setupCode = setupElements.children[0].innerText
+    let setupCode = setupElements.children[0].getAttribute('src')
     //preview image
     let numrows = 5, numcols = 10, cellSize = 22, gridToggle = false, gridColor = null, transparency_four = true, background = null, delay = 500, lock = false, outline = null
     document.getElementsByClassName("solution-finder-display-image")[0].src = draw(decoder.decode(setupCode)[0], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }).toDataURL('image/png')
