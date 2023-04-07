@@ -18,7 +18,7 @@ ___
 <div class="second-setup-body">
 	<div class="second-setup-display">
 		<div class="setup-image">
-			<figfumen id="2nd-iszo-see-l">v115@NhQ4GeBtR4RpEeBtQ4RpJeAgWkAT3kTAyvTABBoo2A?RY0vAQo78A1no2Ap588AwcUrDFbEVC</figfumen>
+			<figfumen src="v115@NhQ4GeBtR4RpEeBtQ4RpJeAgWkAT3kTAyvTABBoo2A?RY0vAQo78A1no2Ap588AwcUrDFbEVC" id="2nd-iszo-see-l">
 		</div>
 		<div class="setup-info">
 			<table>			
@@ -76,17 +76,17 @@ ___
 		<div>
 			<h4>Minimals</h4>
 			<div>
-				<figfumen size="16">v115@9gwhglQ4Bti0RpwhglR4BtA8g0RpwhhlQ4F80hE8Je?AgWTADX7rDy4CwBFb0KBW1ZOBFrvAA</figfumen>
-				<figfumen size="16">v115@9gwhh0Btzhglwhg0R4BtA8ilwhR4wwF8whg0ywE8Je?AgWTADX7rDy4CwBFbsABTFzABFrvAA</figfumen>
-				<figfumen size="16">v115@9gwhQ4Btwwi0RpwhR4ywA8g0RpwhilF8whglQ4BtE8?JeAgWTADX7rDy4CwBFbsABS1Y9AFrvAA</figfumen>
-				<figfumen size="16">v115@9gxhili0RpxhglAtR4A8g0RpxhBtF8xhAtR4E8JeAg?WTADX7rDy4CwBFbU9AQVk2AFrvAA</figfumen>
-				<figfumen size="16">v115@9gwhilwwi0RpwhBtywA8g0RpwhglBtF80hE8JeAgWT?ADX7rDy4CwBFb85ARl+5AFrvAA</figfumen>
+				<figfumen src="v115@9gwhglQ4Bti0RpwhglR4BtA8g0RpwhhlQ4F80hE8Je?AgWTADX7rDy4CwBFb0KBW1ZOBFrvAA" size="16">
+				<figfumen src="v115@9gwhh0Btzhglwhg0R4BtA8ilwhR4wwF8whg0ywE8Je?AgWTADX7rDy4CwBFbsABTFzABFrvAA" size="16">
+				<figfumen src="v115@9gwhQ4Btwwi0RpwhR4ywA8g0RpwhilF8whglQ4BtE8?JeAgWTADX7rDy4CwBFbsABS1Y9AFrvAA" size="16">
+				<figfumen src="v115@9gxhili0RpxhglAtR4A8g0RpxhBtF8xhAtR4E8JeAg?WTADX7rDy4CwBFbU9AQVk2AFrvAA" size="16">
+				<figfumen src="v115@9gwhilwwi0RpwhBtywA8g0RpwhglBtF80hE8JeAgWT?ADX7rDy4CwBFb85ARl+5AFrvAA" size="16">
 			</div>	
 			<hr class="small">
 			<h4>Extras</h4>
 			<div>
-				<figfumen size="16">v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AS7nAB?4ngHB</figfumen>
-				<figfumen size="16">v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AY1gHB?FrvAA</figfumen>
+				<figfumen src="v115@9gg03hgli0AtR4A8ilRpBtF8RpAtR4E8JeAgWsAlEv?XEhoo2AmXyTASILdD2488AQeM2ABlClEFMVABBoo2AS7nAB?4ngHB" size="16">
+				<figfumen src="v115@9gg0R4BtzhglzhBtA8ili0wwF8R4ywE8JeAgWrAlEv?XEhoo2AmXyTASILdD2488AwWM2ABlClEFMVABBoo2AY1gHB?FrvAA" size="16">
 			</div>
 		</div>
 	</details>
@@ -105,8 +105,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@KhBtEezhBtR4RpAezhR4AeRpJeAgWdAT4UTASoUSAS?4MrDmXyrDFbEVCFbMLEyoo2AqAAAA</figfumen>
-					<figfumen>v115@9gh0R4BthlRpg0R4B8BtglRpJ8g0F8glB8JeAgWTAD?X7rDy4CwBFbEEBQVk2AFrvAA</figfumen>
+					<figfumen src="v115@KhBtEezhBtR4RpAezhR4AeRpJeAgWdAT4UTASoUSAS?4MrDmXyrDFbEVCFbMLEyoo2AqAAAA">
+					<figfumen src="v115@9gh0R4BthlRpg0R4B8BtglRpJ8g0F8glB8JeAgWTAD?X7rDy4CwBFbEEBQVk2AFrvAA">
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
@@ -123,8 +123,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@KhRpBeilAeR4RpBtglRpR4zhBtRpJeAgWIAT4UTASY?LgC</figfumen>
-					<figfumen>v115@9gh0R4Btzhg0R4B8BtC8g0S8JeAgWUADX7rDy4CwBF?b85AVFM6A0ngHB</figfumen>
+					<figfumen src="v115@KhRpBeilAeR4RpBtglRpR4zhBtRpJeAgWIAT4UTASY?LgC">
+					<figfumen src="v115@9gh0R4Btzhg0R4B8BtC8g0S8JeAgWUADX7rDy4CwBF?b85AVFM6A0ngHB">
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
@@ -141,8 +141,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@+gglQ4HeglR4BeQ4DehlQ4BtR4RpAezhBtQ4RpJeAg?WIAT4UTASYrtC</figfumen>
-					<figfumen>v115@9gwhB8Bti0RpwhC8BtA8g0RpwhI8whI8JeAgWUADX7?rDy4CwBFb85AU1oRB2ngHB</figfumen>
+					<figfumen src="v115@+gglQ4HeglR4BeQ4DehlQ4BtR4RpAezhBtQ4RpJeAg?WIAT4UTASYrtC">
+					<figfumen src="v115@9gwhB8Bti0RpwhC8BtA8g0RpwhI8whI8JeAgWUADX7?rDy4CwBFb85AU1oRB2ngHB">
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
@@ -160,8 +160,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@IhT4BtCeT4DtRpAezhBtAeRpJeAgWIAT4UTASIjFD</figfumen>
-					<figfumen>v115@9gh0zhhlRpg0F8glRpJ8g0F8glB8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB</figfumen>
+					<figfumen src="v115@IhT4BtCeT4DtRpAezhBtAeRpJeAgWIAT4UTASIjFD">
+					<figfumen src="v115@9gh0zhhlRpg0F8glRpJ8g0F8glB8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB">
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
@@ -178,8 +178,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@/gQ4HewwR4BeQ4CeywQ4BtR4RpAezhBtQ4RpJeAgWI?AT4UTASY9tC</figfumen>
-					<figfumen>v115@9gh0A8Btzhglg0C8BtA8ilJ8g0I8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB</figfumen>
+					<figfumen src="v115@/gQ4HewwR4BeQ4CeywQ4BtR4RpAezhBtQ4RpJeAgWI?AT4UTASY9tC">
+					<figfumen src="v115@9gh0A8Btzhglg0C8BtA8ilJ8g0I8JeAgWUADX7rDy4?CwBFb85AU1oRB2ngHB">
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
@@ -196,8 +196,8 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@KhRpBeQ4hlywRpBtR4glAewwzhBtQ4glJeAgWIAT4U?TASYVWC</figfumen>
-					<figfumen>v115@9gh0R4Btzhg0R4B8BtM8g0I8JeAgWUADX7rDy4CwBF?b85AU1oRB2ngHB</figfumen>
+					<figfumen src="v115@KhRpBeQ4hlywRpBtR4glAewwzhBtQ4glJeAgWIAT4U?TASYVWC">
+					<figfumen src="v115@9gh0R4Btzhg0R4B8BtM8g0I8JeAgWUADX7rDy4CwBF?b85AU1oRB2ngHB">
 				</div>
 				<div class="second-standard-queuebased-writeup">
 					<hr class="small">
@@ -214,9 +214,9 @@ ISZO's queue-based setups are **practical** and **can be learned easily**. Not c
 				</h3>
 				<hr class="small">
 				<div class="second-standard-queuebased-image">
-					<figfumen>v115@9gilzhi0glAtRpDeQ4g0BtRpDeR4AtzhDeQ4JeAgWJ?AT4UTASo8VCqAAAA</figfumen>
-					<figfumen>v115@9gN8RpR4F8RpBtG8R4BtA8JeAgWTADX7rDy4CwBFbU?9AO0XOBFrvAA</figfumen>
-					<figfumen>v115@9gN8Q4ywF8R4BtG8Q4wwBtA8JeAgWTADX7rDy4CwBF?bU9AO0XOBFrvAA</figfumen>
+					<figfumen src="v115@9gilzhi0glAtRpDeQ4g0BtRpDeR4AtzhDeQ4JeAgWJ?AT4UTASo8VCqAAAA">
+					<figfumen src="v115@9gN8RpR4F8RpBtG8R4BtA8JeAgWTADX7rDy4CwBFbU?9AO0XOBFrvAA">
+					<figfumen src="v115@9gN8Q4ywF8R4BtG8Q4wwBtA8JeAgWTADX7rDy4CwBF?bU9AO0XOBFrvAA">
 				</div>
 				<hr class="small">
 				<div class="second-standard-queuebased-writeup">

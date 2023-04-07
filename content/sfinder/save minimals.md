@@ -176,11 +176,11 @@ py sfinder-saves.py filter -w 'O' -p T,*! -bs
 The resulting minimals should be the following:
 <div style="text-align: center">
 <br>
-<figfumen clipboard="false" size=15>v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaAWBwKB3ngHBFbcRASUzABWIaHBQecRAylAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gilR4whzwglAtR4A8whg0ywBtC8whi0wwAtD8whD8?JeAgWaAV+f2A1ngHBFbcRASEROBSOaHBQecRAylAAA</figfumen>
+<figfumen src="v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaAWBwKB3ngHBFbcRASUzABWIaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gilR4whzwglAtR4A8whg0ywBtC8whi0wwAtD8whD8?JeAgWaAV+f2A1ngHBFbcRASEROBSOaHBQecRAylAAA" clipboard="false" size=15>
 <br>
-<figfumen clipboard="false" size=15>v115@9gilR4whwwi0glAtR4A8whywg0BtC8whzwAtD8whD8?JeAgWaA0FIOByngHBFbcRASEhHBQRaHBQecRAylAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAUBwKB3ngHBFbcRASExABVLaHBQecRAylAAA</figfumen>
+<figfumen src="v115@9gilR4whwwi0glAtR4A8whywg0BtC8whzwAtD8whD8?JeAgWaA0FIOByngHBFbcRASEhHBQRaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAUBwKB3ngHBFbcRASExABVLaHBQecRAylAAA" clipboard="false" size=15>
 </div>
 
 The setup also has a 42.46% chance for saving <span class="mino">T</span>, so here's a second example filter command:
@@ -191,13 +191,13 @@ py sfinder-saves.py filter -w 'T,O' -p T,*! -bs
 The resulting minimals should be the following. If you double-check with cover, this set does max out the setup's potential 42.46% save <span class="mino">T</span> before filling in the rest of the missing cover with save <span class="mino">O</span>.
 <br>
 <div style="text-align: center">
-<figfumen clipboard="false" size=15>v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWaA0CwKB2ngHBFbcRASEJEBQLaHBQecRAylAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaA08HOB1ngHBFbcRASEZ9AwPaHBQecRAylAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAT4f2A4ngHBFbcRAS0eHBRRaHBQecRAylAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gwhh0R4Btilwhg0R4A8wwBtRpwhg0C8xwglRpwhD8?wwD8JeAgWaASEYHB3ngHBFbcRAS0GEBUIaHBQecRAylAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gilR4whi0wwglAtR4A8whRpxwBtC8whRpg0wwAtD8?whD8JeAgWZAxFg2A1ngHBFbcRAS0ILBwmv2AUo78AZAAAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gilR4i0RpglAtR4A8wwzhBtC8xwg0RpAtD8wwD8Je?AgWYAZlf9AFrnRASo78AYe22AvfEEBwnAVB</figfumen>
-<figfumen clipboard="false" size=15>v115@9gilR4wwzhglAtR4A8i0RpBtC8xwg0RpAtD8wwD8Je?AgWYASFrRBFrnRASo78A45o2AvfEEBwnAVB</figfumen>
+<figfumen src="v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWaA0CwKB2ngHBFbcRASEJEBQLaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaA08HOB1ngHBFbcRASEZ9AwPaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAT4f2A4ngHBFbcRAS0eHBRRaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gwhh0R4Btilwhg0R4A8wwBtRpwhg0C8xwglRpwhD8?wwD8JeAgWaASEYHB3ngHBFbcRAS0GEBUIaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gilR4whi0wwglAtR4A8whRpxwBtC8whRpg0wwAtD8?whD8JeAgWZAxFg2A1ngHBFbcRAS0ILBwmv2AUo78AZAAAA" clipboard="false" size=15>
+<figfumen src="v115@9gilR4i0RpglAtR4A8wwzhBtC8xwg0RpAtD8wwD8Je?AgWYAZlf9AFrnRASo78AYe22AvfEEBwnAVB" clipboard="false" size=15>
+<figfumen src="v115@9gilR4wwzhglAtR4A8i0RpBtC8xwg0RpAtD8wwD8Je?AgWYASFrRBFrnRASo78A45o2AvfEEBwnAVB" clipboard="false" size=15>
 </div>
 <hr>
 <div class="credits">
