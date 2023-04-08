@@ -154,7 +154,7 @@ ___
 ## Example Path and Filter Commands
 <div class="minimal-graphic" style="display: flex; align-items: center;">
 <p>Here's an example run on how to get save minimals starting from generating the path file. We'll be getting the Save <span class="mino">O</span> minimals for a three-piece 2nd PC setup. This setup in particular has 100% Save <span class="mino">O</span> potential.</p>
-<div style="flex-shrink: 0"><figfumen clipboard="false">v115@LhA8GeC8FeD8AeD8JeAgH</fumen></div>
+<div style="flex-shrink: 0"><figfumen clipboard="false" src="v115@LhA8GeC8FeD8AeD8JeAgH"></figfumen></div>
 </div>
 
 Don't forget `-f csv` and `-k p`. Take note of the `-p` parameter as this will be also used in the filter command. This should create a file in the `/output/` folder named `path.csv`.
@@ -176,11 +176,11 @@ py sfinder-saves.py filter -w 'O' -p T,*! -bs
 The resulting minimals should be the following:
 <div style="text-align: center">
 <br>
-<figfumen src="v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaAWBwKB3ngHBFbcRASUzABWIaHBQecRAylAAA" clipboard="false" size=15>
-<figfumen src="v115@9gilR4whzwglAtR4A8whg0ywBtC8whi0wwAtD8whD8?JeAgWaAV+f2A1ngHBFbcRASEROBSOaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaAWBwKB3ngHBFbcRASUzABWIaHBQecRAylAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gilR4whzwglAtR4A8whg0ywBtC8whi0wwAtD8whD8?JeAgWaAV+f2A1ngHBFbcRASEROBSOaHBQecRAylAAA" clipboard="false" size=15></figfumen>
 <br>
-<figfumen src="v115@9gilR4whwwi0glAtR4A8whywg0BtC8whzwAtD8whD8?JeAgWaA0FIOByngHBFbcRASEhHBQRaHBQecRAylAAA" clipboard="false" size=15>
-<figfumen src="v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAUBwKB3ngHBFbcRASExABVLaHBQecRAylAAA" clipboard="false" size=15>
+<figfumen src="v115@9gilR4whwwi0glAtR4A8whywg0BtC8whzwAtD8whD8?JeAgWaA0FIOByngHBFbcRASEhHBQRaHBQecRAylAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAUBwKB3ngHBFbcRASExABVLaHBQecRAylAAA" clipboard="false" size=15></figfumen>
 </div>
 
 The setup also has a 42.46% chance for saving <span class="mino">T</span>, so here's a second example filter command:
@@ -191,13 +191,13 @@ py sfinder-saves.py filter -w 'T,O' -p T,*! -bs
 The resulting minimals should be the following. If you double-check with cover, this set does max out the setup's potential 42.46% save <span class="mino">T</span> before filling in the rest of the missing cover with save <span class="mino">O</span>.
 <br>
 <div style="text-align: center">
-<figfumen src="v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWaA0CwKB2ngHBFbcRASEJEBQLaHBQecRAylAAA" clipboard="false" size=15>
-<figfumen src="v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaA08HOB1ngHBFbcRASEZ9AwPaHBQecRAylAAA" clipboard="false" size=15>
-<figfumen src="v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAT4f2A4ngHBFbcRAS0eHBRRaHBQecRAylAAA" clipboard="false" size=15>
-<figfumen src="v115@9gwhh0R4Btilwhg0R4A8wwBtRpwhg0C8xwglRpwhD8?wwD8JeAgWaASEYHB3ngHBFbcRAS0GEBUIaHBQecRAylAAA" clipboard="false" size=15>
-<figfumen src="v115@9gilR4whi0wwglAtR4A8whRpxwBtC8whRpg0wwAtD8?whD8JeAgWZAxFg2A1ngHBFbcRAS0ILBwmv2AUo78AZAAAA" clipboard="false" size=15>
-<figfumen src="v115@9gilR4i0RpglAtR4A8wwzhBtC8xwg0RpAtD8wwD8Je?AgWYAZlf9AFrnRASo78AYe22AvfEEBwnAVB" clipboard="false" size=15>
-<figfumen src="v115@9gilR4wwzhglAtR4A8i0RpBtC8xwg0RpAtD8wwD8Je?AgWYASFrRBFrnRASo78A45o2AvfEEBwnAVB" clipboard="false" size=15>
+<figfumen src="v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWaA0CwKB2ngHBFbcRASEJEBQLaHBQecRAylAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gywR4whBthlxwR4A8whg0BtglxwC8whi0glwwD8wh?D8JeAgWaA08HOB1ngHBFbcRASEZ9AwPaHBQecRAylAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gywR4whgli0xwR4A8whglBtg0xwC8whhlBtwwD8wh?D8JeAgWaAT4f2A4ngHBFbcRAS0eHBRRaHBQecRAylAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gwhh0R4Btilwhg0R4A8wwBtRpwhg0C8xwglRpwhD8?wwD8JeAgWaASEYHB3ngHBFbcRAS0GEBUIaHBQecRAylAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gilR4whi0wwglAtR4A8whRpxwBtC8whRpg0wwAtD8?whD8JeAgWZAxFg2A1ngHBFbcRAS0ILBwmv2AUo78AZAAAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gilR4i0RpglAtR4A8wwzhBtC8xwg0RpAtD8wwD8Je?AgWYAZlf9AFrnRASo78AYe22AvfEEBwnAVB" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gilR4wwzhglAtR4A8i0RpBtC8xwg0RpAtD8wwD8Je?AgWYASFrRBFrnRASo78A45o2AvfEEBwnAVB" clipboard="false" size=15></figfumen>
 </div>
 <hr>
 <div class="credits">

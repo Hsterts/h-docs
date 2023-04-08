@@ -64,8 +64,8 @@ ABCD's queue-based setups are (writeup)
 				<h3><span class="mino">XY</span> (Save <span class="mino">T</span>)</h3>
 			</a>
 			<div class="standard-queuebased">
-				<fumen src="QB Setup">
-				<fumen src="QB Solution">
+				<fumen src="QB Setup"></fumen>
+				<fumen src="QB Solution"></fumen>
 				<hr class="small">
 				<p></p>
 			</div>

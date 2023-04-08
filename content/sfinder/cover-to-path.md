@@ -44,7 +44,7 @@ ___
             </ol>
         </p>
     </div>
-    <figfumen src="v115@VgC8GeC8GeC8GeE8CeH8AeI8AeI8AeI8AeC8JeAgH" style="flex-shrink: 0" clipboard="false" height="9">
+    <figfumen src="v115@VgC8GeC8GeC8GeE8CeH8AeI8AeI8AeI8AeC8JeAgH" style="flex-shrink: 0" clipboard="false" height="9"></figfumen>
 </div>
 
 **Getting all the unique solutions**:
