@@ -1,0 +1,29 @@
+<!-- A template taking in the common name, subcommand, shortcut, default value, version number it was available on (optional), and path to description of the file.  -->
+{{ $name := .Params.name }}
+{{ $subcommand := .Params.subcommand }}
+{{ $shortcut := .Params.shortcut }}
+{{ $defaultValue := .Params.defaultValue }}
+{{ $descriptionPath := .Params.descriptionPath }} <!-- Path is relative to the partial folder. Originally tested for markdown files only. -->
+
+<!-- A <details> HTML element showing the name, subcommand, shortcut, and version in <summary>. -->
+<!-- TODO: add source to readthedocs of the corresponding subcommand. -->
+<details>
+    <summary>
+        <span class="summary-title">
+            <strong>{{- $name -}}</strong> [<code>--{{ $subcommand }}</code>, <code>-{{ $shortcut }}</code>]
+        </span>
+        {{ if isset .Params "version" }}
+            <span class="version-text">since v{{ .Params.version }}</span>
+        {{ end }}
+        <br>
+        <span class="default-value-text">default: {{ $defaultValue }} </span>
+    </summary>
+    <div style="text-align: left;overflow: scroll;">
+        <!-- Add the description, accomodating for both html and md formats. May not work if the partial also contains go commands. -->
+        {{ if eq (path.Ext $descriptionPath) ".html" }}
+            {{ partial $descriptionPath . }} <!-- TODO: look into partial variants to reduce rendering -->
+        {{ else }}
+            {{ partial $descriptionPath . | markdownify }}
+        {{ end }}
+    </div>
+</details>

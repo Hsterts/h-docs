@@ -43,11 +43,13 @@ ___
 	</div>
 	<details>
 		<summary>Solutions</summary>
-		<h4>Minimals</h4>
-		<fumen></fumen>
-		<hr class="small">
-		<h4>Extra Solutions</h4>
-		<fumen></fumen>
+		<div>
+			<h4>Minimals</h4>
+			<fumen></fumen>
+			<hr class="small">
+			<h4>Extra Solutions</h4>
+			<fumen></fumen>
+		</div>
 	</details>
 </div>
 <hr>
@@ -62,8 +64,8 @@ ABCD's queue-based setups are (writeup)
 				<h3><span class="mino">XY</span> (Save <span class="mino">T</span>)</h3>
 			</a>
 			<div class="standard-queuebased">
-				<fumen>QB Setup</fumen>
-				<fumen>QB Solution</fumen>
+				<fumen src="QB Setup"></fumen>
+				<fumen src="QB Solution"></fumen>
 				<hr class="small">
 				<p></p>
 			</div>

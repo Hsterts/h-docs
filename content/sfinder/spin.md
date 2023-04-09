@@ -13,166 +13,44 @@ body{display: flex; justify-content: center;}
 
 >[!WARNING] Work In Progress
 >
->This page is currently being worked on! For the meantime, assume that none of the information presented here is correct.
+> This page is currently being worked on! For the meantime, assume that none of the information presented here is correct.
 
 [[sfinder/|Solution Finder]]'s **Spin** command outputs all the ways to get a specified spin (TS0, TSS, TSD, and Mini Variants) from a **specified field**, given a specified **pattern**. The terminal output is written into a file in the specified [[#Miscellaneous Parameters|log path]], and a file containing the path data is generated in the specified [[#Miscellaneous Parameters|output base]].
-```YAML {title="Command Structure"}
-java -jar sfinder.jar spin --tetfu <fumen> --patterns <pattern>
-```
-```YAML {title="Shorthand Command Structure"}
-java -jar sfinder.jar spin -t <fumen> -p <pattern>
-```
 ___
 ## Input Parameters
-**Specified Field** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used.
-- **Page** (`--page`, `-P`): Specify the page of the fumen. 
-	- The default is `1` (the first page)
-	- `--page 2` 
-- **Clear Line** (`--clear-line`, `-c`): Specify the number of line clears for a perfect clear. 
-	- The default is `4`
-	- `--clear-line 6`
+{{< sfinder-parameters/parameter-template name="Specified Field(s)" subcommand="tetfu" shortcut="t" defaultValue="null" descriptionPath="sfinder-parameters/descriptions/tetfu.md" >}}
+{{< sfinder-parameters/parameter-template name="Page" subcommand="page" shortcut="P" defaultValue="1" descriptionPath="sfinder-parameters/descriptions/page.md" >}}
+<br>
+{{< sfinder-parameters/parameter-template name="Patterns" subcommand="patterns" shortcut="p" defaultValue="null" descriptionPath="sfinder-parameters/descriptions/patterns.md" >}}
+<br>
+{{< sfinder-parameters/parameter-template name="Required clear line(s)" subcommand="line" shortcut="c" defaultValue="2" descriptionPath="WIP.md" >}}
 
-**Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
+___
+## Filtering Parameters
+{{< sfinder-parameters/parameter-template name="Minimum fill height" subcommand="fill-bottom" shortcut="fb" defaultValue="0" descriptionPath="WIP.md" >}}
+{{< sfinder-parameters/parameter-template name="Maximum fill height" subcommand="fill-top" shortcut="ft" defaultValue="-1" descriptionPath="WIP.md" >}}
+{{< sfinder-parameters/parameter-template name="Maximum margin height" subcommand="margin-height" shortcut="m" defaultValue="-1" descriptionPath="WIP.md" >}}
+<br>
+{{< sfinder-parameters/parameter-template name="Build roof" subcommand="roof" shortcut="r" defaultValue="yes" descriptionPath="WIP.md" >}}
+{{< sfinder-parameters/parameter-template name="Maximum pieces until roof" subcommand="max-roof" shortcut="mr" defaultValue="-1" descriptionPath="WIP.md" >}}
+<br>
+{{< sfinder-parameters/parameter-template name="Filter" subcommand="filter" shortcut="f" defaultValue="strict" descriptionPath="WIP.md" >}}
+
+Note `spin` always uses the SRS rotation system and cannot be customized, unlike other commands.
+
 ___
 ## Output Parameters
-**Format** (`--format`, `-f`): Dictates the way the path output is written onto a file.
-- By default, the output is in `html`.
-- With `--format html` (the default), there are two outputs (if `--max-layer` is not specified):
-	- `path_unique.html` contains a list of all the possible solves found by sfinder.
-	- `path_minimal.html` contains a loosely defined set of minimals. Read more about what these mean over at [[minimals|this page]].
-- `--format csv` will output the path results as a csv. You will need to specify further what kind of info will be displayed in the csv, <u>or you will end up with nonsensical text</u>. Some more info about different csv outputs [[#Example Commands and Outputs|here]].
+{{< sfinder-parameters/parameter-template name="Format" subcommand="format" shortcut="fo" defaultValue="html" descriptionPath="sfinder-parameters/descriptions/format.md" >}}
 
-**Max Layer** (`--max-layer`, `-L`): refers to the outputs of path when using the **html format**.
-	- By default, it is set to `2` (outputs both `path_unique.html` and `path_minimal.html`)
-	- The only other option is `-L 1`, where it only outputs `path_unique.html`.
-
-**Key** (`--key`, `-k`): refers to the way the path result is sorted when using the **csv format**.
-	- By default, it is set to `none`.
-	- `--key solution` outputs the path info <u>grouped by solution</u>.
-	- `--key pattern` outputs the path info <u>grouped by queue</u>.
-	- `--key use` outputs the path info <u>grouped by pieces used</u>
-	- The parameters may also be shortened to just the first name (`--key use` = `-k u`).
-
-**Split** (`--split`, `-s`): refers to the way the solution fumen is built.
-	- By default, it is set to `no` (output is a normal fumen).
-	- `--split yes` builds the solves <u>piece-by-piece</u> ([[sfinder/fumen editor#Fumen Types|glued fumen]]).
+Note that `spin` uses `-fo` as the shorthand instead of `-f`.
+{{< sfinder-parameters/parameter-template name="Split" subcommand="split" shortcut="s" defaultValue="no" descriptionPath="sfinder-parameters/descriptions/split.md" >}}
 ___
 ## Miscellaneous Parameters
-**Output Base** (`--output-base`, `-o`): Specify the path data file output.
-- By default, the path data is written into `output/path.csv`, `path_minimal.html`, or `path_unique.html` (depending on your path command).
-- `--output-base output/tubpath.csv`
-
-**Log path** (`--log-path`, `-lp`): Specify the .txt file output from the output of the command.
-- By default, the log path is `output/last_output.txt`.
-- `--log-path output/foundpaths.txt`
-
-**Specified Field from a file** (`--field-path`, `-fp`): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
-- By default, the field path is `input/field.txt`.
-- `--field-path input/sdpc.txt`
-
-**Patterns from a file** (`--patterns-path`, `-pp`): instead of defining patterns using `--patterns`, you can specify a .txt file that contains either the actual queues, or patterns.
-- By default, the patterns path is `input/patterns.txt`.
-- `--patterns-path input/filteredqueue.txt`
-
-**Cached Bit** (`--cached-bit`, `-cb`): Specify the smallest bit of the cache to use for the internal algorithm. <u>You most likely will never need to use this parameter</u>.
-___
-## Summary
-<div style="display: flex; justify-content: space-around;''">
-	<div>
-		<table width="40%">
-			<tr>
-				<th colspan="3">Input Parameters</th>
-			</tr>
-			<tr>
-				<th>Parameter</th>
-				<th>Shorthand</th>
-				<th>Default</th>
-			</tr>
-			<tr>
-				<td>--tetfu</td>
-				<td style="text-align: center;">-t</td>
-				<td>null</td>
-			</tr>
-			<tr>
-				<td>--page</td>
-				<td style="text-align: center;">-P</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td>--clear-line</td>
-				<td style="text-align: center;">-c</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>--patterns</td>
-				<td style="text-align: center;">-p</td>
-				<td>null</td>
-			</tr>
-			</table>
-	</div>
-	<div style="flex-direction: column;">
-		<div>
-			<table width="400px">
-				<tr>
-					<th colspan="3">Output Parameters</th>
-				</tr>
-				<tr>
-					<td>--format</td>
-					<td style="text-align: center;">-f</td>
-					<td>html</td>
-				</tr>
-				<tr>
-					<td>--max-layer</td>
-					<td style="text-align: center;">-L</td>
-					<td>2</td>
-				</tr>
-				<tr>
-					<td>--key</td>
-					<td style="text-align: center;">-k</td>
-					<td>none</td>
-				</tr>
-				<tr>
-					<td>--split</td>
-					<td style="text-align: center;">-s</td>
-					<td>no</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<table  width="400px">
-				<tr>
-					<th colspan="3">Miscellaneous Parameters</th>
-				</tr>
-				<tr>
-					<td>--output-base</td>
-					<td style="text-align: center;">-o</td>
-					<td>output/path.txt</td>
-				</tr>
-				<tr>
-					<td>--log-path</td>
-					<td style="text-align: center;">-lp</td>
-					<td>output/last_output.txt</td>
-				</tr>
-				<tr>
-					<td>--field-path</td>
-					<td style="text-align: center;">-fp</td>
-					<td>input/field.txt</td>
-				</tr>
-				<tr>
-					<td>--patterns-path</td>
-					<td style="text-align: center;">-pp</td>
-					<td>input/patterns.txt</td>
-				</tr>
-				<tr>
-					<td>--cached-bit</td>
-					<td style="text-align: center;">-cb</td>
-					<td>0</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-</div>
-
+{{< sfinder-parameters/parameter-template name="Output Base" subcommand="output-base" shortcut="o" defaultValue="output/spin.html" descriptionPath="sfinder-parameters/descriptions/output-base.md" >}}
+{{< sfinder-parameters/parameter-template name="Log Path" subcommand="log-path" shortcut="lp" defaultValue="output/last_output.txt" descriptionPath="sfinder-parameters/descriptions/log-path.md" >}}
+{{< sfinder-parameters/parameter-template name="Specified Field from a file" subcommand="field-path" shortcut="fp" defaultValue="input/field.txt" descriptionPath="sfinder-parameters/descriptions/field-path.md" >}}
+{{< sfinder-parameters/parameter-template name="Patterns from a file" subcommand="patterns-path" shortcut="pp" defaultValue="input/patterns.txt" descriptionPath="sfinder-parameters/descriptions/patterns-path.md" >}}
+{{< sfinder-parameters/parameter-template name="Cached Bit" subcommand="cached-bit" shortcut="cb" defaultValue="0" descriptionPath="sfinder-parameters/descriptions/cached-bit.md" >}}
 ___
 ## Example Commands and Outputs
 An **example output** of the path command:
@@ -290,3 +168,16 @@ ILZ, # pieces used
 v115@9gD8zhF8ilG8BtH8glBtC8JeAgWDA6SdBA, # solutions that use these pieces
 ZSIL;TZIL;... # queues the solutions work for
 ```
+___
+<div class="credits">
+	<div class="stat">
+		<h4>References</h4>
+		<ul>
+			<li>
+				<a href="https://github.com/knewjade/">Knewjade</a>
+				<br>
+                <ul><li><a href="https://solution-finder.readthedocs.io/ja/stable/contents/spin/main.html">Spin documentation</a></li></ul>
+            </li>
+		</ul>
+	</div>
+</div>

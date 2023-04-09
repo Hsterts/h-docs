@@ -4,7 +4,7 @@ let rotationMode = `with180`;
 function toggleMirror(){
 	mirrored = !mirrored;
 	
-	// for the solution finder
+	// for the solution finder //TODO: make solution-finder hook itself to this instead of the other way round
 	let currentCode = document.getElementsByClassName('solution-finder-display-image')[0].dataset.code;
 	let rot = rotationMode == 'with180' ? '-180' : '-90'
 	let source = selectedFileName.replace(rot,'').replace('-mirror','')
@@ -12,45 +12,39 @@ function toggleMirror(){
 	getSolutions()
 	
 	// for the page elements
-	var unmirroredElements = document.getElementById('unmirrored')
-	var mirroredElements = document.getElementsByClassName('mirrored')
+	var unmirroredElements = document.querySelectorAll('.unmirrored')
+	var mirroredElements = document.querySelectorAll('.mirrored')
 	if(!mirrored){
-		for(let x = 0; x < unmirroredElements; x++){
-			unmirroredElements[x].style.display = 'inline-block'
-			mirroredElements[x].style.display = 'none'
-		}
+		unmirroredElements.forEach(element => element.classList.remove('hidden'))
+		mirroredElements.forEach(element => element.classList.add('hidden'))
 	} else {
-		for(let x = 0; x < unmirroredElements; x++){
-			unmirroredElements[x].style.display = 'none'
-			mirroredElements[x].style.display = 'inline-block'
-		}
+		unmirroredElements.forEach(element => element.classList.add('hidden'))
+		mirroredElements.forEach(element => element.classList.remove('hidden'))
 	}
 	formatPage();
 }
 
 function switchRotation(rot){
 	rotationMode = rot
+	if (!selectedFileName) {
+		var selectedFileName = "" //temporary fix until I change sfinder implementation 
+	}
 	var with180Toggle = document.getElementById('with-180-toggle')
 	var no180Toggle = document.getElementById('no-180-toggle')
-	var with180Elements = document.getElementsByClassName('with180')
-  	var no180Elements = document.getElementsByClassName('no180')
-	if(rot == 'with180'){
-	  	with180Toggle.setAttribute('class','rotation-logo logo hidden')
-	  	no180Toggle.setAttribute('class','rotation-logo logo')
-		for(let x = 0; x < with180Elements.length; x++){
-			with180Elements[x].style.display = 'inline-block'
-			no180Elements[x].style.display = 'none'
-		}
+	var with180Elements = document.querySelectorAll('.with180')
+  	var no180Elements = document.querySelectorAll('.no180')
+	if (rot == 'with180') {
+		with180Toggle.classList.remove('hidden')
+		with180Elements.forEach(element => element.classList.remove('hidden'))
+		no180Toggle.classList.add('hidden')
+		no180Elements.forEach(element => element.classList.add('hidden'))
 		selectedFileName = selectedFileName.replace('-90','-180')
 		getSolutions()
-	}
-	if(rot == 'no180'){
-		with180Toggle.setAttribute('class','rotation-logo logo')
-		no180Toggle.setAttribute('class','rotation-logo logo hidden')
-		for(let x = 0; x < with180Elements.length; x++){
-			with180Elements[x].style.display = 'none'
-			no180Elements[x].style.display = 'inline-block'
-		}
+	} else if (rot == 'no180') {
+		with180Toggle.classList.add('hidden')
+		with180Elements.forEach(element => element.classList.add('hidden'))
+		no180Toggle.classList.remove('hidden')
+		no180Elements.forEach(element => element.classList.remove('hidden'))
 		selectedFileName = selectedFileName.replace('-180','-90')
 		getSolutions()
 	}
@@ -59,16 +53,20 @@ function switchRotation(rot){
 function toggleGrid(grid){
 	var withGridToggle = document.getElementById('with-grid-toggle')
 	var noGridToggle = document.getElementById('no-grid-toggle')
-	if(grid == 'withGrid'){
-	  	withGridToggle.setAttribute('class','grid-toggle-logo logo hidden')
-	  	noGridToggle.setAttribute('class','gridtoggle logo')
+	if (grid == 'withGrid'){
+		withGridToggle.classList.remove('hidden')
+		noGridToggle.classList.add('hidden')
 	  	allGridToggle = true;
 	  	formatPage()
-	}
-	else if(grid == 'noGrid'){
-		withGridToggle.setAttribute('class','grid-toggle-logo logo')
-		noGridToggle.setAttribute('class','grid-toggle-logo logo hidden')
+	} else if (grid == 'noGrid'){
+		withGridToggle.classList.add('hidden')
+		noGridToggle.classList.remove('hidden')
 		allGridToggle = false;
 		formatPage()
 	}
 }
+
+window.addEventListener('load', () => {
+	switchRotation('with180') //only hides static elements
+	toggleGrid('noGrid')
+})

@@ -1,0 +1,1 @@
+Instead of defining the fumen code(s) using `--tetfu`, you can specify a `.txt` file that contains fumen code(s) instead.

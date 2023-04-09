@@ -1,0 +1,1 @@
+Allows the last nth pieces to use softdrop regardless of the value of `--drop`.

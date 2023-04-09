@@ -1,0 +1,1 @@
+Specifies the number of B2B clears required for a successful output. By default, it uses `0`, meaning no B2B is required.

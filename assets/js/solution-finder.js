@@ -1,206 +1,176 @@
-solutionFiles = []
+var solutionFiles = []
 
 function selectSetup(source, setupCode){
     let selectionMain = document.getElementById('solution-finder-selection-main')
-	let selectionFumens = [...document.getElementsByClassName('selection-fumen')]
     let selectedSelectionFumen = document.getElementById(source + '-selection-fumen')
 	let solutionFinderSetupImg = document.getElementsByClassName('solution-finder-display-image')[0]
-    let rot = rotationMode == 'with180' ? '-180' : '-90'
-    for(let i = 0; i < selectionFumens.length; i++){selectionFumens[i].className = 'selection-fumen'}
-    selectedSelectionFumen.className = 'selection-fumen selected'
-    selectedFileName = source + rot
-    if(mirrored) {
+    let rot = rotationMode == 'with180' ? '180' : '90'
+    
+	document.querySelectorAll('.selection-fumen').forEach(element => element.classList.remove('selected'))
+    selectedSelectionFumen.classList.add('selection-fumen', 'selected')
+
+    selectedFileName = source + '-' + rot
+    if (mirrored) {
         selectedFileName += '-mirror'
         setupCode = mirrorFumen(setupCode)[0]
     }
+    // this jankiness is because you can't call fumen canvas and are unable to use the default values set there
     let numrows = 5, numcols = 10, cellSize = 22, gridToggle = allGridToggle, gridColor = null, transparency_four = true, background = null, delay = 500, lock = false, outline = null
     solutionFinderSetupImg.setAttribute('data-code', setupCode)
     solutionFinderSetupImg.src = draw(decoder.decode(setupCode)[0], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }).toDataURL('image/png')
     getSolutions()
-    selectionMain.style.display = 'none'
+    selectionMain.classList.add('hidden')
+}
+
+function queueCompositionMatches(queueComposition, queue) { //checks if the queue is an element of the queueComposition pattern
+    //support single pieces or portions of a full bag, delimited by commas.
+    //doesn't support consecutive pieces yet
+    let queueCompSegments = queueComposition.split(',')
+    let stringGenerator = queue => (function* () { for (let piece of queue) { yield piece } })() //generator function to iterate through queue
+    let queueIterator = stringGenerator(queue)
+
+    for (let queueCompSegment of queueCompSegments) {
+        if (queueCompSegment.length == 1) { //single piece
+            let iterator = queueIterator.next()
+            if (iterator.done) return false; //queue is shorter than pattern
+            if (iterator.value != queueCompSegment) return false; //queue doesn't match pattern
+        } else if (queueCompSegment.length == 3) { //*pX pattern
+            let numPieces = parseInt(queueCompSegment[2])
+
+            let cumulatedPieces = new Set()
+            for (let i = 0; i < numPieces; i++) {
+                let iterator = queueIterator.next()
+                if (iterator.done) return false; //queue is shorter than pattern
+                if (cumulatedPieces.has(iterator.value)) return false; //queue doesn't match pattern (no repeated pieces in bag)
+                cumulatedPieces.add(iterator.value)
+            }
+        } else throw Error("Invalid queue composition segment: " + queueCompSegment)
+    }
+    //matched all segments
+    return true;
 }
 
 function getSolutions(){
-    let outputs = document.getElementById('solution-finder-outputs')
-    let query = document.getElementsByClassName('solution-finder-input')[0]
-    query.value = query.value.toUpperCase().replace(/[^TILJSZO]/,'')
-    let queue = query.value
-    console.log(selectedFileName)
-    let fileIndex = Object.keys(solutionFiles).indexOf(selectedFileName)
-    if(queue.length == 7){
-        let data =  Object.values(solutionFiles)[fileIndex]
-        let firstCol = []
-        for(let i = 0; i < data.length; i++){firstCol.push(data[i][0])}
+    solutionFilesLoaded.then(() => {
+        //reads a solution file and displays solutions that cover the input queue.
+        //the type column has two types of annotation: M(minimal) or X#<piece>(extra solve for saving <piece>)
+        let outputs = document.getElementById('solution-finder-outputs')
+        let queueInput = document.getElementsByClassName('solution-finder-input')[0]
+        queueInput.value = queueInput.value.toUpperCase().replace(/[^TILJSZO]/,'') //update display
+        let queue = queueInput.value
+
+        let data = solutionFiles[selectedFileName]
+        let firstCol = data.map(row => row[0])
         let queueIndex = firstCol.indexOf(queue)
-        if(queueIndex == -1){
-            console.log('Queue not found')
+
+        let queueCompRow = firstCol.indexOf('queuecomp')
+        let queueComp = data[queueCompRow][1]
+        
+        let queueCompositionElement = document.getElementsByClassName('queue-composition')[0]
+        queueCompositionElement.innerHTML = queueComp
+        
+        //if the queue matches the pattern, then continue processing, otherwise show the intended queue composition (instead of adding it when you don't find a match)
+        if (queueCompositionMatches(queueComp, queue)) {
+            queueCompositionElement.classList.add('hidden')
             outputs.innerHTML = ''
-            let title = document.getElementsByClassName('solution-finder-input-title')[0]
-            let queueCompRow = firstCol.indexOf('queuecomp')
-            let queueComp = data[queueCompRow][1]
-            title.innerHTML = 'Input <span style="opacity: 0.5; font-weight: 400;">(' + queueComp + ')</span>'
-            setTimeout(function() {title.innerHTML = 'Input'}, 5000)
-        } else {
-            let coverRow = firstCol.indexOf('cover')
-            let typeRow = firstCol.indexOf('type')
-            let results = []
-            for(let i = 1; i < data[0].length; i++){if(data[queueIndex][i] == 'O') results.push({'fumen': data[0][i], 'cover': data[coverRow][i], 'type': data[typeRow][i]})}
-            outputs.innerHTML = ''
-            for(let i = 0; i < results.length; i++){
-                let fumen = results[i]['fumen']
-                let cover = '<strong>Cover</strong>: ' + results[i]['cover']
-                let type = results[i]['type']
-                type = type.replace('M','Minimal').replace('X#','')
+
+            let fumenRow = data[firstCol.indexOf('sequence')]
+            let coverRow = data[firstCol.indexOf('cover')]
+            let typeRow = data[firstCol.indexOf('type')]
+
+            let coveringIndexes = data[queueIndex].flatMap((cell, index) => cell == 'O' ? index : [])
+            for (let coveringIndex of coveringIndexes) {
+                let fumen = fumenRow[coveringIndex]
+                let cover = coverRow[coveringIndex]
+                let type = typeRow[coveringIndex]
+
                 let fig = document.createElement('figure')
-                fig.className = 'fumen-figure'
-                let cap = document.createElement('figcaption')
-                let stats = document.createElement('div')
-                stats.setAttribute('class','stat')
-                stats.innerHTML = cover
-                if(type){stats.innerHTML += '<br>' + type}
-                cap.appendChild(stats)
-                let fumenImg = document.createElement('img')
-                let numrows = 5, numcols = 10, cellSize = 15, gridToggle = false, gridColor = null, transparency_four = true, background = null, delay = 500, lock = false, outline = null
-                fumenImg.src = draw(decoder.decode(unglueFumen(fumen))[0], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }).toDataURL('image/png')
-                fumenImg.setAttribute('data-code',fumen)
-                fumenImg.setAttribute('class','fumen-image')
-                fig.appendChild(fumenImg)
-                fig.appendChild(cap)
-                outputs.appendChild(fig)
+                fig.classList.add('fumen-figure')
+                {
+                    let caption = document.createElement('figcaption')
+                    {
+                        let stats = document.createElement('div')
+                        stats.classList.add('stat')
+                        stats.innerHTML = '<strong>Cover</strong>: ' + cover
+                        if (type) {stats.innerHTML += '<br>' + type.replace('M','Minimal').replace('X#','')}
+                        caption.append(stats)
+                    }
+
+                    let fumenImg = document.createElement('img')
+                    {
+                        let numrows = 5, numcols = 10, cellSize = 15, gridToggle = false, gridColor = null, transparency_four = true, background = null, delay = 500, lock = false, outline = null
+                        fumenImg.src = draw(decoder.decode(unglueFumen(fumen))[0], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }).toDataURL('image/png')
+                        fumenImg.setAttribute('data-code', fumen)
+                        fumenImg.classList.add('fumen-image')
+                    }
+
+                    fig.append(fumenImg, caption)
+                }
+                outputs.append(fig)
             }
-            console.log(results.length + ' solutions found for ' + queue)
+            console.log(coveringIndexes.length + ' solutions found for ' + queue)
+        } else {
+            queueCompositionElement.classList.remove('hidden')
         }
-    }
+    })
 }
 
 async function loadSolutionFiles() {
-    let inputArea = document.getElementsByClassName('solution-finder-input')[0]
-    inputArea.value = 'Loading...'
-    inputArea.disabled = true
-    inputArea.setAttribute('style','opacity: 0.5; text-transform: capitalize; font-family: var(--font-body); font-style: italic;')
-    let data = []
-	let setupElements = Array.from(document.getElementsByClassName('setup-image'), (el) => el.children[0].getAttribute('id'))
-	let solutionFileNames = []
-	for(let i = 0; i < setupElements.length; i++){
-		let sourceMain = setupElements[i]
-		let source90 = sourceMain + '-90'
-		let source180 = sourceMain + '-180'
-		solutionFileNames.push(source90)
-		solutionFileNames.push(source180)
-        solutionFileNames.push(source90 + '-mirror')
-        solutionFileNames.push(source180 + '-mirror')
-	}
-	for(let i = 0; i < solutionFileNames.length; i++){
-		let solutionFileName = solutionFileNames[i]
-		let url = window.location.origin + '/h-docs/attachments_solutions/' + solutionFileName + '.csv'
-		await fetch(url)
-			.then((r) => r.text())
-			.then((t) => {
-				data = $.csv.toArrays(t)
-				solutionFiles[solutionFileName] = data
-			})
-	}
-    inputArea.value = ''
-    inputArea.disabled = false
-    inputArea.setAttribute('style','')
-	console.log(solutionFileNames.length + ' solution files loaded.')
+    let setupElements = Array.from(document.getElementsByClassName('setup-image'))
+    let sourceFileNames = setupElements.map(element => element.children[0].getAttribute('id')) //only take the first image, the setups differ by spin but not shape
+	let solutionFileNames = sourceFileNames.flatMap(sourceFileName => [sourceFileName + '-90', sourceFileName + '-180', sourceFileName + '-90-mirror', sourceFileName + '-180-mirror'])
+	
+    return Promise.allSettled(solutionFileNames.map(async solutionFileName => { //ignores all invalid files
+        let url = window.location.origin + '/h-docs/attachments_solutions/' + solutionFileName + '.csv'
+
+        return fetch(url)
+            .then(response => response.text())
+            .then(text => $.csv.toArrays(text))
+            .then(csv => solutionFiles[solutionFileName] = csv)
+    }))
 }
 
+const solutionFilesLoaded = new Promise((resolve, reject) => {
+    loadSolutionFiles()
+        .then(() => {
+            let inputArea = document.getElementsByClassName('solution-finder-input')[0]
+            inputArea.value = ''
+            inputArea.disabled = false
+            inputArea.classList.remove('solution-finder-loading')
+            console.log(Object.keys(solutionFiles).length + ' solution files loaded.')
+            resolve()
+        })
+})
+
+//TODO: this file definitely doensn't belong in js, move to hugo partial
 function generatePCSF(){
-        let base = document.getElementById('solution-finder-base')
-        if(base){
-        let section = document.createElement('section')
-        section.setAttribute('id','solution-finder')
-        let body = document.createElement('div')
-        body.setAttribute('class','solution-finder-body')
-        let solutionFinder = document.createElement('div')
-        solutionFinder.setAttribute('class','pc-solution-finder')
-        let solutionFinderTitle = document.createElement('h2')
-        solutionFinderTitle.setAttribute('class','solution-finder-title')
-        solutionFinderTitle.innerText = 'Solution Finder'
-        let solutionFinderQuery = document.createElement('div')
-        solutionFinderQuery.setAttribute('class','solution-finder-query')
-        let solutionFinderDisplay = document.createElement('div')
-        solutionFinderDisplay.setAttribute('id','solution-finder-display')
-        let solutionFinderDisplayTitle = document.createElement('h3')
-        solutionFinderDisplayTitle.setAttribute('class','solution-finder-display-title')
-        solutionFinderDisplayTitle.innerText = 'Selected Setup'
-        let solutionFinderDisplayImage = document.createElement('img')
-        solutionFinderDisplayImage.setAttribute('class','solution-finder-display-image')
-        solutionFinderDisplayImage.setAttribute('onclick','document.getElementById("solution-finder-selection-main").style.display = ""')
-        let solutionFinderSelectionMain = document.createElement('div')
-        solutionFinderSelectionMain.setAttribute('id','solution-finder-selection-main')
-        let solutionFinderSelectionBody = document.createElement('div')
-        solutionFinderSelectionBody.setAttribute('id','solution-finder-selection-body')
-        let solutionFinderSelectionTitle = document.createElement('h2')
-        solutionFinderSelectionTitle.setAttribute('class','solution-finder-selection-title')
-        solutionFinderSelectionTitle.innerText = 'Setup Selection'
-        let solutionFinderSelection = document.createElement('div')
-        solutionFinderSelection.setAttribute('id','solution-finder-selection')
+    if (!document.getElementById('solution-finder')) throw Error("solution-finder should be present to include this script.") //solution finder is not present
 
-        let solutionFinderInputBody = document.createElement('div')
-        solutionFinderInputBody.setAttribute('class','solution-finder-input-body')
-        let solutionFinderInputTitle = document.createElement('h3')
-        solutionFinderInputTitle.innerText = 'Input'
-        solutionFinderInputTitle.setAttribute('class','solution-finder-input-title')
-        let solutionFinderInputDiv = document.createElement('div')
-        solutionFinderInputDiv.setAttribute('style','display: flex; flex-direction: row;')
-        solutionFinderInputDiv.setAttribute('class','solution-finder-inputs-container')
-        let solutionFinderInputQueue = document.createElement('div')
-        solutionFinderInputQueue.setAttribute('class','input-item')
-        let solutionFinderInputQueueTitle = document.createElement('span')
-        solutionFinderInputQueueTitle.setAttribute('class','item-title')
-        solutionFinderInputQueueTitle.innerText = 'Queue'
-        let solutionFinderInputTextarea = document.createElement('textarea')
-        solutionFinderInputTextarea.setAttribute('class','solution-finder-input')
-        solutionFinderInputTextarea.setAttribute('maxlength','7')
-        solutionFinderInputTextarea.addEventListener('input', getSolutions)
+    document.getElementsByClassName("solution-finder-display-image")[0].addEventListener('click', () => {
+        document.getElementById('solution-finder-selection-main').classList.remove('hidden')
+    })
+    document.getElementsByClassName("solution-finder-input")[0].addEventListener('input', getSolutions)
 
-        let divider = document.createElement('hr')
-        divider.setAttribute('class', 'small divider')
-        let solutionFinderOutputs = document.createElement('div')
-        solutionFinderOutputs.setAttribute('id', 'solution-finder-outputs')
-
-        base.appendChild(section)
-            section.appendChild(body)
-                body.appendChild(solutionFinder)
-                    solutionFinder.appendChild(solutionFinderTitle)
-                    solutionFinder.appendChild(solutionFinderQuery)
-                        solutionFinderQuery.appendChild(solutionFinderDisplay)
-                            solutionFinderDisplay.appendChild(solutionFinderDisplayTitle)
-                            solutionFinderDisplay.appendChild(solutionFinderDisplayImage)
-                            solutionFinderDisplay.appendChild(solutionFinderSelectionMain)
-                            solutionFinderSelectionMain.appendChild(solutionFinderSelectionBody)
-                                    solutionFinderSelectionBody.appendChild(solutionFinderSelectionTitle)
-                                    solutionFinderSelectionBody.appendChild(solutionFinderSelection)
-                        solutionFinderQuery.appendChild(solutionFinderInputBody)
-                            solutionFinderInputBody.appendChild(solutionFinderInputTitle)
-                            solutionFinderInputBody.appendChild(solutionFinderInputDiv)
-                                solutionFinderInputDiv.appendChild(solutionFinderInputQueue)
-                                    solutionFinderInputQueue.appendChild(solutionFinderInputQueueTitle)
-                                    solutionFinderInputQueue.appendChild(solutionFinderInputTextarea)
-                    solutionFinder.appendChild(divider)
-                    solutionFinder.appendChild(solutionFinderOutputs)
-
-        let setupElements = document.getElementsByClassName('setup-image')
-        for(let i = 0; i < setupElements.length; i++){
-            let setupName = setupElements[i].children[0].getAttribute('id')
-            let setupCode = setupElements[i].children[0].innerText
-            let fumen = document.createElement('fumen')
-            fumen.innerText = setupCode
-            fumen.setAttribute('id', setupName + '-selection-fumen')
-            fumen.setAttribute('clipboard', false)
-            fumen.setAttribute('onclick','selectSetup("' + setupName + '", "' + setupCode + '")')
-            fumen.className = 'selection-fumen'
-            solutionFinderSelection.appendChild(fumen)
-            if(i == 0){
-                let numrows = 5, numcols = 10, cellSize = 22, gridToggle = false, gridColor = null, transparency_four = true, background = null, delay = 500, lock = false, outline = null
-                solutionFinderDisplayImage.src = draw(decoder.decode(setupCode)[0], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }).toDataURL('image/png')
-                selectSetup(setupName, setupCode)
-            }
-        }
-        loadSolutionFiles()
+    //take in all setup-image elements in the page as setups
+    for (let setupElements of document.getElementsByClassName('setup-image')) {
+        let setupName = setupElements.children[0].getAttribute('id')
+        let setupCode = setupElements.children[0].getAttribute('src') //from <fumen> format
+        let fumen = document.createElement('fumen')
+        fumen.setAttribute('src', setupCode)
+        fumen.setAttribute('id', setupName + '-selection-fumen')
+        fumen.setAttribute('clipboard', false)
+        fumen.addEventListener('click', () => selectSetup(setupName, setupCode))
+        fumen.classList.add('selection-fumen')
+        document.getElementById('solution-finder-selection').appendChild(fumen)
     }
+    //temp arrangement to make preview image work
+    let setupElements = document.getElementsByClassName('setup-image')[0]
+    let setupName = setupElements.children[0].getAttribute('id')
+    let setupCode = setupElements.children[0].getAttribute('src')
+    //preview image
+    let numrows = 5, numcols = 10, cellSize = 22, gridToggle = false, gridColor = null, transparency_four = true, background = null, delay = 500, lock = false, outline = null
+    document.getElementsByClassName("solution-finder-display-image")[0].src = draw(decoder.decode(setupCode)[0], { numrows, numcols, cellSize, gridToggle, gridColor, transparency_four, background, delay, lock, outline }).toDataURL('image/png')
+    selectSetup(setupName, setupCode)
 }
 
 generatePCSF()

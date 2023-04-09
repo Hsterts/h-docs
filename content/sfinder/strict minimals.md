@@ -114,7 +114,7 @@ Here's an example diagram of strict minimals' output. It's not illustrative of h
 
 ___
 ## Finding Strict Minimals
-#### Downloade NodeJS:
+#### Download NodeJS:
 1. Go to the [NodeJS download page](https://nodejs.org/en/download/). Installing it should be straight-forward.
     - When installing, make sure that **`NodeJS` and `npm` are added to PATH**. This appears in the **Custom Setup** step of installation.
 2. Open a terminal (Command Prompt, PowerShell, etc.)
@@ -130,16 +130,16 @@ Solution finder's [[sfinder/path|Path Command]] is used to produce a csv file th
 > 
 > The program mostly runs for a few seconds up to a few minutes. If it lasts longer than that, there may be *too many* solutions and the result may take quite a while to produce.
 >
->[This alternative](https://github.com/knewjade/path-filter/) by [Knewjade](https://github.com/knewjade/) can be used to find a slightly larger set in exchange for a much shorter run-time. I also wrote about how to use it over <a href="/h-docs/sfinder/path-filter-minimals/">here</a>.
+> [This alternative](https://github.com/knewjade/path-filter/) by [Knewjade](https://github.com/knewjade/) can be used to find a slightly larger set in exchange for a much shorter run-time. I also wrote about how to use it over <a href="/h-docs/sfinder/path-filter-minimals/">here</a>.
 2. If there are multiple minimal sets, you may need to choose between solutions. An interactive prompt (**use your arrow keys and press enter when you've chosen**) is used for the user to choose between sets of solutions. **Choose according to your needs**-- if you want ease, prioritize easy-looking solutions. If you want saves, prioritize solutions that save better pieces.
 
-3. Outputs are written to `path_minimal_strict.md`. It's placed in the directory the terminal is linked to. Opening it by itself will allow you to see the solutions if you have a markdown editor. However, you can extract the fumens from the markdown file using the makeMinimals Script [(Direct download link)](https://cdn.discordapp.com/attachments/569730842319126541/941520438528466964/makeMinimals_2.zip)
+3. Outputs are written to `path_minimal_strict.md`. It's placed in the directory the terminal is linked to. Opening it by itself will allow you to see the solutions if you have a markdown editor. However, you can extract the fumens from the markdown file using the [makeMinimals Script](https://github.com/Marfung37/makeMinimals)
     - Using the makeMinimals Script is straight-forward. Extract it into the same folder `path_minimal_strict.md` is in, then enter `py true_minimal.py` onto a terminal.
 ___
 ## Example Path and Strict-Minimal Commands
 <div class="minimal-graphic" style="display: flex; align-items: center;">
 <p>Here's an example run on how to get strict minimals starting from generating the path file.</p>
-<div style="flex-shrink: 0"><figfumen clipboard="false">v115@LhA8GeC8FeD8AeD8JeAgH</fumen></div>
+<div style="flex-shrink: 0"><figfumen clipboard="false" src="v115@LhA8GeC8FeD8AeD8JeAgH"></figfumen></div>
 </div>
 
 Don't forget `-f csv` and `-k p`. This should create a file in the `/output/` folder named `path.csv`.
@@ -153,12 +153,13 @@ sfinder-minimal output/path.csv
 ```
 There can different sets of solutions that all qualify as a minimal set. To choose the best one, choices are presented to the user for them to choose between solutions and pin-point their ideal set. Simply use your arrow keys and press enter to choose between setups.
 
-![[sfinder/attachments_sfinder/minimal-interactive.png]]
+![Image of terminal when choosing between different minimal sets.](sfinder/attachments_sfinder/minimal-interactive.png)
+<!-- ![Explanation of how the solutions displayed correspond to the minimal sets they represent.](sfinder/attachments_sfinder/minimal_picking_explanation_ugly.png) -->
 
 The output will be written onto ``path_minimal_strict.md``. The resulting minimals may differ depending on how you chose, but these are my results:
 <div style="text-align: center">
-<br><figfumen clipboard="false" size=15>v115@9gywR4whh0hlxwR4A8whg0RpglxwC8whg0RpglwwD8?whD8JeAgWTADX7rDy4CwBFbkRBZ1AVBFrvAA</figfumen>
-<figfumen clipboard="false" size=15>v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWTADX7rDy4CwBFb0KBW1ZOBFrvAA</figfumen>
+<br><figfumen src="v115@9gywR4whh0hlxwR4A8whg0RpglxwC8whg0RpglwwD8?whD8JeAgWTADX7rDy4CwBFbkRBZ1AVBFrvAA" clipboard="false" size=15></figfumen>
+<figfumen src="v115@9gBtywwhh0R4wwBtwwA8whg0R4glxwC8whg0ilwwD8?whD8JeAgWTADX7rDy4CwBFb0KBW1ZOBFrvAA" clipboard="false" size=15></figfumen>
 </div>
 
 As a bonus, you can get the fumen codes extracted from ``path_minimal_strict.md`` by using the makeMinimals script.

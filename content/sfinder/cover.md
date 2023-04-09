@@ -12,195 +12,35 @@ body{display: flex; justify-content: center;}
 </style>
 
 [[sfinder/|Solution Finder's]] **Cover** command outputs the probability of setting up/building a **specified field** (or multiple), given a specified **pattern**. This output is written in both the terminal and the specified **log path**.
-```YAML {title="Command Structure"}
-java -jar sfinder.jar cover --tetfu <fumen> --patterns <pattern>
-```
-```YAML {title="Shorthand Command Structure"}
-java -jar sfinder.jar cover -t <fumen> -p <pattern>
-```
-```YAML {title="Specifying Multiple Fumens"}
-java -jar sfinder.jar cover -t <fumen> <fumen> -p <pattern>
-```
 ___
 ## Input Parameters
-**Specified Field(s)** (`--tetfu`, `-t`): the [[sfinder/fumen editor#Fumen Code|fumen code(s)]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used. Input multiple fumens for fields by separating the fumens with spaces.
-- **Mirror** (`--mirror`, `-m`): Whether or not to include the mirrors for all inputted fumens. The outputs will mark mirrored `fumen` inputs as `fumen#mirror`.
-	- The default is `false`.
-	- `--mirror true`
+{{< sfinder-parameters/parameter-template name="Specified Field(s)" subcommand="tetfu" shortcut="t" defaultValue="null" descriptionPath="sfinder-parameters/descriptions/tetfu.md" >}}
+{{< sfinder-parameters/parameter-template name="Mirror" subcommand="mirror" shortcut="m" defaultValue="false" descriptionPath="sfinder-parameters/descriptions/mirror.md" >}}
+<br>
+{{< sfinder-parameters/parameter-template name="Patterns" subcommand="patterns" shortcut="p" defaultValue="null" descriptionPath="sfinder-parameters/descriptions/patterns.md" >}}
+{{< sfinder-parameters/parameter-template name="Hold" subcommand="hold" shortcut="H" defaultValue="use" descriptionPath="sfinder-parameters/descriptions/hold.md" >}}
 
-**Patterns** (`--patterns`, `-p`): Determines the queues checked by sfinder. Read more about this parameter [[sfinder/parameter patterns|here]].
-- **Hold** (`--hold`, `-H`): Specify whether or not a hold slot is usable.
-	- By default, it is `use`.
-	- `-H use` or `-H avoid`
-- **Drop** (`--drop`, `-d`): Specify what movements are usable.
-	- By default, it uses `softdrop`. 
+{{< sfinder-parameters/parameter-template name="Drop" subcommand="drop" shortcut="d" defaultValue="soft" descriptionPath="sfinder-parameters/descriptions/drop.md" tSpinTable="true" >}}
+{{< sfinder-parameters/parameter-template name="Last Softdrop" subcommand="last-sd" shortcut="l" defaultValue="0" descriptionPath="sfinder-parameters/descriptions/last-sd.md" >}}
 
-{{< sfinder-parameters/drop t-spin-table="true" >}}
+{{< sfinder-parameters/parameter-template name="Mode" subcommand="mode" shortcut="M" defaultValue="normal" descriptionPath="sfinder-parameters/descriptions/mode.md" >}}
+{{< sfinder-parameters/parameter-template name="Max Clear Line" subcommand="max-clearline" shortcut="mc" defaultValue="-1" descriptionPath="sfinder-parameters/descriptions/max-clearline.md" >}}
+{{< sfinder-parameters/parameter-template name="Max softdrop" subcommand="max-softdrop" shortcut="ms" defaultValue="-1" descriptionPath="sfinder-parameters/descriptions/max-softdrop.md" >}}
+<br>
+{{< sfinder-parameters/parameter-template name="Starting B2B" subcommand="starting-b2b" shortcut="sb" defaultValue="0" descriptionPath="sfinder-parameters/descriptions/starting-b2b.md" >}}
 
-- **Last Softdrop** (`--last-sd`, `-l`): Allows the last nth pieces to use softdrop regardless of the value of `--drop`.
-
-**Mode** (`--mode`, `--M`): specifying the condition by which cover will return as successful or failed.
-> [!WARNING] WIP
->
-> This section can be improved by showcasing the possible modes.
-- **Max Clear Line** (`--clear-line`, `-c`): Specify the number of line clears cover may use. 
-	- By default, it is `-1`, meaning there is no limit.
-	- `--max-clearline 1` for a 4-line high perfect clear field may allow you to get that field's quad clear chance.
-- **Max Softdrop** (`--max-softdrop`, `-ms`): Specify how many times pieces can be softdropped in order to build a setup.
-	- This setting is only enabled in conjunction with `--mode` 
-	- By default, it uses `-1`, no limit placed on softdrops.
-	- `--max-softdrop 2`
-
-**Starting B2B** (`--starting-b2b`, `-sb`): specifying the number of B2B clears is required for a successful output.
-- By default, it uses `0`, meaning no B2B is required.
-- `--starting-b2b 2`
-
-**Kick table** (`--kicks`, `-K`):
-> [!WARNING] WIP
->
-> This section isn't filled out yet.
+{{< sfinder-parameters/parameter-template name="Kick table" subcommand="kicks" shortcut="K" defaultValue="srs" version="1.40" descriptionPath="WIP.md" >}}
 ___
 ## Output Parameters
-**Priority** (`--priority`, `-P`): Only one setup can be marked as `O` for all the fumens provided. This will be the first setup that is buildable in the order of the fumens given in `--tetfu`.
-- By default, priority is `True`.
-- `--priority True`
+{{< sfinder-parameters/parameter-template name="Priority" subcommand="priority" shortcut="P" defaultValue="no" descriptionPath="sfinder-parameters/descriptions/priority.md" >}}
+{{< sfinder-parameters/parameter-template name="Failed Count" subcommand="failed-count" shortcut="fc" defaultValue="100" descriptionPath="sfinder-parameters/descriptions/failed-count.md" >}}
 
-**Failed Count** (`--failed-count`, `-fc`): determines the number of failed queues displayed at the end of the output.
-- By default, failed count is `100`.
-- `--failed-count -1` displays as many failed queues as possible.
 ___
 ## Miscellaneous Parameters
-**Output Base** (`--output-base`, `-o`): Specify the path data file output.
-- By default, the path data is written into `output/path.csv`, `path_minimal.html`, or `path_unique.html` (depending on your path command).
-- `--output-base output/tubpath.csv`
-
-**Log path** (`--log-path`, `-lp`): create a .txt file output from the output of the command.
-- By default, the log path is `output/last_output.txt`.
-- `--log-path output/chances.txt`
-
-**Specified Field from a file** (`--field-path`, `-fp`): instead of defining the fumen code using `--tetfu`, you can specify a .txt file that contains a fumen code instead.
-- By default, the field path is `input/field.txt`.
-- `--field-path input/sdpc.txt`
-
-**Patterns from a file** (`--patterns-path`, `-pp`): instead of defining patterns using `--patterns`, you can specify a .txt file that contains either the actual queues, or patterns.
-- By default, the patterns path is `input/patterns.txt`.
-- `--patterns-path input/filteredqueue.txt`
-
-___
-## Summary
-<div style="display: flex; flex-direction: column;">
-	<table>
-		<tr>
-			<th colspan="3">Input Parameters</th>
-		</tr>
-		<tr>
-			<th>Parameter</th>
-			<th>Shorthand</th>
-			<th>Default</th>
-		</tr>
-		<tr>
-			<td>--tetfu</td>
-			<td>-t</td>
-			<td>null</td>
-		</tr>
-		<tr>
-			<td>--patterns</td>
-			<td>-p</td>
-			<td>null</td>
-		</tr>
-		<tr>
-			<td>--hold</td>
-			<td>-H</td>
-			<td>true</td>
-		</tr>
-		<tr>
-			<td>--drop</td>
-			<td>-d</td>
-			<td>softdrop</td>
-		</tr>
-		<tr>
-			<td>--max-clearline</td>
-			<td>-mc</td>
-			<td>-1</td>
-		</tr>
-		<tr>
-			<td>--max-softdrop</td>
-			<td>-ms</td>
-			<td>-1</td>
-		</tr>
-		<tr>
-			<td>--last-sd</td>
-			<td>-l</td>
-			<td>0</td>
-		</tr>
-		<tr>
-			<td>--mirror</td>
-			<td>-m</td>
-			<td>false</td>
-		</tr>
-		<tr>
-			<td>--kicks</td>
-			<td>-K</td>
-			<td>srs</td>
-		</tr>
-	</table>
-	<br>
-	<table>
-		<tr>
-			<th colspan="3">Output Parameters</th>
-		</tr>
-		<tr>
-			<th>Parameter</th>
-			<th>Shorthand</th>
-			<th>Default</th>
-		</tr>
-		<tr>
-			<td>--priority</td>
-			<td>-P</td>
-			<td>false</td>
-		</tr>
-		<tr>
-			<td>--mode</td>
-			<td>-M</td>
-			<td>normal</td>
-		<tr>
-			<td>--output-base</td>
-			<td>-o</td>
-			<td>output/cover.csv</td>
-		</tr>
-	</table>
-	<br>
-	<table>
-		<tr>
-			<th colspan="3">Miscellaneous Parameters</th>
-		</tr>
-		<tr>
-			<th>Parameter</th>
-			<th>Shorthand</th>
-			<th>Default</th>
-		</tr>
-		<tr>
-			<td>--starting-b2b</td>
-			<td>-sb</td>
-			<td>0</td>
-		</tr>
-		<tr>
-			<td>--log-path</td>
-			<td>-lp</td>
-			<td>output/last_output.txt</td>
-		</tr>
-		<tr>
-			<td>--field-path</td>
-			<td>-fp</td>
-			<td>input/field.txt</td>
-		</tr>
-		<tr>
-			<td>--patterns-path</td>
-			<td>-pp</td>
-			<td>input/patterns.txt</td>
-		</tr>
-	</table>
-</div>
+{{< sfinder-parameters/parameter-template name="Output Base" subcommand="output-base" shortcut="o" defaultValue="output/cover.csv" descriptionPath="sfinder-parameters/descriptions/output-base.md" >}}
+{{< sfinder-parameters/parameter-template name="Log Path" subcommand="log-path" shortcut="lp" defaultValue="output/last_output.txt" descriptionPath="sfinder-parameters/descriptions/log-path.md" >}}
+{{< sfinder-parameters/parameter-template name="Specified Field from a file" subcommand="field-path" shortcut="fp" defaultValue="input/field.txt" descriptionPath="sfinder-parameters/descriptions/field-path.md" >}}
+{{< sfinder-parameters/parameter-template name="Patterns from a file" subcommand="patterns-path" shortcut="pp" defaultValue="input/patterns.txt" descriptionPath="sfinder-parameters/descriptions/patterns-path.md" >}}
 
 ___
 ## Example Commands and Output
@@ -267,3 +107,16 @@ The CSV output lists the first column for the patterns used, and extra columns a
 ___
 ## Special Uses
 1. Cover's output can be converted into an [[sfinder/path|sfinder path output]] to be used to find [[sfinder/custom minimals|custom minimals]], such as Quad PC minimals or T-Spin minimals.
+___
+<div class="credits">
+	<div class="stat">
+		<h4>References</h4>
+		<ul>
+			<li>
+				<a href="https://github.com/knewjade/">Knewjade</a>
+				<br>
+                <ul><li><a href="https://solution-finder.readthedocs.io/ja/stable/contents/cover/main.html">Cover documentation</a></li></ul>
+            </li>
+		</ul>
+	</div>
+</div>

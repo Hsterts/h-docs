@@ -24,19 +24,19 @@
                 <path style="stroke-width: 4px" fill="var(--dark)" d="m123.79625,206.93291a21.20833,21.20833 0 1 0 30.11583,-30.11583l-27.57083,-27.35875l254.49999,0a33.085,33.085 0 0 1 33.72125,32.44875l0,52.38458a21.20833,21.20833 0 0 0 42.41667,0l0,-52.38458a75.50166,75.50166 0 0 0 -76.13791,-74.86541l-254.49999,0l27.57083,-27.35875a21.20833,21.20833 0 0 0 0,-30.11583a21.20833,21.20833 0 0 0 -30.11583,0l-63.625,63.625a21.20833,21.20833 0 0 0 0,30.11583l63.625,63.625z"/>
             </svg>
         </div>
-        <div id="with-180-toggle" class="rotation-logo logo hidden" onclick="switchRotation('with180')">
+        <div id="with-180-toggle" class="rotation-logo logo hidden" onclick="switchRotation('no180')">
             <p style="font-size: 1.0625em" title='{{ i18n "rotation_180_mode" }}' class="rotationmode-text"><b>180</b></p>
         </div>
-        <div id="no-180-toggle" class="rotation-logo logo" onclick="switchRotation('no180')">
+        <div id="no-180-toggle" class="rotation-logo logo" onclick="switchRotation('with180')">
             <p style="font-size: 1.250em" title='{{ i18n "rotation_90_mode" }}' class="rotationmode-text"><b>90</b></p>
         </div>
-        <div id="with-grid-toggle" class="grid-toggle-logo logo" onclick="toggleGrid('withGrid')">
+        <div id="with-grid-toggle" class="grid-toggle-logo logo" onclick="toggleGrid('noGrid')">
             <svg width="512" height="512" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="bi bi-grid-3x3">
                 <title>{{ i18n "grid_toggle" }}</title>
                 <path stroke-width="4px" fill="var(--dark)" d="m1,48.8125a47.8125,47.8125 0 0 1 47.8125,-47.8125l414.37503,0a47.8125,47.8125 0 0 1 47.8125,47.8125l0,414.37503a47.8125,47.8125 0 0 1 -47.8125,47.8125l-414.37503,0a47.8125,47.8125 0 0 1 -47.8125,-47.8125l0,-414.37503zm47.8125,-15.9375a15.9375,15.9375 0 0 0 -15.9375,15.9375l0,111.56251l127.50001,0l0,-127.50001l-111.56251,0zm111.56251,159.37501l-127.50001,0l0,127.50001l127.50001,0l0,-127.50001zm31.875,127.50001l127.50001,0l0,-127.50001l-127.50001,0l0,127.50001zm-31.875,31.875l-127.50001,0l0,111.56251a15.9375,15.9375 0 0 0 15.9375,15.9375l111.56251,0l0,-127.50001zm31.875,0l0,127.50001l127.50001,0l0,-127.50001l-127.50001,0zm159.37501,0l0,127.50001l111.56251,0a15.9375,15.9375 0 0 0 15.9375,-15.9375l0,-111.56251l-127.50001,0zm0,-31.875l127.50001,0l0,-127.50001l-127.50001,0l0,127.50001zm0,-159.37501l127.50001,0l0,-111.56251a15.9375,15.9375 0 0 0 -15.9375,-15.9375l-111.56251,0l0,127.50001zm-31.875,0l0,-127.50001l-127.50001,0l0,127.50001l127.50001,0z"/>
             </svg>
         </div>
-        <div id="no-grid-toggle" class="grid-toggle-logo logo hidden" onclick="toggleGrid('noGrid')">
+        <div id="no-grid-toggle" class="grid-toggle-logo logo hidden" onclick="toggleGrid('withGrid')">
             <svg width="512" height="512" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="bi bi-grid-3x3">
                 <title>{{ i18n "grid_toggle" }}</title>
                 <path  stroke-width="32" stroke="var(--dark)" fill="none" d="m17,61.90625a44.90625,44.90625 0 0 1 44.90625,-44.90625l389.18751,0a44.90625,44.90625 0 0 1 44.90625,44.90625l0,389.18751a44.90625,44.90625 0 0 1 -44.90625,44.90625l-389.18751,0a44.90625,44.90625 0 0 1 -44.90625,-44.90625l0,-389.18751z"/>

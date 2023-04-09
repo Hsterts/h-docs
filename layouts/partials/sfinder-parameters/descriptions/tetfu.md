@@ -1,0 +1,1 @@
+The [[sfinder/fumen editor#Fumen Code|fumen code]] that sfinder begins working with. If not specified, the file `field.txt` in the `input` folder is used. Input multiple fumens for fields by separating the fumens with spaces.

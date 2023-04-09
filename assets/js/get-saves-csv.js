@@ -1,99 +1,109 @@
-saveFiles = []
+"use strict"
+var saveFiles = [] //cache save files used in this page
+const pieces = Array.from('TILJSZO')
 
-function getSaves(source){
-	let display = document.getElementById(source + '-display')
-	let rot = rotationMode == 'with180' ? '180' : '90'
-	let selection = []
-	for(let i = 0; i < 7; i++){
-		let input = document.getElementById('TILJSZO'[i] + '-' + source).checked
-		if(input){selection.push('TILJSZO'[i])}
-	}
-	if(selection.length){
-		let toCall = source + '-' + rot
-		let file = saveFiles[toCall]
-		let count = 0;
-		for(let i = 0; i < file.length - 1; i++){
-			let row = file[i + 1]
-			let cover = 0
-			for(let x = 0; x < selection.length; x++){
-				let column = 'TILJSZO'.indexOf(selection[x])
-				if(row[column] == 'O'){cover = 1}
-			}
-			count += cover;
-		}
-		display.innerHTML = '<strong>' + selection.join('') + '</strong>: ' + (count/(file.length-1)*100).toFixed(2) + '%'
-		display.className = 'save-selection filled'
-	} else {
+//currently only gets saves from the <saves>, make it a parameter
+async function getSaves(saveTable) { //hooked to onclick event
+	let display = saveTable.getElementsByClassName('saves-display')[0]
+	let selectedPieces = pieces.filter(piece => saveTable.querySelector('input.' + piece).checked)
+
+	if (selectedPieces.length == 0) { //no pieces selected
 		display.innerHTML = 'Select Save...'
-		display.className = 'save-selection'
+		display.classList.remove('filled')
+	} else {
+		let a = await getSavesStats(saveTable.getAttribute('src'), selectedPieces, rotationMode)
+		let [ratio, percentage] = await getSavesStats(saveTable.getAttribute('src'), selectedPieces, rotationMode)
+		display.innerHTML = '<strong>' + selectedPieces.join('') + '</strong>: ' + percentage
+		display.title = ratio
+		display.classList.add('filled')
 	}
 }
 
-function loadSaveFiles() {
-	let data = []
-	let saveElements = document.getElementsByTagName('saves')
-	let saveFileNames = []
-	for(let i = 0; i < saveElements.length; i++){
-		let sourceMain = saveElements[i].getAttribute('src')
-		let source90 = sourceMain + '-90'
-		let source180 = sourceMain + '-180'
-		saveFileNames.push(source90)
-		saveFileNames.push(source180)
-	}
-	for(let i = 0; i < saveFileNames.length; i++){
-		let saveFileName = saveFileNames[i]
-		let url = window.location.origin + '/h-docs/attachments_saves/' + saveFileName + '.csv'
-		fetch(url)
-			.then((r) => r.text())
-			.then((t) => {
-				data = $.csv.toArrays(t)
-				saveFiles[saveFileName] = data
-			})
-	}
-	console.log(saveFileNames.length + ' save files loaded.')
-}
-
-function generateSaveInputs(){
-	let saveTags = document.getElementsByTagName('saves')
-	for(let i = 0; i < saveTags.length; i++){
-		if(saveTags[i].children.length > 0) continue
-		let source = saveTags[i].getAttribute('src')
-		let main = document.createElement('div')
-		main.id = source + '-main'
-		main.className = 'save-selection'
-		let display = document.createElement('div')
-		display.id = source + '-display'
-		display.innerText = 'Select Save...'
-		display.className = 'save-selection'
-		display.setAttribute('onclick','document.getElementById("' + source + '-inputs").style.display = "grid"; document.getElementById("' + source + '-inputs").focus()')
-		let inputs = document.createElement('div')
-		inputs.className = 'save-input'
-		inputs.id = source + '-inputs'
-		inputs.setAttribute('tabindex', '0')
-		inputs.setAttribute('onblur','document.getElementById("' + source + '-inputs").style.display = "none";')
-		for(let x = 0; x < 7; x++){
-			let piece = 'TILJSZO'[x]
-			let input = document.createElement('input')
-			input.id = piece + '-' + source
-			input.type = 'checkbox'
-			input.setAttribute('onclick', "getSaves('" + source + "')")
-			
-			let label = document.createElement('label')
-			label.setAttribute('for', piece + '-' + source)
-			
-				let span = document.createElement('span')
-				span.className = 'mino'
-				span.innerText = piece
-			
-			inputs.append(input)
-			inputs.append(label)
-			label.append(span)
+async function getSavesStats(source, savePieces, rotationMode) {
+	return finishLoadingSaveFiles.then(() => {
+		let rot = rotationMode == 'with180' ? '180' : '90'
+		let saveFile = JSON.parse(JSON.stringify(saveFiles[source + '-' + rot]))
+		let saveFilePieceOrder = saveFile.shift() //remove first line listing the tetrominos
+	
+		let count = 0;
+		for (let saveRow of saveFile) {
+			if (saveRow.some((coverResult, index) => savePieces.includes(saveFilePieceOrder[index]) && coverResult == "O")) {
+				count += 1 //at least one of the selected pieces can be saved
+			}
 		}
-		saveTags[i].append(display)
-		main.append(inputs)
-		saveTags[i].append(main)
-	}
+
+		return [count + "/" + saveFile.length, (count/(saveFile.length)*100).toFixed(2) + "%"]
+	})
 }
 
-generateSaveInputs()
-loadSaveFiles()
+async function loadSaveFiles() {
+	let saveFileNames = []
+	for (let saveTable of document.getElementsByClassName('saves-table')) {
+		let sourceBase = saveTable.getAttribute('src')
+		saveFileNames.push(sourceBase + '-90', sourceBase + '-180')
+	}
+	
+	await Promise.all(
+		saveFileNames.map(async saveFileName => {
+			let url = window.location.origin + '/h-docs/attachments_saves/' + saveFileName + '.csv'
+			return fetch(url)
+				.then(response => response.text())
+				.then(text => saveFiles[saveFileName] = $.csv.toArrays(text))
+		})
+	)
+	console.log(saveFileNames.length, 'save files loaded.')
+}
+
+const finishLoadingSaveFiles = new Promise((resolve, reject) => {
+	loadSaveFiles().then(() => resolve())
+})
+
+const saveTypes = {
+	"save-t": "T", 
+	"save-to": "TO", 
+	"save-tio": "TIO", 
+	"avoid-sz": "TILJO", 
+	"save-osz": "OSZ"
+};
+
+window.addEventListener("DOMContentLoaded", () => {
+	//custom save selection
+    for (let saveTable of document.getElementsByClassName('saves-table')) {
+        let display = saveTable.getElementsByClassName('saves-display')[0]
+        let pieceContainer = saveTable.getElementsByClassName('saves-input')[0]
+
+        display.addEventListener('click', () => pieceContainer.classList.toggle('hidden'))
+		pieceContainer.addEventListener('click', () => getSaves(saveTable))
+    }
+
+	//dynamically add save percentages to save tables
+	let insertSavePercentagePromises = []
+	for (let saveTable of document.getElementsByClassName("saves-table")) {
+		let saveFileSource = saveTable.getAttribute("src")
+		if (!saveFileSource) continue; //temp fix for save tables not having a src attribute
+		for (let [saveTitle, savePieces] of Object.entries(saveTypes)) {
+			//dynamically find save percentages
+			let with180Span = document.createElement("div")
+			with180Span.classList.add("with180")
+			
+			let no180Span = document.createElement("div")
+			no180Span.classList.add("no180")
+
+			insertSavePercentagePromises.push(Promise.all([
+				getSavesStats(saveFileSource, savePieces, 'with180').then(([ratio, percent]) => {
+					with180Span.title = ratio
+					with180Span.textContent = percent
+				}),
+				getSavesStats(saveFileSource, savePieces, 'no180').then(([ratio, percent]) => {
+					no180Span.title = ratio
+					no180Span.textContent = percent
+				}),
+			]).then(() => {
+				saveTable.querySelector("#" + saveTitle).append(no180Span, with180Span)
+			}))
+		}
+	}
+	Promise.all(insertSavePercentagePromises).then(() => {
+		switchRotation('with180')
+	})
+});
