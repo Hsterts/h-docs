@@ -1,3 +1,5 @@
+const {encoder} = require('tetris-fumen')
+
 colorMapping = {
 	"S": 7,
 	"J": 6,
