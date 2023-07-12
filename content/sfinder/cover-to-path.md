@@ -1,5 +1,5 @@
 ---
-title: Cover-To-Path Script
+title: "Cover-To-Path Script"
 tags:
 - Guide
 - Sfinder Script
@@ -75,7 +75,7 @@ Since you don't specify the `--tetfu` parameter, the `field.txt` file is what's 
 The result should show `OR = 72.46 % [3652/5040]`.
 
 **Converting the `cover.csv` to `path.csv`**:
-```{title="Example Cover-to-Path Command}
+```{title="Example Cover-to-Path Command"}
 py cover-to-path.py output/cover.csv
 ```
 The resulting file should be in the `/output/` folder, named `cover_to_path.csv`.

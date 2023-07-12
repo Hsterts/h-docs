@@ -5,12 +5,13 @@ function toggleMirror(){
 	mirrored = !mirrored;
 	
 	// for the solution finder
-	let currentCode = document.getElementsByClassName('solution-finder-display-image')[0].dataset.code;
-	let rot = rotationMode == 'with180' ? '-180' : '-90'
-	let source = selectedFileName.replace(rot,'').replace('-mirror','')
-	selectSetup(source, currentCode);
-	getSolutions()
-	
+	try{
+		let currentCode = document.getElementsByClassName('solution-finder-display-image')[0].dataset.code;
+		let rot = rotationMode == 'with180' ? '-180' : '-90'
+		let source = selectedFileName.replace(rot,'').replace('-mirror','')
+		selectSetup(source, currentCode);
+		getSolutions()
+	} catch (e) {}
 	// for the page elements
 	var unmirroredElements = document.getElementById('unmirrored')
 	var mirroredElements = document.getElementsByClassName('mirrored')
