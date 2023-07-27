@@ -66,6 +66,12 @@ Fumens within \<fumen> tags are automatically mirrored. The only consideration f
 	</figure>
 </div>
 
+## In-line Minos
+Wrap text with `<span class="mino">` and all piece-corresponding characters will be converted into a mino. Affected by the mirror feature.
+```
+Here, you can use <span class="mino">ILSZ</span> to create Jaws.
+```
+
 ___
 ## Other Site Bits
 1. **Title for Percentages**: it'd be cool if we had proper titles for percentages as fractions.
